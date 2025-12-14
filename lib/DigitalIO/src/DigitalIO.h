@@ -55,6 +55,7 @@ public:
     void toggle();
     bool read();
     void pulse(uint32_t durationMs);
+    void update();
 
 private:
     uint8_t _pin;

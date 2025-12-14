@@ -12,6 +12,7 @@
     #define GET_MILLIS() millis()
 #else
     #include <chrono>
+    #include <thread>
     #define GET_MICROS() (std::chrono::duration_cast<std::chrono::microseconds>(std::chrono::steady_clock::now().time_since_epoch()).count())
     #define GET_MILLIS() (std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now().time_since_epoch()).count())
 #endif
@@ -202,11 +203,8 @@ void PLCCore::updateCycleTiming() {
         #if defined(ARDUINO)
             delayMicroseconds(remainingTime);
         #else
-            // For non-Arduino platforms, simple busy wait
-            uint32_t endTime = GET_MICROS() + remainingTime;
-            while (GET_MICROS() < endTime) {
-                // Busy wait
-            }
+            // For non-Arduino platforms, use sleep for better CPU efficiency
+            std::this_thread::sleep_for(std::chrono::microseconds(remainingTime));
         #endif
     }
 }

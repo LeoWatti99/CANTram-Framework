@@ -47,7 +47,7 @@ bool LibraryName::exampleMethod(uint32_t input) {
     }
     
     // Method implementation here
-    (void)input;  // Remove when implementing
+    (void)input;  // Template code: suppress unused warning - remove when implementing
     
     return true;
 }

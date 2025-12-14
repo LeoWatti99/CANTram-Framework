@@ -145,7 +145,12 @@ bool DigitalOutput::read() {
 void DigitalOutput::pulse(uint32_t durationMs) {
     high();
     _pulseEndTime = GET_MILLIS() + durationMs;
-    
-    // Note: Application must call update() regularly to end pulse
-    // Or use a timer interrupt
+}
+
+void DigitalOutput::update() {
+    // Check if pulse should end
+    if (_pulseEndTime > 0 && GET_MILLIS() >= _pulseEndTime) {
+        low();
+        _pulseEndTime = 0;
+    }
 }

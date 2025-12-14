@@ -61,8 +61,10 @@ bool CANCore::sendMessage(const CANMessage* msg) {
         return false;
     }
     
-    // Platform-specific send implementation would go here
-    // For now, this is a template that needs platform-specific code
+    // TODO: Platform-specific send implementation
+    // This is a template stub - integrate with actual CAN hardware driver
+    // Example for ESP32: CAN.write(msg->id, msg->len, msg->data);
+    // Example for STM32: Can.write(CANMsg(msg->id, msg->data, msg->len));
     
     _txCount++;
     return true;
@@ -74,8 +76,10 @@ bool CANCore::receiveMessage(CANMessage* msg) {
         return false;
     }
     
-    // Platform-specific receive implementation would go here
-    // For now, this is a template that needs platform-specific code
+    // TODO: Platform-specific receive implementation
+    // This is a template stub - integrate with actual CAN hardware driver
+    // Example for ESP32: if(CAN.read(msg->id, msg->len, msg->data)) { return true; }
+    // Example for STM32: CANMsg rxMsg; if(Can.read(rxMsg)) { /* copy to msg */ return true; }
     
     return false;
 }
@@ -134,21 +138,31 @@ void CANCore::getStatistics(uint32_t* txCount, uint32_t* rxCount, uint32_t* erro
 }
 
 // Platform-specific implementations
+// NOTE: These are template stubs. Complete CAN driver integration is required
+// for production use. Refer to platform-specific CAN libraries:
+// - ESP32: ESP32CAN or TWAI driver
+// - STM32: STM32duino CAN library
+// - Teensy: FlexCAN_T4 or FlexCAN library
+// - Arduino Due: due_can library
 bool CANCore::platformInit() {
 #if defined(ESP32)
-    // ESP32 CAN initialization code would go here
+    // TODO: ESP32 CAN initialization using ESP32CAN or TWAI
+    // Example: CAN.begin(CAN_500KBPS);
     return true;
 #elif defined(STM32)
-    // STM32 CAN initialization code would go here
+    // TODO: STM32 CAN initialization using STM32duino CAN
+    // Example: Can.begin(); Can.setBaudRate(500000);
     return true;
 #elif defined(TEENSY)
-    // Teensy CAN initialization code would go here
+    // TODO: Teensy CAN initialization using FlexCAN
+    // Example: Can0.begin(); Can0.setBaudRate(500000);
     return true;
 #elif defined(ARDUINO_SAM_DUE)
-    // Arduino Due CAN initialization code would go here
+    // TODO: Arduino Due CAN initialization
+    // Example: Can0.begin(CAN_BPS_500K);
     return true;
 #else
-    // Generic/host platform initialization (for testing)
+    // Generic/host platform initialization (for testing/simulation)
     return true;
 #endif
 }

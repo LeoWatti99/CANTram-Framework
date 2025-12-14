@@ -5,13 +5,14 @@ This document provides an overview of all libraries included in the CANTram Fram
 ## Core Communication Libraries
 
 ### CANCore
-**Status**: ✅ Available  
+**Status**: ✅ Available (requires platform driver integration)  
 **Description**: Fundamental CAN bus communication functionality  
 **Features**: 
 - Standard and extended CAN frames
 - Message filtering
 - Multiple baud rates (5kbps - 1Mbps)
 - Statistics tracking
+- Platform-independent API (hardware integration required)
 
 ### CANProtocol
 **Status**: 🚧 Planned  
