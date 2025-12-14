@@ -1,0 +1,22 @@
+{
+  "name": "Timer",
+  "version": "1.0.0",
+  "description": "Timer and scheduling utilities for CANTram Framework",
+  "keywords": ["timer", "delay", "scheduling", "timing"],
+  "authors": [
+    {
+      "name": "Leo Watti",
+      "maintainer": true
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LeoWatti99/CANTram-Framework.git"
+  },
+  "license": "GPL-3.0",
+  "frameworks": ["arduino", "mbed", "espidf"],
+  "platforms": ["espressif32", "ststm32", "teensy", "atmelsam"],
+  "export": {
+    "include": ["src"]
+  }
+}
