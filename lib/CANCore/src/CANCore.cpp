@@ -63,11 +63,15 @@ bool CANCore::sendMessage(const CANMessage* msg) {
     
     // TODO: Platform-specific send implementation
     // This is a template stub - integrate with actual CAN hardware driver
-    // Example for ESP32: CAN.write(msg->id, msg->len, msg->data);
-    // Example for STM32: Can.write(CANMsg(msg->id, msg->data, msg->len));
+    // Example for ESP32: 
+    //   if (CAN.write(msg->id, msg->len, msg->data)) { _txCount++; return true; }
+    // Example for STM32: 
+    //   CANMsg txMsg(msg->id, msg->data, msg->len);
+    //   if (Can.write(txMsg)) { _txCount++; return true; }
     
-    _txCount++;
-    return true;
+    // Stub returns false until platform driver is integrated
+    _lastError = 4; // Not implemented
+    return false;
 }
 
 bool CANCore::receiveMessage(CANMessage* msg) {
@@ -89,7 +93,9 @@ uint8_t CANCore::available() {
         return 0;
     }
     
-    // Platform-specific implementation would go here
+    // TODO: Platform-specific implementation
+    // Example for ESP32: return CAN.available();
+    // Example for STM32: return Can.available();
     return 0;
 }
 
@@ -98,8 +104,9 @@ void CANCore::processMessages() {
         return;
     }
     
-    // Process any pending messages
-    // Platform-specific implementation would go here
+    // TODO: Process any pending messages
+    // Platform-specific implementation for message queue processing
+    // Example: Process RX interrupts, handle TX confirmations, etc.
 }
 
 void CANCore::setFilter(uint32_t id, uint32_t mask, bool extended) {
@@ -107,10 +114,12 @@ void CANCore::setFilter(uint32_t id, uint32_t mask, bool extended) {
         return;
     }
     
-    // Platform-specific filter implementation would go here
-    (void)id;
-    (void)mask;
-    (void)extended;
+    // TODO: Platform-specific filter implementation
+    // Example for ESP32: CAN.setFilter(id, mask, extended);
+    // Example for STM32: Can.setFilter(id, mask, extended);
+    (void)id;     // Suppress unused warning in stub
+    (void)mask;   // Suppress unused warning in stub
+    (void)extended; // Suppress unused warning in stub
 }
 
 void CANCore::clearFilters() {
@@ -118,7 +127,8 @@ void CANCore::clearFilters() {
         return;
     }
     
-    // Platform-specific filter clearing would go here
+    // TODO: Platform-specific filter clearing
+    // Example: CAN.clearFilters() or Can.clearFilters()
 }
 
 uint8_t CANCore::getLastError() {
