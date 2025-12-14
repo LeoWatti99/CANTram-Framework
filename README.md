@@ -1,6 +1,25 @@
 # CANTram-Framework
 
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![Platform: PlatformIO](https://img.shields.io/badge/Platform-PlatformIO-orange.svg)](https://platformio.org/)
+[![Framework: Arduino](https://img.shields.io/badge/Framework-Arduino-00979D.svg)](https://www.arduino.cc/)
+[![Version: 1.0.0](https://img.shields.io/badge/Version-1.0.0-green.svg)](CHANGELOG.md)
+
 A comprehensive C++ library collection for decentralized PLC systems based on microcontrollers. This framework provides modular libraries for building robust industrial control systems using CAN bus communication.
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Features](#features)
+- [Directory Structure](#directory-structure)
+- [Getting Started](#getting-started)
+- [Quick Example](#quick-example)
+- [Library Modules](#library-modules)
+- [Development](#development)
+- [Supported Platforms](#supported-platforms)
+- [Contributing](#contributing)
+- [License](#license)
+- [Support](#support)
 
 ## Overview
 
@@ -32,6 +51,10 @@ CANTram-Framework/
 
 ## Getting Started
 
+### Quick Start
+
+**New to CANTram?** Check out the [Quick Start Guide](docs/quickstart.md) for a step-by-step tutorial!
+
 ### Prerequisites
 
 - **PlatformIO**: Recommended for building and uploading to microcontrollers
@@ -40,7 +63,7 @@ CANTram-Framework/
 
 ### Installation
 
-#### Using PlatformIO
+#### Using PlatformIO (Recommended)
 
 1. Clone this repository:
    ```bash
@@ -48,7 +71,13 @@ CANTram-Framework/
    cd CANTram-Framework
    ```
 
-2. Include desired libraries in your `platformio.ini`:
+2. Build and upload an example:
+   ```bash
+   pio run -t upload
+   pio device monitor
+   ```
+
+3. Or include in your own project's `platformio.ini`:
    ```ini
    [env:your_board]
    platform = ...
