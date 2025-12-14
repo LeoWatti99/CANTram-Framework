@@ -1,0 +1,26 @@
+{
+  "name": "CANTram-Framework",
+  "version": "1.0.0",
+  "description": "Framework for decentralized CANTram Controllers",
+  "keywords": "CANTram",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/LeoWatti99/CANTram-Framework.git"
+  },
+  "authors":
+  [
+    {
+      "name": "Leo Wattenberg",
+      "email": "leo.wattenberg@alumni.fh-aachen.de",
+      "url": "https://www.john-smith/contact"
+    }
+  ],
+  "license": "GPL-3.0",
+
+  "dependencies": {
+    "ownername/print": "~1.3.0"
+  },
+  "frameworks": "*",
+  "platforms": "*"
+}
