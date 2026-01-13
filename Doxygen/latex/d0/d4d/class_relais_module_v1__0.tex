@@ -1,0 +1,407 @@
+\doxysection{Relais\+Module\+V1\+\_\+0 Class Reference}
+\hypertarget{class_relais_module_v1__0}{}\label{class_relais_module_v1__0}\index{RelaisModuleV1\_0@{RelaisModuleV1\_0}}
+
+
+Inheritance diagram for Relais\+Module\+V1\+\_\+0\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{d0/d5b/class_relais_module_v1__0__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Relais\+Module\+V1\+\_\+0\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{d4/d00/class_relais_module_v1__0__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{class_relais_module_v1__0_ad4d2c5de92e8bee2911ad9f228148c35}{get\+HWType}} () const override
+\begin{DoxyCompactList}\small\item\em Get the hardware type string. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_relais_module_v1__0_a2256db6eb1b2430fc9fbb82ad05152dd}{get\+HWVersion}} () const override
+\begin{DoxyCompactList}\small\item\em Get the hardware version string. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_relais_module_v1__0_a5b51d4cb5afd3981a560c4084c8a8933}{get\+FWVersion}} () const override
+\begin{DoxyCompactList}\small\item\em Get the firmware version string. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{class_relais_module_v1__0_a078c91e0b5bc3f21a22bc71388ea1b0d}{get\+GPIODemand}} () const override
+\begin{DoxyCompactList}\small\item\em Get the GPIO demand of the module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{class_relais_module_v1__0_ac06c3a60aebdb574e90d3b28a6b944e3}{get\+GPIOSupply}} () const override
+\begin{DoxyCompactList}\small\item\em Get the GPIO supply capacity of the module. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_relais_module_v1__0_a1a7004ca779f46212dde0bd70c0a8bca}{attach\+Module}} (uint8\+\_\+t slot, uint8\+\_\+t gpio\+Start) override
+\begin{DoxyCompactList}\small\item\em Attach this module to a slot and assign GPIO range. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_relais_module_v1__0_a6373363c88ca982860ec7f07f81005cb}{provide\+GPIOs}} () override
+\begin{DoxyCompactList}\small\item\em Provide GPIO definitions to the core. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_relais_module_v1__0_af2e4f33d631bc14e433c404678347b67}{request\+GPIOs}} () override
+\begin{DoxyCompactList}\small\item\em Request GPIO definitions from the core. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_relais_module_v1__0_ac9c120d926b21c489108c1f925f2abac}{provide\+Hardware\+Resources}} () override
+\begin{DoxyCompactList}\small\item\em Provide hardware resources (e.\+g., I2C, SPI, UART) to the core. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_relais_module_v1__0_abb33be265117a963c1ab9c34e34ea082}{request\+Hardware\+Resources}} () override
+\begin{DoxyCompactList}\small\item\em Request hardware resources from the core. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_relais_module_v1__0_ace1bb24ccb82505ab38059203b179f1a}{add\+Interfaces}} () override
+\begin{DoxyCompactList}\small\item\em Setup and validate module interfaces. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_relais_module_v1__0_aee1e17f77ccc4737865e34291e86c103}{initialize}} () override
+\begin{DoxyCompactList}\small\item\em Initialize the module after attachment and provisioning. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_relais_module_v1__0_a6036020b6f6dd6cbb9ab1c6428fa719b}{cycle}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}response) override
+\begin{DoxyCompactList}\small\item\em Periodic cycle callback. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_interface}{Interface}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_relais_module_v1__0_a78579ed4ffa12aa6978e2c319632cbef}{get\+Interfaces}} () override
+\begin{DoxyCompactList}\small\item\em Get pointer to module\textquotesingle{}s interface array. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_relais_module_v1__0_ae437de38ae5e1caa91ea6d6fca5b7519}{get\+Interface\+Count}} () override
+\begin{DoxyCompactList}\small\item\em Get number of interfaces provided by the module. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_c_a_n_tram_module}{CANTram\+Module}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_a_n_tram_module_ae1c9554adb901b7e798a44d521781c0b}{CANTram\+Module}} ()=default
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_c_a_n_tram_module_a8f93d67f0d5b49b7864369196cb323e6}{\texorpdfstring{$\sim$}{\string~}\+CANTram\+Module}} ()=default
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_c_a_n_tram_module_a496814b4e5fa5f162c48f17ec33d4475}{reset}} ()
+\begin{DoxyCompactList}\small\item\em Reset the module to a known default state. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{class_c_a_n_tram_module_a80b400128bb6f0841953bb7a75cbf99c}{get\+Slot}} () const
+\begin{DoxyCompactList}\small\item\em Get assigned slot index. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{class_c_a_n_tram_module_a7905817e8fee9e8bccfc9bbe70ae5669}{get\+GPIOStart}} () const
+\begin{DoxyCompactList}\small\item\em Get starting GPIO index assigned to the module. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_c_a_n_tram_module_a329b502ade3a32987994381c93ddbd0b}{pre\+Initialize}} ()
+\begin{DoxyCompactList}\small\item\em Pre-\/initialize the module after attachment and provisioning. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_relais_module_v1__0_aa96cef931f16873dafa159187ee68a7c}\label{class_relais_module_v1__0_aa96cef931f16873dafa159187ee68a7c} 
+static const String {\bfseries HW\+\_\+\+TYPE} = "{}Relais\+Module"{}
+\item 
+\Hypertarget{class_relais_module_v1__0_a9172f8ff4672c64149b891d7386fb1c4}\label{class_relais_module_v1__0_a9172f8ff4672c64149b891d7386fb1c4} 
+static const String {\bfseries HW\+\_\+\+VERSION} = "{}1.\+0"{}
+\item 
+\Hypertarget{class_relais_module_v1__0_a9c40d65dae8fbec4258c6e6706c76a4b}\label{class_relais_module_v1__0_a9c40d65dae8fbec4258c6e6706c76a4b} 
+static const String {\bfseries FW\+\_\+\+VERSION} = "{}1.\+0.\+0"{}
+\item 
+\Hypertarget{class_relais_module_v1__0_a3e492115ca6597982c7edcafd7ec5d6c}\label{class_relais_module_v1__0_a3e492115ca6597982c7edcafd7ec5d6c} 
+static constexpr uint8\+\_\+t {\bfseries GPIO\+\_\+\+DEMAND} = 4
+\item 
+\Hypertarget{class_relais_module_v1__0_a3e86b6606c1915df8015e146bb4bb1c5}\label{class_relais_module_v1__0_a3e86b6606c1915df8015e146bb4bb1c5} 
+static constexpr uint8\+\_\+t {\bfseries GPIO\+\_\+\+SUPPLY} = 0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_c_a_n_tram_module}{CANTram\+Module}}}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t {\bfseries SLOT} = 0
+\item 
+uint8\+\_\+t {\bfseries GPIO\+\_\+\+START} = 0
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_relais_module_v1__0_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_relais_module_v1__0_ace1bb24ccb82505ab38059203b179f1a}\index{RelaisModuleV1\_0@{RelaisModuleV1\_0}!addInterfaces@{addInterfaces}}
+\index{addInterfaces@{addInterfaces}!RelaisModuleV1\_0@{RelaisModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{addInterfaces()}{addInterfaces()}}
+{\footnotesize\ttfamily \label{class_relais_module_v1__0_ace1bb24ccb82505ab38059203b179f1a} 
+bool Relais\+Module\+V1\+\_\+0\+::add\+Interfaces (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Setup and validate module interfaces. 
+
+Populate the module\textquotesingle{}s Interface\texorpdfstring{$\ast$}{*} array, name interfaces and validate them as needed. \begin{DoxyReturn}{Returns}
+true if interfaces were successfully added and validated, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_a14b79b625e82a3f11ebbb8271b6466b7}{CANTram\+Module}}.
+
+\Hypertarget{class_relais_module_v1__0_a1a7004ca779f46212dde0bd70c0a8bca}\index{RelaisModuleV1\_0@{RelaisModuleV1\_0}!attachModule@{attachModule}}
+\index{attachModule@{attachModule}!RelaisModuleV1\_0@{RelaisModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{attachModule()}{attachModule()}}
+{\footnotesize\ttfamily \label{class_relais_module_v1__0_a1a7004ca779f46212dde0bd70c0a8bca} 
+bool Relais\+Module\+V1\+\_\+0\+::attach\+Module (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{slot}{, }\item[{uint8\+\_\+t}]{gpio\+Start}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Attach this module to a slot and assign GPIO range. 
+
+Attach this module to a slot and assign its GPIO range.
+
+Initializes the module\textquotesingle{}s internal SLOT and GPIO\+\_\+\+START and triggers GPIO/resource provisioning and interface registration sequences. 
+\begin{DoxyParams}{Parameters}
+{\em slot} & Slot index to attach the module to. \\
+\hline
+{\em gpio\+Start} & Starting GPIO index assigned to this module. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if attachment and provisioning succeeded, false otherwise.
+\end{DoxyReturn}
+Sets the module\textquotesingle{}s SLOT and GPIO\+\_\+\+START values, logs the attachment and runs the standard initialization sequence\+: provide\+GPIOs, provide\+Hardware\+Resources, request\+GPIOs, request\+Hardware\+Resources and add\+Interfaces. Logs success or warnings based on the combined result. 
+\begin{DoxyParams}{Parameters}
+{\em slot} & Slot index to attach the module to. \\
+\hline
+{\em gpio\+Start} & Starting GPIO index assigned to this module. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if all initialization steps succeeded, false if any step failed. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_a_n_tram_module_a67cab1c238257e6d9b88afc4f644e477}{CANTram\+Module}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d4d/class_relais_module_v1__0_a1a7004ca779f46212dde0bd70c0a8bca_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_relais_module_v1__0_a6036020b6f6dd6cbb9ab1c6428fa719b}\index{RelaisModuleV1\_0@{RelaisModuleV1\_0}!cycle@{cycle}}
+\index{cycle@{cycle}!RelaisModuleV1\_0@{RelaisModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{cycle()}{cycle()}}
+{\footnotesize\ttfamily \label{class_relais_module_v1__0_a6036020b6f6dd6cbb9ab1c6428fa719b} 
+void Relais\+Module\+V1\+\_\+0\+::cycle (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{response}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Periodic cycle callback. 
+
+Called regularly by the core to allow the module to perform time-\/based tasks. 
+\begin{DoxyParams}{Parameters}
+{\em response} & Optional pointer to a response buffer where the module may write response bytes. May be nullptr. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_a_n_tram_module_a1be4a73e5fc8e14edad90741593d2d29}{CANTram\+Module}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d4d/class_relais_module_v1__0_a6036020b6f6dd6cbb9ab1c6428fa719b_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_relais_module_v1__0_a5b51d4cb5afd3981a560c4084c8a8933}\index{RelaisModuleV1\_0@{RelaisModuleV1\_0}!getFWVersion@{getFWVersion}}
+\index{getFWVersion@{getFWVersion}!RelaisModuleV1\_0@{RelaisModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{getFWVersion()}{getFWVersion()}}
+{\footnotesize\ttfamily \label{class_relais_module_v1__0_a5b51d4cb5afd3981a560c4084c8a8933} 
+String Relais\+Module\+V1\+\_\+0\+::get\+FWVersion (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the firmware version string. 
+
+Returns the firmware version string implemented by the module. \begin{DoxyReturn}{Returns}
+String Firmware version (e.\+g. "{}1.\+0"{}). 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_acf8e6722dc924b1bf4d5289f3684fd29}{CANTram\+Module}}.
+
+\Hypertarget{class_relais_module_v1__0_a078c91e0b5bc3f21a22bc71388ea1b0d}\index{RelaisModuleV1\_0@{RelaisModuleV1\_0}!getGPIODemand@{getGPIODemand}}
+\index{getGPIODemand@{getGPIODemand}!RelaisModuleV1\_0@{RelaisModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{getGPIODemand()}{getGPIODemand()}}
+{\footnotesize\ttfamily \label{class_relais_module_v1__0_a078c91e0b5bc3f21a22bc71388ea1b0d} 
+uint8\+\_\+t Relais\+Module\+V1\+\_\+0\+::get\+GPIODemand (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the GPIO demand of the module. 
+
+Returns how many GPIOs this module requires from the core. \begin{DoxyReturn}{Returns}
+uint8\+\_\+t Number of GPIOs demanded by the module. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_afa6df5b58f7681a8a316b3910f987cce}{CANTram\+Module}}.
+
+\Hypertarget{class_relais_module_v1__0_ac06c3a60aebdb574e90d3b28a6b944e3}\index{RelaisModuleV1\_0@{RelaisModuleV1\_0}!getGPIOSupply@{getGPIOSupply}}
+\index{getGPIOSupply@{getGPIOSupply}!RelaisModuleV1\_0@{RelaisModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{getGPIOSupply()}{getGPIOSupply()}}
+{\footnotesize\ttfamily \label{class_relais_module_v1__0_ac06c3a60aebdb574e90d3b28a6b944e3} 
+uint8\+\_\+t Relais\+Module\+V1\+\_\+0\+::get\+GPIOSupply (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the GPIO supply capacity of the module. 
+
+Returns how many GPIOs this module provides/supplies to the system. \begin{DoxyReturn}{Returns}
+uint8\+\_\+t Number of GPIOs supplied by the module. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_ae7247503120b76151cc2086dc4250911}{CANTram\+Module}}.
+
+\Hypertarget{class_relais_module_v1__0_ad4d2c5de92e8bee2911ad9f228148c35}\index{RelaisModuleV1\_0@{RelaisModuleV1\_0}!getHWType@{getHWType}}
+\index{getHWType@{getHWType}!RelaisModuleV1\_0@{RelaisModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{getHWType()}{getHWType()}}
+{\footnotesize\ttfamily \label{class_relais_module_v1__0_ad4d2c5de92e8bee2911ad9f228148c35} 
+String Relais\+Module\+V1\+\_\+0\+::get\+HWType (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the hardware type string. 
+
+Returns a human readable hardware type identifier for the concrete module implementation. \begin{DoxyReturn}{Returns}
+String Hardware type identifier (e.\+g. "{}\+Main\+Module\+V1.\+0"{}). 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_a3edca0142c5fa8a0d91a549f8371b460}{CANTram\+Module}}.
+
+\Hypertarget{class_relais_module_v1__0_a2256db6eb1b2430fc9fbb82ad05152dd}\index{RelaisModuleV1\_0@{RelaisModuleV1\_0}!getHWVersion@{getHWVersion}}
+\index{getHWVersion@{getHWVersion}!RelaisModuleV1\_0@{RelaisModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{getHWVersion()}{getHWVersion()}}
+{\footnotesize\ttfamily \label{class_relais_module_v1__0_a2256db6eb1b2430fc9fbb82ad05152dd} 
+String Relais\+Module\+V1\+\_\+0\+::get\+HWVersion (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the hardware version string. 
+
+Returns the hardware revision/version string for the module. \begin{DoxyReturn}{Returns}
+String Hardware version (e.\+g. "{}1.\+0"{}). 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_a5d9287df902bd2f9ec32b4317f95fff6}{CANTram\+Module}}.
+
+\Hypertarget{class_relais_module_v1__0_ae437de38ae5e1caa91ea6d6fca5b7519}\index{RelaisModuleV1\_0@{RelaisModuleV1\_0}!getInterfaceCount@{getInterfaceCount}}
+\index{getInterfaceCount@{getInterfaceCount}!RelaisModuleV1\_0@{RelaisModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{getInterfaceCount()}{getInterfaceCount()}}
+{\footnotesize\ttfamily \label{class_relais_module_v1__0_ae437de38ae5e1caa91ea6d6fca5b7519} 
+size\+\_\+t Relais\+Module\+V1\+\_\+0\+::get\+Interface\+Count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get number of interfaces provided by the module. 
+
+Return the number of entries in the interfaces array returned by \doxylink{class_relais_module_v1__0_a78579ed4ffa12aa6978e2c319632cbef}{get\+Interfaces()}. \begin{DoxyReturn}{Returns}
+size\+\_\+t Number of interface pointers. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_a68c703147d8b495e324febcaccd49dea}{CANTram\+Module}}.
+
+\Hypertarget{class_relais_module_v1__0_a78579ed4ffa12aa6978e2c319632cbef}\index{RelaisModuleV1\_0@{RelaisModuleV1\_0}!getInterfaces@{getInterfaces}}
+\index{getInterfaces@{getInterfaces}!RelaisModuleV1\_0@{RelaisModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{getInterfaces()}{getInterfaces()}}
+{\footnotesize\ttfamily \label{class_relais_module_v1__0_a78579ed4ffa12aa6978e2c319632cbef} 
+\mbox{\hyperlink{class_interface}{Interface}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} Relais\+Module\+V1\+\_\+0\+::get\+Interfaces (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get pointer to module\textquotesingle{}s interface array. 
+
+Returns a pointer to the internal Interface\texorpdfstring{$\ast$}{*} array used by the core to enumerate interfaces. \begin{DoxyReturn}{Returns}
+Interface\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} Pointer to the first element of the module\textquotesingle{}s interfaces array. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_a09c919fc31111badfec18faf64c729f4}{CANTram\+Module}}.
+
+\Hypertarget{class_relais_module_v1__0_aee1e17f77ccc4737865e34291e86c103}\index{RelaisModuleV1\_0@{RelaisModuleV1\_0}!initialize@{initialize}}
+\index{initialize@{initialize}!RelaisModuleV1\_0@{RelaisModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily \label{class_relais_module_v1__0_aee1e17f77ccc4737865e34291e86c103} 
+bool Relais\+Module\+V1\+\_\+0\+::initialize (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Initialize the module after attachment and provisioning. 
+
+Perform runtime initialization (start drivers, begin peripherals) once all modules have been attached. \begin{DoxyReturn}{Returns}
+true if initialization succeeded, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_a6930dfb86a2e06ab9a9b299520830fb7}{CANTram\+Module}}.
+
+\Hypertarget{class_relais_module_v1__0_a6373363c88ca982860ec7f07f81005cb}\index{RelaisModuleV1\_0@{RelaisModuleV1\_0}!provideGPIOs@{provideGPIOs}}
+\index{provideGPIOs@{provideGPIOs}!RelaisModuleV1\_0@{RelaisModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{provideGPIOs()}{provideGPIOs()}}
+{\footnotesize\ttfamily \label{class_relais_module_v1__0_a6373363c88ca982860ec7f07f81005cb} 
+bool Relais\+Module\+V1\+\_\+0\+::provide\+GPIOs (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Provide GPIO definitions to the core. 
+
+Called during module attachment to allow the module to declare any GPIOs it owns or provides. \begin{DoxyReturn}{Returns}
+true if GPIO definitions were provided successfully, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_abaad4d92c02fc8bb525a57d8ac06db7e}{CANTram\+Module}}.
+
+\Hypertarget{class_relais_module_v1__0_ac9c120d926b21c489108c1f925f2abac}\index{RelaisModuleV1\_0@{RelaisModuleV1\_0}!provideHardwareResources@{provideHardwareResources}}
+\index{provideHardwareResources@{provideHardwareResources}!RelaisModuleV1\_0@{RelaisModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{provideHardwareResources()}{provideHardwareResources()}}
+{\footnotesize\ttfamily \label{class_relais_module_v1__0_ac9c120d926b21c489108c1f925f2abac} 
+bool Relais\+Module\+V1\+\_\+0\+::provide\+Hardware\+Resources (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Provide hardware resources (e.\+g., I2C, SPI, UART) to the core. 
+
+Called during attachment to attach \doxylink{class_hardware_resource}{Hardware\+Resource} instances that other modules can request. \begin{DoxyReturn}{Returns}
+true if resources were successfully provided, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_aa509ae950722ebd48383c124ec6a63ec}{CANTram\+Module}}.
+
+\Hypertarget{class_relais_module_v1__0_af2e4f33d631bc14e433c404678347b67}\index{RelaisModuleV1\_0@{RelaisModuleV1\_0}!requestGPIOs@{requestGPIOs}}
+\index{requestGPIOs@{requestGPIOs}!RelaisModuleV1\_0@{RelaisModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{requestGPIOs()}{requestGPIOs()}}
+{\footnotesize\ttfamily \label{class_relais_module_v1__0_af2e4f33d631bc14e433c404678347b67} 
+bool Relais\+Module\+V1\+\_\+0\+::request\+GPIOs (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Request GPIO definitions from the core. 
+
+Called after provide\+GPIOs to obtain runtime GPIO assignments from \doxylink{class_c_a_n_tram_core}{CANTram\+Core}. \begin{DoxyReturn}{Returns}
+true if required GPIOs were acquired and validated, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_a7f2c1c05cafb19676aed58c11219d0f5}{CANTram\+Module}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d4d/class_relais_module_v1__0_af2e4f33d631bc14e433c404678347b67_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_relais_module_v1__0_abb33be265117a963c1ab9c34e34ea082}\index{RelaisModuleV1\_0@{RelaisModuleV1\_0}!requestHardwareResources@{requestHardwareResources}}
+\index{requestHardwareResources@{requestHardwareResources}!RelaisModuleV1\_0@{RelaisModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{requestHardwareResources()}{requestHardwareResources()}}
+{\footnotesize\ttfamily \label{class_relais_module_v1__0_abb33be265117a963c1ab9c34e34ea082} 
+bool Relais\+Module\+V1\+\_\+0\+::request\+Hardware\+Resources (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Request hardware resources from the core. 
+
+Called when the module should acquire hardware resources supplied by the system (e.\+g., UART core). \begin{DoxyReturn}{Returns}
+true if all required hardware resources were granted, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_a88dd0ab2213df828b576d337e38c1ac8}{CANTram\+Module}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/leowa/\+Documents/\+Platform\+IO/\+Projects/\+CANTram\+Framework\+Usage/lib/\+CANTram\+Framework/include/Relais\+Module\+V1\+\_\+0.\+h\item 
+C\+:/\+Users/leowa/\+Documents/\+Platform\+IO/\+Projects/\+CANTram\+Framework\+Usage/lib/\+CANTram\+Framework/src/modules/Relais\+Module\+V1\+\_\+0.\+cpp\end{DoxyCompactItemize}

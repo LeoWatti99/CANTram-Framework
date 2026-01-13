@@ -1,0 +1,38 @@
+\doxysection{C\+:/\+Users/leowa/\+Documents/\+Platform\+IO/\+Projects/\+CANTram\+Framework\+Usage/lib/\+CANTram\+Framework/include/\+PWMCore.h File Reference}
+\hypertarget{_p_w_m_core_8h}{}\label{_p_w_m_core_8h}\index{C:/Users/leowa/Documents/PlatformIO/Projects/CANTramFrameworkUsage/lib/CANTramFramework/include/PWMCore.h@{C:/Users/leowa/Documents/PlatformIO/Projects/CANTramFrameworkUsage/lib/CANTramFramework/include/PWMCore.h}}
+
+
+Abstract PWM core interface for CANTram.  
+
+
+{\ttfamily \#include "{}Output\+Definition.\+h"{}}\newline
+{\ttfamily \#include "{}Debug.\+h"{}}\newline
+{\ttfamily \#include "{}CANTram\+Core.\+h"{}}\newline
+{\ttfamily \#include "{}Hardware\+Resource.\+h"{}}\newline
+Include dependency graph for PWMCore.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/d13/_p_w_m_core_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d8b/_p_w_m_core_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_p_w_m_core}{PWMCore}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract PWM core interface for CANTram. 
+
+Declares the \doxylink{class_p_w_m_core}{PWMCore} base class used to provide PWM functionality to modules. Platform-\/specific implementations should derive from this class and implement channel allocation and duty control. \doxylink{class_p_w_m_core}{PWMCore} is also a \doxylink{class_hardware_resource}{Hardware\+Resource} and participates in the \doxylink{class_c_a_n_tram_core}{CANTram\+Core} hardware resource lifecycle. 

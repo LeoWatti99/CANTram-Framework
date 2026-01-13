@@ -1,0 +1,39 @@
+\doxysection{PWMCore.\+h}
+\hypertarget{_p_w_m_core_8h_source}{}\label{_p_w_m_core_8h_source}\index{C:/Users/leowa/Documents/PlatformIO/Projects/CANTramFrameworkUsage/lib/CANTramFramework/include/PWMCore.h@{C:/Users/leowa/Documents/PlatformIO/Projects/CANTramFrameworkUsage/lib/CANTramFramework/include/PWMCore.h}}
+\mbox{\hyperlink{_p_w_m_core_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ PWMCORE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ PWMCORE\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_output_definition_8h}{OutputDefinition.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_debug_8h}{Debug.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_c_a_n_tram_core_8h}{CANTramCore.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_hardware_resource_8h}{HardwareResource.h}}"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{comment}{//\ Base\ Class\ for\ PWM\ functionality,\ platform\ specific\ implementations\ should\ derive\ from\ this}}
+\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_p_w_m_core_adf80491c0bcb78e790102703a7f45e2b}{PWMCore}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_hardware_resource_a7ddffb890a743f2df28128d9afd5bfa5}{HardwareResource}}\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_p_w_m_core_a169fc8e6e28c21b75af25da238fd9896}{begin}}();}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_p_w_m_core_a054f5a4b0ac5b5cac1bb40e34c0f8912}{addChannel}}(\mbox{\hyperlink{class_output_definition}{OutputDefinition}}*\ def)=0;\ \textcolor{comment}{//Returns\ true\ if\ channel\ was\ added\ successfully}}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_p_w_m_core_ad4ee3115a671d8df6f18ccfaf2b84848}{setDuty}}(\mbox{\hyperlink{class_output_definition}{OutputDefinition}}*\ def,\ uint16\_t\ duty)=0;\ \textcolor{comment}{//Duty\ cycle\ between\ 0\ and\ 4095\ for\ 12\ bit\ resolution}}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_hardware_resource_adead6978be3d7b86c18e3d3e051381e6}{HardwareResource::Type}}\ \mbox{\hyperlink{class_p_w_m_core_a0d03256d58a18e60ac2375bfd3ad3a00}{getType}}()\textcolor{keyword}{\ override\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_hardware_resource_adead6978be3d7b86c18e3d3e051381e6ac2fe3e8cc9a9a8fcb39c32be2da214c5}{Type::PWM}};\ \}}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_p_w_m_core_adf80491c0bcb78e790102703a7f45e2b}{PWMCore}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_p_w_m_core_a8aecc6ed076e3ddc10aa8e9a57bf67da}{\_initialized}}=\textcolor{keyword}{false};}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ uint8\_t\ \mbox{\hyperlink{class_p_w_m_core_a7d8fa8730b71956702cce7fe90b60a8d}{getMaxUsages}}()\textcolor{keyword}{\ override\ }\{\ \textcolor{keywordflow}{return}\ 1;\ \}\ \textcolor{comment}{//PWMCore\ can\ only\ be\ used\ by\ one\ module\ (the\ main\ module)}}
+\DoxyCodeLine{00082\ \};}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

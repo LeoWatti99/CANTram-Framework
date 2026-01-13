@@ -1,0 +1,934 @@
+\doxysection{Main\+Module\+V1\+\_\+0 Class Reference}
+\hypertarget{class_main_module_v1__0}{}\label{class_main_module_v1__0}\index{MainModuleV1\_0@{MainModuleV1\_0}}
+
+
+Inheritance diagram for Main\+Module\+V1\+\_\+0\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d23/class_main_module_v1__0__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Main\+Module\+V1\+\_\+0\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d79/class_main_module_v1__0__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_main_module_v1__0_ae4c594554ec3fa52e3609c3e7b2352a5}{Main\+Module\+V1\+\_\+0}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{class_main_module_v1__0_ae4c594554ec3fa52e3609c3e7b2352a5}{Main\+Module\+V1\+\_\+0\+::\+Main\+Module\+V1\+\_\+0} object. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_main_module_v1__0_aa9412fc0abc8f621580ab2bead087696}{get\+HWType}} () const override
+\begin{DoxyCompactList}\small\item\em Get the hardware type string. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_main_module_v1__0_aa2cbb581d4fe04640109f0b6ecb0042a}{get\+HWVersion}} () const override
+\begin{DoxyCompactList}\small\item\em Get the hardware version string. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_main_module_v1__0_a87ce54b0fb2bbd67622e48024dc17b9e}{get\+FWVersion}} () const override
+\begin{DoxyCompactList}\small\item\em Get the firmware version string. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{class_main_module_v1__0_a501133cf4a307fc25acaf0b6f79dcebc}{get\+GPIODemand}} () const override
+\begin{DoxyCompactList}\small\item\em Get the GPIO demand of the module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{class_main_module_v1__0_a716b45f8a875e8c156aa04ad17275605}{get\+GPIOSupply}} () const override
+\begin{DoxyCompactList}\small\item\em Get the GPIO supply capacity of the module. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_main_module_v1__0_a9226f26c18a54a0361585d2c82465027}{configure\+Output}} (\mbox{\hyperlink{class_output_definition}{Output\+Definition}} \texorpdfstring{$\ast$}{*}def, Output\+Definition\+::\+Configuration\+Mode mode) override
+\begin{DoxyCompactList}\small\item\em Configure an output\textquotesingle{}s direction/mode. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_main_module_v1__0_a49970e0c688bc176501bb0186fd07f28}{configure\+Output}} (\mbox{\hyperlink{class_output_definition}{Output\+Definition}} \texorpdfstring{$\ast$}{*}def)
+\begin{DoxyCompactList}\small\item\em Configures the output for a specific pin or bit. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_main_module_v1__0_ad4923691de74feb70e8f7453841c8be8}{set\+Output}} (\mbox{\hyperlink{class_output_definition}{Output\+Definition}} \texorpdfstring{$\ast$}{*}def, bool state) override
+\begin{DoxyCompactList}\small\item\em Set the logic level on a pin of the module. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_main_module_v1__0_a82d0bff36999c3f85acc5f16dd8e0bfb}{get\+Output}} (\mbox{\hyperlink{class_output_definition}{Output\+Definition}} \texorpdfstring{$\ast$}{*}def) override
+\begin{DoxyCompactList}\small\item\em Get the current state of a digital output. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_main_module_v1__0_a25ea3d52611cb89711973e8c068bbbfc}{reset}} () override
+\begin{DoxyCompactList}\small\item\em Reset the module and its hardware cores. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_main_module_v1__0_a54175254ab9745989cc21d00f490297a}{attach\+Module}} (uint8\+\_\+t slot, uint8\+\_\+t gpio\+Start) override
+\begin{DoxyCompactList}\small\item\em Attach this module to a slot and GPIO start index. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_main_module_v1__0_a85406338313930631d9da73cf9248a8c}{provide\+GPIOs}} () override
+\begin{DoxyCompactList}\small\item\em Provide GPIO output definitions to \doxylink{class_c_a_n_tram_core}{CANTram\+Core}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_main_module_v1__0_a0e0d8a91bc062d1b9bd6c77335ec9e95}{request\+GPIOs}} () override
+\begin{DoxyCompactList}\small\item\em Request GPIOs from the core. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_main_module_v1__0_aa67512e4c9fda1474b76868708383778}{provide\+Hardware\+Resources}} () override
+\begin{DoxyCompactList}\small\item\em Provide hardware resources (UART, PWM, etc.) to \doxylink{class_c_a_n_tram_core}{CANTram\+Core}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_main_module_v1__0_a40ad97aab74f5d8f08e11456036f835c}{request\+Hardware\+Resources}} () override
+\begin{DoxyCompactList}\small\item\em Request hardware resources from the core. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_main_module_v1__0_a7d462f2505c3a1f632db53f4e69bd6ee}{add\+Interfaces}} () override
+\begin{DoxyCompactList}\small\item\em Register any interfaces provided by this module. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_main_module_v1__0_a2917d9056213cc8633b13f91722be603}{pre\+Initialize}} () override
+\begin{DoxyCompactList}\small\item\em Pre-\/initialize the module after attachment. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_main_module_v1__0_a1b5ee0f095998b264fa3424e0dd9cdc5}{initialize}} () override
+\begin{DoxyCompactList}\small\item\em Initialize the module and its hardware subsystems. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_module_v1__0_a234ec79c84887148260311c5d020105e}{enable\+Outputs}} (bool state) override
+\begin{DoxyCompactList}\small\item\em Enable or disable all outputs managed by this provider. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{class_main_module_v1__0_a94e360604a317f98717ae1aaede31061}{get\+Temperature\+Celsius}} ()
+\begin{DoxyCompactList}\small\item\em Get the temperature in Celsius in 0.\+1°C steps. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_module_v1__0_a37be53a3ecbf9864791b17facd5f2169}{cycle}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}response) override
+\begin{DoxyCompactList}\small\item\em Periodic cycle callback for the module. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_interface}{Interface}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_main_module_v1__0_ab58fe7ec532bc345ccaa8139ee29ac38}{get\+Interfaces}} () override
+\begin{DoxyCompactList}\small\item\em Get pointer to module\textquotesingle{}s interface array. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_main_module_v1__0_a58582a6adfe8c35b7bf6d17d683a6fa4}{get\+Interface\+Count}} () override
+\begin{DoxyCompactList}\small\item\em Get number of interfaces provided by the module. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_main_module_v1__0_aa8524c0099c7dd70e7e448925c6cf7ee}{set\+PWM}} (\mbox{\hyperlink{class_output_definition}{Output\+Definition}} \texorpdfstring{$\ast$}{*}def, uint16\+\_\+t value) override
+\begin{DoxyCompactList}\small\item\em Set PWM duty for an output definition. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_main_module_v1__0_a207a1463f359ca72de29492a6c844610}{register\+PWMChannel}} (\mbox{\hyperlink{class_output_definition}{Output\+Definition}} \texorpdfstring{$\ast$}{*}def) override
+\begin{DoxyCompactList}\small\item\em Register a PWM channel for an output. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_c_a_n_tram_module}{CANTram\+Module}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_a_n_tram_module_ae1c9554adb901b7e798a44d521781c0b}{CANTram\+Module}} ()=default
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_c_a_n_tram_module_a8f93d67f0d5b49b7864369196cb323e6}{\texorpdfstring{$\sim$}{\string~}\+CANTram\+Module}} ()=default
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{class_c_a_n_tram_module_a80b400128bb6f0841953bb7a75cbf99c}{get\+Slot}} () const
+\begin{DoxyCompactList}\small\item\em Get assigned slot index. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{class_c_a_n_tram_module_a7905817e8fee9e8bccfc9bbe70ae5669}{get\+GPIOStart}} () const
+\begin{DoxyCompactList}\small\item\em Get starting GPIO index assigned to the module. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_output_provider}{Output\+Provider}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_output_provider_ad7ca75c757ecd3411bb00e7631527051}{disable\+Outputs}} ()
+\begin{DoxyCompactList}\small\item\em Disable all outputs managed by this provider. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_main_module_v1__0_ab4ee5695fdeefa865c444e2e3c085db6}\label{class_main_module_v1__0_ab4ee5695fdeefa865c444e2e3c085db6} 
+Adafruit\+\_\+\+MCP23\+X17 {\bfseries shift\+Register}
+\item 
+\mbox{\hyperlink{class_output_definition}{Output\+Definition}} \mbox{\hyperlink{class_main_module_v1__0_a8a9c7c090352fd515e0d4a2eee41a8b3}{EXTEND}} \mbox{[}GPIO\+\_\+\+SUPPLY\mbox{]}
+\item 
+\Hypertarget{class_main_module_v1__0_a8bb1da219ac4d4d9d2f64591d5057f26}\label{class_main_module_v1__0_a8bb1da219ac4d4d9d2f64591d5057f26} 
+esp\+\_\+adc\+\_\+cal\+\_\+characteristics\+\_\+t {\bfseries adc1\+\_\+chars}
+\item 
+\Hypertarget{class_main_module_v1__0_a251e77b411983f5e7ded95f5c304ed23}\label{class_main_module_v1__0_a251e77b411983f5e7ded95f5c304ed23} 
+bool {\bfseries adc\+\_\+calibrated}
+\item 
+\Hypertarget{class_main_module_v1__0_a2ef6f8eee43bfcdea76f2f45e875bca7}\label{class_main_module_v1__0_a2ef6f8eee43bfcdea76f2f45e875bca7} 
+\mbox{\hyperlink{class_e_s_p32___c_a_n_core}{ESP32\+\_\+\+CANCore}} {\bfseries can\+Core}
+\item 
+\Hypertarget{class_main_module_v1__0_a7316ff014aaa02f921ac006787fa72c6}\label{class_main_module_v1__0_a7316ff014aaa02f921ac006787fa72c6} 
+\mbox{\hyperlink{class_c_a_n_interface}{CANInterface}} {\bfseries can\+Interface}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_main_module_v1__0_a069a83b91868ad408166ddf11ba68d90}\label{class_main_module_v1__0_a069a83b91868ad408166ddf11ba68d90} 
+static const String {\bfseries HW\+\_\+\+TYPE} = "{}Main\+Module\+V1.\+0"{}
+\item 
+\Hypertarget{class_main_module_v1__0_a6acfd48a79b042f47ddaf5120d815a41}\label{class_main_module_v1__0_a6acfd48a79b042f47ddaf5120d815a41} 
+static const String {\bfseries HW\+\_\+\+VERSION} = "{}1.\+0"{}
+\item 
+\Hypertarget{class_main_module_v1__0_adb72b93101ac2103d6b414fb61916bfa}\label{class_main_module_v1__0_adb72b93101ac2103d6b414fb61916bfa} 
+static const String {\bfseries FW\+\_\+\+VERSION} = "{}1.\+0"{}
+\item 
+\Hypertarget{class_main_module_v1__0_a7a01c6552f6de5abb047fdbcfede23d7}\label{class_main_module_v1__0_a7a01c6552f6de5abb047fdbcfede23d7} 
+static constexpr uint8\+\_\+t {\bfseries GPIO\+\_\+\+DEMAND} = 0
+\item 
+\Hypertarget{class_main_module_v1__0_ac96eb37227fd2173f35afd8f595e3ebc}\label{class_main_module_v1__0_ac96eb37227fd2173f35afd8f595e3ebc} 
+static constexpr uint8\+\_\+t {\bfseries GPIO\+\_\+\+SUPPLY} = 25
+\item 
+\Hypertarget{class_main_module_v1__0_a131917e23b9dffbdc2be78fd502834cd}\label{class_main_module_v1__0_a131917e23b9dffbdc2be78fd502834cd} 
+static const uint8\+\_\+t {\bfseries SR\+\_\+\+PIN\+\_\+0} = 0
+\item 
+\Hypertarget{class_main_module_v1__0_ad9866122ae6b6e75703af2f29aba48ac}\label{class_main_module_v1__0_ad9866122ae6b6e75703af2f29aba48ac} 
+static const uint8\+\_\+t {\bfseries SR\+\_\+\+PIN\+\_\+1} = 1
+\item 
+\Hypertarget{class_main_module_v1__0_adb20da81656fdff0a312a67f2694cec0}\label{class_main_module_v1__0_adb20da81656fdff0a312a67f2694cec0} 
+static const uint8\+\_\+t {\bfseries SR\+\_\+\+PIN\+\_\+2} = 2
+\item 
+\Hypertarget{class_main_module_v1__0_a538c19569af7b8ab808e785237055189}\label{class_main_module_v1__0_a538c19569af7b8ab808e785237055189} 
+static const uint8\+\_\+t {\bfseries SR\+\_\+\+PIN\+\_\+3} = 3
+\item 
+\Hypertarget{class_main_module_v1__0_a3053f4c6cc10f91c4b41203bc9de6e0e}\label{class_main_module_v1__0_a3053f4c6cc10f91c4b41203bc9de6e0e} 
+static const uint8\+\_\+t {\bfseries SR\+\_\+\+PIN\+\_\+4} = 4
+\item 
+\Hypertarget{class_main_module_v1__0_a7abc19aa919c974d3a56871656d83a3e}\label{class_main_module_v1__0_a7abc19aa919c974d3a56871656d83a3e} 
+static const uint8\+\_\+t {\bfseries SR\+\_\+\+PIN\+\_\+5} = 5
+\item 
+\Hypertarget{class_main_module_v1__0_a06eecbc1c66f8b87343131b0576a7196}\label{class_main_module_v1__0_a06eecbc1c66f8b87343131b0576a7196} 
+static const uint8\+\_\+t {\bfseries SR\+\_\+\+PIN\+\_\+6} = 6
+\item 
+\Hypertarget{class_main_module_v1__0_a4939ff83d79ad3cc74091273654176ce}\label{class_main_module_v1__0_a4939ff83d79ad3cc74091273654176ce} 
+static const uint8\+\_\+t {\bfseries SR\+\_\+\+PIN\+\_\+7} = 7
+\item 
+\Hypertarget{class_main_module_v1__0_a70386b3428ee2a10c4adf4631e0d301d}\label{class_main_module_v1__0_a70386b3428ee2a10c4adf4631e0d301d} 
+static const uint8\+\_\+t {\bfseries SR\+\_\+\+PIN\+\_\+8} = 8
+\item 
+\Hypertarget{class_main_module_v1__0_ab7377617a24dd704cdda45fe2a073157}\label{class_main_module_v1__0_ab7377617a24dd704cdda45fe2a073157} 
+static const uint8\+\_\+t {\bfseries SR\+\_\+\+PIN\+\_\+9} = 9
+\item 
+\Hypertarget{class_main_module_v1__0_af06d4473dfdcb90b4d1d715cd05c37dd}\label{class_main_module_v1__0_af06d4473dfdcb90b4d1d715cd05c37dd} 
+static const uint8\+\_\+t {\bfseries SR\+\_\+\+PIN\+\_\+10} = 10
+\item 
+\Hypertarget{class_main_module_v1__0_a9ab6215fd0059e8ab92dbd8795e9f7a0}\label{class_main_module_v1__0_a9ab6215fd0059e8ab92dbd8795e9f7a0} 
+static const uint8\+\_\+t {\bfseries SR\+\_\+\+PIN\+\_\+11} = 11
+\item 
+\Hypertarget{class_main_module_v1__0_ad2ce1bc0d6d63f3e3ff6f97f38dc9c45}\label{class_main_module_v1__0_ad2ce1bc0d6d63f3e3ff6f97f38dc9c45} 
+static const uint8\+\_\+t {\bfseries SR\+\_\+\+PIN\+\_\+12} = 12
+\item 
+\Hypertarget{class_main_module_v1__0_a7e9243439230876b293ca7a975be712d}\label{class_main_module_v1__0_a7e9243439230876b293ca7a975be712d} 
+static const uint8\+\_\+t {\bfseries SR\+\_\+\+PIN\+\_\+13} = 13
+\item 
+\Hypertarget{class_main_module_v1__0_a470e8df9b941cb5045b14b722e43e05c}\label{class_main_module_v1__0_a470e8df9b941cb5045b14b722e43e05c} 
+static const uint8\+\_\+t {\bfseries SR\+\_\+\+PIN\+\_\+14} = 14
+\item 
+\Hypertarget{class_main_module_v1__0_aaaf245d9c810dea0bf041f8525c5d56f}\label{class_main_module_v1__0_aaaf245d9c810dea0bf041f8525c5d56f} 
+static const uint8\+\_\+t {\bfseries SR\+\_\+\+PIN\+\_\+15} = 15
+\item 
+\Hypertarget{class_main_module_v1__0_a6925db79e30bda1f98db71d4dbbe9ecb}\label{class_main_module_v1__0_a6925db79e30bda1f98db71d4dbbe9ecb} 
+static const uint8\+\_\+t {\bfseries TEMP\+\_\+\+PIN} = GPIO\+\_\+\+NUM\+\_\+35
+\item 
+\Hypertarget{class_main_module_v1__0_a6df1a66bb79b398ccf43eddbf775dbde}\label{class_main_module_v1__0_a6df1a66bb79b398ccf43eddbf775dbde} 
+static const adc1\+\_\+channel\+\_\+t {\bfseries TEMP\+\_\+\+ADC\+\_\+\+CHANNEL} = ADC1\+\_\+\+GPIO35\+\_\+\+CHANNEL
+\item 
+\Hypertarget{class_main_module_v1__0_ad5e1f43bfcce03c42681b8f8dea97e46}\label{class_main_module_v1__0_ad5e1f43bfcce03c42681b8f8dea97e46} 
+static constexpr uint16\+\_\+t {\bfseries TEMP\+\_\+\+RES\+\_\+1} = 6200
+\item 
+\Hypertarget{class_main_module_v1__0_a54ebb0908e3f8570738c6aee5146eee8}\label{class_main_module_v1__0_a54ebb0908e3f8570738c6aee5146eee8} 
+static constexpr uint16\+\_\+t {\bfseries TEMP\+\_\+\+RES\+\_\+2} = 6200
+\item 
+\Hypertarget{class_main_module_v1__0_a8ab7db53306649e3f384d02bed7e5123}\label{class_main_module_v1__0_a8ab7db53306649e3f384d02bed7e5123} 
+static constexpr float {\bfseries TEMP\+\_\+\+FAKTOR} = float(TEMP\+\_\+\+RES\+\_\+2)/float(TEMP\+\_\+\+RES\+\_\+1 + TEMP\+\_\+\+RES\+\_\+2)
+\item 
+\Hypertarget{class_main_module_v1__0_ad1caab2d2676f2599104c2a0780141cd}\label{class_main_module_v1__0_ad1caab2d2676f2599104c2a0780141cd} 
+static constexpr float {\bfseries TEMP\+\_\+\+SUPPLY\+\_\+\+VOLTAGE} = 5000.\+0
+\item 
+\Hypertarget{class_main_module_v1__0_a4301996f01c4e0413ffbaa9f8c5e2acb}\label{class_main_module_v1__0_a4301996f01c4e0413ffbaa9f8c5e2acb} 
+static constexpr uint8\+\_\+t {\bfseries TEMP\+\_\+\+MULTISAMPLE} = 16
+\item 
+\Hypertarget{class_main_module_v1__0_ad17ceda80fbf1928817078f26576a0a9}\label{class_main_module_v1__0_ad17ceda80fbf1928817078f26576a0a9} 
+static constexpr uint16\+\_\+t {\bfseries ADC\+\_\+\+MAX\+\_\+\+VOLTAGE} = 2450
+\item 
+\Hypertarget{class_main_module_v1__0_aa4051e31282a4d06acfd60d0e720ff25}\label{class_main_module_v1__0_aa4051e31282a4d06acfd60d0e720ff25} 
+static constexpr uint16\+\_\+t {\bfseries ADC\+\_\+\+DEFAULT\+\_\+\+VREF} = 1100
+\item 
+\Hypertarget{class_main_module_v1__0_a96fc43545d8cda870d31edd830ef89a5}\label{class_main_module_v1__0_a96fc43545d8cda870d31edd830ef89a5} 
+static const uint8\+\_\+t {\bfseries CAN\+\_\+\+TX} = GPIO\+\_\+\+NUM\+\_\+17
+\item 
+\Hypertarget{class_main_module_v1__0_ac0781f9629570161f22edf9027aef543}\label{class_main_module_v1__0_ac0781f9629570161f22edf9027aef543} 
+static const uint8\+\_\+t {\bfseries CAN\+\_\+\+RX} = GPIO\+\_\+\+NUM\+\_\+16
+\item 
+\Hypertarget{class_main_module_v1__0_a80d679b2e21122e95dc06529976135ab}\label{class_main_module_v1__0_a80d679b2e21122e95dc06529976135ab} 
+static const uint8\+\_\+t {\bfseries SPI\+\_\+\+COPI} = GPIO\+\_\+\+NUM\+\_\+21
+\item 
+\Hypertarget{class_main_module_v1__0_a7604c1e9c4da5c9988182f507b0366cc}\label{class_main_module_v1__0_a7604c1e9c4da5c9988182f507b0366cc} 
+static const uint8\+\_\+t {\bfseries SPI\+\_\+\+CIPO} = GPIO\+\_\+\+NUM\+\_\+18
+\item 
+\Hypertarget{class_main_module_v1__0_a816e3ec70ad032beca636e00526cdd4f}\label{class_main_module_v1__0_a816e3ec70ad032beca636e00526cdd4f} 
+static const uint8\+\_\+t {\bfseries SPI\+\_\+\+SCK} = GPIO\+\_\+\+NUM\+\_\+22
+\item 
+\Hypertarget{class_main_module_v1__0_ac2605d86fa951588a4bdb818f6020cb2}\label{class_main_module_v1__0_ac2605d86fa951588a4bdb818f6020cb2} 
+static const uint8\+\_\+t {\bfseries I2\+C\+\_\+\+SDA} = GPIO\+\_\+\+NUM\+\_\+13
+\item 
+\Hypertarget{class_main_module_v1__0_a4494ab73806058f9e9731f776df326dd}\label{class_main_module_v1__0_a4494ab73806058f9e9731f776df326dd} 
+static const uint8\+\_\+t {\bfseries I2\+C\+\_\+\+SCL} = GPIO\+\_\+\+NUM\+\_\+14
+\item 
+\Hypertarget{class_main_module_v1__0_a6947417d3aff33000d6af23165b69acd}\label{class_main_module_v1__0_a6947417d3aff33000d6af23165b69acd} 
+static const uint8\+\_\+t {\bfseries UART\+\_\+\+TX} = GPIO\+\_\+\+NUM\+\_\+19
+\item 
+\Hypertarget{class_main_module_v1__0_a57ecb108391b4f33c116c45800ac1c27}\label{class_main_module_v1__0_a57ecb108391b4f33c116c45800ac1c27} 
+static const uint8\+\_\+t {\bfseries UART\+\_\+\+RX} = GPIO\+\_\+\+NUM\+\_\+23
+\item 
+\Hypertarget{class_main_module_v1__0_a4d4fb284dbb264c84b70b57cd2d61c34}\label{class_main_module_v1__0_a4d4fb284dbb264c84b70b57cd2d61c34} 
+static const uint8\+\_\+t {\bfseries INT\+\_\+\+PIN} = GPIO\+\_\+\+NUM\+\_\+34
+\item 
+\Hypertarget{class_main_module_v1__0_a885f0193a8eb4534a4536a2859ab7398}\label{class_main_module_v1__0_a885f0193a8eb4534a4536a2859ab7398} 
+static const uint8\+\_\+t {\bfseries GENERAL\+\_\+\+EN} = SR\+\_\+\+PIN\+\_\+8
+\item 
+\Hypertarget{class_main_module_v1__0_aaefef8656b1e87af9dbb85b7d284890b}\label{class_main_module_v1__0_aaefef8656b1e87af9dbb85b7d284890b} 
+static const uint8\+\_\+t {\bfseries LED\+\_\+\+WARNING} = SR\+\_\+\+PIN\+\_\+0
+\item 
+\Hypertarget{class_main_module_v1__0_a3735ab226ef88f976ef14e7ce92477ef}\label{class_main_module_v1__0_a3735ab226ef88f976ef14e7ce92477ef} 
+static const uint8\+\_\+t {\bfseries LED\+\_\+\+ERROR} = SR\+\_\+\+PIN\+\_\+1
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_u_a_r_t_core}{UARTCore}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_main_module_v1__0_ae9cbfdbe65306397b01de0a43f7fde6f}{get\+Uart\+Core}} () override
+\begin{DoxyCompactList}\small\item\em Obtain a pointer to an available \doxylink{class_u_a_r_t_core}{UARTCore}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_c_a_n_tram_module}{CANTram\+Module}}}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t {\bfseries SLOT} = 0
+\item 
+uint8\+\_\+t {\bfseries GPIO\+\_\+\+START} = 0
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_main_module_v1__0_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_main_module_v1__0_ae4c594554ec3fa52e3609c3e7b2352a5}\index{MainModuleV1\_0@{MainModuleV1\_0}!MainModuleV1\_0@{MainModuleV1\_0}}
+\index{MainModuleV1\_0@{MainModuleV1\_0}!MainModuleV1\_0@{MainModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{MainModuleV1\_0()}{MainModuleV1\_0()}}
+{\footnotesize\ttfamily \label{class_main_module_v1__0_ae4c594554ec3fa52e3609c3e7b2352a5} 
+Main\+Module\+V1\+\_\+0\+::\+Main\+Module\+V1\+\_\+0 (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Construct a new \doxylink{class_main_module_v1__0_ae4c594554ec3fa52e3609c3e7b2352a5}{Main\+Module\+V1\+\_\+0\+::\+Main\+Module\+V1\+\_\+0} object. 
+
+This constructor explicitly calls the \doxylink{class_e_s_p32___i2_c_core}{ESP32\+\_\+\+I2\+CCore} constructor with I2C bus 0 so Wire instead of Wire1 is used. 
+
+\label{doc-func-members}
+\Hypertarget{class_main_module_v1__0_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_main_module_v1__0_a7d462f2505c3a1f632db53f4e69bd6ee}\index{MainModuleV1\_0@{MainModuleV1\_0}!addInterfaces@{addInterfaces}}
+\index{addInterfaces@{addInterfaces}!MainModuleV1\_0@{MainModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{addInterfaces()}{addInterfaces()}}
+{\footnotesize\ttfamily \label{class_main_module_v1__0_a7d462f2505c3a1f632db53f4e69bd6ee} 
+bool Main\+Module\+V1\+\_\+0\+::add\+Interfaces (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Register any interfaces provided by this module. 
+
+Add interface instances to the module so the core can enumerate and use them. \begin{DoxyReturn}{Returns}
+true if interfaces were added successfully, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_a14b79b625e82a3f11ebbb8271b6466b7}{CANTram\+Module}}.
+
+\Hypertarget{class_main_module_v1__0_a54175254ab9745989cc21d00f490297a}\index{MainModuleV1\_0@{MainModuleV1\_0}!attachModule@{attachModule}}
+\index{attachModule@{attachModule}!MainModuleV1\_0@{MainModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{attachModule()}{attachModule()}}
+{\footnotesize\ttfamily \label{class_main_module_v1__0_a54175254ab9745989cc21d00f490297a} 
+bool Main\+Module\+V1\+\_\+0\+::attach\+Module (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{slot}{, }\item[{uint8\+\_\+t}]{gpio\+Start}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Attach this module to a slot and GPIO start index. 
+
+Calls the base \doxylink{class_c_a_n_tram_module}{CANTram\+Module} attach implementation and performs any module-\/specific attach logic. 
+\begin{DoxyParams}{Parameters}
+{\em slot} & Slot index to attach the module to. \\
+\hline
+{\em gpio\+Start} & Starting GPIO index assigned to this module. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the attach operation was successful, false otherwise. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_a_n_tram_module_a67cab1c238257e6d9b88afc4f644e477}{CANTram\+Module}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/dff/class_main_module_v1__0_a54175254ab9745989cc21d00f490297a_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_main_module_v1__0_a49970e0c688bc176501bb0186fd07f28}\index{MainModuleV1\_0@{MainModuleV1\_0}!configureOutput@{configureOutput}}
+\index{configureOutput@{configureOutput}!MainModuleV1\_0@{MainModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{configureOutput()}{configureOutput()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_main_module_v1__0_a49970e0c688bc176501bb0186fd07f28} 
+bool Main\+Module\+V1\+\_\+0\+::configure\+Output (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_output_definition}{Output\+Definition}} \texorpdfstring{$\ast$}{*}}]{def}{}\end{DoxyParamCaption})}
+
+
+
+Configures the output for a specific pin or bit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em def} & GPIO number or shift\+Register output ID of desired output \\
+\hline
+{\em mode} & (Optional) Specify the direction of the pin. Default is OUTPUT \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true, if the cofiguration was completed successfully 
+
+false, if error were encountered during the configuration. See output log for more details 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/dff/class_main_module_v1__0_a49970e0c688bc176501bb0186fd07f28_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_main_module_v1__0_a9226f26c18a54a0361585d2c82465027}\index{MainModuleV1\_0@{MainModuleV1\_0}!configureOutput@{configureOutput}}
+\index{configureOutput@{configureOutput}!MainModuleV1\_0@{MainModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{configureOutput()}{configureOutput()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_main_module_v1__0_a9226f26c18a54a0361585d2c82465027} 
+bool Main\+Module\+V1\+\_\+0\+::configure\+Output (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_output_definition}{Output\+Definition}} \texorpdfstring{$\ast$}{*}}]{def}{, }\item[{Output\+Definition\+::\+Configuration\+Mode}]{mode}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Configure an output\textquotesingle{}s direction/mode. 
+
+Configure the physical output referenced by def to the given mode (e.\+g., INPUT, OUTPUT). 
+\begin{DoxyParams}{Parameters}
+{\em def} & Pointer to the \doxylink{class_output_definition}{Output\+Definition} describing the output to configure. \\
+\hline
+{\em mode} & Mode value to set (Arduino-\/style constants like INPUT/\+OUTPUT). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if configuration succeeded, false on error. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_output_provider_abcb5e82617e9b6aa348290ea77319936}{Output\+Provider}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/dff/class_main_module_v1__0_a9226f26c18a54a0361585d2c82465027_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/dff/class_main_module_v1__0_a9226f26c18a54a0361585d2c82465027_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_main_module_v1__0_a37be53a3ecbf9864791b17facd5f2169}\index{MainModuleV1\_0@{MainModuleV1\_0}!cycle@{cycle}}
+\index{cycle@{cycle}!MainModuleV1\_0@{MainModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{cycle()}{cycle()}}
+{\footnotesize\ttfamily \label{class_main_module_v1__0_a37be53a3ecbf9864791b17facd5f2169} 
+void Main\+Module\+V1\+\_\+0\+::cycle (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{response}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Periodic cycle callback for the module. 
+
+Called by the core to perform periodic tasks. Implement module-\/specific cyclic behavior here. 
+\begin{DoxyParams}{Parameters}
+{\em response} & Pointer to a response buffer where the module may write response bytes. May be nullptr if not used. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_a_n_tram_module_a1be4a73e5fc8e14edad90741593d2d29}{CANTram\+Module}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/dff/class_main_module_v1__0_a37be53a3ecbf9864791b17facd5f2169_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_main_module_v1__0_a234ec79c84887148260311c5d020105e}\index{MainModuleV1\_0@{MainModuleV1\_0}!enableOutputs@{enableOutputs}}
+\index{enableOutputs@{enableOutputs}!MainModuleV1\_0@{MainModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{enableOutputs()}{enableOutputs()}}
+{\footnotesize\ttfamily \label{class_main_module_v1__0_a234ec79c84887148260311c5d020105e} 
+void Main\+Module\+V1\+\_\+0\+::enable\+Outputs (\begin{DoxyParamCaption}\item[{bool}]{state}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Enable or disable all outputs managed by this provider. 
+
+Globally enable or disable outputs. Implementation-\/specific behavior (e.\+g., power gating). This method is called by the \doxylink{class_c_a_n_tram_core}{CANTram\+Core} during initialization. 
+\begin{DoxyParams}{Parameters}
+{\em state} & true to enable outputs, false to disable. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_output_provider_aa30505769d3096bf35c097c23b762ea2}{Output\+Provider}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/dff/class_main_module_v1__0_a234ec79c84887148260311c5d020105e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_main_module_v1__0_a87ce54b0fb2bbd67622e48024dc17b9e}\index{MainModuleV1\_0@{MainModuleV1\_0}!getFWVersion@{getFWVersion}}
+\index{getFWVersion@{getFWVersion}!MainModuleV1\_0@{MainModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{getFWVersion()}{getFWVersion()}}
+{\footnotesize\ttfamily \label{class_main_module_v1__0_a87ce54b0fb2bbd67622e48024dc17b9e} 
+String Main\+Module\+V1\+\_\+0\+::get\+FWVersion (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the firmware version string. 
+
+Returns the firmware version string implemented by the module. \begin{DoxyReturn}{Returns}
+String Firmware version (e.\+g. "{}1.\+0"{}). 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_acf8e6722dc924b1bf4d5289f3684fd29}{CANTram\+Module}}.
+
+\Hypertarget{class_main_module_v1__0_a501133cf4a307fc25acaf0b6f79dcebc}\index{MainModuleV1\_0@{MainModuleV1\_0}!getGPIODemand@{getGPIODemand}}
+\index{getGPIODemand@{getGPIODemand}!MainModuleV1\_0@{MainModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{getGPIODemand()}{getGPIODemand()}}
+{\footnotesize\ttfamily \label{class_main_module_v1__0_a501133cf4a307fc25acaf0b6f79dcebc} 
+uint8\+\_\+t Main\+Module\+V1\+\_\+0\+::get\+GPIODemand (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the GPIO demand of the module. 
+
+Returns how many GPIOs this module requires from the core. \begin{DoxyReturn}{Returns}
+uint8\+\_\+t Number of GPIOs demanded by the module. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_afa6df5b58f7681a8a316b3910f987cce}{CANTram\+Module}}.
+
+\Hypertarget{class_main_module_v1__0_a716b45f8a875e8c156aa04ad17275605}\index{MainModuleV1\_0@{MainModuleV1\_0}!getGPIOSupply@{getGPIOSupply}}
+\index{getGPIOSupply@{getGPIOSupply}!MainModuleV1\_0@{MainModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{getGPIOSupply()}{getGPIOSupply()}}
+{\footnotesize\ttfamily \label{class_main_module_v1__0_a716b45f8a875e8c156aa04ad17275605} 
+uint8\+\_\+t Main\+Module\+V1\+\_\+0\+::get\+GPIOSupply (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the GPIO supply capacity of the module. 
+
+Returns how many GPIOs this module provides/supplies to the system. \begin{DoxyReturn}{Returns}
+uint8\+\_\+t Number of GPIOs supplied by the module. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_ae7247503120b76151cc2086dc4250911}{CANTram\+Module}}.
+
+\Hypertarget{class_main_module_v1__0_aa9412fc0abc8f621580ab2bead087696}\index{MainModuleV1\_0@{MainModuleV1\_0}!getHWType@{getHWType}}
+\index{getHWType@{getHWType}!MainModuleV1\_0@{MainModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{getHWType()}{getHWType()}}
+{\footnotesize\ttfamily \label{class_main_module_v1__0_aa9412fc0abc8f621580ab2bead087696} 
+String Main\+Module\+V1\+\_\+0\+::get\+HWType (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the hardware type string. 
+
+Returns a human readable hardware type identifier for the concrete module implementation. \begin{DoxyReturn}{Returns}
+String Hardware type identifier (e.\+g. "{}\+Main\+Module\+V1.\+0"{}). 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_a3edca0142c5fa8a0d91a549f8371b460}{CANTram\+Module}}.
+
+\Hypertarget{class_main_module_v1__0_aa2cbb581d4fe04640109f0b6ecb0042a}\index{MainModuleV1\_0@{MainModuleV1\_0}!getHWVersion@{getHWVersion}}
+\index{getHWVersion@{getHWVersion}!MainModuleV1\_0@{MainModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{getHWVersion()}{getHWVersion()}}
+{\footnotesize\ttfamily \label{class_main_module_v1__0_aa2cbb581d4fe04640109f0b6ecb0042a} 
+String Main\+Module\+V1\+\_\+0\+::get\+HWVersion (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the hardware version string. 
+
+Returns the hardware revision/version string for the module. \begin{DoxyReturn}{Returns}
+String Hardware version (e.\+g. "{}1.\+0"{}). 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_a5d9287df902bd2f9ec32b4317f95fff6}{CANTram\+Module}}.
+
+\Hypertarget{class_main_module_v1__0_a58582a6adfe8c35b7bf6d17d683a6fa4}\index{MainModuleV1\_0@{MainModuleV1\_0}!getInterfaceCount@{getInterfaceCount}}
+\index{getInterfaceCount@{getInterfaceCount}!MainModuleV1\_0@{MainModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{getInterfaceCount()}{getInterfaceCount()}}
+{\footnotesize\ttfamily \label{class_main_module_v1__0_a58582a6adfe8c35b7bf6d17d683a6fa4} 
+size\+\_\+t Main\+Module\+V1\+\_\+0\+::get\+Interface\+Count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get number of interfaces provided by the module. 
+
+Return the number of entries in the interfaces array returned by \doxylink{class_main_module_v1__0_ab58fe7ec532bc345ccaa8139ee29ac38}{get\+Interfaces()}. \begin{DoxyReturn}{Returns}
+size\+\_\+t Number of interface pointers. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_a68c703147d8b495e324febcaccd49dea}{CANTram\+Module}}.
+
+\Hypertarget{class_main_module_v1__0_ab58fe7ec532bc345ccaa8139ee29ac38}\index{MainModuleV1\_0@{MainModuleV1\_0}!getInterfaces@{getInterfaces}}
+\index{getInterfaces@{getInterfaces}!MainModuleV1\_0@{MainModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{getInterfaces()}{getInterfaces()}}
+{\footnotesize\ttfamily \label{class_main_module_v1__0_ab58fe7ec532bc345ccaa8139ee29ac38} 
+\mbox{\hyperlink{class_interface}{Interface}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} Main\+Module\+V1\+\_\+0\+::get\+Interfaces (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get pointer to module\textquotesingle{}s interface array. 
+
+Returns a pointer to the internal Interface\texorpdfstring{$\ast$}{*} array used by the core to enumerate interfaces. \begin{DoxyReturn}{Returns}
+Interface\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} Pointer to the first element of the module\textquotesingle{}s interfaces array. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_a09c919fc31111badfec18faf64c729f4}{CANTram\+Module}}.
+
+\Hypertarget{class_main_module_v1__0_a82d0bff36999c3f85acc5f16dd8e0bfb}\index{MainModuleV1\_0@{MainModuleV1\_0}!getOutput@{getOutput}}
+\index{getOutput@{getOutput}!MainModuleV1\_0@{MainModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{getOutput()}{getOutput()}}
+{\footnotesize\ttfamily \label{class_main_module_v1__0_a82d0bff36999c3f85acc5f16dd8e0bfb} 
+bool Main\+Module\+V1\+\_\+0\+::get\+Output (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_output_definition}{Output\+Definition}} \texorpdfstring{$\ast$}{*}}]{def}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the current state of a digital output. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em def} & Output definition containing the pin information \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the output state was retrieved successfully 
+
+false if an error occurred 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_output_provider_aefcacb21da3e89066b57ae27690549bf}{Output\+Provider}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/dff/class_main_module_v1__0_a82d0bff36999c3f85acc5f16dd8e0bfb_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_main_module_v1__0_a94e360604a317f98717ae1aaede31061}\index{MainModuleV1\_0@{MainModuleV1\_0}!getTemperatureCelsius@{getTemperatureCelsius}}
+\index{getTemperatureCelsius@{getTemperatureCelsius}!MainModuleV1\_0@{MainModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{getTemperatureCelsius()}{getTemperatureCelsius()}}
+{\footnotesize\ttfamily \label{class_main_module_v1__0_a94e360604a317f98717ae1aaede31061} 
+uint16\+\_\+t Main\+Module\+V1\+\_\+0\+::get\+Temperature\+Celsius (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Get the temperature in Celsius in 0.\+1°C steps. 
+
+Reads ADC samples (digital controller on C3, single reads on ESP32) and converts them to temperature using calibration or approximation. Returns temperature in tenths of a degree Celsius (e.\+g., 253 means 25.\+3°C). \begin{DoxyReturn}{Returns}
+int16\+\_\+t Temperature in 0.\+1°C steps. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/dff/class_main_module_v1__0_a94e360604a317f98717ae1aaede31061_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_main_module_v1__0_ae9cbfdbe65306397b01de0a43f7fde6f}\index{MainModuleV1\_0@{MainModuleV1\_0}!getUartCore@{getUartCore}}
+\index{getUartCore@{getUartCore}!MainModuleV1\_0@{MainModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{getUartCore()}{getUartCore()}}
+{\footnotesize\ttfamily \label{class_main_module_v1__0_ae9cbfdbe65306397b01de0a43f7fde6f} 
+virtual \mbox{\hyperlink{class_u_a_r_t_core}{UARTCore}} \texorpdfstring{$\ast$}{*} Main\+Module\+V1\+\_\+0\+::get\+Uart\+Core (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Obtain a pointer to an available \doxylink{class_u_a_r_t_core}{UARTCore}. 
+
+Returns a pointer to a \doxylink{class_u_a_r_t_core}{UARTCore} instance that can be used by clients. May return nullptr if no \doxylink{class_u_a_r_t_core}{UARTCore} is available. \begin{DoxyReturn}{Returns}
+UARTCore\texorpdfstring{$\ast$}{*} Pointer to a \doxylink{class_u_a_r_t_core}{UARTCore} instance or nullptr if none available. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_u_a_r_t_provider_a8122e23379ae91a0b7df45006772d84a}{UARTProvider}}.
+
+\Hypertarget{class_main_module_v1__0_a1b5ee0f095998b264fa3424e0dd9cdc5}\index{MainModuleV1\_0@{MainModuleV1\_0}!initialize@{initialize}}
+\index{initialize@{initialize}!MainModuleV1\_0@{MainModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily \label{class_main_module_v1__0_a1b5ee0f095998b264fa3424e0dd9cdc5} 
+bool Main\+Module\+V1\+\_\+0\+::initialize (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Initialize the module and its hardware subsystems. 
+
+Initializes UART, PWM, I2C, SPI and ADC subsystems as required by the module. This prepares the module for operation after attachment and resource provisioning. \begin{DoxyReturn}{Returns}
+true if all initialization steps succeeded, false if any step failed. 
+\end{DoxyReturn}
+Initialize the shift register for GPIO expansion.
+
+Configuration of shift register must happen before initialization of the core!
+
+Otherwise errors will be generated since the core is not able to set the initial values of these outputs \begin{DoxyReturn}{Returns}
+true if initialization succeeded, false otherwise.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_a6930dfb86a2e06ab9a9b299520830fb7}{CANTram\+Module}}.
+
+\Hypertarget{class_main_module_v1__0_a2917d9056213cc8633b13f91722be603}\index{MainModuleV1\_0@{MainModuleV1\_0}!preInitialize@{preInitialize}}
+\index{preInitialize@{preInitialize}!MainModuleV1\_0@{MainModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{preInitialize()}{preInitialize()}}
+{\footnotesize\ttfamily \label{class_main_module_v1__0_a2917d9056213cc8633b13f91722be603} 
+bool Main\+Module\+V1\+\_\+0\+::pre\+Initialize (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Pre-\/initialize the module after attachment. 
+
+Initializes I2C core before main intialization, because the shiftregister needs to be started to set the gpios of the extend bus. \begin{DoxyReturn}{Returns}
+true if pre-\/initialization succeeded, false otherwise. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_a_n_tram_module_a329b502ade3a32987994381c93ddbd0b}{CANTram\+Module}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/dff/class_main_module_v1__0_a2917d9056213cc8633b13f91722be603_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_main_module_v1__0_a85406338313930631d9da73cf9248a8c}\index{MainModuleV1\_0@{MainModuleV1\_0}!provideGPIOs@{provideGPIOs}}
+\index{provideGPIOs@{provideGPIOs}!MainModuleV1\_0@{MainModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{provideGPIOs()}{provideGPIOs()}}
+{\footnotesize\ttfamily \label{class_main_module_v1__0_a85406338313930631d9da73cf9248a8c} 
+bool Main\+Module\+V1\+\_\+0\+::provide\+GPIOs (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Provide GPIO output definitions to \doxylink{class_c_a_n_tram_core}{CANTram\+Core}. 
+
+Registers the module\textquotesingle{}s output definition table with \doxylink{class_c_a_n_tram_core}{CANTram\+Core} so the core can manage GPIO provisioning for this module. \begin{DoxyReturn}{Returns}
+true if output definitions were added successfully, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_abaad4d92c02fc8bb525a57d8ac06db7e}{CANTram\+Module}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/dff/class_main_module_v1__0_a85406338313930631d9da73cf9248a8c_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_main_module_v1__0_aa67512e4c9fda1474b76868708383778}\index{MainModuleV1\_0@{MainModuleV1\_0}!provideHardwareResources@{provideHardwareResources}}
+\index{provideHardwareResources@{provideHardwareResources}!MainModuleV1\_0@{MainModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{provideHardwareResources()}{provideHardwareResources()}}
+{\footnotesize\ttfamily \label{class_main_module_v1__0_aa67512e4c9fda1474b76868708383778} 
+bool Main\+Module\+V1\+\_\+0\+::provide\+Hardware\+Resources (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Provide hardware resources (UART, PWM, etc.) to \doxylink{class_c_a_n_tram_core}{CANTram\+Core}. 
+
+Attaches hardware resource instances to the core so other modules may request/use them. \begin{DoxyReturn}{Returns}
+true if all resources were attached successfully, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_aa509ae950722ebd48383c124ec6a63ec}{CANTram\+Module}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/dff/class_main_module_v1__0_aa67512e4c9fda1474b76868708383778_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_main_module_v1__0_a207a1463f359ca72de29492a6c844610}\index{MainModuleV1\_0@{MainModuleV1\_0}!registerPWMChannel@{registerPWMChannel}}
+\index{registerPWMChannel@{registerPWMChannel}!MainModuleV1\_0@{MainModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{registerPWMChannel()}{registerPWMChannel()}}
+{\footnotesize\ttfamily \label{class_main_module_v1__0_a207a1463f359ca72de29492a6c844610} 
+bool Main\+Module\+V1\+\_\+0\+::register\+PWMChannel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_output_definition}{Output\+Definition}} \texorpdfstring{$\ast$}{*}}]{def}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Register a PWM channel for an output. 
+
+Initializes PWM core and requests a channel allocation for the given output definition. 
+\begin{DoxyParams}{Parameters}
+{\em def} & Pointer to the \doxylink{class_output_definition}{Output\+Definition} to register for PWM. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if channel registration succeeded, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_p_w_m_output_provider_a61998be15a228bbd6f0d6b179aca623b}{PWMOutput\+Provider}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/dff/class_main_module_v1__0_a207a1463f359ca72de29492a6c844610_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_main_module_v1__0_a0e0d8a91bc062d1b9bd6c77335ec9e95}\index{MainModuleV1\_0@{MainModuleV1\_0}!requestGPIOs@{requestGPIOs}}
+\index{requestGPIOs@{requestGPIOs}!MainModuleV1\_0@{MainModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{requestGPIOs()}{requestGPIOs()}}
+{\footnotesize\ttfamily \label{class_main_module_v1__0_a0e0d8a91bc062d1b9bd6c77335ec9e95} 
+bool Main\+Module\+V1\+\_\+0\+::request\+GPIOs (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Request GPIOs from the core. 
+
+Called by the core when module GPIOs should be configured/allocated. Module should request any runtime GPIOs here. \begin{DoxyReturn}{Returns}
+true if requests succeeded, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_a7f2c1c05cafb19676aed58c11219d0f5}{CANTram\+Module}}.
+
+\Hypertarget{class_main_module_v1__0_a40ad97aab74f5d8f08e11456036f835c}\index{MainModuleV1\_0@{MainModuleV1\_0}!requestHardwareResources@{requestHardwareResources}}
+\index{requestHardwareResources@{requestHardwareResources}!MainModuleV1\_0@{MainModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{requestHardwareResources()}{requestHardwareResources()}}
+{\footnotesize\ttfamily \label{class_main_module_v1__0_a40ad97aab74f5d8f08e11456036f835c} 
+bool Main\+Module\+V1\+\_\+0\+::request\+Hardware\+Resources (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Request hardware resources from the core. 
+
+Called when the module should request any hardware resources it needs. Implement module-\/specific requests here. \begin{DoxyReturn}{Returns}
+true if all resource requests were granted, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_a88dd0ab2213df828b576d337e38c1ac8}{CANTram\+Module}}.
+
+\Hypertarget{class_main_module_v1__0_a25ea3d52611cb89711973e8c068bbbfc}\index{MainModuleV1\_0@{MainModuleV1\_0}!reset@{reset}}
+\index{reset@{reset}!MainModuleV1\_0@{MainModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \label{class_main_module_v1__0_a25ea3d52611cb89711973e8c068bbbfc} 
+bool Main\+Module\+V1\+\_\+0\+::reset (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reset the module and its hardware cores. 
+
+Calls reset on UART and PWM cores and resets the shift register to return the module to a known default state. \begin{DoxyReturn}{Returns}
+true if all resets succeeded, false if any reset failed. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_a_n_tram_module_a496814b4e5fa5f162c48f17ec33d4475}{CANTram\+Module}}.
+
+\Hypertarget{class_main_module_v1__0_ad4923691de74feb70e8f7453841c8be8}\index{MainModuleV1\_0@{MainModuleV1\_0}!setOutput@{setOutput}}
+\index{setOutput@{setOutput}!MainModuleV1\_0@{MainModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{setOutput()}{setOutput()}}
+{\footnotesize\ttfamily \label{class_main_module_v1__0_ad4923691de74feb70e8f7453841c8be8} 
+bool Main\+Module\+V1\+\_\+0\+::set\+Output (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_output_definition}{Output\+Definition}} \texorpdfstring{$\ast$}{*}}]{def}{, }\item[{bool}]{state}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Set the logic level on a pin of the module. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em def} & Output to set the state \\
+\hline
+{\em state} & logic level HIGH or LOW \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true, if logic level was set correctly 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_output_provider_aafd6e27985454618ea1b21a88f1b4ea3}{Output\+Provider}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/dff/class_main_module_v1__0_ad4923691de74feb70e8f7453841c8be8_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_main_module_v1__0_aa8524c0099c7dd70e7e448925c6cf7ee}\index{MainModuleV1\_0@{MainModuleV1\_0}!setPWM@{setPWM}}
+\index{setPWM@{setPWM}!MainModuleV1\_0@{MainModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{setPWM()}{setPWM()}}
+{\footnotesize\ttfamily \label{class_main_module_v1__0_aa8524c0099c7dd70e7e448925c6cf7ee} 
+bool Main\+Module\+V1\+\_\+0\+::set\+PWM (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_output_definition}{Output\+Definition}} \texorpdfstring{$\ast$}{*}}]{def}{, }\item[{uint16\+\_\+t}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Set PWM duty for an output definition. 
+
+Validates the output definition for PWM capability and delegates to the PWM core to set the duty cycle. 
+\begin{DoxyParams}{Parameters}
+{\em def} & Pointer to the \doxylink{class_output_definition}{Output\+Definition} describing the output. \\
+\hline
+{\em value} & Duty value to set (implementation-\/specific range). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if PWM was set successfully, false on error (e.\+g., non-\/\+PWM output). 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_p_w_m_output_provider_a8bee55eeda0ec8908389443cb0b47ac4}{PWMOutput\+Provider}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/dff/class_main_module_v1__0_aa8524c0099c7dd70e7e448925c6cf7ee_cgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_main_module_v1__0_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_main_module_v1__0_a8a9c7c090352fd515e0d4a2eee41a8b3}\index{MainModuleV1\_0@{MainModuleV1\_0}!EXTEND@{EXTEND}}
+\index{EXTEND@{EXTEND}!MainModuleV1\_0@{MainModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{EXTEND}{EXTEND}}
+{\footnotesize\ttfamily \label{class_main_module_v1__0_a8a9c7c090352fd515e0d4a2eee41a8b3} 
+\mbox{\hyperlink{class_output_definition}{Output\+Definition}} Main\+Module\+V1\+\_\+0\+::\+EXTEND\mbox{[}GPIO\+\_\+\+SUPPLY\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_output_definition}{OutputDefinition}}(\textcolor{keyword}{false},\ UART\_RX,\ \textcolor{keyword}{false},\ \textcolor{keyword}{true},\ \textcolor{keyword}{false},\ \textcolor{keyword}{this}),\ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_output_definition}{OutputDefinition}}(\textcolor{keyword}{false},\ UART\_TX,\ \textcolor{keyword}{false},\ \textcolor{keyword}{true},\ \textcolor{keyword}{false},\ \textcolor{keyword}{this}),\ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_output_definition}{OutputDefinition}}(\textcolor{keyword}{false},\ GPIO\_NUM\_32,\ \textcolor{keyword}{false},\ \textcolor{keyword}{true},\ \textcolor{keyword}{false},\ \textcolor{keyword}{this}),\ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_output_definition}{OutputDefinition}}(\textcolor{keyword}{false},\ GPIO\_NUM\_15,\ \textcolor{keyword}{false},\ \textcolor{keyword}{true},\ \textcolor{keyword}{false},\ \textcolor{keyword}{this}),\ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_output_definition}{OutputDefinition}}(\textcolor{keyword}{false},\ GPIO\_NUM\_33,\ \textcolor{keyword}{false},\ \textcolor{keyword}{true},\ \textcolor{keyword}{false},\ \textcolor{keyword}{this}),\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_output_definition}{OutputDefinition}}(\textcolor{keyword}{false},\ GPIO\_NUM\_2,\ \textcolor{keyword}{false},\ \textcolor{keyword}{true},\ \textcolor{keyword}{false},\ \textcolor{keyword}{this}),\ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_output_definition}{OutputDefinition}}(\textcolor{keyword}{false},\ GPIO\_NUM\_25,\ \textcolor{keyword}{false},\ \textcolor{keyword}{true},\ \textcolor{keyword}{false},\ \textcolor{keyword}{this}),\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_output_definition}{OutputDefinition}}(\textcolor{keyword}{false},\ GPIO\_NUM\_0,\ \textcolor{keyword}{false},\ \textcolor{keyword}{true},\ \textcolor{keyword}{false},\ \textcolor{keyword}{this}),\ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_output_definition}{OutputDefinition}}(\textcolor{keyword}{false},\ GPIO\_NUM\_26,\ \textcolor{keyword}{false},\ \textcolor{keyword}{true},\ \textcolor{keyword}{false},\ \textcolor{keyword}{this}),\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_output_definition}{OutputDefinition}}(\textcolor{keyword}{false},\ GPIO\_NUM\_4,\ \textcolor{keyword}{false},\ \textcolor{keyword}{true},\ \textcolor{keyword}{false},\ \textcolor{keyword}{this}),\ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_output_definition}{OutputDefinition}}(\textcolor{keyword}{false},\ GPIO\_NUM\_27,\ \textcolor{keyword}{false},\ \textcolor{keyword}{true},\ \textcolor{keyword}{false},\ \textcolor{keyword}{this}),\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_output_definition}{OutputDefinition}}(\textcolor{keyword}{false},\ GPIO\_NUM\_5,\ \textcolor{keyword}{false},\ \textcolor{keyword}{true},\ \textcolor{keyword}{false},\ \textcolor{keyword}{this}),\ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_output_definition}{OutputDefinition}}(\textcolor{keyword}{true},\ SR\_PIN\_15,\ \textcolor{keyword}{false},\ \textcolor{keyword}{false},\ \textcolor{keyword}{false},\ \textcolor{keyword}{this}),\ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_output_definition}{OutputDefinition}}(\textcolor{keyword}{true},\ SR\_PIN\_2,\ \textcolor{keyword}{false},\ \textcolor{keyword}{false},\ \textcolor{keyword}{false},\ \textcolor{keyword}{this}),\ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_output_definition}{OutputDefinition}}(\textcolor{keyword}{true},\ SR\_PIN\_14,\ \textcolor{keyword}{false},\ \textcolor{keyword}{false},\ \textcolor{keyword}{false},\ \textcolor{keyword}{this}),\ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_output_definition}{OutputDefinition}}(\textcolor{keyword}{true},\ SR\_PIN\_3,\ \textcolor{keyword}{false},\ \textcolor{keyword}{false},\ \textcolor{keyword}{false},\ \textcolor{keyword}{this}),\ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_output_definition}{OutputDefinition}}(\textcolor{keyword}{true},\ SR\_PIN\_13,\ \textcolor{keyword}{false},\ \textcolor{keyword}{false},\ \textcolor{keyword}{false},\ \textcolor{keyword}{this}),\ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_output_definition}{OutputDefinition}}(\textcolor{keyword}{true},\ SR\_PIN\_4,\ \textcolor{keyword}{false},\ \textcolor{keyword}{false},\ \textcolor{keyword}{false},\ \textcolor{keyword}{this}),\ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_output_definition}{OutputDefinition}}(\textcolor{keyword}{true},\ SR\_PIN\_12,\ \textcolor{keyword}{false},\ \textcolor{keyword}{false},\ \textcolor{keyword}{false},\ \textcolor{keyword}{this}),\ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_output_definition}{OutputDefinition}}(\textcolor{keyword}{true},\ SR\_PIN\_5,\ \textcolor{keyword}{false},\ \textcolor{keyword}{false},\ \textcolor{keyword}{false},\ \textcolor{keyword}{this}),\ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_output_definition}{OutputDefinition}}(\textcolor{keyword}{true},\ SR\_PIN\_11,\ \textcolor{keyword}{false},\ \textcolor{keyword}{false},\ \textcolor{keyword}{false},\ \textcolor{keyword}{this}),\ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_output_definition}{OutputDefinition}}(\textcolor{keyword}{true},\ SR\_PIN\_6,\ \textcolor{keyword}{false},\ \textcolor{keyword}{false},\ \textcolor{keyword}{false},\ \textcolor{keyword}{this}),\ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_output_definition}{OutputDefinition}}(\textcolor{keyword}{true},\ SR\_PIN\_10,\ \textcolor{keyword}{false},\ \textcolor{keyword}{false},\ \textcolor{keyword}{false},\ \textcolor{keyword}{this}),\ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_output_definition}{OutputDefinition}}(\textcolor{keyword}{true},\ SR\_PIN\_7,\ \textcolor{keyword}{false},\ \textcolor{keyword}{false},\ \textcolor{keyword}{false},\ \textcolor{keyword}{this}),\ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_output_definition}{OutputDefinition}}(\textcolor{keyword}{true},\ SR\_PIN\_9,\ \textcolor{keyword}{false},\ \textcolor{keyword}{false},\ \textcolor{keyword}{false},\ \textcolor{keyword}{this})\ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/leowa/\+Documents/\+Platform\+IO/\+Projects/\+CANTram\+Framework\+Usage/lib/\+CANTram\+Framework/include/\mbox{\hyperlink{_main_module_v1__0_8h}{Main\+Module\+V1\+\_\+0.\+h}}\item 
+C\+:/\+Users/leowa/\+Documents/\+Platform\+IO/\+Projects/\+CANTram\+Framework\+Usage/lib/\+CANTram\+Framework/src/modules/Main\+Module\+V1\+\_\+0.\+cpp\item 
+C\+:/\+Users/leowa/\+Documents/\+Platform\+IO/\+Projects/\+CANTram\+Framework\+Usage/lib/\+CANTram\+Framework/src/modules/\mbox{\hyperlink{_main_module_v1__0__outputs_8cpp}{Main\+Module\+V1\+\_\+0\+\_\+outputs.\+cpp}}\end{DoxyCompactItemize}

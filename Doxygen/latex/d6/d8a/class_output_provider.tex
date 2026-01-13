@@ -1,0 +1,172 @@
+\doxysection{Output\+Provider Class Reference}
+\hypertarget{class_output_provider}{}\label{class_output_provider}\index{OutputProvider@{OutputProvider}}
+
+
+Abstract interface for providers that control outputs.  
+
+
+
+
+{\ttfamily \#include $<$Output\+Definition.\+h$>$}
+
+
+
+Inheritance diagram for Output\+Provider\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{d9/d6d/class_output_provider__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{class_output_provider_abcb5e82617e9b6aa348290ea77319936}{configure\+Output}} (\mbox{\hyperlink{class_output_definition}{Output\+Definition}} \texorpdfstring{$\ast$}{*}def, Output\+Definition\+::\+Configuration\+Mode mode)=0
+\begin{DoxyCompactList}\small\item\em Configure an output\textquotesingle{}s direction/mode. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_output_provider_aafd6e27985454618ea1b21a88f1b4ea3}{set\+Output}} (\mbox{\hyperlink{class_output_definition}{Output\+Definition}} \texorpdfstring{$\ast$}{*}def, bool state)=0
+\begin{DoxyCompactList}\small\item\em Set the logical state of an output. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_output_provider_aefcacb21da3e89066b57ae27690549bf}{get\+Output}} (\mbox{\hyperlink{class_output_definition}{Output\+Definition}} \texorpdfstring{$\ast$}{*}def)=0
+\begin{DoxyCompactList}\small\item\em Read the current logical state of an output. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_output_provider_aa30505769d3096bf35c097c23b762ea2}{enable\+Outputs}} (bool state=true)
+\begin{DoxyCompactList}\small\item\em Enable or disable all outputs managed by this provider. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_output_provider_ad7ca75c757ecd3411bb00e7631527051}{disable\+Outputs}} ()
+\begin{DoxyCompactList}\small\item\em Disable all outputs managed by this provider. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract interface for providers that control outputs. 
+
+Implementors provide mechanisms to configure outputs (mode), set output state and read state. Concrete providers adapt MCU GPIO, expanders, or shift registers to the \doxylink{class_output_definition}{Output\+Definition} API. 
+
+\label{doc-func-members}
+\Hypertarget{class_output_provider_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_output_provider_abcb5e82617e9b6aa348290ea77319936}\index{OutputProvider@{OutputProvider}!configureOutput@{configureOutput}}
+\index{configureOutput@{configureOutput}!OutputProvider@{OutputProvider}}
+\doxysubsubsection{\texorpdfstring{configureOutput()}{configureOutput()}}
+{\footnotesize\ttfamily \label{class_output_provider_abcb5e82617e9b6aa348290ea77319936} 
+virtual bool Output\+Provider\+::configure\+Output (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_output_definition}{Output\+Definition}} \texorpdfstring{$\ast$}{*}}]{def}{, }\item[{Output\+Definition\+::\+Configuration\+Mode}]{mode}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Configure an output\textquotesingle{}s direction/mode. 
+
+Configure the physical output referenced by def to the given mode (e.\+g., INPUT, OUTPUT). 
+\begin{DoxyParams}{Parameters}
+{\em def} & Pointer to the \doxylink{class_output_definition}{Output\+Definition} describing the output to configure. \\
+\hline
+{\em mode} & Mode value to set (Arduino-\/style constants like INPUT/\+OUTPUT). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if configuration succeeded, false on error. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_main_module_v1__0_a9226f26c18a54a0361585d2c82465027}{Main\+Module\+V1\+\_\+0}}.
+
+\Hypertarget{class_output_provider_ad7ca75c757ecd3411bb00e7631527051}\index{OutputProvider@{OutputProvider}!disableOutputs@{disableOutputs}}
+\index{disableOutputs@{disableOutputs}!OutputProvider@{OutputProvider}}
+\doxysubsubsection{\texorpdfstring{disableOutputs()}{disableOutputs()}}
+{\footnotesize\ttfamily \label{class_output_provider_ad7ca75c757ecd3411bb00e7631527051} 
+virtual void Output\+Provider\+::disable\+Outputs (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Disable all outputs managed by this provider. 
+
+Convenience method to disable outputs. Calls enable\+Outputs(false). Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d8a/class_output_provider_ad7ca75c757ecd3411bb00e7631527051_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_output_provider_aa30505769d3096bf35c097c23b762ea2}\index{OutputProvider@{OutputProvider}!enableOutputs@{enableOutputs}}
+\index{enableOutputs@{enableOutputs}!OutputProvider@{OutputProvider}}
+\doxysubsubsection{\texorpdfstring{enableOutputs()}{enableOutputs()}}
+{\footnotesize\ttfamily \label{class_output_provider_aa30505769d3096bf35c097c23b762ea2} 
+virtual void Output\+Provider\+::enable\+Outputs (\begin{DoxyParamCaption}\item[{bool}]{state}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Enable or disable all outputs managed by this provider. 
+
+Globally enable or disable outputs. Implementation-\/specific behavior (e.\+g., power gating). This method is called by the \doxylink{class_c_a_n_tram_core}{CANTram\+Core} during initialization. 
+\begin{DoxyParams}{Parameters}
+{\em state} & true to enable outputs, false to disable. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_main_module_v1__0_a234ec79c84887148260311c5d020105e}{Main\+Module\+V1\+\_\+0}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d8a/class_output_provider_aa30505769d3096bf35c097c23b762ea2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_output_provider_aefcacb21da3e89066b57ae27690549bf}\index{OutputProvider@{OutputProvider}!getOutput@{getOutput}}
+\index{getOutput@{getOutput}!OutputProvider@{OutputProvider}}
+\doxysubsubsection{\texorpdfstring{getOutput()}{getOutput()}}
+{\footnotesize\ttfamily \label{class_output_provider_aefcacb21da3e89066b57ae27690549bf} 
+virtual bool Output\+Provider\+::get\+Output (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_output_definition}{Output\+Definition}} \texorpdfstring{$\ast$}{*}}]{def}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Read the current logical state of an output. 
+
+Query the provider for the current state of the specified output. For inputs this reads the actual level; for outputs the implementation may return the last set state. 
+\begin{DoxyParams}{Parameters}
+{\em def} & Pointer to the \doxylink{class_output_definition}{Output\+Definition} to read. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool Current logical state (true = HIGH, false = LOW). 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_main_module_v1__0_a82d0bff36999c3f85acc5f16dd8e0bfb}{Main\+Module\+V1\+\_\+0}}.
+
+\Hypertarget{class_output_provider_aafd6e27985454618ea1b21a88f1b4ea3}\index{OutputProvider@{OutputProvider}!setOutput@{setOutput}}
+\index{setOutput@{setOutput}!OutputProvider@{OutputProvider}}
+\doxysubsubsection{\texorpdfstring{setOutput()}{setOutput()}}
+{\footnotesize\ttfamily \label{class_output_provider_aafd6e27985454618ea1b21a88f1b4ea3} 
+virtual bool Output\+Provider\+::set\+Output (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_output_definition}{Output\+Definition}} \texorpdfstring{$\ast$}{*}}]{def}{, }\item[{bool}]{state}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the logical state of an output. 
+
+Drive the physical output described by def to the requested boolean state. 
+\begin{DoxyParams}{Parameters}
+{\em def} & Pointer to the \doxylink{class_output_definition}{Output\+Definition} describing the output to change. \\
+\hline
+{\em state} & Desired logical state (true = HIGH, false = LOW). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the state was successfully applied, false otherwise. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_main_module_v1__0_ad4923691de74feb70e8f7453841c8be8}{Main\+Module\+V1\+\_\+0}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d8a/class_output_provider_aafd6e27985454618ea1b21a88f1b4ea3_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/leowa/\+Documents/\+Platform\+IO/\+Projects/\+CANTram\+Framework\+Usage/lib/\+CANTram\+Framework/include/\mbox{\hyperlink{_output_definition_8h}{Output\+Definition.\+h}}\end{DoxyCompactItemize}

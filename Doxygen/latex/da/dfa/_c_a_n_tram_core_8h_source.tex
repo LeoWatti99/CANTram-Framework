@@ -1,0 +1,104 @@
+\doxysection{CANTram\+Core.\+h}
+\hypertarget{_c_a_n_tram_core_8h_source}{}\label{_c_a_n_tram_core_8h_source}\index{C:/Users/leowa/Documents/PlatformIO/Projects/CANTramFrameworkUsage/lib/CANTramFramework/include/CANTramCore.h@{C:/Users/leowa/Documents/PlatformIO/Projects/CANTramFrameworkUsage/lib/CANTramFramework/include/CANTramCore.h}}
+\mbox{\hyperlink{_c_a_n_tram_core_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#ifndef\ CANTRAMCORE\_H}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ CANTRAMCORE\_H}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <Arduino.h>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_c_a_n_tram_module_8h}{CANTramModule.h}}>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_output_definition_8h}{OutputDefinition.h}}"{}}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_debug_8h}{Debug.h}}"{}}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_hardware_resource_8h}{HardwareResource.h}}"{}}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_c_a_n_core_8h}{CANCore.h}}"{}}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#ifndef\ DEFAULT\_REF}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#define\ DEFAULT\_REF\ -\/1\ }}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}\ CANTramCoreError}
+\DoxyCodeLine{00027\ \{}
+\DoxyCodeLine{00028\ \ \ CAN\_TRAM\_OK,}
+\DoxyCodeLine{00029\ \ \ MAX\_GPIOS\_EXCEEDED,}
+\DoxyCodeLine{00030\ \ \ GPIO\_OVERWRITE,}
+\DoxyCodeLine{00031\ \}\ CANTramCoreError;}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00037\ \textcolor{keyword}{class\ }CANTramCore}
+\DoxyCodeLine{00038\ \{}
+\DoxyCodeLine{00039\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00040\ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ setOutput(uint8\_t\ nr,\ \textcolor{keywordtype}{bool}\ state);}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ CANTramCore()\ =\ \textcolor{keyword}{delete};\ \ \textcolor{comment}{//\ Prevent\ instantiation}}
+\DoxyCodeLine{00043\ \ \ \string~CANTramCore()\ =\ \textcolor{keyword}{delete};\ \textcolor{comment}{//\ Prevent\ destruction}}
+\DoxyCodeLine{00044\ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_c_a_n_tram_core_ae27c247816847e4df4945bae63f4fadd}{attachModule}}(\mbox{\hyperlink{class_c_a_n_tram_module}{CANTramModule}}\ *module,\ int8\_t\ index,int8\_t\ gpioStart);}
+\DoxyCodeLine{00045\ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_c_a_n_tram_core_ae27c247816847e4df4945bae63f4fadd}{attachModule}}(\mbox{\hyperlink{class_c_a_n_tram_module}{CANTramModule}}\ *module);}
+\DoxyCodeLine{00046\ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_c_a_n_tram_module}{CANTramModule}}*\ getModule(uint8\_t\ index)\{}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordflow}{if}(index\ >=\ MAX\_MODULES)\{}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00049\ \ \ \ \ \}}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordflow}{return}\ modules[index];}
+\DoxyCodeLine{00051\ \ \ \}}
+\DoxyCodeLine{00052\ \ \ \textcolor{comment}{//\ static\ void\ setOutputDefinitionTable(OutputDefinition*\ table,\ uint8\_t\ size);}}
+\DoxyCodeLine{00053\ \ \ \textcolor{keyword}{static}\ CANTramCoreError\ \mbox{\hyperlink{class_c_a_n_tram_core_a4fe1f36c52a9ff3561351c2390893bc4}{addOutputDefinitionPointers}}(\mbox{\hyperlink{class_output_definition}{OutputDefinition}}\ *def[],\ uint8\_t\ size);}
+\DoxyCodeLine{00054\ \ \ \textcolor{keyword}{static}\ CANTramCoreError\ \mbox{\hyperlink{class_c_a_n_tram_core_a96f8c5553711f030ffb740a2578e3d5c}{addOutputDefinitions}}(\mbox{\hyperlink{class_output_definition}{OutputDefinition}}\ def[],\ uint8\_t\ size);}
+\DoxyCodeLine{00055\ \ \ \textcolor{keyword}{static}\ CANTramCoreError\ \mbox{\hyperlink{class_c_a_n_tram_core_a3bd45401c1ff106db1a07cd6a35bc8b4}{addOutputDefinition}}(\mbox{\hyperlink{class_output_definition}{OutputDefinition}}\ *def,\ uint8\_t\ index,\ \textcolor{keywordtype}{bool}\ overwrite\ =\ \textcolor{keyword}{true});}
+\DoxyCodeLine{00056\ \ \ \textcolor{keyword}{static}\ CANTramCoreError\ \mbox{\hyperlink{class_c_a_n_tram_core_a3bd45401c1ff106db1a07cd6a35bc8b4}{addOutputDefinition}}(\mbox{\hyperlink{class_output_definition}{OutputDefinition}}\ *def);}
+\DoxyCodeLine{00057\ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_output_definition}{OutputDefinition}}\ *\mbox{\hyperlink{class_c_a_n_tram_core_a327fbf9847ec97e69a1dcfa554650a8d}{getOutputDefinition}}(uint8\_t\ index);}
+\DoxyCodeLine{00058\ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_output_definition}{OutputDefinition}}\ *\mbox{\hyperlink{class_c_a_n_tram_core_a671c48002cdb950965c9a00395baf0d5}{useOutputDefinition}}(uint8\_t\ index);}
+\DoxyCodeLine{00059\ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_c_a_n_tram_core_a4c8bf1d786691f0b81228738d8e700d2}{reset}}();}
+\DoxyCodeLine{00060\ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_c_a_n_tram_core_a7ea7863ef4164f0bedf74af378528105}{initialize}}();}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_c_a_n_tram_core_a75d1f964d2ed65cca8f3eab0dc6bf878}{attachHardwareResource}}(\mbox{\hyperlink{class_hardware_resource}{HardwareResource}}\ *resource);}
+\DoxyCodeLine{00063\ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_hardware_resource}{HardwareResource}}\ *useHardwareResource(\mbox{\hyperlink{class_hardware_resource_adead6978be3d7b86c18e3d3e051381e6}{HardwareResource::Type}}\ type)}
+\DoxyCodeLine{00064\ \ \ }
+\DoxyCodeLine{00065\ \ \ \{}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ 30;\ i++)}
+\DoxyCodeLine{00067\ \ \ \ \ \{}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (hardwareResources[i]\ ==\ \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (hardwareResources[i]-\/>getType()\ !=\ type)}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!hardwareResources[i]-\/>requestUsage())}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ hardwareResources[i];}
+\DoxyCodeLine{00075\ \ \ \ \ \}}
+\DoxyCodeLine{00076\ \ \ \ \ \mbox{\hyperlink{_debug_8h_a2ab63874bfdcb0637ccb2dff37bdb8af}{WARNING\_PRINTLN}}(\textcolor{stringliteral}{"{}[CANTramCore]\ WARNING:\ No\ hardware\ resource\ of\ type\ "{}}\ +\ String((\textcolor{keywordtype}{int})type)\ +\ \textcolor{stringliteral}{"{}\ available."{}});}
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00078\ \ \ \}}
+\DoxyCodeLine{00079\ \ \ \textcolor{keyword}{static}\ uint8\_t\ getUsedGPIOs()\ \{\ \textcolor{keywordflow}{return}\ usedGPIOs;\ \}}
+\DoxyCodeLine{00080\ \ \ \textcolor{keyword}{static}\ uint8\_t\ getProvidedGPIOs()\ \{\ \textcolor{keywordflow}{return}\ providedGPIOs;\ \}}
+\DoxyCodeLine{00081\ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ addInterface(\mbox{\hyperlink{class_interface}{Interface}}*\ interface);}
+\DoxyCodeLine{00082\ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ addInterfaces(\mbox{\hyperlink{class_interface}{Interface}}*\ interfaceArray[],\ uint8\_t\ size);}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ \ }
+\DoxyCodeLine{00085\ \ \ \textcolor{keyword}{static}\ CANCore::Baudrate\ DEFAULT\_CAN\_BAUDRATE;}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \ \ \textcolor{keyword}{static}\ uint8\_t\ \mbox{\hyperlink{class_c_a_n_tram_core_ad90c889bd94797175e8cd9d4079c8b2e}{loop}}();}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ summaryReport();}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00092\ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ uint8\_t\ MAX\_MODULES\ =\ 20;}
+\DoxyCodeLine{00093\ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_c_a_n_tram_module}{CANTramModule}}\ *modules[];}
+\DoxyCodeLine{00094\ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ uint8\_t\ MAX\_HARDWARE\_RESOURCES\ =\ 30;}
+\DoxyCodeLine{00095\ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_hardware_resource}{HardwareResource}}\ *hardwareResources[];}
+\DoxyCodeLine{00096\ \ \ \textcolor{keyword}{static}\ uint8\_t\ moduleCount;}
+\DoxyCodeLine{00097\ \ \ \textcolor{keyword}{static}\ uint8\_t\ providedGPIOs;\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Tells\ the\ core\ how\ many\ GPIOs\ are\ provided}}
+\DoxyCodeLine{00098\ \ \ \textcolor{keyword}{static}\ uint8\_t\ usedGPIOs;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Tells\ the\ core\ how\ many\ GPIOs\ are\ used\ by\ modules}}
+\DoxyCodeLine{00099\ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ uint8\_t\ MAX\_GPIO\ =\ 100;\ \textcolor{comment}{//\ Maximum\ number\ of\ GPIOs\ (including\ shift\ register\ outputs)}}
+\DoxyCodeLine{00100\ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_output_definition}{OutputDefinition}}\ *outputDefinitionTable[];}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00102\ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ uint8\_t\ MAX\_INTERFACES\ =\ 200;\ \textcolor{comment}{//\ Maximum\ number\ of\ interfaces}}
+\DoxyCodeLine{00103\ \ \ \textcolor{keyword}{static}\ uint8\_t\ interfaceCount;}
+\DoxyCodeLine{00104\ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_interface}{Interface}}*\ interfaces[];}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00106\ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ outputDefinitionTableInitialized;}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00108\ \ \ \textcolor{comment}{//\ Private\ members\ here}}
+\DoxyCodeLine{00109\ \};}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00111\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

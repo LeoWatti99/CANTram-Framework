@@ -1,0 +1,603 @@
+\doxysection{Digital\+Module\+V1\+\_\+0 Class Reference}
+\hypertarget{class_digital_module_v1__0}{}\label{class_digital_module_v1__0}\index{DigitalModuleV1\_0@{DigitalModuleV1\_0}}
+
+
+Inheritance diagram for Digital\+Module\+V1\+\_\+0\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{dc/da4/class_digital_module_v1__0__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Digital\+Module\+V1\+\_\+0\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{d5/dc3/class_digital_module_v1__0__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_digital_module_v1__0_a8157ff7fcdc60bd836373c5a46d22062}\label{class_digital_module_v1__0_a8157ff7fcdc60bd836373c5a46d22062} 
+enum {\bfseries ERROR\+\_\+\+CODES} \{ {\bfseries STATUS\+\_\+\+OK} = 0
+, {\bfseries DEACTIVATED\+\_\+\+CHANNEL} = 11
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{class_digital_module_v1__0_a529264909bab166dc52d224ca719011b}{get\+HWType}} () const override
+\begin{DoxyCompactList}\small\item\em Get the hardware type string. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_digital_module_v1__0_ad41f6d07efca1d95dac17f2f77fe1b82}{get\+HWVersion}} () const override
+\begin{DoxyCompactList}\small\item\em Get the hardware version string. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_digital_module_v1__0_a8ecee0734562f0601963b0d4365f4ef8}{get\+FWVersion}} () const override
+\begin{DoxyCompactList}\small\item\em Get the firmware version string. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{class_digital_module_v1__0_a0e1364361441d3180ed65e22b08ba695}{get\+GPIODemand}} () const override
+\begin{DoxyCompactList}\small\item\em Get the GPIO demand of the module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{class_digital_module_v1__0_a659aa59723788b608b208e34fbbe50ab}{get\+GPIOSupply}} () const override
+\begin{DoxyCompactList}\small\item\em Get the GPIO supply capacity of the module. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_digital_module_v1__0_aa9f385dc783b97731a0ce53bbf667c9b}{Digital\+Module\+V1\+\_\+0}} (uint8\+\_\+t output\+Mask=0x\+F0)
+\begin{DoxyCompactList}\small\item\em Construct a \doxylink{class_digital_module_v1__0}{Digital\+Module\+V1\+\_\+0} instance. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_digital_module_v1__0_a6b52d3ca7181a224b478d93766a7bfe7}{attach\+Module}} (uint8\+\_\+t slot, uint8\+\_\+t gpio\+Start) override
+\begin{DoxyCompactList}\small\item\em Attach the module to a slot and assign GPIO range. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_digital_module_v1__0_a70d92346670144adca80528dbfad8fe4}{provide\+GPIOs}} () override
+\begin{DoxyCompactList}\small\item\em Provide GPIO definitions to the core. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_digital_module_v1__0_ad4f0b8f23b9bb1cece68d1eea31ceb59}{request\+GPIOs}} () override
+\begin{DoxyCompactList}\small\item\em Request and configure GPIOs from the core. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_digital_module_v1__0_abea9ddf782b2583cca8caf4d268ee203}{provide\+Hardware\+Resources}} () override
+\begin{DoxyCompactList}\small\item\em Provide hardware resources to the core. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_digital_module_v1__0_aee7d56d42e8e1ef25085cb24385286c5}{request\+Hardware\+Resources}} () override
+\begin{DoxyCompactList}\small\item\em Request hardware resources required by this module. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_digital_module_v1__0_a4748ca50960d9b54c52b18a00a35dc55}{add\+Interfaces}} () override
+\begin{DoxyCompactList}\small\item\em Add and validate interfaces provided by the module. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_digital_module_v1__0_adbbb9654bd1819b20c6247ea3a9eb291}{initialize}} () override
+\begin{DoxyCompactList}\small\item\em Initialize the module and its IC drivers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_digital_module_v1__0_a75ccf259962e3e9414b0bfc92b77c9c7}{cycle}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}response) override
+\begin{DoxyCompactList}\small\item\em Periodic cycle callback. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_digital_module_v1__0_a59f571736a88c73e2b151b40509510ab}{set\+Wire\+Break\+Mask}} (uint8\+\_\+t mask=0)
+\begin{DoxyCompactList}\small\item\em Configure wire-\/break detection mask. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_interface}{Interface}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_digital_module_v1__0_a67cd467b3c2ee6245938155a10778c20}{get\+Interfaces}} () override
+\begin{DoxyCompactList}\small\item\em Get pointer to the module\textquotesingle{}s interface array. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_digital_module_v1__0_ad4d78cb2cf619fdf7f90455e27268b9f}{get\+Interface\+Count}} () override
+\begin{DoxyCompactList}\small\item\em Get number of interfaces provided by this module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{class_digital_module_v1__0_aff96c7afef7466bbcee1db26627b03ff}{set\+Outputs}} (uint8\+\_\+t outputs)
+\begin{DoxyCompactList}\small\item\em Set all digital outputs at once. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{class_digital_module_v1__0_ad7da56707bd67535b0adec44a4d67593}{set\+Output}} (uint8\+\_\+t output, bool state)
+\begin{DoxyCompactList}\small\item\em Set a single digital output. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{class_digital_module_v1__0_a2a1d0401a1e23b1ec7c5f4287bc8649f}{get\+Inputs}} () const
+\begin{DoxyCompactList}\small\item\em Get current input states. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{class_digital_module_v1__0_a3f1664bc2d1bd2edd5a9c4fea5bbbe03}{get\+Wire\+Breaks}} () const
+\begin{DoxyCompactList}\small\item\em Get current wire-\/break status. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_c_a_n_tram_module}{CANTram\+Module}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_a_n_tram_module_ae1c9554adb901b7e798a44d521781c0b}{CANTram\+Module}} ()=default
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_c_a_n_tram_module_a8f93d67f0d5b49b7864369196cb323e6}{\texorpdfstring{$\sim$}{\string~}\+CANTram\+Module}} ()=default
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_c_a_n_tram_module_a496814b4e5fa5f162c48f17ec33d4475}{reset}} ()
+\begin{DoxyCompactList}\small\item\em Reset the module to a known default state. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{class_c_a_n_tram_module_a80b400128bb6f0841953bb7a75cbf99c}{get\+Slot}} () const
+\begin{DoxyCompactList}\small\item\em Get assigned slot index. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{class_c_a_n_tram_module_a7905817e8fee9e8bccfc9bbe70ae5669}{get\+GPIOStart}} () const
+\begin{DoxyCompactList}\small\item\em Get starting GPIO index assigned to the module. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_c_a_n_tram_module_a329b502ade3a32987994381c93ddbd0b}{pre\+Initialize}} ()
+\begin{DoxyCompactList}\small\item\em Pre-\/initialize the module after attachment and provisioning. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_digital_module_v1__0_a8cf8563c51774629fdabe339603d316e}\label{class_digital_module_v1__0_a8cf8563c51774629fdabe339603d316e} 
+static const String {\bfseries HW\+\_\+\+TYPE} = "{}Digital\+Module\+V1.\+0"{}
+\item 
+\Hypertarget{class_digital_module_v1__0_a52cfface30e1f2f8e0b79d5388703e27}\label{class_digital_module_v1__0_a52cfface30e1f2f8e0b79d5388703e27} 
+static const String {\bfseries HW\+\_\+\+VERSION} = "{}1.\+0"{}
+\item 
+\Hypertarget{class_digital_module_v1__0_a04b988554c5a318d0591d88c4feed267}\label{class_digital_module_v1__0_a04b988554c5a318d0591d88c4feed267} 
+static const String {\bfseries FW\+\_\+\+VERSION} = "{}1.\+0"{}
+\item 
+\Hypertarget{class_digital_module_v1__0_a7605604bdb6f0a0d257efc603d9b68a6}\label{class_digital_module_v1__0_a7605604bdb6f0a0d257efc603d9b68a6} 
+static constexpr uint8\+\_\+t {\bfseries GPIO\+\_\+\+DEMAND} = 2
+\item 
+\Hypertarget{class_digital_module_v1__0_a5f9349247bf5733026014ad3728da618}\label{class_digital_module_v1__0_a5f9349247bf5733026014ad3728da618} 
+static constexpr uint8\+\_\+t {\bfseries GPIO\+\_\+\+SUPPLY} = 0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_c_a_n_tram_module}{CANTram\+Module}}}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t {\bfseries SLOT} = 0
+\item 
+uint8\+\_\+t {\bfseries GPIO\+\_\+\+START} = 0
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_digital_module_v1__0_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_digital_module_v1__0_aa9f385dc783b97731a0ce53bbf667c9b}\index{DigitalModuleV1\_0@{DigitalModuleV1\_0}!DigitalModuleV1\_0@{DigitalModuleV1\_0}}
+\index{DigitalModuleV1\_0@{DigitalModuleV1\_0}!DigitalModuleV1\_0@{DigitalModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{DigitalModuleV1\_0()}{DigitalModuleV1\_0()}}
+{\footnotesize\ttfamily \label{class_digital_module_v1__0_aa9f385dc783b97731a0ce53bbf667c9b} 
+Digital\+Module\+V1\+\_\+0\+::\+Digital\+Module\+V1\+\_\+0 (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{output\+Mask}{ = {\ttfamily 0xF0}}\end{DoxyParamCaption})}
+
+
+
+Construct a \doxylink{class_digital_module_v1__0}{Digital\+Module\+V1\+\_\+0} instance. 
+
+Construct a new \doxylink{class_digital_module_v1__0}{Digital\+Module\+V1\+\_\+0} object.
+
+Create the digital module and configure which channels act as outputs using the output\+Mask. 
+\begin{DoxyParams}{Parameters}
+{\em output\+Mask} & Bitmask where a set bit configures the corresponding channel as an output. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+Initializes internal state, output mask and constructs input/output IC driver and interface objects. 
+\begin{DoxyParams}{Parameters}
+{\em output\+Mask} & Bitmask selecting which channels are configured as outputs. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\label{doc-func-members}
+\Hypertarget{class_digital_module_v1__0_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_digital_module_v1__0_a4748ca50960d9b54c52b18a00a35dc55}\index{DigitalModuleV1\_0@{DigitalModuleV1\_0}!addInterfaces@{addInterfaces}}
+\index{addInterfaces@{addInterfaces}!DigitalModuleV1\_0@{DigitalModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{addInterfaces()}{addInterfaces()}}
+{\footnotesize\ttfamily \label{class_digital_module_v1__0_a4748ca50960d9b54c52b18a00a35dc55} 
+bool Digital\+Module\+V1\+\_\+0\+::add\+Interfaces (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Add and validate interfaces provided by the module. 
+
+Add and configure interfaces exposed by the module.
+
+Populate the internal Interface\texorpdfstring{$\ast$}{*} array with Digital\+Input/\+Digital\+Output instances and validate them. \begin{DoxyReturn}{Returns}
+bool true if interfaces were added and validated successfully, false otherwise.
+\end{DoxyReturn}
+Populates the module\textquotesingle{}s internal interface array with \doxylink{class_digital_input}{Digital\+Input} and \doxylink{class_digital_output}{Digital\+Output} instances, sets interface names and validates them based on availability of CS pins and output mask. \begin{DoxyReturn}{Returns}
+true if interfaces were added and validated successfully, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_a14b79b625e82a3f11ebbb8271b6466b7}{CANTram\+Module}}.
+
+\Hypertarget{class_digital_module_v1__0_a6b52d3ca7181a224b478d93766a7bfe7}\index{DigitalModuleV1\_0@{DigitalModuleV1\_0}!attachModule@{attachModule}}
+\index{attachModule@{attachModule}!DigitalModuleV1\_0@{DigitalModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{attachModule()}{attachModule()}}
+{\footnotesize\ttfamily \label{class_digital_module_v1__0_a6b52d3ca7181a224b478d93766a7bfe7} 
+bool Digital\+Module\+V1\+\_\+0\+::attach\+Module (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{slot}{, }\item[{uint8\+\_\+t}]{gpio\+Start}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Attach the module to a slot and assign GPIO range. 
+
+Attach module to a slot and assign GPIO start index.
+
+Performs \doxylink{class_c_a_n_tram_module}{CANTram\+Module} base attach logic and any module specific attach-\/time configuration. 
+\begin{DoxyParams}{Parameters}
+{\em slot} & Slot index to attach the module to. \\
+\hline
+{\em gpio\+Start} & Starting GPIO index assigned to this module. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool true if attach and provisioning succeeded, false otherwise.
+\end{DoxyReturn}
+Calls the base \doxylink{class_c_a_n_tram_module}{CANTram\+Module} attach implementation and performs any Digital\+Module-\/specific attach logic. 
+\begin{DoxyParams}{Parameters}
+{\em slot} & Slot index to attach the module to. \\
+\hline
+{\em gpio\+Start} & Starting GPIO index assigned to this module. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if attach succeeded, false otherwise. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_a_n_tram_module_a67cab1c238257e6d9b88afc4f644e477}{CANTram\+Module}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/ddb/class_digital_module_v1__0_a6b52d3ca7181a224b478d93766a7bfe7_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_digital_module_v1__0_a75ccf259962e3e9414b0bfc92b77c9c7}\index{DigitalModuleV1\_0@{DigitalModuleV1\_0}!cycle@{cycle}}
+\index{cycle@{cycle}!DigitalModuleV1\_0@{DigitalModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{cycle()}{cycle()}}
+{\footnotesize\ttfamily \label{class_digital_module_v1__0_a75ccf259962e3e9414b0bfc92b77c9c7} 
+void Digital\+Module\+V1\+\_\+0\+::cycle (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{response}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Periodic cycle callback. 
+
+Periodic cycle handler called by the core.
+
+Called by the core to perform cyclic tasks\+: update outputs, read inputs and update interface values. 
+\begin{DoxyParams}{Parameters}
+{\em response} & Optional pointer to a response buffer where response bytes may be written (may be nullptr). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+Updates outputs based on interface values, writes outputs to the output IC, reads inputs from the input IC (with repeated fetches for stability), and updates input interface values. 
+\begin{DoxyParams}{Parameters}
+{\em response} & Optional pointer to a response buffer; may be nullptr if not used. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_a_n_tram_module_a1be4a73e5fc8e14edad90741593d2d29}{CANTram\+Module}}.
+
+\Hypertarget{class_digital_module_v1__0_a8ecee0734562f0601963b0d4365f4ef8}\index{DigitalModuleV1\_0@{DigitalModuleV1\_0}!getFWVersion@{getFWVersion}}
+\index{getFWVersion@{getFWVersion}!DigitalModuleV1\_0@{DigitalModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{getFWVersion()}{getFWVersion()}}
+{\footnotesize\ttfamily \label{class_digital_module_v1__0_a8ecee0734562f0601963b0d4365f4ef8} 
+String Digital\+Module\+V1\+\_\+0\+::get\+FWVersion (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the firmware version string. 
+
+Returns the firmware version string implemented by the module. \begin{DoxyReturn}{Returns}
+String Firmware version (e.\+g. "{}1.\+0"{}). 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_acf8e6722dc924b1bf4d5289f3684fd29}{CANTram\+Module}}.
+
+\Hypertarget{class_digital_module_v1__0_a0e1364361441d3180ed65e22b08ba695}\index{DigitalModuleV1\_0@{DigitalModuleV1\_0}!getGPIODemand@{getGPIODemand}}
+\index{getGPIODemand@{getGPIODemand}!DigitalModuleV1\_0@{DigitalModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{getGPIODemand()}{getGPIODemand()}}
+{\footnotesize\ttfamily \label{class_digital_module_v1__0_a0e1364361441d3180ed65e22b08ba695} 
+uint8\+\_\+t Digital\+Module\+V1\+\_\+0\+::get\+GPIODemand (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the GPIO demand of the module. 
+
+Returns how many GPIOs this module requires from the core. \begin{DoxyReturn}{Returns}
+uint8\+\_\+t Number of GPIOs demanded by the module. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_afa6df5b58f7681a8a316b3910f987cce}{CANTram\+Module}}.
+
+\Hypertarget{class_digital_module_v1__0_a659aa59723788b608b208e34fbbe50ab}\index{DigitalModuleV1\_0@{DigitalModuleV1\_0}!getGPIOSupply@{getGPIOSupply}}
+\index{getGPIOSupply@{getGPIOSupply}!DigitalModuleV1\_0@{DigitalModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{getGPIOSupply()}{getGPIOSupply()}}
+{\footnotesize\ttfamily \label{class_digital_module_v1__0_a659aa59723788b608b208e34fbbe50ab} 
+uint8\+\_\+t Digital\+Module\+V1\+\_\+0\+::get\+GPIOSupply (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the GPIO supply capacity of the module. 
+
+Returns how many GPIOs this module provides/supplies to the system. \begin{DoxyReturn}{Returns}
+uint8\+\_\+t Number of GPIOs supplied by the module. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_ae7247503120b76151cc2086dc4250911}{CANTram\+Module}}.
+
+\Hypertarget{class_digital_module_v1__0_a529264909bab166dc52d224ca719011b}\index{DigitalModuleV1\_0@{DigitalModuleV1\_0}!getHWType@{getHWType}}
+\index{getHWType@{getHWType}!DigitalModuleV1\_0@{DigitalModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{getHWType()}{getHWType()}}
+{\footnotesize\ttfamily \label{class_digital_module_v1__0_a529264909bab166dc52d224ca719011b} 
+String Digital\+Module\+V1\+\_\+0\+::get\+HWType (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the hardware type string. 
+
+Returns a human readable hardware type identifier for the concrete module implementation. \begin{DoxyReturn}{Returns}
+String Hardware type identifier (e.\+g. "{}\+Main\+Module\+V1.\+0"{}). 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_a3edca0142c5fa8a0d91a549f8371b460}{CANTram\+Module}}.
+
+\Hypertarget{class_digital_module_v1__0_ad41f6d07efca1d95dac17f2f77fe1b82}\index{DigitalModuleV1\_0@{DigitalModuleV1\_0}!getHWVersion@{getHWVersion}}
+\index{getHWVersion@{getHWVersion}!DigitalModuleV1\_0@{DigitalModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{getHWVersion()}{getHWVersion()}}
+{\footnotesize\ttfamily \label{class_digital_module_v1__0_ad41f6d07efca1d95dac17f2f77fe1b82} 
+String Digital\+Module\+V1\+\_\+0\+::get\+HWVersion (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the hardware version string. 
+
+Returns the hardware revision/version string for the module. \begin{DoxyReturn}{Returns}
+String Hardware version (e.\+g. "{}1.\+0"{}). 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_a5d9287df902bd2f9ec32b4317f95fff6}{CANTram\+Module}}.
+
+\Hypertarget{class_digital_module_v1__0_a2a1d0401a1e23b1ec7c5f4287bc8649f}\index{DigitalModuleV1\_0@{DigitalModuleV1\_0}!getInputs@{getInputs}}
+\index{getInputs@{getInputs}!DigitalModuleV1\_0@{DigitalModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{getInputs()}{getInputs()}}
+{\footnotesize\ttfamily \label{class_digital_module_v1__0_a2a1d0401a1e23b1ec7c5f4287bc8649f} 
+uint8\+\_\+t Digital\+Module\+V1\+\_\+0\+::get\+Inputs (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get current input states. 
+
+Returns the cached input state byte where each bit represents an input channel state. \begin{DoxyReturn}{Returns}
+uint8\+\_\+t Byte with input states. 
+\end{DoxyReturn}
+\Hypertarget{class_digital_module_v1__0_ad4d78cb2cf619fdf7f90455e27268b9f}\index{DigitalModuleV1\_0@{DigitalModuleV1\_0}!getInterfaceCount@{getInterfaceCount}}
+\index{getInterfaceCount@{getInterfaceCount}!DigitalModuleV1\_0@{DigitalModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{getInterfaceCount()}{getInterfaceCount()}}
+{\footnotesize\ttfamily \label{class_digital_module_v1__0_ad4d78cb2cf619fdf7f90455e27268b9f} 
+size\+\_\+t Digital\+Module\+V1\+\_\+0\+::get\+Interface\+Count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get number of interfaces provided by this module. 
+
+Returns the compile-\/time count of interface slots for this module. \begin{DoxyReturn}{Returns}
+size\+\_\+t Number of interface pointers in the module. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_a68c703147d8b495e324febcaccd49dea}{CANTram\+Module}}.
+
+\Hypertarget{class_digital_module_v1__0_a67cd467b3c2ee6245938155a10778c20}\index{DigitalModuleV1\_0@{DigitalModuleV1\_0}!getInterfaces@{getInterfaces}}
+\index{getInterfaces@{getInterfaces}!DigitalModuleV1\_0@{DigitalModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{getInterfaces()}{getInterfaces()}}
+{\footnotesize\ttfamily \label{class_digital_module_v1__0_a67cd467b3c2ee6245938155a10778c20} 
+\mbox{\hyperlink{class_interface}{Interface}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} Digital\+Module\+V1\+\_\+0\+::get\+Interfaces (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get pointer to the module\textquotesingle{}s interface array. 
+
+Returns a pointer to the internal array of \doxylink{class_interface}{Interface} pointers for enumeration by the core. \begin{DoxyReturn}{Returns}
+Interface\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} Pointer to the first element of the interfaces array. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_a09c919fc31111badfec18faf64c729f4}{CANTram\+Module}}.
+
+\Hypertarget{class_digital_module_v1__0_a3f1664bc2d1bd2edd5a9c4fea5bbbe03}\index{DigitalModuleV1\_0@{DigitalModuleV1\_0}!getWireBreaks@{getWireBreaks}}
+\index{getWireBreaks@{getWireBreaks}!DigitalModuleV1\_0@{DigitalModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{getWireBreaks()}{getWireBreaks()}}
+{\footnotesize\ttfamily \label{class_digital_module_v1__0_a3f1664bc2d1bd2edd5a9c4fea5bbbe03} 
+uint8\+\_\+t Digital\+Module\+V1\+\_\+0\+::get\+Wire\+Breaks (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get current wire-\/break status. 
+
+Returns the cached wire-\/break status byte where each bit represents a wire-\/break flag for a channel. \begin{DoxyReturn}{Returns}
+uint8\+\_\+t Byte with wire-\/break flags. 
+\end{DoxyReturn}
+\Hypertarget{class_digital_module_v1__0_adbbb9654bd1819b20c6247ea3a9eb291}\index{DigitalModuleV1\_0@{DigitalModuleV1\_0}!initialize@{initialize}}
+\index{initialize@{initialize}!DigitalModuleV1\_0@{DigitalModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily \label{class_digital_module_v1__0_adbbb9654bd1819b20c6247ea3a9eb291} 
+bool Digital\+Module\+V1\+\_\+0\+::initialize (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Initialize the module and its IC drivers. 
+
+Initialize the digital module hardware and ICs.
+
+Configure and start the input/output driver ICs, set up external CS handling and prepare for operation. \begin{DoxyReturn}{Returns}
+bool true if initialization completed successfully, false otherwise.
+\end{DoxyReturn}
+Initializes output and input ICs, configures external chip-\/select handling using the configured CS output providers, and starts IC drivers. Logs configuration state for debugging. \begin{DoxyReturn}{Returns}
+true if initialization succeeded, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_a6930dfb86a2e06ab9a9b299520830fb7}{CANTram\+Module}}.
+
+\Hypertarget{class_digital_module_v1__0_a70d92346670144adca80528dbfad8fe4}\index{DigitalModuleV1\_0@{DigitalModuleV1\_0}!provideGPIOs@{provideGPIOs}}
+\index{provideGPIOs@{provideGPIOs}!DigitalModuleV1\_0@{DigitalModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{provideGPIOs()}{provideGPIOs()}}
+{\footnotesize\ttfamily \label{class_digital_module_v1__0_a70d92346670144adca80528dbfad8fe4} 
+bool Digital\+Module\+V1\+\_\+0\+::provide\+GPIOs (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Provide GPIO definitions to the core. 
+
+Declare any GPIOs this module provides to \doxylink{class_c_a_n_tram_core}{CANTram\+Core}. Called during attachment. \begin{DoxyReturn}{Returns}
+bool true if GPIO definitions were provided successfully, false otherwise.
+\end{DoxyReturn}
+Placeholder\+: the digital module does not add additional GPIO definitions beyond core expectations. \begin{DoxyReturn}{Returns}
+true on success. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_abaad4d92c02fc8bb525a57d8ac06db7e}{CANTram\+Module}}.
+
+\Hypertarget{class_digital_module_v1__0_abea9ddf782b2583cca8caf4d268ee203}\index{DigitalModuleV1\_0@{DigitalModuleV1\_0}!provideHardwareResources@{provideHardwareResources}}
+\index{provideHardwareResources@{provideHardwareResources}!DigitalModuleV1\_0@{DigitalModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{provideHardwareResources()}{provideHardwareResources()}}
+{\footnotesize\ttfamily \label{class_digital_module_v1__0_abea9ddf782b2583cca8caf4d268ee203} 
+bool Digital\+Module\+V1\+\_\+0\+::provide\+Hardware\+Resources (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Provide hardware resources to the core. 
+
+Provide hardware resources to \doxylink{class_c_a_n_tram_core}{CANTram\+Core}.
+
+Attach any \doxylink{class_hardware_resource}{Hardware\+Resource} instances offered by this module so other modules can request them. \begin{DoxyReturn}{Returns}
+bool true if hardware resources were provided successfully, false otherwise.
+\end{DoxyReturn}
+Currently no additional hardware resources are attached by this module. \begin{DoxyReturn}{Returns}
+true on success. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_aa509ae950722ebd48383c124ec6a63ec}{CANTram\+Module}}.
+
+\Hypertarget{class_digital_module_v1__0_ad4f0b8f23b9bb1cece68d1eea31ceb59}\index{DigitalModuleV1\_0@{DigitalModuleV1\_0}!requestGPIOs@{requestGPIOs}}
+\index{requestGPIOs@{requestGPIOs}!DigitalModuleV1\_0@{DigitalModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{requestGPIOs()}{requestGPIOs()}}
+{\footnotesize\ttfamily \label{class_digital_module_v1__0_ad4f0b8f23b9bb1cece68d1eea31ceb59} 
+bool Digital\+Module\+V1\+\_\+0\+::request\+GPIOs (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Request and configure GPIOs from the core. 
+
+Request and configure GPIOs used by the module.
+
+Obtain \doxylink{class_output_definition}{Output\+Definition} pointers for CS pins and configure their initial\+Value and mode. This method must keep the configuration and initial\+Value assignment for correct operation. \begin{DoxyReturn}{Returns}
+bool true if required GPIO definitions were obtained and configured, false otherwise.
+\end{DoxyReturn}
+Obtains CS output definitions from \doxylink{class_c_a_n_tram_core}{CANTram\+Core} for outputs and inputs, configures them as outputs, and sets their initial state to HIGH (deselected). Logs errors when definitions are missing. \begin{DoxyReturn}{Returns}
+true if required GPIO definitions were obtained and configured, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_a7f2c1c05cafb19676aed58c11219d0f5}{CANTram\+Module}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/ddb/class_digital_module_v1__0_ad4f0b8f23b9bb1cece68d1eea31ceb59_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_digital_module_v1__0_aee7d56d42e8e1ef25085cb24385286c5}\index{DigitalModuleV1\_0@{DigitalModuleV1\_0}!requestHardwareResources@{requestHardwareResources}}
+\index{requestHardwareResources@{requestHardwareResources}!DigitalModuleV1\_0@{DigitalModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{requestHardwareResources()}{requestHardwareResources()}}
+{\footnotesize\ttfamily \label{class_digital_module_v1__0_aee7d56d42e8e1ef25085cb24385286c5} 
+bool Digital\+Module\+V1\+\_\+0\+::request\+Hardware\+Resources (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Request hardware resources required by this module. 
+
+Request hardware resources required by the module.
+
+Acquire shared hardware resources (if any) from \doxylink{class_c_a_n_tram_core}{CANTram\+Core} for module operation. \begin{DoxyReturn}{Returns}
+bool true if required resources were granted, false otherwise.
+\end{DoxyReturn}
+Placeholder for requesting shared hardware resources. Returns true by default. \begin{DoxyReturn}{Returns}
+true if requested resources were acquired, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_a88dd0ab2213df828b576d337e38c1ac8}{CANTram\+Module}}.
+
+\Hypertarget{class_digital_module_v1__0_ad7da56707bd67535b0adec44a4d67593}\index{DigitalModuleV1\_0@{DigitalModuleV1\_0}!setOutput@{setOutput}}
+\index{setOutput@{setOutput}!DigitalModuleV1\_0@{DigitalModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{setOutput()}{setOutput()}}
+{\footnotesize\ttfamily \label{class_digital_module_v1__0_ad7da56707bd67535b0adec44a4d67593} 
+uint8\+\_\+t Digital\+Module\+V1\+\_\+0\+::set\+Output (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{output}{, }\item[{bool}]{state}{}\end{DoxyParamCaption})}
+
+
+
+Set a single digital output. 
+
+Set or clear a single output bit in the module\textquotesingle{}s cached output state if the channel is configured as output. 
+\begin{DoxyParams}{Parameters}
+{\em output} & Index of the output channel (0..7). \\
+\hline
+{\em state} & Desired logical state for the channel (true = HIGH, false = LOW). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\+\_\+t STATUS\+\_\+\+OK if operation succeeded, DEACTIVATED\+\_\+\+CHANNEL if channel is not configured as output.
+\end{DoxyReturn}
+Sets or clears the specified output bit in the module\textquotesingle{}s cached output state if that channel is configured as an output. 
+\begin{DoxyParams}{Parameters}
+{\em output} & Index of the output channel (0..7). \\
+\hline
+{\em state} & Desired logical state for the channel (true = HIGH, false = LOW). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\+\_\+t STATUS\+\_\+\+OK if operation succeeded, DEACTIVATED\+\_\+\+CHANNEL if the channel is not configured as an output. 
+\end{DoxyReturn}
+\Hypertarget{class_digital_module_v1__0_aff96c7afef7466bbcee1db26627b03ff}\index{DigitalModuleV1\_0@{DigitalModuleV1\_0}!setOutputs@{setOutputs}}
+\index{setOutputs@{setOutputs}!DigitalModuleV1\_0@{DigitalModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{setOutputs()}{setOutputs()}}
+{\footnotesize\ttfamily \label{class_digital_module_v1__0_aff96c7afef7466bbcee1db26627b03ff} 
+uint8\+\_\+t Digital\+Module\+V1\+\_\+0\+::set\+Outputs (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{outputs}{}\end{DoxyParamCaption})}
+
+
+
+Set all digital outputs at once. 
+
+Update the module\textquotesingle{}s outputs cache and corresponding output interfaces, respecting the output mask. 
+\begin{DoxyParams}{Parameters}
+{\em outputs} & Byte containing 8 output bits (bit0..bit7). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\+\_\+t STATUS\+\_\+\+OK on success.
+\end{DoxyReturn}
+Updates the module\textquotesingle{}s cached output state respecting the output mask and writes the values into the output interfaces. 
+\begin{DoxyParams}{Parameters}
+{\em outputs} & Byte containing 8 output bits (bit0..bit7). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\+\_\+t STATUS\+\_\+\+OK on success. 
+\end{DoxyReturn}
+\Hypertarget{class_digital_module_v1__0_a59f571736a88c73e2b151b40509510ab}\index{DigitalModuleV1\_0@{DigitalModuleV1\_0}!setWireBreakMask@{setWireBreakMask}}
+\index{setWireBreakMask@{setWireBreakMask}!DigitalModuleV1\_0@{DigitalModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{setWireBreakMask()}{setWireBreakMask()}}
+{\footnotesize\ttfamily \label{class_digital_module_v1__0_a59f571736a88c73e2b151b40509510ab} 
+void Digital\+Module\+V1\+\_\+0\+::set\+Wire\+Break\+Mask (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{mask}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+
+
+Configure wire-\/break detection mask. 
+
+Configure wire-\/break mask for input detection.
+
+Apply the provided mask to enable/disable wire-\/break detection per channel on the input IC. 
+\begin{DoxyParams}{Parameters}
+{\em mask} & Bitmask indicating channels for which wire-\/break detection should be active. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+Iterates through channels and sets the wire-\/break detection mask on the input IC. Logs errors for any failure to apply the mask on individual channels. 
+\begin{DoxyParams}{Parameters}
+{\em mask} & Bitmask specifying which channels should have wire-\/break detection enabled. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/leowa/\+Documents/\+Platform\+IO/\+Projects/\+CANTram\+Framework\+Usage/lib/\+CANTram\+Framework/include/Digital\+Module\+V1\+\_\+0.\+h\item 
+C\+:/\+Users/leowa/\+Documents/\+Platform\+IO/\+Projects/\+CANTram\+Framework\+Usage/lib/\+CANTram\+Framework/src/modules/Digital\+Module\+V1\+\_\+0.\+cpp\end{DoxyCompactItemize}

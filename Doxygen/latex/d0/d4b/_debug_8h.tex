@@ -1,0 +1,507 @@
+\doxysection{C\+:/\+Users/leowa/\+Documents/\+Platform\+IO/\+Projects/\+CANTram\+Framework\+Usage/lib/\+CANTram\+Framework/include/\+Debug.h File Reference}
+\hypertarget{_debug_8h}{}\label{_debug_8h}\index{C:/Users/leowa/Documents/PlatformIO/Projects/CANTramFrameworkUsage/lib/CANTramFramework/include/Debug.h@{C:/Users/leowa/Documents/PlatformIO/Projects/CANTramFrameworkUsage/lib/CANTramFramework/include/Debug.h}}
+
+
+Logging and debug macro definitions for \doxylink{class_c_a_n_tram_core}{CANTram\+Core}.  
+
+
+{\ttfamily \#include $<$Arduino.\+h$>$}\newline
+Include dependency graph for Debug.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{d8/d40/_debug_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d15/_debug_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_debug_8h_a2b1da0cb514f35f2dad5f19754377274}{DEBUG\+\_\+\+OUTPUT}}
+\begin{DoxyCompactList}\small\item\em Disable all output when defined. \end{DoxyCompactList}\item 
+\Hypertarget{_debug_8h_afd2af33eff1aa55142249e4ba9317605}\label{_debug_8h_afd2af33eff1aa55142249e4ba9317605} 
+\#define {\bfseries INFO\+\_\+\+OUTPUT}
+\item 
+\Hypertarget{_debug_8h_a5508e02ae09c9565a66427c56909c82f}\label{_debug_8h_a5508e02ae09c9565a66427c56909c82f} 
+\#define {\bfseries ERROR\+\_\+\+OUTPUT}
+\item 
+\Hypertarget{_debug_8h_aa823b67eb1c9de891dae980c12ec9990}\label{_debug_8h_aa823b67eb1c9de891dae980c12ec9990} 
+\#define {\bfseries WARNING\+\_\+\+OUTPUT}
+\item 
+\Hypertarget{_debug_8h_a1e6f9b59835399ea72711ab60ab2d958}\label{_debug_8h_a1e6f9b59835399ea72711ab60ab2d958} 
+\#define {\bfseries CRITICAL\+\_\+\+ERROR\+\_\+\+OUTPUT}
+\item 
+\Hypertarget{_debug_8h_ae8ecfa3976a455beb3a24ef1d7cecbe9}\label{_debug_8h_ae8ecfa3976a455beb3a24ef1d7cecbe9} 
+\#define {\bfseries DEV\+\_\+\+ERROR\+\_\+\+OUTPUT}
+\item 
+\Hypertarget{_debug_8h_a710fd7accfba27ed9250129eb7f55b2c}\label{_debug_8h_a710fd7accfba27ed9250129eb7f55b2c} 
+\#define {\bfseries INSTRUCTION\+\_\+\+OUTPUT}
+\item 
+\Hypertarget{_debug_8h_abdd60bad2ed9c548f3b7ec12ac096639}\label{_debug_8h_abdd60bad2ed9c548f3b7ec12ac096639} 
+\#define {\bfseries CHIP\+\_\+\+OUTPUT}
+\item 
+\Hypertarget{_debug_8h_a839d49d8b25c37c91a1a8ed3090c7cb0}\label{_debug_8h_a839d49d8b25c37c91a1a8ed3090c7cb0} 
+\#define {\bfseries MEASUREMENT\+\_\+\+OUTPUT}
+\item 
+\Hypertarget{_debug_8h_af972dc9d988e79f1c53964a9b3b9860f}\label{_debug_8h_af972dc9d988e79f1c53964a9b3b9860f} 
+\#define {\bfseries MACRO\+\_\+\+LOCATION}~"{}"{}
+\item 
+\#define \mbox{\hyperlink{_debug_8h_af6551f0b4c3964c3128f808e7bf987c7}{DEBUG\+\_\+\+PRINT}}(x)
+\begin{DoxyCompactList}\small\item\em Print a debug message without newline. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_debug_8h_a8e30ff0704664fcb13dabf0c4dc5c8f5}{DEBUG\+\_\+\+PRINTLN}}(x)
+\begin{DoxyCompactList}\small\item\em Print a debug message with newline. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_debug_8h_af1bb2a2c18de0a487366724efb4f1b8c}{MEASUREMENT\+\_\+\+PRINT}}(x)
+\begin{DoxyCompactList}\small\item\em Print a measurement message without newline. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_debug_8h_aee4ea675d26ff667e6641d91ccc5bf1a}{MEASUREMENT\+\_\+\+PRINTLN}}(x)
+\begin{DoxyCompactList}\small\item\em Print a measurement message with newline. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_debug_8h_ac55217e6814de7894a11b7e7cd54f708}{INSTRUCTION\+\_\+\+PRINT}}(x)
+\begin{DoxyCompactList}\small\item\em Print a INSTRUCTION message without newline. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_debug_8h_a625610458d92e74e7a0eb4dbe1d78c79}{INSTRUCTION\+\_\+\+PRINTLN}}(x)
+\begin{DoxyCompactList}\small\item\em Print a INSTRUCTION message without newline. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_debug_8h_ada3de6ba49d97903fbf36000cc99d55d}{INFO\+\_\+\+PRINT}}(x)
+\begin{DoxyCompactList}\small\item\em Print an info-\/level message without newline. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_debug_8h_a693063ba84ad2119e7f3ea1b97947055}{INFO\+\_\+\+PRINTLN}}(x)
+\begin{DoxyCompactList}\small\item\em Print an info-\/level message with newline. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_debug_8h_aefd58cef04351b40871f9aa0c84a895a}{ERROR\+\_\+\+PRINT}}(x)
+\begin{DoxyCompactList}\small\item\em Print an error-\/level message without newline. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_debug_8h_aab934c3f2345fdd7f8ca02ff2c332f60}{ERROR\+\_\+\+PRINTLN}}(x)
+\begin{DoxyCompactList}\small\item\em Print an error-\/level message with newline. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_debug_8h_af25901a0f15375b04a19c6089aba7abe}{WARNING\+\_\+\+PRINT}}(x)
+\begin{DoxyCompactList}\small\item\em Print a warning-\/level message without newline. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_debug_8h_a2ab63874bfdcb0637ccb2dff37bdb8af}{WARNING\+\_\+\+PRINTLN}}(x)
+\begin{DoxyCompactList}\small\item\em Print a warning-\/level message with newline. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_debug_8h_af5ac1d6712be8931a015904d3e7b671a}{DEV\+\_\+\+ERROR\+\_\+\+PRINT}}(x)
+\begin{DoxyCompactList}\small\item\em Print a developer-\/error-\/level message without newline. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_debug_8h_aeb03a131ff07c832ab6ad83b6e6a0744}{DEV\+\_\+\+ERROR\+\_\+\+PRINTLN}}(x)
+\begin{DoxyCompactList}\small\item\em Print a developer-\/error-\/level message with newline. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_debug_8h_aa701e4f6c5d2d6affe69e633f63b67f2}{CHIP\+\_\+\+PRINT}}(x)
+\begin{DoxyCompactList}\small\item\em Print a chip-\/level message without newline. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_debug_8h_a6d7fbffe38d5c736fd08a08c3632ecef}{CHIP\+\_\+\+PRINTLN}}(x)
+\begin{DoxyCompactList}\small\item\em Print a chip-\/level message with newline. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_debug_8h_a1832fbfe80e31438e395951e4fa75882}{CRITICAL\+\_\+\+ERROR\+\_\+\+PRINT}}(x)
+\begin{DoxyCompactList}\small\item\em Print a critical error message and halt execution. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_debug_8h_a80f4fbd5eca866a2e8c9aacafe26b2a4}{CRITICAL\+\_\+\+ERROR\+\_\+\+PRINTLN}}(x)
+\begin{DoxyCompactList}\small\item\em Print a critical error message with newline and halt execution. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_debug_8h_a98e7c49c7900880470d265bce927fba1}{NULL\+\_\+\+PTR\+\_\+\+CHECK}}(ptr)
+\begin{DoxyCompactList}\small\item\em Check a pointer for null and report a critical error if null. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Logging and debug macro definitions for \doxylink{class_c_a_n_tram_core}{CANTram\+Core}. 
+
+Defines macros for debug, info, error, warning, developer error and chip-\/level logging. Macros prepend a level prefix and optionally include file/line information when DEBUG\+\_\+\+SHOW\+\_\+\+LOCATION is defined. Also provides a NULL pointer check macro that prints a critical error and halts execution when a null pointer is detected. 
+
+\label{doc-define-members}
+\Hypertarget{_debug_8h_doc-define-members}
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_debug_8h_aa701e4f6c5d2d6affe69e633f63b67f2}\index{Debug.h@{Debug.h}!CHIP\_PRINT@{CHIP\_PRINT}}
+\index{CHIP\_PRINT@{CHIP\_PRINT}!Debug.h@{Debug.h}}
+\doxysubsubsection{\texorpdfstring{CHIP\_PRINT}{CHIP\_PRINT}}
+{\footnotesize\ttfamily \label{_debug_8h_aa701e4f6c5d2d6affe69e633f63b67f2} 
+\#define CHIP\+\_\+\+PRINT(\begin{DoxyParamCaption}\item[{}]{x}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Serial.print((String)\ \textcolor{stringliteral}{"{}CHIP:\ "{}}\ +\ x\ +\ \ MACRO\_LOCATION)}
+
+\end{DoxyCode}
+
+
+Print a chip-\/level message without newline. 
+
+Used for chip-\/related informational messages. Expands to Serial.\+print with "{}\+CHIP\+: "{} prefix and optional file/line info. 
+\begin{DoxyParams}{Parameters}
+{\em x} & Expression or string to print (will be converted to String). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_debug_8h_a6d7fbffe38d5c736fd08a08c3632ecef}\index{Debug.h@{Debug.h}!CHIP\_PRINTLN@{CHIP\_PRINTLN}}
+\index{CHIP\_PRINTLN@{CHIP\_PRINTLN}!Debug.h@{Debug.h}}
+\doxysubsubsection{\texorpdfstring{CHIP\_PRINTLN}{CHIP\_PRINTLN}}
+{\footnotesize\ttfamily \label{_debug_8h_a6d7fbffe38d5c736fd08a08c3632ecef} 
+\#define CHIP\+\_\+\+PRINTLN(\begin{DoxyParamCaption}\item[{}]{x}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Serial.println((String)\ \textcolor{stringliteral}{"{}CHIP:\ "{}}\ +\ x\ +\ \ MACRO\_LOCATION)}
+
+\end{DoxyCode}
+
+
+Print a chip-\/level message with newline. 
+
+Used for chip-\/related informational messages. Expands to Serial.\+println with "{}\+CHIP\+: "{} prefix and optional file/line info. 
+\begin{DoxyParams}{Parameters}
+{\em x} & Expression or string to print (will be converted to String). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_debug_8h_a1832fbfe80e31438e395951e4fa75882}\index{Debug.h@{Debug.h}!CRITICAL\_ERROR\_PRINT@{CRITICAL\_ERROR\_PRINT}}
+\index{CRITICAL\_ERROR\_PRINT@{CRITICAL\_ERROR\_PRINT}!Debug.h@{Debug.h}}
+\doxysubsubsection{\texorpdfstring{CRITICAL\_ERROR\_PRINT}{CRITICAL\_ERROR\_PRINT}}
+{\footnotesize\ttfamily \label{_debug_8h_a1832fbfe80e31438e395951e4fa75882} 
+\#define CRITICAL\+\_\+\+ERROR\+\_\+\+PRINT(\begin{DoxyParamCaption}\item[{}]{x}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ Serial.print((String)\ \textcolor{stringliteral}{"{}CRITICAL\ ERROR:\ "{}}\ +\ x\ +\ \ MACRO\_LOCATION);\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ while\ (\textcolor{keyword}{true})}
+
+\end{DoxyCode}
+
+
+Print a critical error message and halt execution. 
+
+Prints "{}\+CRITICAL ERROR\+: "{} prefix with the provided message and optional file/line info, then enters an infinite loop to stop execution. 
+\begin{DoxyParams}{Parameters}
+{\em x} & Expression or string to print (will be converted to String). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This macro does not return. 
+\end{DoxyNote}
+\Hypertarget{_debug_8h_a80f4fbd5eca866a2e8c9aacafe26b2a4}\index{Debug.h@{Debug.h}!CRITICAL\_ERROR\_PRINTLN@{CRITICAL\_ERROR\_PRINTLN}}
+\index{CRITICAL\_ERROR\_PRINTLN@{CRITICAL\_ERROR\_PRINTLN}!Debug.h@{Debug.h}}
+\doxysubsubsection{\texorpdfstring{CRITICAL\_ERROR\_PRINTLN}{CRITICAL\_ERROR\_PRINTLN}}
+{\footnotesize\ttfamily \label{_debug_8h_a80f4fbd5eca866a2e8c9aacafe26b2a4} 
+\#define CRITICAL\+\_\+\+ERROR\+\_\+\+PRINTLN(\begin{DoxyParamCaption}\item[{}]{x}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ Serial.println((String)\ \textcolor{stringliteral}{"{}CRITICAL\ ERROR:\ "{}}\ +\ x\ +\ \ MACRO\_LOCATION);\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ while\ (\textcolor{keyword}{true})}
+
+\end{DoxyCode}
+
+
+Print a critical error message with newline and halt execution. 
+
+Prints "{}\+CRITICAL ERROR\+: "{} prefix with the provided message and optional file/line info, then enters an infinite loop to stop execution. 
+\begin{DoxyParams}{Parameters}
+{\em x} & Expression or string to print (will be converted to String). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This macro does not return. 
+\end{DoxyNote}
+\Hypertarget{_debug_8h_a2b1da0cb514f35f2dad5f19754377274}\index{Debug.h@{Debug.h}!DEBUG\_OUTPUT@{DEBUG\_OUTPUT}}
+\index{DEBUG\_OUTPUT@{DEBUG\_OUTPUT}!Debug.h@{Debug.h}}
+\doxysubsubsection{\texorpdfstring{DEBUG\_OUTPUT}{DEBUG\_OUTPUT}}
+{\footnotesize\ttfamily \label{_debug_8h_a2b1da0cb514f35f2dad5f19754377274} 
+\#define DEBUG\+\_\+\+OUTPUT}
+
+
+
+Disable all output when defined. 
+
+Uncomment to completely disable all logging macros. If not defined, individual level macros control output. \Hypertarget{_debug_8h_af6551f0b4c3964c3128f808e7bf987c7}\index{Debug.h@{Debug.h}!DEBUG\_PRINT@{DEBUG\_PRINT}}
+\index{DEBUG\_PRINT@{DEBUG\_PRINT}!Debug.h@{Debug.h}}
+\doxysubsubsection{\texorpdfstring{DEBUG\_PRINT}{DEBUG\_PRINT}}
+{\footnotesize\ttfamily \label{_debug_8h_af6551f0b4c3964c3128f808e7bf987c7} 
+\#define DEBUG\+\_\+\+PRINT(\begin{DoxyParamCaption}\item[{}]{x}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Serial.print((String)\ \textcolor{stringliteral}{"{}DEBUG:\ "{}}\ +\ x\ +\ MACRO\_LOCATION)}
+
+\end{DoxyCode}
+
+
+Print a debug message without newline. 
+
+Expands to Serial.\+print with "{}\+DEBUG\+: "{} prefix and optional file/line info. 
+\begin{DoxyParams}{Parameters}
+{\em x} & Expression or string to print (will be converted to String). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_debug_8h_a8e30ff0704664fcb13dabf0c4dc5c8f5}\index{Debug.h@{Debug.h}!DEBUG\_PRINTLN@{DEBUG\_PRINTLN}}
+\index{DEBUG\_PRINTLN@{DEBUG\_PRINTLN}!Debug.h@{Debug.h}}
+\doxysubsubsection{\texorpdfstring{DEBUG\_PRINTLN}{DEBUG\_PRINTLN}}
+{\footnotesize\ttfamily \label{_debug_8h_a8e30ff0704664fcb13dabf0c4dc5c8f5} 
+\#define DEBUG\+\_\+\+PRINTLN(\begin{DoxyParamCaption}\item[{}]{x}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Serial.println((String)\ \textcolor{stringliteral}{"{}DEBUG:\ "{}}\ +\ x\ +\ MACRO\_LOCATION)}
+
+\end{DoxyCode}
+
+
+Print a debug message with newline. 
+
+Expands to Serial.\+println with "{}\+DEBUG\+: "{} prefix and optional file/line info. 
+\begin{DoxyParams}{Parameters}
+{\em x} & Expression or string to print (will be converted to String). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_debug_8h_af5ac1d6712be8931a015904d3e7b671a}\index{Debug.h@{Debug.h}!DEV\_ERROR\_PRINT@{DEV\_ERROR\_PRINT}}
+\index{DEV\_ERROR\_PRINT@{DEV\_ERROR\_PRINT}!Debug.h@{Debug.h}}
+\doxysubsubsection{\texorpdfstring{DEV\_ERROR\_PRINT}{DEV\_ERROR\_PRINT}}
+{\footnotesize\ttfamily \label{_debug_8h_af5ac1d6712be8931a015904d3e7b671a} 
+\#define DEV\+\_\+\+ERROR\+\_\+\+PRINT(\begin{DoxyParamCaption}\item[{}]{x}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Serial.print((String)\ \textcolor{stringliteral}{"{}DEV\_ERROR:\ "{}}\ +\ x\ +\ \ MACRO\_LOCATION)}
+
+\end{DoxyCode}
+
+
+Print a developer-\/error-\/level message without newline. 
+
+For development-\/only diagnostics. Expands to Serial.\+print with "{}\+DEV\+\_\+\+ERROR\+: "{} prefix and optional file/line info. 
+\begin{DoxyParams}{Parameters}
+{\em x} & Expression or string to print (will be converted to String). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_debug_8h_aeb03a131ff07c832ab6ad83b6e6a0744}\index{Debug.h@{Debug.h}!DEV\_ERROR\_PRINTLN@{DEV\_ERROR\_PRINTLN}}
+\index{DEV\_ERROR\_PRINTLN@{DEV\_ERROR\_PRINTLN}!Debug.h@{Debug.h}}
+\doxysubsubsection{\texorpdfstring{DEV\_ERROR\_PRINTLN}{DEV\_ERROR\_PRINTLN}}
+{\footnotesize\ttfamily \label{_debug_8h_aeb03a131ff07c832ab6ad83b6e6a0744} 
+\#define DEV\+\_\+\+ERROR\+\_\+\+PRINTLN(\begin{DoxyParamCaption}\item[{}]{x}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Serial.println((String)\ \textcolor{stringliteral}{"{}DEV\_ERROR:\ "{}}\ +\ x\ +\ \ MACRO\_LOCATION)}
+
+\end{DoxyCode}
+
+
+Print a developer-\/error-\/level message with newline. 
+
+For development-\/only diagnostics. Expands to Serial.\+println with "{}\+DEV\+\_\+\+ERROR\+: "{} prefix and optional file/line info. 
+\begin{DoxyParams}{Parameters}
+{\em x} & Expression or string to print (will be converted to String). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_debug_8h_aefd58cef04351b40871f9aa0c84a895a}\index{Debug.h@{Debug.h}!ERROR\_PRINT@{ERROR\_PRINT}}
+\index{ERROR\_PRINT@{ERROR\_PRINT}!Debug.h@{Debug.h}}
+\doxysubsubsection{\texorpdfstring{ERROR\_PRINT}{ERROR\_PRINT}}
+{\footnotesize\ttfamily \label{_debug_8h_aefd58cef04351b40871f9aa0c84a895a} 
+\#define ERROR\+\_\+\+PRINT(\begin{DoxyParamCaption}\item[{}]{x}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Serial.print((String)\ \textcolor{stringliteral}{"{}ERROR:\ "{}}\ +\ x\ +\ \ MACRO\_LOCATION)}
+
+\end{DoxyCode}
+
+
+Print an error-\/level message without newline. 
+
+Expands to Serial.\+print with "{}\+ERROR\+: "{} prefix and optional file/line info. 
+\begin{DoxyParams}{Parameters}
+{\em x} & Expression or string to print (will be converted to String). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_debug_8h_aab934c3f2345fdd7f8ca02ff2c332f60}\index{Debug.h@{Debug.h}!ERROR\_PRINTLN@{ERROR\_PRINTLN}}
+\index{ERROR\_PRINTLN@{ERROR\_PRINTLN}!Debug.h@{Debug.h}}
+\doxysubsubsection{\texorpdfstring{ERROR\_PRINTLN}{ERROR\_PRINTLN}}
+{\footnotesize\ttfamily \label{_debug_8h_aab934c3f2345fdd7f8ca02ff2c332f60} 
+\#define ERROR\+\_\+\+PRINTLN(\begin{DoxyParamCaption}\item[{}]{x}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Serial.println((String)\ \textcolor{stringliteral}{"{}ERROR:\ "{}}\ +\ x\ +\ \ MACRO\_LOCATION)}
+
+\end{DoxyCode}
+
+
+Print an error-\/level message with newline. 
+
+Expands to Serial.\+println with "{}\+ERROR\+: "{} prefix and optional file/line info. 
+\begin{DoxyParams}{Parameters}
+{\em x} & Expression or string to print (will be converted to String). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_debug_8h_ada3de6ba49d97903fbf36000cc99d55d}\index{Debug.h@{Debug.h}!INFO\_PRINT@{INFO\_PRINT}}
+\index{INFO\_PRINT@{INFO\_PRINT}!Debug.h@{Debug.h}}
+\doxysubsubsection{\texorpdfstring{INFO\_PRINT}{INFO\_PRINT}}
+{\footnotesize\ttfamily \label{_debug_8h_ada3de6ba49d97903fbf36000cc99d55d} 
+\#define INFO\+\_\+\+PRINT(\begin{DoxyParamCaption}\item[{}]{x}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Serial.print((String)\ \textcolor{stringliteral}{"{}INFO:\ "{}}\ +\ x\ +\ \ MACRO\_LOCATION)}
+
+\end{DoxyCode}
+
+
+Print an info-\/level message without newline. 
+
+Expands to Serial.\+print with "{}\+INFO\+: "{} prefix and optional file/line info. 
+\begin{DoxyParams}{Parameters}
+{\em x} & Expression or string to print (will be converted to String). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_debug_8h_a693063ba84ad2119e7f3ea1b97947055}\index{Debug.h@{Debug.h}!INFO\_PRINTLN@{INFO\_PRINTLN}}
+\index{INFO\_PRINTLN@{INFO\_PRINTLN}!Debug.h@{Debug.h}}
+\doxysubsubsection{\texorpdfstring{INFO\_PRINTLN}{INFO\_PRINTLN}}
+{\footnotesize\ttfamily \label{_debug_8h_a693063ba84ad2119e7f3ea1b97947055} 
+\#define INFO\+\_\+\+PRINTLN(\begin{DoxyParamCaption}\item[{}]{x}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Serial.println((String)\ \textcolor{stringliteral}{"{}INFO:\ "{}}\ +\ x\ +\ \ MACRO\_LOCATION)}
+
+\end{DoxyCode}
+
+
+Print an info-\/level message with newline. 
+
+Expands to Serial.\+println with "{}\+INFO\+: "{} prefix and optional file/line info. 
+\begin{DoxyParams}{Parameters}
+{\em x} & Expression or string to print (will be converted to String). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_debug_8h_ac55217e6814de7894a11b7e7cd54f708}\index{Debug.h@{Debug.h}!INSTRUCTION\_PRINT@{INSTRUCTION\_PRINT}}
+\index{INSTRUCTION\_PRINT@{INSTRUCTION\_PRINT}!Debug.h@{Debug.h}}
+\doxysubsubsection{\texorpdfstring{INSTRUCTION\_PRINT}{INSTRUCTION\_PRINT}}
+{\footnotesize\ttfamily \label{_debug_8h_ac55217e6814de7894a11b7e7cd54f708} 
+\#define INSTRUCTION\+\_\+\+PRINT(\begin{DoxyParamCaption}\item[{}]{x}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Serial.print((String)\ \textcolor{stringliteral}{"{}INSTRUCTION:\ "{}}\ +\ x\ +\ MACRO\_LOCATION)}
+
+\end{DoxyCode}
+
+
+Print a INSTRUCTION message without newline. 
+
+Expands to Serial.\+print with "{}\+INSTRUCTION\+: "{} prefix and optional file/line info. 
+\begin{DoxyParams}{Parameters}
+{\em x} & Expression or string to print (will be converted to String). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_debug_8h_a625610458d92e74e7a0eb4dbe1d78c79}\index{Debug.h@{Debug.h}!INSTRUCTION\_PRINTLN@{INSTRUCTION\_PRINTLN}}
+\index{INSTRUCTION\_PRINTLN@{INSTRUCTION\_PRINTLN}!Debug.h@{Debug.h}}
+\doxysubsubsection{\texorpdfstring{INSTRUCTION\_PRINTLN}{INSTRUCTION\_PRINTLN}}
+{\footnotesize\ttfamily \label{_debug_8h_a625610458d92e74e7a0eb4dbe1d78c79} 
+\#define INSTRUCTION\+\_\+\+PRINTLN(\begin{DoxyParamCaption}\item[{}]{x}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Serial.println((String)\ \textcolor{stringliteral}{"{}INSTRUCTION:\ "{}}\ +\ x\ +\ MACRO\_LOCATION)}
+
+\end{DoxyCode}
+
+
+Print a INSTRUCTION message without newline. 
+
+Expands to Serial.\+println with "{}\+INSTRUCTION\+: "{} prefix and optional file/line info. 
+\begin{DoxyParams}{Parameters}
+{\em x} & Expression or string to print (will be converted to String). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_debug_8h_af1bb2a2c18de0a487366724efb4f1b8c}\index{Debug.h@{Debug.h}!MEASUREMENT\_PRINT@{MEASUREMENT\_PRINT}}
+\index{MEASUREMENT\_PRINT@{MEASUREMENT\_PRINT}!Debug.h@{Debug.h}}
+\doxysubsubsection{\texorpdfstring{MEASUREMENT\_PRINT}{MEASUREMENT\_PRINT}}
+{\footnotesize\ttfamily \label{_debug_8h_af1bb2a2c18de0a487366724efb4f1b8c} 
+\#define MEASUREMENT\+\_\+\+PRINT(\begin{DoxyParamCaption}\item[{}]{x}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Serial.print((String)\ \textcolor{stringliteral}{"{}MEASUREMENT:\ "{}}\ +\ x\ +\ MACRO\_LOCATION)}
+
+\end{DoxyCode}
+
+
+Print a measurement message without newline. 
+
+Expands to Serial.\+print with "{}\+MEASUREMENT\+: "{} prefix and optional file/line info. 
+\begin{DoxyParams}{Parameters}
+{\em x} & Expression or string to print (will be converted to String). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_debug_8h_aee4ea675d26ff667e6641d91ccc5bf1a}\index{Debug.h@{Debug.h}!MEASUREMENT\_PRINTLN@{MEASUREMENT\_PRINTLN}}
+\index{MEASUREMENT\_PRINTLN@{MEASUREMENT\_PRINTLN}!Debug.h@{Debug.h}}
+\doxysubsubsection{\texorpdfstring{MEASUREMENT\_PRINTLN}{MEASUREMENT\_PRINTLN}}
+{\footnotesize\ttfamily \label{_debug_8h_aee4ea675d26ff667e6641d91ccc5bf1a} 
+\#define MEASUREMENT\+\_\+\+PRINTLN(\begin{DoxyParamCaption}\item[{}]{x}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Serial.println((String)\ \textcolor{stringliteral}{"{}MEASUREMENT:\ "{}}\ +\ x\ +\ MACRO\_LOCATION)}
+
+\end{DoxyCode}
+
+
+Print a measurement message with newline. 
+
+Expands to Serial.\+println with "{}\+MEASUREMENT\+: "{} prefix and optional file/line info. 
+\begin{DoxyParams}{Parameters}
+{\em x} & Expression or string to print (will be converted to String). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_debug_8h_a98e7c49c7900880470d265bce927fba1}\index{Debug.h@{Debug.h}!NULL\_PTR\_CHECK@{NULL\_PTR\_CHECK}}
+\index{NULL\_PTR\_CHECK@{NULL\_PTR\_CHECK}!Debug.h@{Debug.h}}
+\doxysubsubsection{\texorpdfstring{NULL\_PTR\_CHECK}{NULL\_PTR\_CHECK}}
+{\footnotesize\ttfamily \label{_debug_8h_a98e7c49c7900880470d265bce927fba1} 
+\#define NULL\+\_\+\+PTR\+\_\+\+CHECK(\begin{DoxyParamCaption}\item[{}]{ptr}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (ptr\ ==\ \textcolor{keyword}{nullptr})\ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ CRITICAL\_ERROR\_PRINTLN(\textcolor{stringliteral}{"{}Null\ pointer\ exception:\ "{}}\ +\ \#ptr);\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+Check a pointer for null and report a critical error if null. 
+
+Evaluates the provided pointer expression and if it is nullptr, prints a critical error with the pointer name and halts execution. 
+\begin{DoxyParams}{Parameters}
+{\em ptr} & Pointer expression to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+This macro does not return on failure; execution halts in an infinite loop after reporting the error. 
+\end{DoxyReturn}
+\Hypertarget{_debug_8h_af25901a0f15375b04a19c6089aba7abe}\index{Debug.h@{Debug.h}!WARNING\_PRINT@{WARNING\_PRINT}}
+\index{WARNING\_PRINT@{WARNING\_PRINT}!Debug.h@{Debug.h}}
+\doxysubsubsection{\texorpdfstring{WARNING\_PRINT}{WARNING\_PRINT}}
+{\footnotesize\ttfamily \label{_debug_8h_af25901a0f15375b04a19c6089aba7abe} 
+\#define WARNING\+\_\+\+PRINT(\begin{DoxyParamCaption}\item[{}]{x}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Serial.print((String)\ \textcolor{stringliteral}{"{}WARNING:\ "{}}\ +\ x\ +\ \ MACRO\_LOCATION)}
+
+\end{DoxyCode}
+
+
+Print a warning-\/level message without newline. 
+
+Expands to Serial.\+print with "{}\+WARNING\+: "{} prefix and optional file/line info. 
+\begin{DoxyParams}{Parameters}
+{\em x} & Expression or string to print (will be converted to String). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_debug_8h_a2ab63874bfdcb0637ccb2dff37bdb8af}\index{Debug.h@{Debug.h}!WARNING\_PRINTLN@{WARNING\_PRINTLN}}
+\index{WARNING\_PRINTLN@{WARNING\_PRINTLN}!Debug.h@{Debug.h}}
+\doxysubsubsection{\texorpdfstring{WARNING\_PRINTLN}{WARNING\_PRINTLN}}
+{\footnotesize\ttfamily \label{_debug_8h_a2ab63874bfdcb0637ccb2dff37bdb8af} 
+\#define WARNING\+\_\+\+PRINTLN(\begin{DoxyParamCaption}\item[{}]{x}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Serial.println((String)\ \textcolor{stringliteral}{"{}WARNING:\ "{}}\ +\ x\ +\ \ MACRO\_LOCATION)}
+
+\end{DoxyCode}
+
+
+Print a warning-\/level message with newline. 
+
+Expands to Serial.\+println with "{}\+WARNING\+: "{} prefix and optional file/line info. 
+\begin{DoxyParams}{Parameters}
+{\em x} & Expression or string to print (will be converted to String). \\
+\hline
+\end{DoxyParams}

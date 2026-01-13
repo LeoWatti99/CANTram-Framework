@@ -1,0 +1,428 @@
+\doxysection{Analog\+Module\+V1\+\_\+0 Class Reference}
+\hypertarget{class_analog_module_v1__0}{}\label{class_analog_module_v1__0}\index{AnalogModuleV1\_0@{AnalogModuleV1\_0}}
+
+
+Inheritance diagram for Analog\+Module\+V1\+\_\+0\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{d3/d36/class_analog_module_v1__0__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Analog\+Module\+V1\+\_\+0\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{d0/dc4/class_analog_module_v1__0__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{class_analog_module_v1__0_a51a372016b5d240a79d49e6853bd8518}{get\+HWType}} () const override
+\begin{DoxyCompactList}\small\item\em Get the hardware type string. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_analog_module_v1__0_a7b4e1ca68f8d9f31965655a7d469592c}{get\+HWVersion}} () const override
+\begin{DoxyCompactList}\small\item\em Get the hardware version string. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_analog_module_v1__0_aa4c1e1889578720bc95599c563397114}{get\+FWVersion}} () const override
+\begin{DoxyCompactList}\small\item\em Get the firmware version string. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{class_analog_module_v1__0_ab34d1eaa309b1b2e37851d66287f43d6}{get\+GPIODemand}} () const override
+\begin{DoxyCompactList}\small\item\em Get the GPIO demand of the module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{class_analog_module_v1__0_a8f3dcb7de360ffab0709a04a9657f682}{get\+GPIOSupply}} () const override
+\begin{DoxyCompactList}\small\item\em Get the GPIO supply capacity of the module. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_analog_module_v1__0_a0d48d770904f90501dfa2bef16270d8c}{attach\+Module}} (uint8\+\_\+t slot, uint8\+\_\+t gpio\+Start) override
+\begin{DoxyCompactList}\small\item\em Attach module to a slot and set GPIO start. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_analog_module_v1__0_a214392a00aecdb232ff0cf0c12271d7c}{provide\+GPIOs}} () override
+\begin{DoxyCompactList}\small\item\em Provide GPIO definitions to the core. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_analog_module_v1__0_ad075b7cce67bb33101d4c831a8125ef3}{request\+GPIOs}} () override
+\begin{DoxyCompactList}\small\item\em Request and configure GPIOs used by the module. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_analog_module_v1__0_a094a3fac21a9835d501d965dc6c3f4bf}{provide\+Hardware\+Resources}} () override
+\begin{DoxyCompactList}\small\item\em Provide hardware resources to the core. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_analog_module_v1__0_ac7d18b81c9980020734c35b7987219b6}{request\+Hardware\+Resources}} () override
+\begin{DoxyCompactList}\small\item\em Request hardware resources required by the module. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_analog_module_v1__0_ae288aa8255de5ca8b8a08ef1c18b44b2}{add\+Interfaces}} () override
+\begin{DoxyCompactList}\small\item\em Add interface objects to the module\textquotesingle{}s interface list. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_analog_module_v1__0_ad93b42ec5c2d12a57aece35289506add}{initialize}} () override
+\begin{DoxyCompactList}\small\item\em Initialize the analog module and external ADC chip interface. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_analog_module_v1__0_adf25f90bf6a38cfe20c6ac8984cf36fa}{cycle}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}response) override
+\begin{DoxyCompactList}\small\item\em Periodic cycle handler called by the core. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_analog_module_v1__0_af605e705430ba08785ac8dfd68e5efa7}{reset}} () override
+\begin{DoxyCompactList}\small\item\em Reset the module and its interfaces. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_interface}{Interface}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_analog_module_v1__0_a25653fb8e041079aeec6c8be87cc077a}{get\+Interfaces}} () override
+\begin{DoxyCompactList}\small\item\em Get pointer to module\textquotesingle{}s interface array. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_analog_module_v1__0_a27c2aef9374563ee7a5130443233d333}{get\+Interface\+Count}} () override
+\begin{DoxyCompactList}\small\item\em Get number of interfaces provided by the module. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_c_a_n_tram_module}{CANTram\+Module}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_a_n_tram_module_ae1c9554adb901b7e798a44d521781c0b}{CANTram\+Module}} ()=default
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_c_a_n_tram_module_a8f93d67f0d5b49b7864369196cb323e6}{\texorpdfstring{$\sim$}{\string~}\+CANTram\+Module}} ()=default
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{class_c_a_n_tram_module_a80b400128bb6f0841953bb7a75cbf99c}{get\+Slot}} () const
+\begin{DoxyCompactList}\small\item\em Get assigned slot index. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{class_c_a_n_tram_module_a7905817e8fee9e8bccfc9bbe70ae5669}{get\+GPIOStart}} () const
+\begin{DoxyCompactList}\small\item\em Get starting GPIO index assigned to the module. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_c_a_n_tram_module_a329b502ade3a32987994381c93ddbd0b}{pre\+Initialize}} ()
+\begin{DoxyCompactList}\small\item\em Pre-\/initialize the module after attachment and provisioning. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_analog_module_v1__0_aa05405738ab5788a8d4a17913680916f}\label{class_analog_module_v1__0_aa05405738ab5788a8d4a17913680916f} 
+static const String {\bfseries HW\+\_\+\+TYPE} = "{}Analog\+Module\+V1.\+0"{}
+\item 
+\Hypertarget{class_analog_module_v1__0_a8250bc68c428c774d1e40fed52f37d2b}\label{class_analog_module_v1__0_a8250bc68c428c774d1e40fed52f37d2b} 
+static const String {\bfseries HW\+\_\+\+VERSION} = "{}1.\+0"{}
+\item 
+\Hypertarget{class_analog_module_v1__0_a35bfe0c844c6736abc96b237c0d18aee}\label{class_analog_module_v1__0_a35bfe0c844c6736abc96b237c0d18aee} 
+static const String {\bfseries FW\+\_\+\+VERSION} = "{}1.\+0"{}
+\item 
+\Hypertarget{class_analog_module_v1__0_aa14aba2470deb518f86f442577aede55}\label{class_analog_module_v1__0_aa14aba2470deb518f86f442577aede55} 
+static constexpr uint8\+\_\+t {\bfseries GPIO\+\_\+\+DEMAND} = 5
+\item 
+\Hypertarget{class_analog_module_v1__0_a8cfebe271fa5429a8fd9e029e859a071}\label{class_analog_module_v1__0_a8cfebe271fa5429a8fd9e029e859a071} 
+static constexpr uint8\+\_\+t {\bfseries GPIO\+\_\+\+SUPPLY} = 0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_c_a_n_tram_module}{CANTram\+Module}}}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t {\bfseries SLOT} = 0
+\item 
+uint8\+\_\+t {\bfseries GPIO\+\_\+\+START} = 0
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_analog_module_v1__0_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_analog_module_v1__0_ae288aa8255de5ca8b8a08ef1c18b44b2}\index{AnalogModuleV1\_0@{AnalogModuleV1\_0}!addInterfaces@{addInterfaces}}
+\index{addInterfaces@{addInterfaces}!AnalogModuleV1\_0@{AnalogModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{addInterfaces()}{addInterfaces()}}
+{\footnotesize\ttfamily \label{class_analog_module_v1__0_ae288aa8255de5ca8b8a08ef1c18b44b2} 
+bool Analog\+Module\+V1\+\_\+0\+::add\+Interfaces (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Add interface objects to the module\textquotesingle{}s interface list. 
+
+Constructs and names analog input and output interface objects and places pointers into the module interface array. Input interfaces are validated only if a valid CS output definition exists. \begin{DoxyReturn}{Returns}
+true if interfaces were added and validated where possible, false if any required interface validation failed. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_a14b79b625e82a3f11ebbb8271b6466b7}{CANTram\+Module}}.
+
+\Hypertarget{class_analog_module_v1__0_a0d48d770904f90501dfa2bef16270d8c}\index{AnalogModuleV1\_0@{AnalogModuleV1\_0}!attachModule@{attachModule}}
+\index{attachModule@{attachModule}!AnalogModuleV1\_0@{AnalogModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{attachModule()}{attachModule()}}
+{\footnotesize\ttfamily \label{class_analog_module_v1__0_a0d48d770904f90501dfa2bef16270d8c} 
+bool Analog\+Module\+V1\+\_\+0\+::attach\+Module (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{slot}{, }\item[{uint8\+\_\+t}]{gpio\+Start}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Attach module to a slot and set GPIO start. 
+
+Calls base class attach to register slot and gpio start. Module-\/specific initialization is minimal here. 
+\begin{DoxyParams}{Parameters}
+{\em slot} & Module slot index. \\
+\hline
+{\em gpio\+Start} & Starting GPIO index assigned to this module. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if base attach succeeded, false otherwise. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_a_n_tram_module_a67cab1c238257e6d9b88afc4f644e477}{CANTram\+Module}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/d06/class_analog_module_v1__0_a0d48d770904f90501dfa2bef16270d8c_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_analog_module_v1__0_adf25f90bf6a38cfe20c6ac8984cf36fa}\index{AnalogModuleV1\_0@{AnalogModuleV1\_0}!cycle@{cycle}}
+\index{cycle@{cycle}!AnalogModuleV1\_0@{AnalogModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{cycle()}{cycle()}}
+{\footnotesize\ttfamily \label{class_analog_module_v1__0_adf25f90bf6a38cfe20c6ac8984cf36fa} 
+void Analog\+Module\+V1\+\_\+0\+::cycle (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{response}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Periodic cycle handler called by the core. 
+
+Performs a burst read from the external ADC chip, logs and validates the status, updates analog input interface values, and propagates PWM output values to the PWM providers for validated outputs. 
+\begin{DoxyParams}{Parameters}
+{\em response} & Optional pointer to a response buffer where the module can write response bytes; may be nullptr if unused. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_a_n_tram_module_a1be4a73e5fc8e14edad90741593d2d29}{CANTram\+Module}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/d06/class_analog_module_v1__0_adf25f90bf6a38cfe20c6ac8984cf36fa_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_analog_module_v1__0_aa4c1e1889578720bc95599c563397114}\index{AnalogModuleV1\_0@{AnalogModuleV1\_0}!getFWVersion@{getFWVersion}}
+\index{getFWVersion@{getFWVersion}!AnalogModuleV1\_0@{AnalogModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{getFWVersion()}{getFWVersion()}}
+{\footnotesize\ttfamily \label{class_analog_module_v1__0_aa4c1e1889578720bc95599c563397114} 
+String Analog\+Module\+V1\+\_\+0\+::get\+FWVersion (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the firmware version string. 
+
+Returns the firmware version string implemented by the module. \begin{DoxyReturn}{Returns}
+String Firmware version (e.\+g. "{}1.\+0"{}). 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_acf8e6722dc924b1bf4d5289f3684fd29}{CANTram\+Module}}.
+
+\Hypertarget{class_analog_module_v1__0_ab34d1eaa309b1b2e37851d66287f43d6}\index{AnalogModuleV1\_0@{AnalogModuleV1\_0}!getGPIODemand@{getGPIODemand}}
+\index{getGPIODemand@{getGPIODemand}!AnalogModuleV1\_0@{AnalogModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{getGPIODemand()}{getGPIODemand()}}
+{\footnotesize\ttfamily \label{class_analog_module_v1__0_ab34d1eaa309b1b2e37851d66287f43d6} 
+uint8\+\_\+t Analog\+Module\+V1\+\_\+0\+::get\+GPIODemand (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the GPIO demand of the module. 
+
+Returns how many GPIOs this module requires from the core. \begin{DoxyReturn}{Returns}
+uint8\+\_\+t Number of GPIOs demanded by the module. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_afa6df5b58f7681a8a316b3910f987cce}{CANTram\+Module}}.
+
+\Hypertarget{class_analog_module_v1__0_a8f3dcb7de360ffab0709a04a9657f682}\index{AnalogModuleV1\_0@{AnalogModuleV1\_0}!getGPIOSupply@{getGPIOSupply}}
+\index{getGPIOSupply@{getGPIOSupply}!AnalogModuleV1\_0@{AnalogModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{getGPIOSupply()}{getGPIOSupply()}}
+{\footnotesize\ttfamily \label{class_analog_module_v1__0_a8f3dcb7de360ffab0709a04a9657f682} 
+uint8\+\_\+t Analog\+Module\+V1\+\_\+0\+::get\+GPIOSupply (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the GPIO supply capacity of the module. 
+
+Returns how many GPIOs this module provides/supplies to the system. \begin{DoxyReturn}{Returns}
+uint8\+\_\+t Number of GPIOs supplied by the module. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_ae7247503120b76151cc2086dc4250911}{CANTram\+Module}}.
+
+\Hypertarget{class_analog_module_v1__0_a51a372016b5d240a79d49e6853bd8518}\index{AnalogModuleV1\_0@{AnalogModuleV1\_0}!getHWType@{getHWType}}
+\index{getHWType@{getHWType}!AnalogModuleV1\_0@{AnalogModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{getHWType()}{getHWType()}}
+{\footnotesize\ttfamily \label{class_analog_module_v1__0_a51a372016b5d240a79d49e6853bd8518} 
+String Analog\+Module\+V1\+\_\+0\+::get\+HWType (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the hardware type string. 
+
+Returns a human readable hardware type identifier for the concrete module implementation. \begin{DoxyReturn}{Returns}
+String Hardware type identifier (e.\+g. "{}\+Main\+Module\+V1.\+0"{}). 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_a3edca0142c5fa8a0d91a549f8371b460}{CANTram\+Module}}.
+
+\Hypertarget{class_analog_module_v1__0_a7b4e1ca68f8d9f31965655a7d469592c}\index{AnalogModuleV1\_0@{AnalogModuleV1\_0}!getHWVersion@{getHWVersion}}
+\index{getHWVersion@{getHWVersion}!AnalogModuleV1\_0@{AnalogModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{getHWVersion()}{getHWVersion()}}
+{\footnotesize\ttfamily \label{class_analog_module_v1__0_a7b4e1ca68f8d9f31965655a7d469592c} 
+String Analog\+Module\+V1\+\_\+0\+::get\+HWVersion (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the hardware version string. 
+
+Returns the hardware revision/version string for the module. \begin{DoxyReturn}{Returns}
+String Hardware version (e.\+g. "{}1.\+0"{}). 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_a5d9287df902bd2f9ec32b4317f95fff6}{CANTram\+Module}}.
+
+\Hypertarget{class_analog_module_v1__0_a27c2aef9374563ee7a5130443233d333}\index{AnalogModuleV1\_0@{AnalogModuleV1\_0}!getInterfaceCount@{getInterfaceCount}}
+\index{getInterfaceCount@{getInterfaceCount}!AnalogModuleV1\_0@{AnalogModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{getInterfaceCount()}{getInterfaceCount()}}
+{\footnotesize\ttfamily \label{class_analog_module_v1__0_a27c2aef9374563ee7a5130443233d333} 
+size\+\_\+t Analog\+Module\+V1\+\_\+0\+::get\+Interface\+Count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get number of interfaces provided by the module. 
+
+Return the number of entries in the interfaces array returned by \doxylink{class_analog_module_v1__0_a25653fb8e041079aeec6c8be87cc077a}{get\+Interfaces()}. \begin{DoxyReturn}{Returns}
+size\+\_\+t Number of interface pointers. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_a68c703147d8b495e324febcaccd49dea}{CANTram\+Module}}.
+
+\Hypertarget{class_analog_module_v1__0_a25653fb8e041079aeec6c8be87cc077a}\index{AnalogModuleV1\_0@{AnalogModuleV1\_0}!getInterfaces@{getInterfaces}}
+\index{getInterfaces@{getInterfaces}!AnalogModuleV1\_0@{AnalogModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{getInterfaces()}{getInterfaces()}}
+{\footnotesize\ttfamily \label{class_analog_module_v1__0_a25653fb8e041079aeec6c8be87cc077a} 
+\mbox{\hyperlink{class_interface}{Interface}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} Analog\+Module\+V1\+\_\+0\+::get\+Interfaces (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get pointer to module\textquotesingle{}s interface array. 
+
+Returns a pointer to the internal Interface\texorpdfstring{$\ast$}{*} array used by the core to enumerate interfaces. \begin{DoxyReturn}{Returns}
+Interface\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} Pointer to the first element of the module\textquotesingle{}s interfaces array. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_a09c919fc31111badfec18faf64c729f4}{CANTram\+Module}}.
+
+\Hypertarget{class_analog_module_v1__0_ad93b42ec5c2d12a57aece35289506add}\index{AnalogModuleV1\_0@{AnalogModuleV1\_0}!initialize@{initialize}}
+\index{initialize@{initialize}!AnalogModuleV1\_0@{AnalogModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily \label{class_analog_module_v1__0_ad93b42ec5c2d12a57aece35289506add} 
+bool Analog\+Module\+V1\+\_\+0\+::initialize (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Initialize the analog module and external ADC chip interface. 
+
+Activates external chip-\/select management on the input driver, installs a CS control callback that uses the module\textquotesingle{}s CS output provider, and starts the input driver. Logs an error if initialization fails. \begin{DoxyReturn}{Returns}
+true if initialization succeeded, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_a6930dfb86a2e06ab9a9b299520830fb7}{CANTram\+Module}}.
+
+\Hypertarget{class_analog_module_v1__0_a214392a00aecdb232ff0cf0c12271d7c}\index{AnalogModuleV1\_0@{AnalogModuleV1\_0}!provideGPIOs@{provideGPIOs}}
+\index{provideGPIOs@{provideGPIOs}!AnalogModuleV1\_0@{AnalogModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{provideGPIOs()}{provideGPIOs()}}
+{\footnotesize\ttfamily \label{class_analog_module_v1__0_a214392a00aecdb232ff0cf0c12271d7c} 
+bool Analog\+Module\+V1\+\_\+0\+::provide\+GPIOs (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Provide GPIO definitions to the core. 
+
+This module does not add additional GPIO definitions beyond those provided elsewhere, so this function currently returns true and acts as a placeholder for future additions. \begin{DoxyReturn}{Returns}
+true on success. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_abaad4d92c02fc8bb525a57d8ac06db7e}{CANTram\+Module}}.
+
+\Hypertarget{class_analog_module_v1__0_a094a3fac21a9835d501d965dc6c3f4bf}\index{AnalogModuleV1\_0@{AnalogModuleV1\_0}!provideHardwareResources@{provideHardwareResources}}
+\index{provideHardwareResources@{provideHardwareResources}!AnalogModuleV1\_0@{AnalogModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{provideHardwareResources()}{provideHardwareResources()}}
+{\footnotesize\ttfamily \label{class_analog_module_v1__0_a094a3fac21a9835d501d965dc6c3f4bf} 
+bool Analog\+Module\+V1\+\_\+0\+::provide\+Hardware\+Resources (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Provide hardware resources to the core. 
+
+Currently this module does not attach additional hardware resources (e.\+g., cores) to \doxylink{class_c_a_n_tram_core}{CANTram\+Core}. \begin{DoxyReturn}{Returns}
+true on success. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_aa509ae950722ebd48383c124ec6a63ec}{CANTram\+Module}}.
+
+\Hypertarget{class_analog_module_v1__0_ad075b7cce67bb33101d4c831a8125ef3}\index{AnalogModuleV1\_0@{AnalogModuleV1\_0}!requestGPIOs@{requestGPIOs}}
+\index{requestGPIOs@{requestGPIOs}!AnalogModuleV1\_0@{AnalogModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{requestGPIOs()}{requestGPIOs()}}
+{\footnotesize\ttfamily \label{class_analog_module_v1__0_ad075b7cce67bb33101d4c831a8125ef3} 
+bool Analog\+Module\+V1\+\_\+0\+::request\+GPIOs (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Request and configure GPIOs used by the module. 
+
+Retrieves the chip-\/select output definition and PWM output definitions from \doxylink{class_c_a_n_tram_core}{CANTram\+Core}. Configures the CS pin as an output and sets its initial state high to deselect the external ADC chip. \begin{DoxyReturn}{Returns}
+true if all required GPIOs were obtained/configured, false if any were missing or misconfigured. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_a7f2c1c05cafb19676aed58c11219d0f5}{CANTram\+Module}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/d06/class_analog_module_v1__0_ad075b7cce67bb33101d4c831a8125ef3_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_analog_module_v1__0_ac7d18b81c9980020734c35b7987219b6}\index{AnalogModuleV1\_0@{AnalogModuleV1\_0}!requestHardwareResources@{requestHardwareResources}}
+\index{requestHardwareResources@{requestHardwareResources}!AnalogModuleV1\_0@{AnalogModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{requestHardwareResources()}{requestHardwareResources()}}
+{\footnotesize\ttfamily \label{class_analog_module_v1__0_ac7d18b81c9980020734c35b7987219b6} 
+bool Analog\+Module\+V1\+\_\+0\+::request\+Hardware\+Resources (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Request hardware resources required by the module. 
+
+Registers analog output interfaces and requests PWM channels from the PWM provider for each output. Validates interfaces when registration succeeds. \begin{DoxyReturn}{Returns}
+true if all requested hardware resources were successfully acquired and interfaces validated, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_a88dd0ab2213df828b576d337e38c1ac8}{CANTram\+Module}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/d06/class_analog_module_v1__0_ac7d18b81c9980020734c35b7987219b6_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_analog_module_v1__0_af605e705430ba08785ac8dfd68e5efa7}\index{AnalogModuleV1\_0@{AnalogModuleV1\_0}!reset@{reset}}
+\index{reset@{reset}!AnalogModuleV1\_0@{AnalogModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \label{class_analog_module_v1__0_af605e705430ba08785ac8dfd68e5efa7} 
+bool Analog\+Module\+V1\+\_\+0\+::reset (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reset the module and its interfaces. 
+
+Calls base reset, attempts to reset the external input chip, and clears interface values to zero. \begin{DoxyReturn}{Returns}
+true if reset operations succeeded, false if any reset failed. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_a_n_tram_module_a496814b4e5fa5f162c48f17ec33d4475}{CANTram\+Module}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/d06/class_analog_module_v1__0_af605e705430ba08785ac8dfd68e5efa7_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/leowa/\+Documents/\+Platform\+IO/\+Projects/\+CANTram\+Framework\+Usage/lib/\+CANTram\+Framework/include/Analog\+Module\+V1\+\_\+0.\+h\item 
+C\+:/\+Users/leowa/\+Documents/\+Platform\+IO/\+Projects/\+CANTram\+Framework\+Usage/lib/\+CANTram\+Framework/src/modules/Analog\+Module\+V1\+\_\+0.\+cpp\end{DoxyCompactItemize}

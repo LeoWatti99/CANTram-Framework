@@ -1,0 +1,67 @@
+\doxysection{SPIChip.\+h}
+\hypertarget{_s_p_i_chip_8h_source}{}\label{_s_p_i_chip_8h_source}\index{C:/Users/leowa/Documents/PlatformIO/Projects/CANTramFrameworkUsage/lib/CANTramFramework/include/SPIChip.h@{C:/Users/leowa/Documents/PlatformIO/Projects/CANTramFrameworkUsage/lib/CANTramFramework/include/SPIChip.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ SPICHIP\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ SPICHIP\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_debug_8h}{Debug.h}}"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{comment}{/*\ Base\ class\ for\ SPI\ devices\ in\ CANTram\ Controller.\ This\ class\ makes\ it\ possible\ to\ use\ external\ chip\ select\ since\ the\ SPI\ device\ may\ be\ selected\ via\ a\ shift\ register.*/}}
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }SPIChip\ \{}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ activateExternalChipSelect()\ \{}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \ \ \ \ useExternalChipSelect\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setCSControlCallback(std::function<\textcolor{keywordtype}{void}(\textcolor{keywordtype}{bool})>\ callback)\ \{}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \ \ \ \ csControl\ =\ callback;}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \ \ \ \ useExternalChipSelect\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setCSPin(\textcolor{keywordtype}{int}\ csPin)\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \ \ \ useExternalChipSelect\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ \_csPin\ =\ csPin;}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ pinMode(\_csPin,\ OUTPUT);}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ digitalWrite(\_csPin,\ HIGH);\ \textcolor{comment}{//\ Set\ CS\ high\ to\ deselect\ the\ device}}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \_csPin;}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ useExternalChipSelect\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ SPIChip()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ SPIChip(uint8\_t\ csPin)\ :\ \_csPin(csPin)\ \{}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ useExternalChipSelect\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ pinMode(\_csPin,\ OUTPUT);}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ digitalWrite(\_csPin,\ HIGH);\ \textcolor{comment}{//\ Set\ CS\ high\ to\ deselect\ the\ device}}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ std::function<void(\textcolor{keywordtype}{bool})>\ csControl\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ selectChip()\ \{}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_debug_8h_a6d7fbffe38d5c736fd08a08c3632ecef}{CHIP\_PRINTLN}}(\textcolor{stringliteral}{"{}[SPIChip]\ Select\ chip"{}});}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(!SPIChip::useExternalChipSelect)\{}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_debug_8h_a6d7fbffe38d5c736fd08a08c3632ecef}{CHIP\_PRINTLN}}(\textcolor{stringliteral}{"{}[SPIChip]\ Using\ internal\ chip\ select"{}});}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ digitalWrite(\_csPin,\ LOW);\ \textcolor{comment}{//\ Set\ CS\ low}}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_debug_8h_a6d7fbffe38d5c736fd08a08c3632ecef}{CHIP\_PRINTLN}}(\textcolor{stringliteral}{"{}[SPIChip]\ Using\ external\ chip\ select"{}});}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ SPIChip::csControl(LOW);}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ deselectChip()\ \{}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_debug_8h_a6d7fbffe38d5c736fd08a08c3632ecef}{CHIP\_PRINTLN}}(\textcolor{stringliteral}{"{}[SPIChip]\ Deselect\ chip"{}});}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(!SPIChip::useExternalChipSelect)\{}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_debug_8h_a6d7fbffe38d5c736fd08a08c3632ecef}{CHIP\_PRINTLN}}(\textcolor{stringliteral}{"{}[SPIChip]\ Using\ internal\ chip\ select"{}});}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ digitalWrite(\_csPin,\ HIGH);\ \textcolor{comment}{//\ Set\ CS\ high}}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_debug_8h_a6d7fbffe38d5c736fd08a08c3632ecef}{CHIP\_PRINTLN}}(\textcolor{stringliteral}{"{}[SPIChip]\ Using\ external\ chip\ select"{}});}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ SPIChip::csControl(HIGH);}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00060\ \};}
+\DoxyCodeLine{00061\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

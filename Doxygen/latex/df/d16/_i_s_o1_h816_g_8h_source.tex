@@ -1,0 +1,59 @@
+\doxysection{ISO1\+H816\+G.\+h}
+\hypertarget{_i_s_o1_h816_g_8h_source}{}\label{_i_s_o1_h816_g_8h_source}\index{C:/Users/leowa/Documents/PlatformIO/Projects/CANTramFrameworkUsage/lib/CANTramFramework/include/ISO1H816G.h@{C:/Users/leowa/Documents/PlatformIO/Projects/CANTramFrameworkUsage/lib/CANTramFramework/include/ISO1H816G.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ ISO1H816G\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ ISO1H816G\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <Arduino.h>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <SPI.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}SPIChip.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_debug_8h}{Debug.h}}"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }ISO1H816G\ :\ \textcolor{keyword}{public}\ SPIChip\ }
+\DoxyCodeLine{00009\ \{}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{enum}\ ERROR\_CODES\{}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ STATUS\_OK\ =\ 0,}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ NOT\_INITIALIZED\ =\ 5,}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ INVALID\_CHANNEL\ =\ 10,}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ SPI\_FAULT\ =\ 20,}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ DISABLE\_PIN\_NOT\_SET\ =\ 30,}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ DIAG\_PIN\_NOT\_SET\ =\ 40}
+\DoxyCodeLine{00018\ \ \ \ \ \};}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ ISO1H816G()=\textcolor{keywordflow}{default};}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ ISO1H816G(uint8\_t\ csPin,\ uint8\_t\ disPin,\ uint8\_t\ diagPin);}
+\DoxyCodeLine{00021\ \ \ \ \ }
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ uint8\_t\ begin();}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ uint8\_t\ enable();}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ disable();}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ isEnabled()\ \{\textcolor{keywordflow}{return}\ \_enabled;\ \}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ uint8\_t\ setOutputs(uint8\_t\ outputs);}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ uint8\_t\ setOutput(uint8\_t\ output,\ \textcolor{keywordtype}{bool}\ state);}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ uint8\_t\ getOutputs()\ \{\ \textcolor{keywordflow}{return}\ \_outputs;\ \}}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ getOutput(uint8\_t\ output)\ \{\ \textcolor{keywordflow}{return}\ (\_outputs\ \&\ (1\ <<\ output))\ !=\ 0;\ \}}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setSPISettings(uint32\_t\ speed,\ uint8\_t\ bitOrder,\ uint8\_t\ dataMode)\ \{\ \_spiSettings\ =\ SPISettings(speed,\ bitOrder,\ dataMode);\ \}}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ OnFault(\textcolor{keywordtype}{void}\ (*callback)(\textcolor{keywordtype}{void}));}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setPins(uint8\_t\ csPin,\ uint8\_t\ disPin=-\/1,\ uint8\_t\ diagPin=-\/1);}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ uint8\_t\ \_outputs;\ \textcolor{comment}{//\ Outputs}}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ uint8\_t\ \_disPin;}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ uint8\_t\ \_diagPin;}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ uint8\_t\ \_enabled;}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ uint8\_t\ \_initialized;}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ uint8\_t\ \_fault;}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ SPISettings\ \_spiSettings\ =\ SPISettings(1000000,\ MSBFIRST,\ SPI\_MODE3);}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ useDisable;}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ useDiag;}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00052\ \};}
+\DoxyCodeLine{00053\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

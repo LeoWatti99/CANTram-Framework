@@ -1,0 +1,55 @@
+\doxysection{ESP32\+PWMCore.\+h}
+\hypertarget{_e_s_p32_p_w_m_core_8h_source}{}\label{_e_s_p32_p_w_m_core_8h_source}\index{C:/Users/leowa/Documents/PlatformIO/Projects/CANTramFrameworkUsage/lib/CANTramFramework/include/ESP32PWMCore.h@{C:/Users/leowa/Documents/PlatformIO/Projects/CANTramFrameworkUsage/lib/CANTramFramework/include/ESP32PWMCore.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ ESP32PWMCORE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ ESP32PWMCORE\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <driver/ledc.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_p_w_m_core_8h}{PWMCore.h}}>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_output_definition_8h}{OutputDefinition.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_debug_8h}{Debug.h}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_e_s_p32_p_w_m_core}{ESP32PWMCore}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_p_w_m_core_adf80491c0bcb78e790102703a7f45e2b}{PWMCore}}\ \{}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_e_s_p32_p_w_m_core_adb2ff5f5f836bf15913d129c639426dd}{reset}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_e_s_p32_p_w_m_core_a0f842f0b6d66e76ebcf186334ba04330}{begin}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_e_s_p32_p_w_m_core_aa519c3a55207f3d0122a2c0e63ffaf5d}{addChannel}}(\mbox{\hyperlink{class_output_definition}{OutputDefinition}}*\ def)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setFrequency(uint32\_t\ freqHz)\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \ \ \ \ \_PWMTimerConfig.freq\_hz\ =\ freqHz;}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setResolution(ledc\_timer\_bit\_t\ resolution)\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \ \ \ \ \_PWMTimerConfig.duty\_resolution\ =\ resolution;}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ overrideTimer(ledc\_timer\_t\ timer)\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ \_PWMTimerConfig.timer\_num\ =\ timer;}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ overrideSpeedMode(ledc\_mode\_t\ mode)\ \{}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ \_PWMTimerConfig.speed\_mode\ =\ mode;}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_e_s_p32_p_w_m_core_a712e8e5de0a00e0625c277bf4a1f5b4a}{setDuty}}(\mbox{\hyperlink{class_output_definition}{OutputDefinition}}*\ def,\ uint16\_t\ duty)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ uint8\_t\ MAX\_CHANNELS\ =\ 8;}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ ledc\_timer\_config\_t\ \_PWMTimerConfig\{}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ .speed\_mode\ \ \ \ \ \ \ =\ LEDC\_HIGH\_SPEED\_MODE,}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ .duty\_resolution\ \ =\ LEDC\_TIMER\_12\_BIT,\ \textcolor{comment}{//\ Set\ duty\ resolution\ to\ 12\ bits}}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ .timer\_num\ \ \ \ \ \ \ \ =\ LEDC\_TIMER\_0,\ \ \ \ \ \textcolor{comment}{//\ Use\ timer\ 0}}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ .freq\_hz\ \ \ \ \ \ \ \ \ \ =\ 5000,\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Set\ frequency\ to\ 5\ kHz}}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ .clk\_cfg\ \ \ \ \ \ \ \ \ \ =\ LEDC\_AUTO\_CLK\ \ \ \ \ \ \textcolor{comment}{//\ Auto\ select\ the\ source\ clock}}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ uint8\_t\ \_ledcChannelCount;}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ ledc\_channel\_t\ \_ledcChannels[8];\ \textcolor{comment}{//\ Array\ to\ hold\ channel\ numbers}}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{int}\ MAX\_GPIO\ =\ 40;\ \textcolor{comment}{//\ ESP32\ has\ up\ to\ 39\ GPIOs}}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ int8\_t\ \_channelLUT[MAX\_GPIO];\ \textcolor{comment}{//\ checks\ to\ which\ channel\ a\ pin\ is\ assigned}}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ uint8\_t\ \mbox{\hyperlink{class_e_s_p32_p_w_m_core_a15e540c8230375afdf62ba4175712aa6}{getMaxUsages}}()\textcolor{keyword}{\ override\ }\{\ \textcolor{keywordflow}{return}\ 8;\ \}\ \textcolor{comment}{//PWMCore\ can\ only\ be\ used\ by\ one\ module\ (the\ main\ module)}}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00047\ \};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

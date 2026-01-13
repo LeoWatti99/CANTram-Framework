@@ -1,0 +1,34 @@
+\doxysection{Digital\+Input.\+h}
+\hypertarget{_digital_input_8h_source}{}\label{_digital_input_8h_source}\index{C:/Users/leowa/Documents/PlatformIO/Projects/CANTramFrameworkUsage/lib/CANTramFramework/include/DigitalInput.h@{C:/Users/leowa/Documents/PlatformIO/Projects/CANTramFrameworkUsage/lib/CANTramFramework/include/DigitalInput.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ DIGITAL\_INPUT\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ DIGITAL\_INPUT\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}Interface.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_debug_8h}{Debug.h}}"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }DigitalInput\ :\ \textcolor{keyword}{public}\ Interface\ \{}
+\DoxyCodeLine{00008\ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00009\ \ \ \ \ DigitalInput()\ =\textcolor{keywordflow}{default};}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{enum}\ Pull\ \{}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ NONE,}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ UP,}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ DOWN}
+\DoxyCodeLine{00014\ \ \ \ \ \};}
+\DoxyCodeLine{00015\ \ \ \ \ }
+\DoxyCodeLine{00016\ \ \ \ \ Interface::Type\ getType()\textcolor{keyword}{\ const\ override\ }\{}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ DIGITAL\_INPUT;}
+\DoxyCodeLine{00018\ \ \ \ \ \}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ }
+\DoxyCodeLine{00021\ \ \ \ \ }
+\DoxyCodeLine{00022\ \ }
+\DoxyCodeLine{00023\ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00024\ \ \ \ \ Pull\ pull;}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,292 @@
+\doxysection{MAX22531 Class Reference}
+\hypertarget{class_m_a_x22531}{}\label{class_m_a_x22531}\index{MAX22531@{MAX22531}}
+
+
+Inheritance diagram for MAX22531\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=144pt]{d2/d99/class_m_a_x22531__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for MAX22531\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=144pt]{df/d42/class_m_a_x22531__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_m_a_x22531_1_1_burst_response}{Burst\+Response}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_m_a_x22531_a3f04b3165c242bc97bb6bd743e6558af}\label{class_m_a_x22531_a3f04b3165c242bc97bb6bd743e6558af} 
+enum {\bfseries ERROR\+\_\+\+CODES} \{ {\bfseries STATUS\+\_\+\+OK} = 0
+, {\bfseries INVALID\+\_\+\+CHANNEL} = 10
+, {\bfseries INVALID\+\_\+\+REGISTER} = 20
+, {\bfseries NULL\+\_\+\+POINTER} = 30
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_m_a_x22531_a7fbb56231b7cf88e4645fe3a85c28d0b}{MAX22531}} (uint8\+\_\+t cs\+Pin, uint8\+\_\+t int\+Pin)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{class_m_a_x22531}{MAX22531} object with specified chip select and interrupt pins. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_m_a_x22531_adbe1e2d33ed92cd35eb9268912e832ac}{begin}} ()
+\begin{DoxyCompactList}\small\item\em Initializes the \doxylink{class_m_a_x22531}{MAX22531} chip and confirms communication. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{class_m_a_x22531_ac1478352d019d569c797a91def4a1e67}{write\+Register}} (uint8\+\_\+t address, uint16\+\_\+t data)
+\begin{DoxyCompactList}\small\item\em Writes a 16-\/bit value to a register on the \doxylink{class_m_a_x22531}{MAX22531}. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{class_m_a_x22531_a5711a7d5588204fa3a09d580c7f7e7e9}{read\+Register}} (uint8\+\_\+t address, uint16\+\_\+t \texorpdfstring{$\ast$}{*}data=nullptr)
+\begin{DoxyCompactList}\small\item\em Reads a 16-\/bit value from a register on the \doxylink{class_m_a_x22531}{MAX22531}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_m_a_x22531_1_1_burst_response}{Burst\+Response}} \mbox{\hyperlink{class_m_a_x22531_a344e5f8b852eaa9a4f254ccc481b2a37}{burst\+Read}} (bool filtered=true)
+\begin{DoxyCompactList}\small\item\em Performs a burst read of ADC channels and interrupt status from the \doxylink{class_m_a_x22531}{MAX22531}. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{class_m_a_x22531_af97b1c8acd34114f7c4474e7e62d66d4}{read\+Channel}} (uint8\+\_\+t channel, uint16\+\_\+t \texorpdfstring{$\ast$}{*}data=nullptr, bool filtered=true)
+\begin{DoxyCompactList}\small\item\em Reads a specific ADC channel from the \doxylink{class_m_a_x22531}{MAX22531} and returns the 12-\/bit ADC value. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_m_a_x22531_1_1_burst_response}{Burst\+Response}} \mbox{\hyperlink{class_m_a_x22531_a3e854b36095768c42cd6ffb1d8445a80}{read\+All\+Channels}} ()
+\begin{DoxyCompactList}\small\item\em Reads all filtered ADC channels and interrupt status from the \doxylink{class_m_a_x22531}{MAX22531}. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{class_m_a_x22531_ae6a21ef931f021030bdd7d2566489ed1}{HWreset}} ()
+\begin{DoxyCompactList}\small\item\em Performs a hardware reset of the \doxylink{class_m_a_x22531}{MAX22531} via the CONTROL register. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_s_p_i_chip}{SPIChip}}}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries activate\+External\+Chip\+Select} ()
+\item 
+void {\bfseries set\+CSControl\+Callback} (std\+::function$<$ void(bool)$>$ callback)
+\item 
+void {\bfseries set\+CSPin} (int cs\+Pin)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_s_p_i_chip}{SPIChip}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries SPIChip} (uint8\+\_\+t cs\+Pin)
+\item 
+void {\bfseries select\+Chip} ()
+\item 
+void {\bfseries deselect\+Chip} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_s_p_i_chip}{SPIChip}}}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries \+\_\+cs\+Pin}
+\item 
+bool {\bfseries use\+External\+Chip\+Select} = false
+\item 
+std\+::function$<$ void(bool)$>$ {\bfseries cs\+Control} = nullptr
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_m_a_x22531_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_m_a_x22531_a7fbb56231b7cf88e4645fe3a85c28d0b}\index{MAX22531@{MAX22531}!MAX22531@{MAX22531}}
+\index{MAX22531@{MAX22531}!MAX22531@{MAX22531}}
+\doxysubsubsection{\texorpdfstring{MAX22531()}{MAX22531()}}
+{\footnotesize\ttfamily \label{class_m_a_x22531_a7fbb56231b7cf88e4645fe3a85c28d0b} 
+MAX22531\+::\+MAX22531 (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{cs\+Pin}{, }\item[{uint8\+\_\+t}]{int\+Pin}{}\end{DoxyParamCaption})}
+
+
+
+Constructs a \doxylink{class_m_a_x22531}{MAX22531} object with specified chip select and interrupt pins. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cs\+Pin} & Chip select pin for SPI communication. \\
+\hline
+{\em int\+Pin} & Interrupt pin (optional, set to -\/1 if unused). \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_m_a_x22531_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_m_a_x22531_adbe1e2d33ed92cd35eb9268912e832ac}\index{MAX22531@{MAX22531}!begin@{begin}}
+\index{begin@{begin}!MAX22531@{MAX22531}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily \label{class_m_a_x22531_adbe1e2d33ed92cd35eb9268912e832ac} 
+bool MAX22531\+::begin (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Initializes the \doxylink{class_m_a_x22531}{MAX22531} chip and confirms communication. 
+
+\begin{DoxyReturn}{Returns}
+true if initialization and communication are successful, false otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{d7/dd1/class_m_a_x22531_adbe1e2d33ed92cd35eb9268912e832ac_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_m_a_x22531_a344e5f8b852eaa9a4f254ccc481b2a37}\index{MAX22531@{MAX22531}!burstRead@{burstRead}}
+\index{burstRead@{burstRead}!MAX22531@{MAX22531}}
+\doxysubsubsection{\texorpdfstring{burstRead()}{burstRead()}}
+{\footnotesize\ttfamily \label{class_m_a_x22531_a344e5f8b852eaa9a4f254ccc481b2a37} 
+\mbox{\hyperlink{struct_m_a_x22531_1_1_burst_response}{MAX22531\+::\+Burst\+Response}} MAX22531\+::burst\+Read (\begin{DoxyParamCaption}\item[{bool}]{filtered}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+
+
+Performs a burst read of ADC channels and interrupt status from the \doxylink{class_m_a_x22531}{MAX22531}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filtered} & If true, reads filtered ADC values; if false, reads unfiltered values. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{struct_m_a_x22531_1_1_burst_response}{Burst\+Response} struct containing ADC and interrupt data. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/dd1/class_m_a_x22531_a344e5f8b852eaa9a4f254ccc481b2a37_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_m_a_x22531_ae6a21ef931f021030bdd7d2566489ed1}\index{MAX22531@{MAX22531}!HWreset@{HWreset}}
+\index{HWreset@{HWreset}!MAX22531@{MAX22531}}
+\doxysubsubsection{\texorpdfstring{HWreset()}{HWreset()}}
+{\footnotesize\ttfamily \label{class_m_a_x22531_ae6a21ef931f021030bdd7d2566489ed1} 
+uint8\+\_\+t MAX22531\+::\+HWreset (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Performs a hardware reset of the \doxylink{class_m_a_x22531}{MAX22531} via the CONTROL register. 
+
+\begin{DoxyReturn}{Returns}
+STATUS\+\_\+\+OK on success, error code otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/dd1/class_m_a_x22531_ae6a21ef931f021030bdd7d2566489ed1_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_m_a_x22531_a3e854b36095768c42cd6ffb1d8445a80}\index{MAX22531@{MAX22531}!readAllChannels@{readAllChannels}}
+\index{readAllChannels@{readAllChannels}!MAX22531@{MAX22531}}
+\doxysubsubsection{\texorpdfstring{readAllChannels()}{readAllChannels()}}
+{\footnotesize\ttfamily \label{class_m_a_x22531_a3e854b36095768c42cd6ffb1d8445a80} 
+\mbox{\hyperlink{struct_m_a_x22531_1_1_burst_response}{MAX22531\+::\+Burst\+Response}} MAX22531\+::read\+All\+Channels (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reads all filtered ADC channels and interrupt status from the \doxylink{class_m_a_x22531}{MAX22531}. 
+
+\begin{DoxyReturn}{Returns}
+\doxylink{struct_m_a_x22531_1_1_burst_response}{Burst\+Response} struct containing ADC and interrupt data. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/dd1/class_m_a_x22531_a3e854b36095768c42cd6ffb1d8445a80_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_m_a_x22531_af97b1c8acd34114f7c4474e7e62d66d4}\index{MAX22531@{MAX22531}!readChannel@{readChannel}}
+\index{readChannel@{readChannel}!MAX22531@{MAX22531}}
+\doxysubsubsection{\texorpdfstring{readChannel()}{readChannel()}}
+{\footnotesize\ttfamily \label{class_m_a_x22531_af97b1c8acd34114f7c4474e7e62d66d4} 
+uint16\+\_\+t MAX22531\+::read\+Channel (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{channel}{, }\item[{uint16\+\_\+t \texorpdfstring{$\ast$}{*}}]{data}{ = {\ttfamily nullptr}, }\item[{bool}]{filtered}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+
+
+Reads a specific ADC channel from the \doxylink{class_m_a_x22531}{MAX22531} and returns the 12-\/bit ADC value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & The ADC channel to read (0-\/3). \\
+\hline
+{\em data} & Pointer to store the read ADC value. Must not be null. \\
+\hline
+{\em filtered} & If true, reads from the filtered ADC register; if false, reads from the unfiltered ADC register. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+STATUS\+\_\+\+OK on success, INVALID\+\_\+\+CHANNEL if the channel is out of range, NULL\+\_\+\+POINTER if data is null. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/dd1/class_m_a_x22531_af97b1c8acd34114f7c4474e7e62d66d4_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_m_a_x22531_a5711a7d5588204fa3a09d580c7f7e7e9}\index{MAX22531@{MAX22531}!readRegister@{readRegister}}
+\index{readRegister@{readRegister}!MAX22531@{MAX22531}}
+\doxysubsubsection{\texorpdfstring{readRegister()}{readRegister()}}
+{\footnotesize\ttfamily \label{class_m_a_x22531_a5711a7d5588204fa3a09d580c7f7e7e9} 
+uint16\+\_\+t MAX22531\+::read\+Register (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{address}{, }\item[{uint16\+\_\+t \texorpdfstring{$\ast$}{*}}]{data}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})}
+
+
+
+Reads a 16-\/bit value from a register on the \doxylink{class_m_a_x22531}{MAX22531}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em address} & Register address to read from. \\
+\hline
+{\em data} & Pointer to store the read 16-\/bit value. Must not be null. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+STATUS\+\_\+\+OK on success, INVALID\+\_\+\+REGISTER if address is invalid, NULL\+\_\+\+POINTER if data is null. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/dd1/class_m_a_x22531_a5711a7d5588204fa3a09d580c7f7e7e9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_m_a_x22531_ac1478352d019d569c797a91def4a1e67}\index{MAX22531@{MAX22531}!writeRegister@{writeRegister}}
+\index{writeRegister@{writeRegister}!MAX22531@{MAX22531}}
+\doxysubsubsection{\texorpdfstring{writeRegister()}{writeRegister()}}
+{\footnotesize\ttfamily \label{class_m_a_x22531_ac1478352d019d569c797a91def4a1e67} 
+uint8\+\_\+t MAX22531\+::write\+Register (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{address}{, }\item[{uint16\+\_\+t}]{data}{}\end{DoxyParamCaption})}
+
+
+
+Writes a 16-\/bit value to a register on the \doxylink{class_m_a_x22531}{MAX22531}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em address} & Register address to write to. \\
+\hline
+{\em data} & 16-\/bit data to write. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+STATUS\+\_\+\+OK on success, INVALID\+\_\+\+REGISTER if address is invalid. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/dd1/class_m_a_x22531_ac1478352d019d569c797a91def4a1e67_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/leowa/\+Documents/\+Platform\+IO/\+Projects/\+CANTram\+Framework\+Usage/lib/\+CANTram\+Framework/include/\mbox{\hyperlink{_m_a_x22531_8h}{MAX22531.\+h}}\item 
+C\+:/\+Users/leowa/\+Documents/\+Platform\+IO/\+Projects/\+CANTram\+Framework\+Usage/lib/\+CANTram\+Framework/src/chips/\+MAX22531/MAX22531.\+cpp\end{DoxyCompactItemize}

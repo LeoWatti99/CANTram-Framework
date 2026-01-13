@@ -1,0 +1,62 @@
+\doxysection{Interface.\+h}
+\hypertarget{_interface_8h_source}{}\label{_interface_8h_source}\index{C:/Users/leowa/Documents/PlatformIO/Projects/CANTramFrameworkUsage/lib/CANTramFramework/include/Interface.h@{C:/Users/leowa/Documents/PlatformIO/Projects/CANTramFrameworkUsage/lib/CANTramFramework/include/Interface.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ INTERFACE\_BASE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ INTERFACE\_BASE\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <Arduino.h>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_debug_8h}{Debug.h}}"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }Interface\ \{}
+\DoxyCodeLine{00008\ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{enum}\ Resolution\ \{}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ \ \ \ \ RES\_8BIT\ =\ 8,}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \ \ \ \ RES\_10BIT\ =\ 10,}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \ \ \ \ RES\_12BIT\ =\ 12,}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \ \ \ \ RES\_16BIT\ =\ 16}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00015\ \ \ \ \ }
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{enum}\ Type\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ DIGITAL\_INPUT,}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ DIGITAL\_OUTPUT,}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ ANALOG\_INPUT,}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ ANALOG\_OUTPUT,}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ RELAIS,}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ BUS}
+\DoxyCodeLine{00024\ \ \ \ \ \};}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{comment}{//\ Overload\ setQ\ for\ bool\ and\ float\_t\ to\ auto-\/cast\ to\ Value}}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ setQ(uint16\_t\ q)\ \{\ Q\ =\ q;\ \}\ \textcolor{comment}{//\ Accepts\ float\_t,\ sets\ analog}}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{virtual}\ uint16\_t\ getQ()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ Q;\ \}}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{virtual}\ Type\ getType()\ \textcolor{keyword}{const}\ =\ 0;\ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//Type\ of\ the\ interface}}
+\DoxyCodeLine{00029\ \ \ \ \ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ rename(\textcolor{keyword}{const}\ String\&\ newName)\ \{\ }
+\DoxyCodeLine{00031\ \ \ \ \ \ \ String\ oldName\ =\ name;}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ name\ =\ newName;}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \mbox{\hyperlink{_debug_8h_a693063ba84ad2119e7f3ea1b97947055}{INFO\_PRINTLN}}(\textcolor{stringliteral}{"{}[Interface]\ Interface\ renamed\ "{}}\ +\ oldName\ +\ \textcolor{stringliteral}{"{}\ to\ "{}}\ +\ name);}
+\DoxyCodeLine{00034\ \ \ \ \ \}}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>\ }
+\DoxyCodeLine{00036\ \ \ \ \ T\ as()\ \{\textcolor{keywordflow}{return}\ \textcolor{keyword}{static\_cast<}T\textcolor{keyword}{>}(\textcolor{keyword}{this});\}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ validate()\ \{\ \_valid\ =\ \textcolor{keyword}{true};\ \}}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ validate(\textcolor{keywordtype}{bool}\ state)\ \{\ \_valid\ =\ state;\ \}}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ invalidate()\ \{\ \_invalid\ =\ \textcolor{keyword}{true};\ \}}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{bool}\ isValid()\ \{\ \textcolor{keywordflow}{return}\ \_valid\ \&\&\ !\_invalid;\ \}}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{bool}\ isInvalid()\ \{\ \textcolor{keywordflow}{return}\ \_invalid;\ \}}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ String\ getName()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ name;\ \}}
+\DoxyCodeLine{00045\ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00046\ \ \ \ \ String\ \ name;}
+\DoxyCodeLine{00047\ \ \ \ \ Interface()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00048\ \ \ \ \ uint16\_t\ Q\ =\ 0;}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{bool}\ \_valid\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{bool}\ \_invalid\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00051\ \ \ \ \ }
+\DoxyCodeLine{00052\ \ \ \ \ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{comment}{//\ Protected\ members\ here}}
+\DoxyCodeLine{00054\ \};}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

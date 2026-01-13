@@ -1,0 +1,81 @@
+\doxysection{ESP32\+\_\+\+UART.\+h}
+\hypertarget{_e_s_p32___u_a_r_t_8h_source}{}\label{_e_s_p32___u_a_r_t_8h_source}\index{C:/Users/leowa/Documents/PlatformIO/Projects/CANTramFrameworkUsage/lib/CANTramFramework/include/ESP32\_UART.h@{C:/Users/leowa/Documents/PlatformIO/Projects/CANTramFrameworkUsage/lib/CANTramFramework/include/ESP32\_UART.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ ESP32\_UART\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ ESP32\_UART\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <driver/uart.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}UARTInterface.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_u_a_r_t_core_8h}{UARTCore.h}}"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ \ \ \ @brief\ Class\ to\ manage\ UART\ Objects\ on\ ESP32}}
+\DoxyCodeLine{00010\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }ESP32\_UART\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_u_a_r_t_core}{UARTCore}}\ \{}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \textcolor{keyword}{enum}\ uartState\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ NONE,}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ INSTALLED,}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ CONFIGURED,}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ STARTED}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ ESP32\_UART()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_e_s_p32___u_a_r_t_a0729d44483caad65176f225c7924755c}{reset}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_e_s_p32___u_a_r_t_a6da4b5cb2f0ffee5af03f66224e4bcb2}{install}}(}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ uart\_num,}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ uint8\_t\ tx\_pin,\ }
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ uint8\_t\ rx\_pin,\ }
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ uint16\_t\ bufferSize}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ )\ \textcolor{keyword}{override};\ \textcolor{comment}{//Prepare\ the\ driver\ and\ allocate\ memory}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_e_s_p32___u_a_r_t_a1a0b6a3517aeeda8f92cb43054d47436}{applyConfig}}();\ \textcolor{comment}{//Start\ the\ driver}}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_e_s_p32___u_a_r_t_acdf2bf644ded75b797ef85f44fcb5f60}{applyPins}}(\textcolor{keywordtype}{int}\ tx\_pin,\ \textcolor{keywordtype}{int}\ rx\_pin);\ \textcolor{comment}{//Set\ the\ TX\ and\ RX\ pins}}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_e_s_p32___u_a_r_t_acdf2bf644ded75b797ef85f44fcb5f60}{applyPins}}();\ }
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setUARTPort(uart\_port\_t\ uartPort)\ \{\ \_uartPort\ =\ uartPort;\ \}}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_e_s_p32___u_a_r_t_aa16ed83457d3ddb3ca9290581082fcba}{send}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ buffer[],\ \textcolor{keywordtype}{size\_t}\ size)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{class_e_s_p32___u_a_r_t_a9347eb37496924596031fac5adbfca56}{read}}(\textcolor{keywordtype}{char}\ buffer[])\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{class_e_s_p32___u_a_r_t_ab7b05058426c5c21323ba8b113f2ec5e}{available}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_e_s_p32___u_a_r_t_a48a03e2bed3b8320ca1f4c65fa814867}{flush}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ uartState\ \_state\ =\ NONE;}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ QueueHandle\_t\ uart\_queue\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ uart\_port\_t\ \_uartPort=DEFAULT\_REF;}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ uart\_word\_length\_t\ toEsp32DataBits(\mbox{\hyperlink{class_u_a_r_t_core_a1895842f7c33678bdf154e12cc617903}{UARTCore::DataBits}}\ bits)\ \{}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{switch}\ (bits)\ \{}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ UARTCore::DataBits::UART\_DATA\_5\_BITS:\ \textcolor{keywordflow}{return}\ uart\_word\_length\_t(UART\_DATA\_5\_BITS);}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ UARTCore::DataBits::UART\_DATA\_6\_BITS:\ \textcolor{keywordflow}{return}\ uart\_word\_length\_t(UART\_DATA\_6\_BITS);}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ UARTCore::DataBits::UART\_DATA\_7\_BITS:\ \textcolor{keywordflow}{return}\ uart\_word\_length\_t(UART\_DATA\_7\_BITS);}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ UARTCore::DataBits::UART\_DATA\_8\_BITS:\ \textcolor{keywordflow}{return}\ uart\_word\_length\_t(UART\_DATA\_8\_BITS);}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}:\ \textcolor{keywordflow}{return}\ uart\_word\_length\_t(UART\_DATA\_8\_BITS);\ \textcolor{comment}{//\ fallback\ or\ handle\ error}}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ uart\_parity\_t\ toEsp32Parity(\mbox{\hyperlink{class_u_a_r_t_core_a53addcd39a841913c86bd7e25cca94a0}{UARTCore::Parity}}\ parity)\ \{}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{switch}\ (parity)\ \{}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ UARTCore::Parity::UART\_PARITY\_NONE:\ \textcolor{keywordflow}{return}\ uart\_parity\_t(UART\_PARITY\_DISABLE);}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ UARTCore::Parity::UART\_PARITY\_EVEN:\ \textcolor{keywordflow}{return}\ uart\_parity\_t(UART\_PARITY\_EVEN);}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ UARTCore::Parity::UART\_PARITY\_ODD:\ \ \textcolor{keywordflow}{return}\ uart\_parity\_t(UART\_PARITY\_ODD);}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}:\ \textcolor{keywordflow}{return}\ uart\_parity\_t(UART\_PARITY\_DISABLE);\ \textcolor{comment}{//\ fallback\ or\ handle\ error}}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ uart\_stop\_bits\_t\ toEsp32StopBits(\mbox{\hyperlink{class_u_a_r_t_core_ab88ed673e8897a7804c27ac7d749f00b}{UARTCore::StopBits}}\ stopBits)\ \{}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{switch}\ (stopBits)\ \{}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ UARTCore::StopBits::UART\_STOP\_BITS\_1:\ \ \ \textcolor{keywordflow}{return}\ uart\_stop\_bits\_t(UART\_STOP\_BITS\_1);}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ UARTCore::StopBits::UART\_STOP\_BITS\_1\_5:\ \textcolor{keywordflow}{return}\ uart\_stop\_bits\_t(UART\_STOP\_BITS\_1\_5);}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ UARTCore::StopBits::UART\_STOP\_BITS\_2:\ \ \ \textcolor{keywordflow}{return}\ uart\_stop\_bits\_t(UART\_STOP\_BITS\_2);}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}:\ \textcolor{keywordflow}{return}\ uart\_stop\_bits\_t(UART\_STOP\_BITS\_1);\ \textcolor{comment}{//\ fallback\ or\ handle\ error}}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \};}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

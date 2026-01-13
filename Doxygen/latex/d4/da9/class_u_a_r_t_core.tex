@@ -1,0 +1,396 @@
+\doxysection{UARTCore Class Reference}
+\hypertarget{class_u_a_r_t_core}{}\label{class_u_a_r_t_core}\index{UARTCore@{UARTCore}}
+
+
+Base class for platform-\/specific UART implementations.  
+
+
+
+
+{\ttfamily \#include $<$UARTCore.\+h$>$}
+
+
+
+Inheritance diagram for UARTCore\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{d6/d9a/class_u_a_r_t_core__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for UARTCore\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{df/d22/class_u_a_r_t_core__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_u_a_r_t_core_a1895842f7c33678bdf154e12cc617903}{Data\+Bits}} \{ {\bfseries UART\+\_\+\+DATA\+\_\+5\+\_\+\+BITS} = 0
+, {\bfseries UART\+\_\+\+DATA\+\_\+6\+\_\+\+BITS} = 1
+, {\bfseries UART\+\_\+\+DATA\+\_\+7\+\_\+\+BITS} = 2
+, {\bfseries UART\+\_\+\+DATA\+\_\+8\+\_\+\+BITS} = 3
+ \}
+\begin{DoxyCompactList}\small\item\em Possible data bit widths for UART communication. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{class_u_a_r_t_core_a53addcd39a841913c86bd7e25cca94a0}{Parity}} \{ {\bfseries UART\+\_\+\+PARITY\+\_\+\+NONE} = 0
+, {\bfseries UART\+\_\+\+PARITY\+\_\+\+EVEN} = 1
+, {\bfseries UART\+\_\+\+PARITY\+\_\+\+ODD} = 2
+ \}
+\begin{DoxyCompactList}\small\item\em \doxylink{class_u_a_r_t_core_a53addcd39a841913c86bd7e25cca94a0}{Parity} configuration options. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{class_u_a_r_t_core_ab88ed673e8897a7804c27ac7d749f00b}{Stop\+Bits}} \{ {\bfseries UART\+\_\+\+STOP\+\_\+\+BITS\+\_\+1} = 1
+, {\bfseries UART\+\_\+\+STOP\+\_\+\+BITS\+\_\+1\+\_\+5} = 2
+, {\bfseries UART\+\_\+\+STOP\+\_\+\+BITS\+\_\+2} = 3
+ \}
+\begin{DoxyCompactList}\small\item\em Stop bit configuration options. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Types inherited from \mbox{\hyperlink{class_hardware_resource}{Hardware\+Resource}}}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_hardware_resource_adead6978be3d7b86c18e3d3e051381e6}{Type}} \{ \newline
+\mbox{\hyperlink{class_hardware_resource_adead6978be3d7b86c18e3d3e051381e6ac6f39e4a2dbc764df53048f26209f0a1}{UART}}
+, \mbox{\hyperlink{class_hardware_resource_adead6978be3d7b86c18e3d3e051381e6a63a2eead0d2771007afa8c8af281c50d}{SPI}}
+, \mbox{\hyperlink{class_hardware_resource_adead6978be3d7b86c18e3d3e051381e6ac77292ec986f613995babba396598dbc}{I2C}}
+, \mbox{\hyperlink{class_hardware_resource_adead6978be3d7b86c18e3d3e051381e6ac2fe3e8cc9a9a8fcb39c32be2da214c5}{PWM}}
+, \newline
+\mbox{\hyperlink{class_hardware_resource_adead6978be3d7b86c18e3d3e051381e6a0ae946256af51077cacc3c0a11575635}{CAN}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration of hardware resource types. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{class_u_a_r_t_core_aa4f8aee7f125854186d5a451324f5fb8}{install}} (int uart\+\_\+num, uint8\+\_\+t tx\+\_\+pin, uint8\+\_\+t rx\+\_\+pin, uint16\+\_\+t buffer\+Size)=0
+\begin{DoxyCompactList}\small\item\em Install and initialize the UART driver and resources. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_u_a_r_t_core_aeaf04f4297b48fdaee839a2ff9fb4ad4}{reset}} () override
+\begin{DoxyCompactList}\small\item\em Reset the UART core and release/clear resources. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_u_a_r_t_core_a4313ac566018e2da28caa76bd8f35bcb}{config}} (uint32\+\_\+t baudrate, \mbox{\hyperlink{class_u_a_r_t_core_a1895842f7c33678bdf154e12cc617903}{Data\+Bits}} data\+Bits, \mbox{\hyperlink{class_u_a_r_t_core_a53addcd39a841913c86bd7e25cca94a0}{Parity}} parity, \mbox{\hyperlink{class_u_a_r_t_core_ab88ed673e8897a7804c27ac7d749f00b}{Stop\+Bits}} stop\+Bits)
+\begin{DoxyCompactList}\small\item\em Configure UART communication parameters. \end{DoxyCompactList}\item 
+\Hypertarget{class_u_a_r_t_core_a8eb660f9020d2d0a7832f70febbf0346}\label{class_u_a_r_t_core_a8eb660f9020d2d0a7832f70febbf0346} 
+virtual bool {\bfseries set\+Baudrate} (uint32\+\_\+t baudrate)
+\item 
+\Hypertarget{class_u_a_r_t_core_a9580d6df0c6fb5235e009e6fb89fbdfb}\label{class_u_a_r_t_core_a9580d6df0c6fb5235e009e6fb89fbdfb} 
+virtual bool {\bfseries set\+Data\+Bits} (\mbox{\hyperlink{class_u_a_r_t_core_a1895842f7c33678bdf154e12cc617903}{Data\+Bits}} data\+Bits)
+\item 
+\Hypertarget{class_u_a_r_t_core_afee2e6c94b2031b57002ad002472ef46}\label{class_u_a_r_t_core_afee2e6c94b2031b57002ad002472ef46} 
+virtual bool {\bfseries set\+Parity} (\mbox{\hyperlink{class_u_a_r_t_core_a53addcd39a841913c86bd7e25cca94a0}{Parity}} parity)
+\item 
+\Hypertarget{class_u_a_r_t_core_abb0cc5aee951ee436737eecbfc1fff41}\label{class_u_a_r_t_core_abb0cc5aee951ee436737eecbfc1fff41} 
+virtual bool {\bfseries set\+Stop\+Bits} (\mbox{\hyperlink{class_u_a_r_t_core_ab88ed673e8897a7804c27ac7d749f00b}{Stop\+Bits}} stop\+Bits)
+\item 
+virtual bool \mbox{\hyperlink{class_u_a_r_t_core_a7119ad4a93b3f7895a1be10623cf35a3}{send}} (const char buffer\mbox{[}$\,$\mbox{]}, size\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em Send a buffer of bytes over UART. \end{DoxyCompactList}\item 
+virtual size\+\_\+t \mbox{\hyperlink{class_u_a_r_t_core_a09060493e91d608fb209d8c09675fabe}{read}} (char buffer\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Read available bytes from the UART into the provided buffer. \end{DoxyCompactList}\item 
+virtual size\+\_\+t \mbox{\hyperlink{class_u_a_r_t_core_ace871307d31091740402a97b42eb86ef}{available}} ()=0
+\begin{DoxyCompactList}\small\item\em Get the number of bytes currently available for reading. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_u_a_r_t_core_a6c0643b7fc686ab2ef773a86b4e1cc8e}{flush}} ()=0
+\begin{DoxyCompactList}\small\item\em Flush the UART transmit buffer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_hardware_resource_adead6978be3d7b86c18e3d3e051381e6}{Hardware\+Resource\+::\+Type}} \mbox{\hyperlink{class_u_a_r_t_core_af2aad4efeda3999a508c721e8f2ce46e}{get\+Type}} () override
+\begin{DoxyCompactList}\small\item\em Get the \doxylink{class_hardware_resource}{Hardware\+Resource} type for this core. \end{DoxyCompactList}\item 
+\Hypertarget{class_u_a_r_t_core_ae1258dd47029813252f074e9016c33ec}\label{class_u_a_r_t_core_ae1258dd47029813252f074e9016c33ec} 
+virtual bool {\bfseries set\+Pins} (uint8\+\_\+t tx\+\_\+pin, uint8\+\_\+t rx\+\_\+pin)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_hardware_resource}{Hardware\+Resource}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_hardware_resource_a26f48b38e5bb1d9bdd47ea2e6de87fdb}{request\+Usage}} ()
+\begin{DoxyCompactList}\small\item\em Request a usage slot for this resource. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{class_hardware_resource_a07205354c25627a3bb10ad417e335ff9}{get\+Usages}} ()
+\begin{DoxyCompactList}\small\item\em Get the current number of usages of this resource. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_hardware_resource_a569821aa9a34d96ed143488a72e6872b}{is\+Used}} ()
+\begin{DoxyCompactList}\small\item\em Check if the resource is currently used. \end{DoxyCompactList}\item 
+virtual uint8\+\_\+t \mbox{\hyperlink{class_hardware_resource_a470679cae7880c9ca436755a50f68db4}{get\+Remaining\+Usages}} ()
+\begin{DoxyCompactList}\small\item\em Get remaining usage capacity for this resource. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_u_a_r_t_core_a92f43d02b5db5cf4c7de16e9c2ec13e9}\label{class_u_a_r_t_core_a92f43d02b5db5cf4c7de16e9c2ec13e9} 
+int8\+\_\+t {\bfseries \+\_\+rx\+Pin} = DEFAULT\+\_\+\+REF
+\item 
+\Hypertarget{class_u_a_r_t_core_ae94cd61f159ed2e99e6b459191fbf5c7}\label{class_u_a_r_t_core_ae94cd61f159ed2e99e6b459191fbf5c7} 
+int8\+\_\+t {\bfseries \+\_\+tx\+Pin} = DEFAULT\+\_\+\+REF
+\item 
+\Hypertarget{class_u_a_r_t_core_a5569de2e78f8462e4b297e7e161e9ca4}\label{class_u_a_r_t_core_a5569de2e78f8462e4b297e7e161e9ca4} 
+bool {\bfseries pins\+Configured} = false
+\item 
+\Hypertarget{class_u_a_r_t_core_a97b09384b1ed63a9912d43a2130f7065}\label{class_u_a_r_t_core_a97b09384b1ed63a9912d43a2130f7065} 
+uint32\+\_\+t {\bfseries \+\_\+baudrate} = 0
+\item 
+\Hypertarget{class_u_a_r_t_core_a11c1cad71bc45a022ab322b102ea9d4f}\label{class_u_a_r_t_core_a11c1cad71bc45a022ab322b102ea9d4f} 
+\mbox{\hyperlink{class_u_a_r_t_core_ab88ed673e8897a7804c27ac7d749f00b}{Stop\+Bits}} {\bfseries \+\_\+stop\+Bits} = UART\+\_\+\+STOP\+\_\+\+BITS\+\_\+1
+\item 
+\Hypertarget{class_u_a_r_t_core_a0aa9f0c95255fd7f091f018d8586ca8d}\label{class_u_a_r_t_core_a0aa9f0c95255fd7f091f018d8586ca8d} 
+\mbox{\hyperlink{class_u_a_r_t_core_a53addcd39a841913c86bd7e25cca94a0}{Parity}} {\bfseries \+\_\+parity} = UART\+\_\+\+PARITY\+\_\+\+NONE
+\item 
+\Hypertarget{class_u_a_r_t_core_ae3e960fde2b6fddba7ea0c4090d63f2f}\label{class_u_a_r_t_core_ae3e960fde2b6fddba7ea0c4090d63f2f} 
+\mbox{\hyperlink{class_u_a_r_t_core_a1895842f7c33678bdf154e12cc617903}{Data\+Bits}} {\bfseries \+\_\+data\+Bits} = UART\+\_\+\+DATA\+\_\+8\+\_\+\+BITS
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_hardware_resource}{Hardware\+Resource}}}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{class_hardware_resource_a78845b363f906c0383e91ea912bbddbc}{usages}} =0
+\begin{DoxyCompactList}\small\item\em Current usage counter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_hardware_resource}{Hardware\+Resource}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_hardware_resource_a7ddffb890a743f2df28128d9afd5bfa5}{Hardware\+Resource}} ()=default
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+virtual uint8\+\_\+t \mbox{\hyperlink{class_hardware_resource_a6b7a709561faf5d344b7c3e14bf37558}{get\+Max\+Usages}} ()
+\begin{DoxyCompactList}\small\item\em Get the maximum simultaneous usages allowed for this resource. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base class for platform-\/specific UART implementations. 
+
+Derive from \doxylink{class_u_a_r_t_core}{UARTCore} when implementing UART support for a specific microcontroller or platform. The class integrates with the \doxylink{class_hardware_resource}{Hardware\+Resource} lifecycle provided by \doxylink{class_c_a_n_tram_core}{CANTram\+Core}. 
+
+\label{doc-enum-members}
+\Hypertarget{class_u_a_r_t_core_doc-enum-members}
+\doxysubsection{Member Enumeration Documentation}
+\Hypertarget{class_u_a_r_t_core_a1895842f7c33678bdf154e12cc617903}\index{UARTCore@{UARTCore}!DataBits@{DataBits}}
+\index{DataBits@{DataBits}!UARTCore@{UARTCore}}
+\doxysubsubsection{\texorpdfstring{DataBits}{DataBits}}
+{\footnotesize\ttfamily \label{class_u_a_r_t_core_a1895842f7c33678bdf154e12cc617903} 
+enum \mbox{\hyperlink{class_u_a_r_t_core_a1895842f7c33678bdf154e12cc617903}{UARTCore\+::\+Data\+Bits}}}
+
+
+
+Possible data bit widths for UART communication. 
+
+Enum values map to typical UART data length settings. \Hypertarget{class_u_a_r_t_core_a53addcd39a841913c86bd7e25cca94a0}\index{UARTCore@{UARTCore}!Parity@{Parity}}
+\index{Parity@{Parity}!UARTCore@{UARTCore}}
+\doxysubsubsection{\texorpdfstring{Parity}{Parity}}
+{\footnotesize\ttfamily \label{class_u_a_r_t_core_a53addcd39a841913c86bd7e25cca94a0} 
+enum \mbox{\hyperlink{class_u_a_r_t_core_a53addcd39a841913c86bd7e25cca94a0}{UARTCore\+::\+Parity}}}
+
+
+
+\doxylink{class_u_a_r_t_core_a53addcd39a841913c86bd7e25cca94a0}{Parity} configuration options. 
+
+Select no parity, even parity or odd parity for UART frames. \Hypertarget{class_u_a_r_t_core_ab88ed673e8897a7804c27ac7d749f00b}\index{UARTCore@{UARTCore}!StopBits@{StopBits}}
+\index{StopBits@{StopBits}!UARTCore@{UARTCore}}
+\doxysubsubsection{\texorpdfstring{StopBits}{StopBits}}
+{\footnotesize\ttfamily \label{class_u_a_r_t_core_ab88ed673e8897a7804c27ac7d749f00b} 
+enum \mbox{\hyperlink{class_u_a_r_t_core_ab88ed673e8897a7804c27ac7d749f00b}{UARTCore\+::\+Stop\+Bits}}}
+
+
+
+Stop bit configuration options. 
+
+Specifies 1, 1.\+5 or 2 stop bits for UART frames. 
+
+\label{doc-func-members}
+\Hypertarget{class_u_a_r_t_core_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_u_a_r_t_core_ace871307d31091740402a97b42eb86ef}\index{UARTCore@{UARTCore}!available@{available}}
+\index{available@{available}!UARTCore@{UARTCore}}
+\doxysubsubsection{\texorpdfstring{available()}{available()}}
+{\footnotesize\ttfamily \label{class_u_a_r_t_core_ace871307d31091740402a97b42eb86ef} 
+virtual size\+\_\+t UARTCore\+::available (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the number of bytes currently available for reading. 
+
+Query the UART driver\textquotesingle{}s RX buffer to determine how many bytes can be read without blocking. \begin{DoxyReturn}{Returns}
+size\+\_\+t Number of bytes available to read. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_e_s_p32___u_a_r_t_ab7b05058426c5c21323ba8b113f2ec5e}{ESP32\+\_\+\+UART}}.
+
+\Hypertarget{class_u_a_r_t_core_a4313ac566018e2da28caa76bd8f35bcb}\index{UARTCore@{UARTCore}!config@{config}}
+\index{config@{config}!UARTCore@{UARTCore}}
+\doxysubsubsection{\texorpdfstring{config()}{config()}}
+{\footnotesize\ttfamily \label{class_u_a_r_t_core_a4313ac566018e2da28caa76bd8f35bcb} 
+virtual bool UARTCore\+::config (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{baudrate}{, }\item[{\mbox{\hyperlink{class_u_a_r_t_core_a1895842f7c33678bdf154e12cc617903}{Data\+Bits}}}]{data\+Bits}{, }\item[{\mbox{\hyperlink{class_u_a_r_t_core_a53addcd39a841913c86bd7e25cca94a0}{Parity}}}]{parity}{, }\item[{\mbox{\hyperlink{class_u_a_r_t_core_ab88ed673e8897a7804c27ac7d749f00b}{Stop\+Bits}}}]{stop\+Bits}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Configure UART communication parameters. 
+
+Set baudrate, data bits, parity and stop bits for the UART peripheral. 
+\begin{DoxyParams}{Parameters}
+{\em baudrate} & Desired baud rate (e.\+g., 115200). \\
+\hline
+{\em data\+Bits} & Data bit selection from \doxylink{class_u_a_r_t_core_a1895842f7c33678bdf154e12cc617903}{Data\+Bits} enum. \\
+\hline
+{\em parity} & \doxylink{class_u_a_r_t_core_a53addcd39a841913c86bd7e25cca94a0}{Parity} selection from \doxylink{class_u_a_r_t_core_a53addcd39a841913c86bd7e25cca94a0}{Parity} enum. \\
+\hline
+{\em stop\+Bits} & Stop bit selection from \doxylink{class_u_a_r_t_core_ab88ed673e8897a7804c27ac7d749f00b}{Stop\+Bits} enum. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if configuration succeeded, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_u_a_r_t_core_a6c0643b7fc686ab2ef773a86b4e1cc8e}\index{UARTCore@{UARTCore}!flush@{flush}}
+\index{flush@{flush}!UARTCore@{UARTCore}}
+\doxysubsubsection{\texorpdfstring{flush()}{flush()}}
+{\footnotesize\ttfamily \label{class_u_a_r_t_core_a6c0643b7fc686ab2ef773a86b4e1cc8e} 
+virtual void UARTCore\+::flush (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Flush the UART transmit buffer. 
+
+Ensure that any queued transmit data is sent. Implementation should block until transmit is complete if required. \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_e_s_p32___u_a_r_t_a48a03e2bed3b8320ca1f4c65fa814867}{ESP32\+\_\+\+UART}}.
+
+\Hypertarget{class_u_a_r_t_core_af2aad4efeda3999a508c721e8f2ce46e}\index{UARTCore@{UARTCore}!getType@{getType}}
+\index{getType@{getType}!UARTCore@{UARTCore}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily \label{class_u_a_r_t_core_af2aad4efeda3999a508c721e8f2ce46e} 
+\mbox{\hyperlink{class_hardware_resource_adead6978be3d7b86c18e3d3e051381e6}{Hardware\+Resource\+::\+Type}} UARTCore\+::get\+Type (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the \doxylink{class_hardware_resource}{Hardware\+Resource} type for this core. 
+
+Overrides \doxylink{class_hardware_resource_ad1058e4c12406f756755fad5db55dc77}{Hardware\+Resource\+::get\+Type()} to return \doxylink{class_hardware_resource_adead6978be3d7b86c18e3d3e051381e6ac6f39e4a2dbc764df53048f26209f0a1}{Hardware\+Resource\+::\+Type\+::\+UART}. \begin{DoxyReturn}{Returns}
+\doxylink{class_hardware_resource_adead6978be3d7b86c18e3d3e051381e6}{Hardware\+Resource\+::\+Type} The enum value \doxylink{class_hardware_resource_adead6978be3d7b86c18e3d3e051381e6ac6f39e4a2dbc764df53048f26209f0a1}{Type\+::\+UART}. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_hardware_resource_ad1058e4c12406f756755fad5db55dc77}{Hardware\+Resource}}.
+
+\Hypertarget{class_u_a_r_t_core_aa4f8aee7f125854186d5a451324f5fb8}\index{UARTCore@{UARTCore}!install@{install}}
+\index{install@{install}!UARTCore@{UARTCore}}
+\doxysubsubsection{\texorpdfstring{install()}{install()}}
+{\footnotesize\ttfamily \label{class_u_a_r_t_core_aa4f8aee7f125854186d5a451324f5fb8} 
+virtual bool UARTCore\+::install (\begin{DoxyParamCaption}\item[{int}]{uart\+\_\+num}{, }\item[{uint8\+\_\+t}]{tx\+\_\+pin}{, }\item[{uint8\+\_\+t}]{rx\+\_\+pin}{, }\item[{uint16\+\_\+t}]{buffer\+Size}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Install and initialize the UART driver and resources. 
+
+Prepare the underlying hardware driver and allocate required memory/buffers for UART operation. This method should be called once before attempting to use the UART for I/O. 
+\begin{DoxyParams}{Parameters}
+{\em uart\+\_\+num} & Identifier of the UART peripheral to install (platform-\/specific). \\
+\hline
+{\em tx\+\_\+pin} & GPIO pin used for UART TX. \\
+\hline
+{\em rx\+\_\+pin} & GPIO pin used for UART RX. \\
+\hline
+{\em buffer\+Size} & Size in bytes of the RX buffer to allocate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if installation and allocation succeeded, false on failure. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_e_s_p32___u_a_r_t_a6da4b5cb2f0ffee5af03f66224e4bcb2}{ESP32\+\_\+\+UART}}.
+
+\Hypertarget{class_u_a_r_t_core_a09060493e91d608fb209d8c09675fabe}\index{UARTCore@{UARTCore}!read@{read}}
+\index{read@{read}!UARTCore@{UARTCore}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily \label{class_u_a_r_t_core_a09060493e91d608fb209d8c09675fabe} 
+virtual size\+\_\+t UARTCore\+::read (\begin{DoxyParamCaption}\item[{char}]{buffer}{\mbox{[}$\,$\mbox{]}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Read available bytes from the UART into the provided buffer. 
+
+Attempt to read up to the size of the provided buffer. The concrete implementation should return the actual number of bytes read. 
+\begin{DoxyParams}{Parameters}
+{\em buffer} & Destination buffer to receive bytes. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+size\+\_\+t Number of bytes read into the buffer (0 if none available). 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_e_s_p32___u_a_r_t_a9347eb37496924596031fac5adbfca56}{ESP32\+\_\+\+UART}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{d4/da9/class_u_a_r_t_core_a09060493e91d608fb209d8c09675fabe_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_a_r_t_core_aeaf04f4297b48fdaee839a2ff9fb4ad4}\index{UARTCore@{UARTCore}!reset@{reset}}
+\index{reset@{reset}!UARTCore@{UARTCore}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \label{class_u_a_r_t_core_aeaf04f4297b48fdaee839a2ff9fb4ad4} 
+virtual bool UARTCore\+::reset (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reset the UART core and release/clear resources. 
+
+Default implementation logs the reset and delegates to \doxylink{class_hardware_resource_a7372684f2afb5139ef8464194a087649}{Hardware\+Resource\+::reset()} to clear usage counters. Override if additional platform-\/specific teardown is required. \begin{DoxyReturn}{Returns}
+true if reset succeeded, false otherwise. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_hardware_resource_a7372684f2afb5139ef8464194a087649}{Hardware\+Resource}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_e_s_p32___u_a_r_t_a0729d44483caad65176f225c7924755c}{ESP32\+\_\+\+UART}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/da9/class_u_a_r_t_core_aeaf04f4297b48fdaee839a2ff9fb4ad4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{d4/da9/class_u_a_r_t_core_aeaf04f4297b48fdaee839a2ff9fb4ad4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_a_r_t_core_a7119ad4a93b3f7895a1be10623cf35a3}\index{UARTCore@{UARTCore}!send@{send}}
+\index{send@{send}!UARTCore@{UARTCore}}
+\doxysubsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily \label{class_u_a_r_t_core_a7119ad4a93b3f7895a1be10623cf35a3} 
+virtual bool UARTCore\+::send (\begin{DoxyParamCaption}\item[{const char}]{buffer}{\mbox{[}$\,$\mbox{]}, }\item[{size\+\_\+t}]{size}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Send a buffer of bytes over UART. 
+
+Write the provided buffer to the UART transmit queue or driver. Default implementation logs and returns false. 
+\begin{DoxyParams}{Parameters}
+{\em buffer} & Character buffer containing bytes to send. \\
+\hline
+{\em size} & Number of bytes to send from the buffer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the data was successfully queued/sent, false otherwise. 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_e_s_p32___u_a_r_t_aa16ed83457d3ddb3ca9290581082fcba}{ESP32\+\_\+\+UART}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{d4/da9/class_u_a_r_t_core_a7119ad4a93b3f7895a1be10623cf35a3_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/leowa/\+Documents/\+Platform\+IO/\+Projects/\+CANTram\+Framework\+Usage/lib/\+CANTram\+Framework/include/\mbox{\hyperlink{_u_a_r_t_core_8h}{UARTCore.\+h}}\end{DoxyCompactItemize}

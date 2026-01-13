@@ -1,0 +1,223 @@
+\doxysection{ESP32\+PWMCore Class Reference}
+\hypertarget{class_e_s_p32_p_w_m_core}{}\label{class_e_s_p32_p_w_m_core}\index{ESP32PWMCore@{ESP32PWMCore}}
+
+
+Inheritance diagram for ESP32\+PWMCore\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{d3/d50/class_e_s_p32_p_w_m_core__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ESP32\+PWMCore\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{d4/d55/class_e_s_p32_p_w_m_core__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_e_s_p32_p_w_m_core_adb2ff5f5f836bf15913d129c639426dd}{reset}} () override
+\begin{DoxyCompactList}\small\item\em Reset the hardware resource to a known default state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_e_s_p32_p_w_m_core_a0f842f0b6d66e76ebcf186334ba04330}{begin}} () override
+\begin{DoxyCompactList}\small\item\em Initialize PWM core resources. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_e_s_p32_p_w_m_core_aa519c3a55207f3d0122a2c0e63ffaf5d}{add\+Channel}} (\mbox{\hyperlink{class_output_definition}{Output\+Definition}} \texorpdfstring{$\ast$}{*}def) override
+\begin{DoxyCompactList}\small\item\em Add/allocate a PWM channel for the given output definition. \end{DoxyCompactList}\item 
+\Hypertarget{class_e_s_p32_p_w_m_core_a3f6073e360c9c188beb9ec110e157731}\label{class_e_s_p32_p_w_m_core_a3f6073e360c9c188beb9ec110e157731} 
+void {\bfseries set\+Frequency} (uint32\+\_\+t freq\+Hz)
+\item 
+\Hypertarget{class_e_s_p32_p_w_m_core_a633eab54a21ab2aa0767295d0fd37964}\label{class_e_s_p32_p_w_m_core_a633eab54a21ab2aa0767295d0fd37964} 
+void {\bfseries set\+Resolution} (ledc\+\_\+timer\+\_\+bit\+\_\+t resolution)
+\item 
+\Hypertarget{class_e_s_p32_p_w_m_core_a400f548e283428be961add6f45f770c8}\label{class_e_s_p32_p_w_m_core_a400f548e283428be961add6f45f770c8} 
+void {\bfseries override\+Timer} (ledc\+\_\+timer\+\_\+t timer)
+\item 
+\Hypertarget{class_e_s_p32_p_w_m_core_a377857b145c0fdf72a16546393d59bb7}\label{class_e_s_p32_p_w_m_core_a377857b145c0fdf72a16546393d59bb7} 
+void {\bfseries override\+Speed\+Mode} (ledc\+\_\+mode\+\_\+t mode)
+\item 
+void \mbox{\hyperlink{class_e_s_p32_p_w_m_core_a712e8e5de0a00e0625c277bf4a1f5b4a}{set\+Duty}} (\mbox{\hyperlink{class_output_definition}{Output\+Definition}} \texorpdfstring{$\ast$}{*}def, uint16\+\_\+t duty) override
+\begin{DoxyCompactList}\small\item\em Set PWM duty cycle for a registered output. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_p_w_m_core}{PWMCore}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_hardware_resource_adead6978be3d7b86c18e3d3e051381e6}{Hardware\+Resource\+::\+Type}} \mbox{\hyperlink{class_p_w_m_core_a0d03256d58a18e60ac2375bfd3ad3a00}{get\+Type}} () override
+\begin{DoxyCompactList}\small\item\em Get the hardware resource type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_hardware_resource}{Hardware\+Resource}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_hardware_resource_a26f48b38e5bb1d9bdd47ea2e6de87fdb}{request\+Usage}} ()
+\begin{DoxyCompactList}\small\item\em Request a usage slot for this resource. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{class_hardware_resource_a07205354c25627a3bb10ad417e335ff9}{get\+Usages}} ()
+\begin{DoxyCompactList}\small\item\em Get the current number of usages of this resource. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_hardware_resource_a569821aa9a34d96ed143488a72e6872b}{is\+Used}} ()
+\begin{DoxyCompactList}\small\item\em Check if the resource is currently used. \end{DoxyCompactList}\item 
+virtual uint8\+\_\+t \mbox{\hyperlink{class_hardware_resource_a470679cae7880c9ca436755a50f68db4}{get\+Remaining\+Usages}} ()
+\begin{DoxyCompactList}\small\item\em Get remaining usage capacity for this resource. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{class_e_s_p32_p_w_m_core_a15e540c8230375afdf62ba4175712aa6}{get\+Max\+Usages}} () override
+\begin{DoxyCompactList}\small\item\em Get the maximum simultaneous usages allowed for this resource. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_p_w_m_core}{PWMCore}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_w_m_core_adf80491c0bcb78e790102703a7f45e2b}{PWMCore}} ()=default
+\begin{DoxyCompactList}\small\item\em Protected default constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_hardware_resource}{Hardware\+Resource}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_hardware_resource_a7ddffb890a743f2df28128d9afd5bfa5}{Hardware\+Resource}} ()=default
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Types inherited from \mbox{\hyperlink{class_hardware_resource}{Hardware\+Resource}}}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_hardware_resource_adead6978be3d7b86c18e3d3e051381e6}{Type}} \{ \newline
+\mbox{\hyperlink{class_hardware_resource_adead6978be3d7b86c18e3d3e051381e6ac6f39e4a2dbc764df53048f26209f0a1}{UART}}
+, \mbox{\hyperlink{class_hardware_resource_adead6978be3d7b86c18e3d3e051381e6a63a2eead0d2771007afa8c8af281c50d}{SPI}}
+, \mbox{\hyperlink{class_hardware_resource_adead6978be3d7b86c18e3d3e051381e6ac77292ec986f613995babba396598dbc}{I2C}}
+, \mbox{\hyperlink{class_hardware_resource_adead6978be3d7b86c18e3d3e051381e6ac2fe3e8cc9a9a8fcb39c32be2da214c5}{PWM}}
+, \newline
+\mbox{\hyperlink{class_hardware_resource_adead6978be3d7b86c18e3d3e051381e6a0ae946256af51077cacc3c0a11575635}{CAN}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration of hardware resource types. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_p_w_m_core}{PWMCore}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_p_w_m_core_a8aecc6ed076e3ddc10aa8e9a57bf67da}{\+\_\+initialized}} =false
+\begin{DoxyCompactList}\small\item\em Internal initialized flag. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_hardware_resource}{Hardware\+Resource}}}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{class_hardware_resource_a78845b363f906c0383e91ea912bbddbc}{usages}} =0
+\begin{DoxyCompactList}\small\item\em Current usage counter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_e_s_p32_p_w_m_core_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_e_s_p32_p_w_m_core_aa519c3a55207f3d0122a2c0e63ffaf5d}\index{ESP32PWMCore@{ESP32PWMCore}!addChannel@{addChannel}}
+\index{addChannel@{addChannel}!ESP32PWMCore@{ESP32PWMCore}}
+\doxysubsubsection{\texorpdfstring{addChannel()}{addChannel()}}
+{\footnotesize\ttfamily \label{class_e_s_p32_p_w_m_core_aa519c3a55207f3d0122a2c0e63ffaf5d} 
+bool ESP32\+PWMCore\+::add\+Channel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_output_definition}{Output\+Definition}} \texorpdfstring{$\ast$}{*}}]{def}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Add/allocate a PWM channel for the given output definition. 
+
+Reserve any internal timer/channel resources required to drive PWM on the provided \doxylink{class_output_definition}{Output\+Definition}. The implementation should validate that the \doxylink{class_output_definition}{Output\+Definition} supports PWM and return true on success. 
+\begin{DoxyParams}{Parameters}
+{\em def} & Pointer to the \doxylink{class_output_definition}{Output\+Definition} to register for PWM. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the channel was added/allocated successfully, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_p_w_m_core_a054f5a4b0ac5b5cac1bb40e34c0f8912}{PWMCore}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d75/class_e_s_p32_p_w_m_core_aa519c3a55207f3d0122a2c0e63ffaf5d_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_e_s_p32_p_w_m_core_a0f842f0b6d66e76ebcf186334ba04330}\index{ESP32PWMCore@{ESP32PWMCore}!begin@{begin}}
+\index{begin@{begin}!ESP32PWMCore@{ESP32PWMCore}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily \label{class_e_s_p32_p_w_m_core_a0f842f0b6d66e76ebcf186334ba04330} 
+void ESP32\+PWMCore\+::begin (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Initialize PWM core resources. 
+
+Perform any platform-\/specific initialization required before PWM channels can be allocated or used. Implementations should set internal initialized state and configure timers/hardware as needed. \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_p_w_m_core_a169fc8e6e28c21b75af25da238fd9896}{PWMCore}}.
+
+\Hypertarget{class_e_s_p32_p_w_m_core_a15e540c8230375afdf62ba4175712aa6}\index{ESP32PWMCore@{ESP32PWMCore}!getMaxUsages@{getMaxUsages}}
+\index{getMaxUsages@{getMaxUsages}!ESP32PWMCore@{ESP32PWMCore}}
+\doxysubsubsection{\texorpdfstring{getMaxUsages()}{getMaxUsages()}}
+{\footnotesize\ttfamily \label{class_e_s_p32_p_w_m_core_a15e540c8230375afdf62ba4175712aa6} 
+uint8\+\_\+t ESP32\+PWMCore\+::get\+Max\+Usages (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Get the maximum simultaneous usages allowed for this resource. 
+
+\doxylink{class_p_w_m_core}{PWMCore} limits concurrent users by default to a single module (the main module). Override in derived classes only if multiple simultaneous users are supported. \begin{DoxyReturn}{Returns}
+uint8\+\_\+t Maximum number of concurrent usages (default 1). 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_p_w_m_core_a7d8fa8730b71956702cce7fe90b60a8d}{PWMCore}}.
+
+\Hypertarget{class_e_s_p32_p_w_m_core_adb2ff5f5f836bf15913d129c639426dd}\index{ESP32PWMCore@{ESP32PWMCore}!reset@{reset}}
+\index{reset@{reset}!ESP32PWMCore@{ESP32PWMCore}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \label{class_e_s_p32_p_w_m_core_adb2ff5f5f836bf15913d129c639426dd} 
+bool ESP32\+PWMCore\+::reset (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reset the hardware resource to a known default state. 
+
+Default implementation clears the usage counter and logs the reset. Derived classes should call the base implementation and perform any additional hardware-\/specific reset steps. \begin{DoxyReturn}{Returns}
+true if the reset succeeded, false otherwise. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_hardware_resource_a7372684f2afb5139ef8464194a087649}{Hardware\+Resource}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d75/class_e_s_p32_p_w_m_core_adb2ff5f5f836bf15913d129c639426dd_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_e_s_p32_p_w_m_core_a712e8e5de0a00e0625c277bf4a1f5b4a}\index{ESP32PWMCore@{ESP32PWMCore}!setDuty@{setDuty}}
+\index{setDuty@{setDuty}!ESP32PWMCore@{ESP32PWMCore}}
+\doxysubsubsection{\texorpdfstring{setDuty()}{setDuty()}}
+{\footnotesize\ttfamily \label{class_e_s_p32_p_w_m_core_a712e8e5de0a00e0625c277bf4a1f5b4a} 
+void ESP32\+PWMCore\+::set\+Duty (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_output_definition}{Output\+Definition}} \texorpdfstring{$\ast$}{*}}]{def}{, }\item[{uint16\+\_\+t}]{duty}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Set PWM duty cycle for a registered output. 
+
+Drive the output described by def with the specified duty value. Duty units are implementation-\/specific but are expected to be in the range 0..4095 for 12-\/bit resolution. 
+\begin{DoxyParams}{Parameters}
+{\em def} & Pointer to the \doxylink{class_output_definition}{Output\+Definition} to set PWM on. \\
+\hline
+{\em duty} & Duty value to apply (e.\+g., 0..4095 for 12-\/bit resolution). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_p_w_m_core_ad4ee3115a671d8df6f18ccfaf2b84848}{PWMCore}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/leowa/\+Documents/\+Platform\+IO/\+Projects/\+CANTram\+Framework\+Usage/lib/\+CANTram\+Framework/include/ESP32\+PWMCore.\+h\item 
+C\+:/\+Users/leowa/\+Documents/\+Platform\+IO/\+Projects/\+CANTram\+Framework\+Usage/lib/\+CANTram\+Framework/src/hardware/ESP32\+PWMCore.\+cpp\end{DoxyCompactItemize}

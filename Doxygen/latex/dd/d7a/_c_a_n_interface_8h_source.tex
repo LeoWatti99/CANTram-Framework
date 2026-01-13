@@ -1,0 +1,90 @@
+\doxysection{CANInterface.\+h}
+\hypertarget{_c_a_n_interface_8h_source}{}\label{_c_a_n_interface_8h_source}\index{C:/Users/leowa/Documents/PlatformIO/Projects/CANTramFrameworkUsage/lib/CANTramFramework/include/CANInterface.h@{C:/Users/leowa/Documents/PlatformIO/Projects/CANTramFrameworkUsage/lib/CANTramFramework/include/CANInterface.h}}
+\mbox{\hyperlink{_c_a_n_interface_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CANINTERFACE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CANINTERFACE\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <Arduino.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}Interface.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_c_a_n_core_8h}{CANCore.h}}"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }CANInterface\ :\ \textcolor{keyword}{public}\ Interface\ \{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ Interface::Type\ getType()\textcolor{keyword}{\ const\ override\ }\{\ \textcolor{keywordflow}{return}\ Interface::BUS;\ \}}
+\DoxyCodeLine{00018\ \ \ \ \ CANInterface()=\textcolor{keywordflow}{default};}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{bool}\ begin()\{}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(!\_canCore)\{}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_debug_8h_aeb03a131ff07c832ab6ad83b6e6a0744}{DEV\_ERROR\_PRINTLN}}(\textcolor{stringliteral}{"{}[CANInterface]\ ERROR:\ No\ CANCore\ assigned.\ Call\ setCANCore()\ before\ begin()."{}});}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(!\_canCore-\/>begin())\{}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_debug_8h_aab934c3f2345fdd7f8ca02ff2c332f60}{ERROR\_PRINTLN}}(\textcolor{stringliteral}{"{}[CANInterface]\ ERROR:\ CAN\ initialization\ failed."{}});}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};\ \ }
+\DoxyCodeLine{00029\ \ \ \ \ \}}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{bool}\ end()\{}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(!\_canCore)\{}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_debug_8h_aeb03a131ff07c832ab6ad83b6e6a0744}{DEV\_ERROR\_PRINTLN}}(\textcolor{stringliteral}{"{}[CANInterface]\ ERROR:\ No\ CANCore\ assigned.\ Call\ setCANCore()\ before\ end()."{}});}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(!\_canCore-\/>end())\{}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_debug_8h_aab934c3f2345fdd7f8ca02ff2c332f60}{ERROR\_PRINTLN}}(\textcolor{stringliteral}{"{}[CANInterface]\ ERROR:\ CAN\ deinitialization\ failed."{}});}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};\ \ }
+\DoxyCodeLine{00041\ \ \ \ \ \}}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{bool}\ setBaudrate(CANCore::Baudrate\ baudrate)\{}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(!\_canCore)\{}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_debug_8h_aeb03a131ff07c832ab6ad83b6e6a0744}{DEV\_ERROR\_PRINTLN}}(\textcolor{stringliteral}{"{}[CANInterface]\ ERROR:\ No\ CANCore\ assigned.\ Call\ setCANCore()\ before\ setBaudrate()."{}});}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(!\_canCore-\/>setBaudrate(baudrate))\{}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_debug_8h_aab934c3f2345fdd7f8ca02ff2c332f60}{ERROR\_PRINTLN}}(\textcolor{stringliteral}{"{}[CANInterface]\ ERROR:\ Failed\ to\ set\ CAN\ baudrate."{}});}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00053\ \ \ \ \ \}}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{bool}\ sendMessage(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_c_a_n_core_1_1_c_a_n_message}{CANCore::CANMessage}}\&\ message)\{}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(!\_canCore)\{}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_debug_8h_aeb03a131ff07c832ab6ad83b6e6a0744}{DEV\_ERROR\_PRINTLN}}(\textcolor{stringliteral}{"{}[CANInterface]\ ERROR:\ No\ CANCore\ assigned.\ Call\ setCANCore()\ before\ sendMessage()."{}});}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(!\_canCore-\/>sendMessage(message))\{}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_debug_8h_aab934c3f2345fdd7f8ca02ff2c332f60}{ERROR\_PRINTLN}}(\textcolor{stringliteral}{"{}[CANInterface]\ ERROR:\ Failed\ to\ send\ CAN\ message."{}});}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00065\ \ \ \ \ \}}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{bool}\ receiveMessage(\mbox{\hyperlink{struct_c_a_n_core_1_1_c_a_n_message}{CANCore::CANMessage}}\&\ message)\{}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(!\_canCore)\{}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_debug_8h_aeb03a131ff07c832ab6ad83b6e6a0744}{DEV\_ERROR\_PRINTLN}}(\textcolor{stringliteral}{"{}[CANInterface]\ ERROR:\ No\ CANCore\ assigned.\ Call\ setCANCore()\ before\ receiveMessage()."{}});}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \_canCore-\/>readMessage(message);}
+\DoxyCodeLine{00073\ \ \ \ \ \}}
+\DoxyCodeLine{00074\ \ \ \ \ uint8\_t\ available()\{}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(!\_canCore)\{}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_debug_8h_aeb03a131ff07c832ab6ad83b6e6a0744}{DEV\_ERROR\_PRINTLN}}(\textcolor{stringliteral}{"{}[CANInterface]\ ERROR:\ No\ CANCore\ assigned.\ Call\ setCANCore()\ before\ available()."{}});}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \_canCore-\/>available();}
+\DoxyCodeLine{00080\ \ \ \ \ \}}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{void}\ setCANCore(\mbox{\hyperlink{class_c_a_n_core}{CANCore}}*\ canCore)\ \{\ \_canCore\ =\ canCore;\ \}}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00085\ \ \ \ \ \mbox{\hyperlink{class_c_a_n_core}{CANCore}}*\ \_canCore;}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \};}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CANINTERFACE\_H}}
+
+\end{DoxyCode}

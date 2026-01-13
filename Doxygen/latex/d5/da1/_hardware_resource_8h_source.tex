@@ -1,0 +1,60 @@
+\doxysection{Hardware\+Resource.\+h}
+\hypertarget{_hardware_resource_8h_source}{}\label{_hardware_resource_8h_source}\index{C:/Users/leowa/Documents/PlatformIO/Projects/CANTramFrameworkUsage/lib/CANTramFramework/include/HardwareResource.h@{C:/Users/leowa/Documents/PlatformIO/Projects/CANTramFrameworkUsage/lib/CANTramFramework/include/HardwareResource.h}}
+\mbox{\hyperlink{_hardware_resource_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ HARDWARE\_RESOURCE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ HARDWARE\_RESOURCE\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_debug_8h}{Debug.h}}"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_hardware_resource_a7ddffb890a743f2df28128d9afd5bfa5}{HardwareResource}}\{}
+\DoxyCodeLine{00020\ \ \ \textcolor{keyword}{public}:\ }
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00026\ \ \ \textcolor{keyword}{enum}\ \mbox{\hyperlink{class_hardware_resource_adead6978be3d7b86c18e3d3e051381e6}{Type}}\{}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_hardware_resource_adead6978be3d7b86c18e3d3e051381e6ac6f39e4a2dbc764df53048f26209f0a1}{UART}},\ }
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_hardware_resource_adead6978be3d7b86c18e3d3e051381e6a63a2eead0d2771007afa8c8af281c50d}{SPI}},\ \ }
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{class_hardware_resource_adead6978be3d7b86c18e3d3e051381e6ac77292ec986f613995babba396598dbc}{I2C}},\ \ }
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{class_hardware_resource_adead6978be3d7b86c18e3d3e051381e6ac2fe3e8cc9a9a8fcb39c32be2da214c5}{PWM}},\ \ \ }
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_hardware_resource_adead6978be3d7b86c18e3d3e051381e6a0ae946256af51077cacc3c0a11575635}{CAN}}\ \ \ \ }
+\DoxyCodeLine{00032\ \ \ \};\ }
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00039\ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_hardware_resource_adead6978be3d7b86c18e3d3e051381e6}{Type}}\ \mbox{\hyperlink{class_hardware_resource_ad1058e4c12406f756755fad5db55dc77}{getType}}()=0;}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00047\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_hardware_resource_a7372684f2afb5139ef8464194a087649}{reset}}()\{}
+\DoxyCodeLine{00048\ \ \ \ \ \mbox{\hyperlink{_debug_8h_a8e30ff0704664fcb13dabf0c4dc5c8f5}{DEBUG\_PRINTLN}}(\textcolor{stringliteral}{"{}[HardwareResource]\ Resetting\ hardware\ resource\ of\ type\ "{}}\ +\ String((\textcolor{keywordtype}{int})\mbox{\hyperlink{class_hardware_resource_ad1058e4c12406f756755fad5db55dc77}{getType}}()));}
+\DoxyCodeLine{00049\ \ \ \ \ \mbox{\hyperlink{class_hardware_resource_a78845b363f906c0383e91ea912bbddbc}{usages}}\ =\ 0;}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00051\ \ \ \}}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00059\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_hardware_resource_a26f48b38e5bb1d9bdd47ea2e6de87fdb}{requestUsage}}()\{}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_hardware_resource_a78845b363f906c0383e91ea912bbddbc}{usages}}\ >=\ \mbox{\hyperlink{class_hardware_resource_a6b7a709561faf5d344b7c3e14bf37558}{getMaxUsages}}()\ \&\&\ \mbox{\hyperlink{class_hardware_resource_a6b7a709561faf5d344b7c3e14bf37558}{getMaxUsages}}()\ !=\ 0)\{}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \mbox{\hyperlink{_debug_8h_aab934c3f2345fdd7f8ca02ff2c332f60}{ERROR\_PRINTLN}}(\textcolor{stringliteral}{"{}[HardwareResource]\ Hardware\ resource\ of\ type\ "{}}\ +\ String((\textcolor{keywordtype}{int})\mbox{\hyperlink{class_hardware_resource_ad1058e4c12406f756755fad5db55dc77}{getType}}())\ +\ \textcolor{stringliteral}{"{}\ already\ used\ by\ maximum\ number\ of\ modules\ ("{}}\ +\ String(\mbox{\hyperlink{class_hardware_resource_a6b7a709561faf5d344b7c3e14bf37558}{getMaxUsages}}())\ +\ \textcolor{stringliteral}{"{})."{}});}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00063\ \ \ \ \ \}}
+\DoxyCodeLine{00064\ \ \ \ \ \mbox{\hyperlink{class_hardware_resource_a78845b363f906c0383e91ea912bbddbc}{usages}}++;}
+\DoxyCodeLine{00065\ \ \ \ \ \mbox{\hyperlink{_debug_8h_a8e30ff0704664fcb13dabf0c4dc5c8f5}{DEBUG\_PRINTLN}}(\textcolor{stringliteral}{"{}[HardwareResource]\ Hardware\ resource\ of\ type\ "{}}\ +\ String((\textcolor{keywordtype}{int})\mbox{\hyperlink{class_hardware_resource_ad1058e4c12406f756755fad5db55dc77}{getType}}())\ +\ \textcolor{stringliteral}{"{}\ usage\ requested.\ Current\ usages:\ "{}}\ +\ String(\mbox{\hyperlink{class_hardware_resource_a78845b363f906c0383e91ea912bbddbc}{usages}})\ +\ \textcolor{stringliteral}{"{}/"{}}\ +\ String(\mbox{\hyperlink{class_hardware_resource_a6b7a709561faf5d344b7c3e14bf37558}{getMaxUsages}}()));}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00067\ \ \ \}}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00074\ \ \ uint8\_t\ \mbox{\hyperlink{class_hardware_resource_a07205354c25627a3bb10ad417e335ff9}{getUsages}}()\{\textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_hardware_resource_a78845b363f906c0383e91ea912bbddbc}{usages}};\}}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00081\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_hardware_resource_a569821aa9a34d96ed143488a72e6872b}{isUsed}}()\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_hardware_resource_a78845b363f906c0383e91ea912bbddbc}{usages}}\ >\ 0;\ \}}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00088\ \ \ \textcolor{keyword}{virtual}\ uint8\_t\ \mbox{\hyperlink{class_hardware_resource_a470679cae7880c9ca436755a50f68db4}{getRemainingUsages}}()\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_hardware_resource_a6b7a709561faf5d344b7c3e14bf37558}{getMaxUsages}}()\ -\/\ \mbox{\hyperlink{class_hardware_resource_a78845b363f906c0383e91ea912bbddbc}{usages}};\ \}}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00091\ \ \ \ \ }
+\DoxyCodeLine{00092\ \ \ \ \ }
+\DoxyCodeLine{00093\ \ \ \textcolor{keyword}{protected}:\ }
+\DoxyCodeLine{00098\ \ \ \ \ uint8\_t\ \mbox{\hyperlink{class_hardware_resource_a78845b363f906c0383e91ea912bbddbc}{usages}}=0;}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00104\ \ \ \ \ \mbox{\hyperlink{class_hardware_resource_a7ddffb890a743f2df28128d9afd5bfa5}{HardwareResource}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00111\ \ \ \ \ \textcolor{keyword}{virtual}\ uint8\_t\ \mbox{\hyperlink{class_hardware_resource_a6b7a709561faf5d344b7c3e14bf37558}{getMaxUsages}}()\{\ \textcolor{keywordflow}{return}\ 1;\ \}}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00113\ \};}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00115\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

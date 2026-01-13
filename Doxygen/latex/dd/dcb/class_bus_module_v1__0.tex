@@ -1,0 +1,492 @@
+\doxysection{Bus\+Module\+V1\+\_\+0 Class Reference}
+\hypertarget{class_bus_module_v1__0}{}\label{class_bus_module_v1__0}\index{BusModuleV1\_0@{BusModuleV1\_0}}
+
+
+Inheritance diagram for Bus\+Module\+V1\+\_\+0\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{d9/d08/class_bus_module_v1__0__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Bus\+Module\+V1\+\_\+0\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{d8/dd2/class_bus_module_v1__0__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{class_bus_module_v1__0_ad27db80f3d7030a0fafdd985079b3bdd}{get\+HWType}} () const override
+\begin{DoxyCompactList}\small\item\em Get the hardware type string. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_bus_module_v1__0_a64857b219f743fa39813812c9b911428}{get\+HWVersion}} () const override
+\begin{DoxyCompactList}\small\item\em Get the hardware version string. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_bus_module_v1__0_abb12c39782672f8904b8cc7f5a8c7364}{get\+FWVersion}} () const override
+\begin{DoxyCompactList}\small\item\em Get the firmware version string. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{class_bus_module_v1__0_ab1f6be81ebb01684222a2fbfdc19cba1}{get\+GPIODemand}} () const override
+\begin{DoxyCompactList}\small\item\em Get the GPIO demand of the module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{class_bus_module_v1__0_ab3624eb3ad2ae3333c22125fb0fee5b5}{get\+GPIOSupply}} () const override
+\begin{DoxyCompactList}\small\item\em Get the GPIO supply capacity of the module. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_bus_module_v1__0_a16bba6acd40262044fbb2dfa89967a37}{attach\+Module}} (uint8\+\_\+t slot, uint8\+\_\+t gpio\+Start) override
+\begin{DoxyCompactList}\small\item\em Attach this module to a slot and GPIO start index. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_bus_module_v1__0_ae608f88ec327b8ea590cfe5767ae6106}{provide\+GPIOs}} () override
+\begin{DoxyCompactList}\small\item\em Provide GPIO definitions to the core. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_bus_module_v1__0_a4a285d859c46cc480e2ccc452e1f0f38}{request\+GPIOs}} () override
+\begin{DoxyCompactList}\small\item\em Request GPIO definitions from \doxylink{class_c_a_n_tram_core}{CANTram\+Core} and validate pins for module interfaces. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_bus_module_v1__0_a5d7b5c4ee7d5a1ba9d8ed0628a7f597f}{provide\+Hardware\+Resources}} () override
+\begin{DoxyCompactList}\small\item\em Provide hardware resources to \doxylink{class_c_a_n_tram_core}{CANTram\+Core}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_bus_module_v1__0_a805fbe1982b45754d54965eef97c73e3}{request\+Hardware\+Resources}} () override
+\begin{DoxyCompactList}\small\item\em Request hardware resources required by the Bus\+Module. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_bus_module_v1__0_ad4d8d6745e0f039f1aaf1f4adf0f4416}{add\+Interfaces}} () override
+\begin{DoxyCompactList}\small\item\em Add interfaces provided by the Bus\+Module to the module interface list. \end{DoxyCompactList}\item 
+\Hypertarget{class_bus_module_v1__0_ae88b3f40706022a43dd5c1698f17e370}\label{class_bus_module_v1__0_ae88b3f40706022a43dd5c1698f17e370} 
+bool {\bfseries add\+SPIDevice} (\mbox{\hyperlink{class_s_p_i_chip}{SPIChip}} \texorpdfstring{$\ast$}{*}spi\+Device, bool allow\+Override=false)
+\item 
+\Hypertarget{class_bus_module_v1__0_a581d0e57e72c8a2ad27b75bce8bb3ed2}\label{class_bus_module_v1__0_a581d0e57e72c8a2ad27b75bce8bb3ed2} 
+bool {\bfseries set\+Loop\+Function} (std\+::function$<$ void(uint8\+\_\+t \texorpdfstring{$\ast$}{*}response)$>$ loop\+Function)
+\item 
+bool \mbox{\hyperlink{class_bus_module_v1__0_aedf45f0be91985e58f6b6d08af048fb3}{initialize}} () override
+\begin{DoxyCompactList}\small\item\em Initialize the module after attachment and provisioning. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_bus_module_v1__0_ae39f45e115c9d24cb7adf367fbdd64b7}{pre\+Initialize}} () override
+\begin{DoxyCompactList}\small\item\em Pre-\/initialize the module after attachment and provisioning. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bus_module_v1__0_a25a59d36f49cd5316a0186bd02b1a588}{cycle}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}response) override
+\begin{DoxyCompactList}\small\item\em Periodic cycle callback for the Bus\+Module. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_bus_module_v1__0_adca07691ab1dbe6942abd50e3b6a2a23}{reset}} () override
+\begin{DoxyCompactList}\small\item\em Reset the module to a known default state. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_interface}{Interface}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_bus_module_v1__0_af6c2381228cdd502b31111301cb116fd}{get\+Interfaces}} () override
+\begin{DoxyCompactList}\small\item\em Get pointer to module\textquotesingle{}s interface array. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_bus_module_v1__0_ab2f8ee922f12c35d5d893cb4e07b4565}{get\+Interface\+Count}} () override
+\begin{DoxyCompactList}\small\item\em Get number of interfaces provided by the module. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_bus_module_v1__0_aedb474256450213f863497e8bebd6301}{add\+UARTInterface}} ()
+\begin{DoxyCompactList}\small\item\em Add and configure the UART interface for this module. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_bus_module_v1__0_a6c101e00230c5a741169d9f8a327816b}{add\+I2\+CInterface}} ()
+\begin{DoxyCompactList}\small\item\em Add and configure the I2C interface for this module. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_c_a_n_tram_module}{CANTram\+Module}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_a_n_tram_module_ae1c9554adb901b7e798a44d521781c0b}{CANTram\+Module}} ()=default
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_c_a_n_tram_module_a8f93d67f0d5b49b7864369196cb323e6}{\texorpdfstring{$\sim$}{\string~}\+CANTram\+Module}} ()=default
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{class_c_a_n_tram_module_a80b400128bb6f0841953bb7a75cbf99c}{get\+Slot}} () const
+\begin{DoxyCompactList}\small\item\em Get assigned slot index. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{class_c_a_n_tram_module_a7905817e8fee9e8bccfc9bbe70ae5669}{get\+GPIOStart}} () const
+\begin{DoxyCompactList}\small\item\em Get starting GPIO index assigned to the module. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_bus_module_v1__0_a8b5598da493de194b609532239b31145}\label{class_bus_module_v1__0_a8b5598da493de194b609532239b31145} 
+static const String {\bfseries HW\+\_\+\+TYPE} = "{}Bus\+Module\+V1.\+0"{}
+\item 
+\Hypertarget{class_bus_module_v1__0_ae0973e78c0faf60857fe6c0d16f304cf}\label{class_bus_module_v1__0_ae0973e78c0faf60857fe6c0d16f304cf} 
+static const String {\bfseries HW\+\_\+\+VERSION} = "{}1.\+0"{}
+\item 
+\Hypertarget{class_bus_module_v1__0_ad4e0f5bedc10986d1f85b8f69979940a}\label{class_bus_module_v1__0_ad4e0f5bedc10986d1f85b8f69979940a} 
+static const String {\bfseries FW\+\_\+\+VERSION} = "{}1.\+0"{}
+\item 
+\Hypertarget{class_bus_module_v1__0_a12b48c1218bf979dbf4a3ecd7414b292}\label{class_bus_module_v1__0_a12b48c1218bf979dbf4a3ecd7414b292} 
+static constexpr uint8\+\_\+t {\bfseries GPIO\+\_\+\+DEMAND} = 3
+\item 
+\Hypertarget{class_bus_module_v1__0_ac3b1ec0f1fe6e4b37665e68437694b78}\label{class_bus_module_v1__0_ac3b1ec0f1fe6e4b37665e68437694b78} 
+static constexpr uint8\+\_\+t {\bfseries GPIO\+\_\+\+SUPPLY} = 0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_c_a_n_tram_module}{CANTram\+Module}}}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t {\bfseries SLOT} = 0
+\item 
+uint8\+\_\+t {\bfseries GPIO\+\_\+\+START} = 0
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_bus_module_v1__0_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_bus_module_v1__0_a6c101e00230c5a741169d9f8a327816b}\index{BusModuleV1\_0@{BusModuleV1\_0}!addI2CInterface@{addI2CInterface}}
+\index{addI2CInterface@{addI2CInterface}!BusModuleV1\_0@{BusModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{addI2CInterface()}{addI2CInterface()}}
+{\footnotesize\ttfamily \label{class_bus_module_v1__0_a6c101e00230c5a741169d9f8a327816b} 
+bool Bus\+Module\+V1\+\_\+0\+::add\+I2\+CInterface (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Add and configure the I2C interface for this module. 
+
+Inserts the I2C interface into the module interface array. \begin{DoxyReturn}{Returns}
+true if I2C interface setup succeeded, false otherwise. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/dcb/class_bus_module_v1__0_a6c101e00230c5a741169d9f8a327816b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_bus_module_v1__0_ad4d8d6745e0f039f1aaf1f4adf0f4416}\index{BusModuleV1\_0@{BusModuleV1\_0}!addInterfaces@{addInterfaces}}
+\index{addInterfaces@{addInterfaces}!BusModuleV1\_0@{BusModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{addInterfaces()}{addInterfaces()}}
+{\footnotesize\ttfamily \label{class_bus_module_v1__0_ad4d8d6745e0f039f1aaf1f4adf0f4416} 
+bool Bus\+Module\+V1\+\_\+0\+::add\+Interfaces (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Add interfaces provided by the Bus\+Module to the module interface list. 
+
+Adds UART and I2C interfaces (I2C stubbed) and logs the operation. \begin{DoxyReturn}{Returns}
+true if interfaces were added successfully, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_a14b79b625e82a3f11ebbb8271b6466b7}{CANTram\+Module}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/dcb/class_bus_module_v1__0_ad4d8d6745e0f039f1aaf1f4adf0f4416_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_bus_module_v1__0_aedb474256450213f863497e8bebd6301}\index{BusModuleV1\_0@{BusModuleV1\_0}!addUARTInterface@{addUARTInterface}}
+\index{addUARTInterface@{addUARTInterface}!BusModuleV1\_0@{BusModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{addUARTInterface()}{addUARTInterface()}}
+{\footnotesize\ttfamily \label{class_bus_module_v1__0_aedb474256450213f863497e8bebd6301} 
+bool Bus\+Module\+V1\+\_\+0\+::add\+UARTInterface (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Add and configure the UART interface for this module. 
+
+Inserts the UART interface into the module interface array, validates associated pins and configures UART core pins. \begin{DoxyReturn}{Returns}
+true if UART interface setup succeeded, false otherwise. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/dcb/class_bus_module_v1__0_aedb474256450213f863497e8bebd6301_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_bus_module_v1__0_a16bba6acd40262044fbb2dfa89967a37}\index{BusModuleV1\_0@{BusModuleV1\_0}!attachModule@{attachModule}}
+\index{attachModule@{attachModule}!BusModuleV1\_0@{BusModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{attachModule()}{attachModule()}}
+{\footnotesize\ttfamily \label{class_bus_module_v1__0_a16bba6acd40262044fbb2dfa89967a37} 
+bool Bus\+Module\+V1\+\_\+0\+::attach\+Module (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{slot}{, }\item[{uint8\+\_\+t}]{gpio\+Start}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Attach this module to a slot and GPIO start index. 
+
+Calls the base \doxylink{class_c_a_n_tram_module}{CANTram\+Module} attach implementation and performs any module-\/specific attach logic. 
+\begin{DoxyParams}{Parameters}
+{\em slot} & Slot index to attach the module to. \\
+\hline
+{\em gpio\+Start} & Starting GPIO index assigned to this module. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the attach operation was successful, false otherwise. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_a_n_tram_module_a67cab1c238257e6d9b88afc4f644e477}{CANTram\+Module}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/dcb/class_bus_module_v1__0_a16bba6acd40262044fbb2dfa89967a37_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_bus_module_v1__0_a25a59d36f49cd5316a0186bd02b1a588}\index{BusModuleV1\_0@{BusModuleV1\_0}!cycle@{cycle}}
+\index{cycle@{cycle}!BusModuleV1\_0@{BusModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{cycle()}{cycle()}}
+{\footnotesize\ttfamily \label{class_bus_module_v1__0_a25a59d36f49cd5316a0186bd02b1a588} 
+void Bus\+Module\+V1\+\_\+0\+::cycle (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{response}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Periodic cycle callback for the Bus\+Module. 
+
+Called by the core to perform periodic tasks. Implement module-\/specific cyclic behavior here. 
+\begin{DoxyParams}{Parameters}
+{\em response} & Optional pointer to a response buffer where the module may write response bytes. May be nullptr if unused. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_a_n_tram_module_a1be4a73e5fc8e14edad90741593d2d29}{CANTram\+Module}}.
+
+\Hypertarget{class_bus_module_v1__0_abb12c39782672f8904b8cc7f5a8c7364}\index{BusModuleV1\_0@{BusModuleV1\_0}!getFWVersion@{getFWVersion}}
+\index{getFWVersion@{getFWVersion}!BusModuleV1\_0@{BusModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{getFWVersion()}{getFWVersion()}}
+{\footnotesize\ttfamily \label{class_bus_module_v1__0_abb12c39782672f8904b8cc7f5a8c7364} 
+String Bus\+Module\+V1\+\_\+0\+::get\+FWVersion (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the firmware version string. 
+
+Returns the firmware version string implemented by the module. \begin{DoxyReturn}{Returns}
+String Firmware version (e.\+g. "{}1.\+0"{}). 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_acf8e6722dc924b1bf4d5289f3684fd29}{CANTram\+Module}}.
+
+\Hypertarget{class_bus_module_v1__0_ab1f6be81ebb01684222a2fbfdc19cba1}\index{BusModuleV1\_0@{BusModuleV1\_0}!getGPIODemand@{getGPIODemand}}
+\index{getGPIODemand@{getGPIODemand}!BusModuleV1\_0@{BusModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{getGPIODemand()}{getGPIODemand()}}
+{\footnotesize\ttfamily \label{class_bus_module_v1__0_ab1f6be81ebb01684222a2fbfdc19cba1} 
+uint8\+\_\+t Bus\+Module\+V1\+\_\+0\+::get\+GPIODemand (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the GPIO demand of the module. 
+
+Returns how many GPIOs this module requires from the core. \begin{DoxyReturn}{Returns}
+uint8\+\_\+t Number of GPIOs demanded by the module. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_afa6df5b58f7681a8a316b3910f987cce}{CANTram\+Module}}.
+
+\Hypertarget{class_bus_module_v1__0_ab3624eb3ad2ae3333c22125fb0fee5b5}\index{BusModuleV1\_0@{BusModuleV1\_0}!getGPIOSupply@{getGPIOSupply}}
+\index{getGPIOSupply@{getGPIOSupply}!BusModuleV1\_0@{BusModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{getGPIOSupply()}{getGPIOSupply()}}
+{\footnotesize\ttfamily \label{class_bus_module_v1__0_ab3624eb3ad2ae3333c22125fb0fee5b5} 
+uint8\+\_\+t Bus\+Module\+V1\+\_\+0\+::get\+GPIOSupply (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the GPIO supply capacity of the module. 
+
+Returns how many GPIOs this module provides/supplies to the system. \begin{DoxyReturn}{Returns}
+uint8\+\_\+t Number of GPIOs supplied by the module. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_ae7247503120b76151cc2086dc4250911}{CANTram\+Module}}.
+
+\Hypertarget{class_bus_module_v1__0_ad27db80f3d7030a0fafdd985079b3bdd}\index{BusModuleV1\_0@{BusModuleV1\_0}!getHWType@{getHWType}}
+\index{getHWType@{getHWType}!BusModuleV1\_0@{BusModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{getHWType()}{getHWType()}}
+{\footnotesize\ttfamily \label{class_bus_module_v1__0_ad27db80f3d7030a0fafdd985079b3bdd} 
+String Bus\+Module\+V1\+\_\+0\+::get\+HWType (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the hardware type string. 
+
+Returns a human readable hardware type identifier for the concrete module implementation. \begin{DoxyReturn}{Returns}
+String Hardware type identifier (e.\+g. "{}\+Main\+Module\+V1.\+0"{}). 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_a3edca0142c5fa8a0d91a549f8371b460}{CANTram\+Module}}.
+
+\Hypertarget{class_bus_module_v1__0_a64857b219f743fa39813812c9b911428}\index{BusModuleV1\_0@{BusModuleV1\_0}!getHWVersion@{getHWVersion}}
+\index{getHWVersion@{getHWVersion}!BusModuleV1\_0@{BusModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{getHWVersion()}{getHWVersion()}}
+{\footnotesize\ttfamily \label{class_bus_module_v1__0_a64857b219f743fa39813812c9b911428} 
+String Bus\+Module\+V1\+\_\+0\+::get\+HWVersion (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the hardware version string. 
+
+Returns the hardware revision/version string for the module. \begin{DoxyReturn}{Returns}
+String Hardware version (e.\+g. "{}1.\+0"{}). 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_a5d9287df902bd2f9ec32b4317f95fff6}{CANTram\+Module}}.
+
+\Hypertarget{class_bus_module_v1__0_ab2f8ee922f12c35d5d893cb4e07b4565}\index{BusModuleV1\_0@{BusModuleV1\_0}!getInterfaceCount@{getInterfaceCount}}
+\index{getInterfaceCount@{getInterfaceCount}!BusModuleV1\_0@{BusModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{getInterfaceCount()}{getInterfaceCount()}}
+{\footnotesize\ttfamily \label{class_bus_module_v1__0_ab2f8ee922f12c35d5d893cb4e07b4565} 
+size\+\_\+t Bus\+Module\+V1\+\_\+0\+::get\+Interface\+Count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get number of interfaces provided by the module. 
+
+Return the number of entries in the interfaces array returned by \doxylink{class_bus_module_v1__0_af6c2381228cdd502b31111301cb116fd}{get\+Interfaces()}. \begin{DoxyReturn}{Returns}
+size\+\_\+t Number of interface pointers. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_a68c703147d8b495e324febcaccd49dea}{CANTram\+Module}}.
+
+\Hypertarget{class_bus_module_v1__0_af6c2381228cdd502b31111301cb116fd}\index{BusModuleV1\_0@{BusModuleV1\_0}!getInterfaces@{getInterfaces}}
+\index{getInterfaces@{getInterfaces}!BusModuleV1\_0@{BusModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{getInterfaces()}{getInterfaces()}}
+{\footnotesize\ttfamily \label{class_bus_module_v1__0_af6c2381228cdd502b31111301cb116fd} 
+\mbox{\hyperlink{class_interface}{Interface}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} Bus\+Module\+V1\+\_\+0\+::get\+Interfaces (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get pointer to module\textquotesingle{}s interface array. 
+
+Returns a pointer to the internal Interface\texorpdfstring{$\ast$}{*} array used by the core to enumerate interfaces. \begin{DoxyReturn}{Returns}
+Interface\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} Pointer to the first element of the module\textquotesingle{}s interfaces array. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_a09c919fc31111badfec18faf64c729f4}{CANTram\+Module}}.
+
+\Hypertarget{class_bus_module_v1__0_aedf45f0be91985e58f6b6d08af048fb3}\index{BusModuleV1\_0@{BusModuleV1\_0}!initialize@{initialize}}
+\index{initialize@{initialize}!BusModuleV1\_0@{BusModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily \label{class_bus_module_v1__0_aedf45f0be91985e58f6b6d08af048fb3} 
+bool Bus\+Module\+V1\+\_\+0\+::initialize (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Initialize the module after attachment and provisioning. 
+
+Perform runtime initialization (start drivers, begin peripherals) once all modules have been attached. \begin{DoxyReturn}{Returns}
+true if initialization succeeded, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_a6930dfb86a2e06ab9a9b299520830fb7}{CANTram\+Module}}.
+
+\Hypertarget{class_bus_module_v1__0_ae39f45e115c9d24cb7adf367fbdd64b7}\index{BusModuleV1\_0@{BusModuleV1\_0}!preInitialize@{preInitialize}}
+\index{preInitialize@{preInitialize}!BusModuleV1\_0@{BusModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{preInitialize()}{preInitialize()}}
+{\footnotesize\ttfamily \label{class_bus_module_v1__0_ae39f45e115c9d24cb7adf367fbdd64b7} 
+bool Bus\+Module\+V1\+\_\+0\+::pre\+Initialize (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Pre-\/initialize the module after attachment and provisioning. 
+
+Perform any pre-\/initialization steps before the main \doxylink{class_bus_module_v1__0_aedf45f0be91985e58f6b6d08af048fb3}{initialize()} call. May be used to establish e.\+g. i2c communication needed for initialization. \begin{DoxyReturn}{Returns}
+true if pre-\/initialization succeeded, false otherwise. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_a_n_tram_module_a329b502ade3a32987994381c93ddbd0b}{CANTram\+Module}}.
+
+\Hypertarget{class_bus_module_v1__0_ae608f88ec327b8ea590cfe5767ae6106}\index{BusModuleV1\_0@{BusModuleV1\_0}!provideGPIOs@{provideGPIOs}}
+\index{provideGPIOs@{provideGPIOs}!BusModuleV1\_0@{BusModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{provideGPIOs()}{provideGPIOs()}}
+{\footnotesize\ttfamily \label{class_bus_module_v1__0_ae608f88ec327b8ea590cfe5767ae6106} 
+bool Bus\+Module\+V1\+\_\+0\+::provide\+GPIOs (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Provide GPIO definitions to the core. 
+
+Placeholder for Bus\+Module-\/specific GPIO provisioning. Currently does not register additional GPIOs. \begin{DoxyReturn}{Returns}
+true on success. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_abaad4d92c02fc8bb525a57d8ac06db7e}{CANTram\+Module}}.
+
+\Hypertarget{class_bus_module_v1__0_a5d7b5c4ee7d5a1ba9d8ed0628a7f597f}\index{BusModuleV1\_0@{BusModuleV1\_0}!provideHardwareResources@{provideHardwareResources}}
+\index{provideHardwareResources@{provideHardwareResources}!BusModuleV1\_0@{BusModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{provideHardwareResources()}{provideHardwareResources()}}
+{\footnotesize\ttfamily \label{class_bus_module_v1__0_a5d7b5c4ee7d5a1ba9d8ed0628a7f597f} 
+bool Bus\+Module\+V1\+\_\+0\+::provide\+Hardware\+Resources (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Provide hardware resources to \doxylink{class_c_a_n_tram_core}{CANTram\+Core}. 
+
+Placeholder for attaching hardware resources (UART, I2C, SPI, etc.) that Bus\+Module may provide. \begin{DoxyReturn}{Returns}
+true on success. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_aa509ae950722ebd48383c124ec6a63ec}{CANTram\+Module}}.
+
+\Hypertarget{class_bus_module_v1__0_a4a285d859c46cc480e2ccc452e1f0f38}\index{BusModuleV1\_0@{BusModuleV1\_0}!requestGPIOs@{requestGPIOs}}
+\index{requestGPIOs@{requestGPIOs}!BusModuleV1\_0@{BusModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{requestGPIOs()}{requestGPIOs()}}
+{\footnotesize\ttfamily \label{class_bus_module_v1__0_a4a285d859c46cc480e2ccc452e1f0f38} 
+bool Bus\+Module\+V1\+\_\+0\+::request\+GPIOs (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Request GPIO definitions from \doxylink{class_c_a_n_tram_core}{CANTram\+Core} and validate pins for module interfaces. 
+
+Retrieves UART RX/\+TX and SPI CS output definitions from the core, validates they are not on shift registers and logs the assigned pins. Invalid pins will cause related interfaces to be invalidated. \begin{DoxyReturn}{Returns}
+true if all required GPIO definitions were found and valid, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_a7f2c1c05cafb19676aed58c11219d0f5}{CANTram\+Module}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/dcb/class_bus_module_v1__0_a4a285d859c46cc480e2ccc452e1f0f38_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_bus_module_v1__0_a805fbe1982b45754d54965eef97c73e3}\index{BusModuleV1\_0@{BusModuleV1\_0}!requestHardwareResources@{requestHardwareResources}}
+\index{requestHardwareResources@{requestHardwareResources}!BusModuleV1\_0@{BusModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{requestHardwareResources()}{requestHardwareResources()}}
+{\footnotesize\ttfamily \label{class_bus_module_v1__0_a805fbe1982b45754d54965eef97c73e3} 
+bool Bus\+Module\+V1\+\_\+0\+::request\+Hardware\+Resources (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Request hardware resources required by the Bus\+Module. 
+
+Attempts to acquire a UART hardware resource from \doxylink{class_c_a_n_tram_core}{CANTram\+Core} and assigns it to the module\textquotesingle{}s UART interface. If no UART resource is available the UART interface is invalidated. \begin{DoxyReturn}{Returns}
+true if required resources were successfully acquired, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_tram_module_a88dd0ab2213df828b576d337e38c1ac8}{CANTram\+Module}}.
+
+\Hypertarget{class_bus_module_v1__0_adca07691ab1dbe6942abd50e3b6a2a23}\index{BusModuleV1\_0@{BusModuleV1\_0}!reset@{reset}}
+\index{reset@{reset}!BusModuleV1\_0@{BusModuleV1\_0}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \label{class_bus_module_v1__0_adca07691ab1dbe6942abd50e3b6a2a23} 
+bool Bus\+Module\+V1\+\_\+0\+::reset (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reset the module to a known default state. 
+
+Optional override for module-\/specific reset logic. Base implementation should be safe to call. \begin{DoxyReturn}{Returns}
+true if reset succeeded, false otherwise.
+\end{DoxyReturn}
+Default implementation performs module reset actions. It logs the reset operation and returns true. Derived classes may override to perform additional hardware or state reset behavior. \begin{DoxyReturn}{Returns}
+true if reset succeeded, false otherwise. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_a_n_tram_module_a496814b4e5fa5f162c48f17ec33d4475}{CANTram\+Module}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/dcb/class_bus_module_v1__0_adca07691ab1dbe6942abd50e3b6a2a23_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/leowa/\+Documents/\+Platform\+IO/\+Projects/\+CANTram\+Framework\+Usage/lib/\+CANTram\+Framework/include/Bus\+Module.\+h\item 
+C\+:/\+Users/leowa/\+Documents/\+Platform\+IO/\+Projects/\+CANTram\+Framework\+Usage/lib/\+CANTram\+Framework/src/modules/Bus\+Module.\+cpp\end{DoxyCompactItemize}

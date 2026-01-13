@@ -1,0 +1,64 @@
+\doxysection{Analog\+Module\+V1\+\_\+0.\+h}
+\hypertarget{_analog_module_v1__0_8h_source}{}\label{_analog_module_v1__0_8h_source}\index{C:/Users/leowa/Documents/PlatformIO/Projects/CANTramFrameworkUsage/lib/CANTramFramework/include/AnalogModuleV1\_0.h@{C:/Users/leowa/Documents/PlatformIO/Projects/CANTramFrameworkUsage/lib/CANTramFramework/include/AnalogModuleV1\_0.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ ANALOG\_MODULE\_V1\_0\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ ANALOG\_MODULE\_V1\_0\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <Arduino.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_c_a_n_tram_module_8h}{CANTramModule.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_m_a_x22531_8h}{MAX22531.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}Interface.h"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}AnalogInput.h"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}AnalogOutput.h"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_output_definition_8h}{OutputDefinition.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_debug_8h}{Debug.h}}"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }AnalogModuleV1\_0\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_c_a_n_tram_module_ae1c9554adb901b7e798a44d521781c0b}{CANTramModule}}\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ AnalogModuleV1\_0()\ =\textcolor{keywordflow}{default};}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{comment}{//Module\ information}}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ String\ HW\_TYPE;}
+\DoxyCodeLine{00020\ \ \ \ \ String\ \mbox{\hyperlink{class_analog_module_v1__0_a51a372016b5d240a79d49e6853bd8518}{getHWType}}()\textcolor{keyword}{\ const\ override\ }\{\ \textcolor{keywordflow}{return}\ HW\_TYPE;\ \}}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ String\ HW\_VERSION;}
+\DoxyCodeLine{00022\ \ \ \ \ String\ \mbox{\hyperlink{class_analog_module_v1__0_a7b4e1ca68f8d9f31965655a7d469592c}{getHWVersion}}()\textcolor{keyword}{\ const\ override\ }\{\ \textcolor{keywordflow}{return}\ HW\_VERSION;\ \}}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ String\ FW\_VERSION;}
+\DoxyCodeLine{00024\ \ \ \ \ String\ \mbox{\hyperlink{class_analog_module_v1__0_aa4c1e1889578720bc95599c563397114}{getFWVersion}}()\textcolor{keyword}{\ const\ override\ }\{\ \textcolor{keywordflow}{return}\ FW\_VERSION;\ \}}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ uint8\_t\ GPIO\_DEMAND\ =\ 5;}
+\DoxyCodeLine{00026\ \ \ \ \ uint8\_t\ \mbox{\hyperlink{class_analog_module_v1__0_ab34d1eaa309b1b2e37851d66287f43d6}{getGPIODemand}}()\textcolor{keyword}{\ const\ override\ }\{\ \textcolor{keywordflow}{return}\ GPIO\_DEMAND;\ \}}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ uint8\_t\ GPIO\_SUPPLY\ =\ 0;}
+\DoxyCodeLine{00028\ \ \ \ \ uint8\_t\ \mbox{\hyperlink{class_analog_module_v1__0_a8f3dcb7de360ffab0709a04a9657f682}{getGPIOSupply}}()\textcolor{keyword}{\ const\ override\ }\{\ \textcolor{keywordflow}{return}\ GPIO\_SUPPLY;\ \}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{comment}{//Core\ functions}}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_analog_module_v1__0_a0d48d770904f90501dfa2bef16270d8c}{attachModule}}(uint8\_t\ slot,\ uint8\_t\ gpioStart)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_analog_module_v1__0_a214392a00aecdb232ff0cf0c12271d7c}{provideGPIOs}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_analog_module_v1__0_ad075b7cce67bb33101d4c831a8125ef3}{requestGPIOs}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_analog_module_v1__0_a094a3fac21a9835d501d965dc6c3f4bf}{provideHardwareResources}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_analog_module_v1__0_ac7d18b81c9980020734c35b7987219b6}{requestHardwareResources}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_analog_module_v1__0_ae288aa8255de5ca8b8a08ef1c18b44b2}{addInterfaces}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_analog_module_v1__0_ad93b42ec5c2d12a57aece35289506add}{initialize}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_analog_module_v1__0_adf25f90bf6a38cfe20c6ac8984cf36fa}{cycle}}(uint8\_t*\ response)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_analog_module_v1__0_af605e705430ba08785ac8dfd68e5efa7}{reset}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{comment}{//Interfaces}}
+\DoxyCodeLine{00042\ \ \ \ \ \mbox{\hyperlink{class_interface}{Interface}}**\ \mbox{\hyperlink{class_analog_module_v1__0_a25653fb8e041079aeec6c8be87cc077a}{getInterfaces}}()\textcolor{keyword}{\ override\ }\{\ \textcolor{keywordflow}{return}\ \_interfaces;\ \}}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{class_analog_module_v1__0_a27c2aef9374563ee7a5130443233d333}{getInterfaceCount}}()\textcolor{keyword}{\ override\ }\{\ \textcolor{keywordflow}{return}\ INTERFACE\_COUNT;\ \}}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{size\_t}\ INTERFACE\_COUNT\ =\ 8;}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_interface}{Interface}}*\ \_interfaces[INTERFACE\_COUNT];}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_analog_input}{AnalogInput}}\ \_analogInputInterfaces[4];}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_analog_output}{AnalogOutput}}\ \_analogOutputInterfaces[4];}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_output_definition}{OutputDefinition}}*\ CS\_INPUTS;\ \textcolor{comment}{//Chip\ select\ pin\ for\ the\ input\ chip}}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_output_definition}{OutputDefinition}}*\ PWM\_OUTPUTS[4];\ \textcolor{comment}{//Pins\ for\ analog\ outputs}}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Hardware}}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_m_a_x22531}{MAX22531}}\ \_Inputs;}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ Interface::Resolution\ \_resolution\ =\ Interface::RES\_12BIT;}
+\DoxyCodeLine{00056\ \};}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

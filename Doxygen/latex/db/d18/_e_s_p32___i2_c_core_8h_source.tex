@@ -1,0 +1,66 @@
+\doxysection{ESP32\+\_\+\+I2\+CCore.\+h}
+\hypertarget{_e_s_p32___i2_c_core_8h_source}{}\label{_e_s_p32___i2_c_core_8h_source}\index{C:/Users/leowa/Documents/PlatformIO/Projects/CANTramFrameworkUsage/lib/CANTramFramework/include/ESP32\_I2CCore.h@{C:/Users/leowa/Documents/PlatformIO/Projects/CANTramFrameworkUsage/lib/CANTramFramework/include/ESP32\_I2CCore.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ ESP32\_I2CCORE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ ESP32\_I2CCORE\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}I2CCore.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <Arduino.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_debug_8h}{Debug.h}}>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}driver/i2c.h"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <Wire.h>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ WRITE\_ADDRESS(address)\ ((address\ <<\ 1)\ |\ I2C\_MASTER\_WRITE)}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#define\ READ\_ADDRESS(address)\ \ ((address\ <<\ 1)\ |\ I2C\_MASTER\_READ)}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }ESP32\_I2CCore\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_i2_c_core}{I2CCore}}\ \{}
+\DoxyCodeLine{00014\ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ \ \ \ \ ESP32\_I2CCore(uint8\_t\ i2c\_num);}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_e_s_p32___i2_c_core_aa3e0817cba1f01e19e046fa27a776eab}{reset}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{bool}\ begin()\ \textcolor{keyword}{override};\ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{void}\ beginTransmission(uint8\_t\ address)\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \_wire-\/>beginTransmission(address);}
+\DoxyCodeLine{00020\ \ \ \ \ \};}
+\DoxyCodeLine{00021\ \ \ \ \ uint8\_t\ endTransmission()\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \_wire-\/>endTransmission();}
+\DoxyCodeLine{00023\ \ \ \ \ \};}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ write(uint8\_t\ data)\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \_wire-\/>write(data);}
+\DoxyCodeLine{00026\ \ \ \ \ \};}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ write(\textcolor{keyword}{const}\ uint8\_t\ *data,\ \textcolor{keywordtype}{size\_t}\ quantity)\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \_wire-\/>write(data,\ quantity);}
+\DoxyCodeLine{00029\ \ \ \ \ \};}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ requestFrom(uint8\_t\ address,\ \textcolor{keywordtype}{size\_t}\ len,\ \textcolor{keywordtype}{bool}\ stopBit)\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \_wire-\/>requestFrom(address,\ len,\ stopBit);}
+\DoxyCodeLine{00032\ \ \ \ \ \};}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{int}\ available()\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \_wire-\/>available();}
+\DoxyCodeLine{00035\ \ \ \ \ \};}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{int}\ read()\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \_wire-\/>read();}
+\DoxyCodeLine{00038\ \ \ \ \ \};}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{int}\ peek()\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \_wire-\/>peek();}
+\DoxyCodeLine{00041\ \ \ \ \ \};}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ flush()\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \_wire-\/>flush();}
+\DoxyCodeLine{00044\ \ \ \ \ \};}
+\DoxyCodeLine{00045\ \ \ \ \ TwoWire\&\ getWireInstance()\ \{}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\_wire;}
+\DoxyCodeLine{00047\ \ \ \ \ \};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ uint8\_t\ ESP\_I2C\_NUM\_0\ =\ 0;}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ uint8\_t\ ESP\_I2C\_NUM\_1\ =\ 1;}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{comment}{//\ Protected\ members\ here}}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00055\ \ \ \ \ TwoWire*\ \_wire;}
+\DoxyCodeLine{00056\ \ \ \ \ uint8\_t\ \_i2c\_num;}
+\DoxyCodeLine{00057\ \ \ \ \ }
+\DoxyCodeLine{00058\ \};}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

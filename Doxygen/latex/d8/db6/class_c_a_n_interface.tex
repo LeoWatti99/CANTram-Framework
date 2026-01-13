@@ -1,0 +1,124 @@
+\doxysection{CANInterface Class Reference}
+\hypertarget{class_c_a_n_interface}{}\label{class_c_a_n_interface}\index{CANInterface@{CANInterface}}
+
+
+Inheritance diagram for CANInterface\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=156pt]{d8/d9f/class_c_a_n_interface__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for CANInterface\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=156pt]{d6/d20/class_c_a_n_interface__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Interface\+::\+Type \mbox{\hyperlink{class_c_a_n_interface_a516f0d21082836b57826f419c6f7e746}{get\+Type}} () const override
+\item 
+\Hypertarget{class_c_a_n_interface_aeb44c652113e138ae5a3423e73b975e2}\label{class_c_a_n_interface_aeb44c652113e138ae5a3423e73b975e2} 
+bool {\bfseries begin} ()
+\item 
+\Hypertarget{class_c_a_n_interface_a58804ee5924e2ee89bc2140c0ec538c2}\label{class_c_a_n_interface_a58804ee5924e2ee89bc2140c0ec538c2} 
+bool {\bfseries end} ()
+\item 
+\Hypertarget{class_c_a_n_interface_aabe1aeabb64bf6971fdf16531254dddb}\label{class_c_a_n_interface_aabe1aeabb64bf6971fdf16531254dddb} 
+bool {\bfseries set\+Baudrate} (CANCore\+::\+Baudrate baudrate)
+\item 
+\Hypertarget{class_c_a_n_interface_ad968416f4969c1f17d8313df3d7e88b1}\label{class_c_a_n_interface_ad968416f4969c1f17d8313df3d7e88b1} 
+bool {\bfseries send\+Message} (const \mbox{\hyperlink{struct_c_a_n_core_1_1_c_a_n_message}{CANCore\+::\+CANMessage}} \&message)
+\item 
+\Hypertarget{class_c_a_n_interface_af3db3c2b8ce98535ac35f6f05ae317ea}\label{class_c_a_n_interface_af3db3c2b8ce98535ac35f6f05ae317ea} 
+bool {\bfseries receive\+Message} (\mbox{\hyperlink{struct_c_a_n_core_1_1_c_a_n_message}{CANCore\+::\+CANMessage}} \&message)
+\item 
+\Hypertarget{class_c_a_n_interface_a4cfcba5f861980f9b719883fff974710}\label{class_c_a_n_interface_a4cfcba5f861980f9b719883fff974710} 
+uint8\+\_\+t {\bfseries available} ()
+\item 
+\Hypertarget{class_c_a_n_interface_aae997351cbed6d6617d2caa3342886f5}\label{class_c_a_n_interface_aae997351cbed6d6617d2caa3342886f5} 
+void {\bfseries set\+CANCore} (\mbox{\hyperlink{class_c_a_n_core}{CANCore}} \texorpdfstring{$\ast$}{*}can\+Core)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_interface}{Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_interface_a3ac5ff9b58ddb3323ad28d470850b41e}{setQ}} (uint16\+\_\+t q)
+\item 
+virtual uint16\+\_\+t {\bfseries getQ} () const
+\item 
+void {\bfseries rename} (const String \&new\+Name)
+\item 
+{\footnotesize template$<$typename T$>$ }\\T {\bfseries as} ()
+\item 
+void {\bfseries validate} ()
+\item 
+void {\bfseries validate} (bool state)
+\item 
+void {\bfseries invalidate} ()
+\item 
+bool {\bfseries is\+Valid} ()
+\item 
+bool {\bfseries is\+Invalid} ()
+\item 
+String {\bfseries get\+Name} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Types inherited from \mbox{\hyperlink{class_interface}{Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_interface_a765c7b30069d200e461995c602b98e90}\label{class_interface_a765c7b30069d200e461995c602b98e90} 
+enum {\bfseries Resolution} \{ {\bfseries RES\+\_\+8\+BIT} = 8
+, {\bfseries RES\+\_\+10\+BIT} = 10
+, {\bfseries RES\+\_\+12\+BIT} = 12
+, {\bfseries RES\+\_\+16\+BIT} = 16
+ \}
+\item 
+\Hypertarget{class_interface_a01562cbfcb9c8793a7117b67ee0ce079}\label{class_interface_a01562cbfcb9c8793a7117b67ee0ce079} 
+enum {\bfseries Type} \{ \newline
+{\bfseries DIGITAL\+\_\+\+INPUT}
+, {\bfseries DIGITAL\+\_\+\+OUTPUT}
+, {\bfseries ANALOG\+\_\+\+INPUT}
+, {\bfseries ANALOG\+\_\+\+OUTPUT}
+, \newline
+{\bfseries RELAIS}
+, {\bfseries BUS}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_interface}{Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+String {\bfseries name}
+\item 
+uint16\+\_\+t {\bfseries Q} = 0
+\item 
+bool {\bfseries \+\_\+valid} = false
+\item 
+bool {\bfseries \+\_\+invalid} = false
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_c_a_n_interface_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_c_a_n_interface_a516f0d21082836b57826f419c6f7e746}\index{CANInterface@{CANInterface}!getType@{getType}}
+\index{getType@{getType}!CANInterface@{CANInterface}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily \label{class_c_a_n_interface_a516f0d21082836b57826f419c6f7e746} 
+Interface\+::\+Type CANInterface\+::get\+Type (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_interface}{Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/leowa/\+Documents/\+Platform\+IO/\+Projects/\+CANTram\+Framework\+Usage/lib/\+CANTram\+Framework/include/\mbox{\hyperlink{_c_a_n_interface_8h}{CANInterface.\+h}}\end{DoxyCompactItemize}

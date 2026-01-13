@@ -1,0 +1,348 @@
+\doxysection{ESP32\+\_\+\+CANCore Class Reference}
+\hypertarget{class_e_s_p32___c_a_n_core}{}\label{class_e_s_p32___c_a_n_core}\index{ESP32\_CANCore@{ESP32\_CANCore}}
+
+
+Inheritance diagram for ESP32\+\_\+\+CANCore\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{d3/d55/class_e_s_p32___c_a_n_core__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ESP32\+\_\+\+CANCore\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{de/da8/class_e_s_p32___c_a_n_core__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_hardware_resource_adead6978be3d7b86c18e3d3e051381e6}{Hardware\+Resource\+::\+Type}} \mbox{\hyperlink{class_e_s_p32___c_a_n_core_ac6c187e2a8158cfcc770b568e96706ec}{get\+Type}} () override
+\begin{DoxyCompactList}\small\item\em Get the hardware resource type. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_e_s_p32___c_a_n_core_acf383daa8d43b01883d8008dbbb8fc06}{begin}} () override
+\begin{DoxyCompactList}\small\item\em Initialize the CAN interface. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_e_s_p32___c_a_n_core_ad668c0ff123ec46700546e952dad39d5}{set\+Baudrate}} (Baudrate baudrate) override
+\begin{DoxyCompactList}\small\item\em Set the CAN bus baudrate. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_e_s_p32___c_a_n_core_ac11700a4723c67a486fe48ac6d6d66a1}{set\+Pins}} (int8\+\_\+t tx\+Pin, int8\+\_\+t rx\+Pin) override
+\begin{DoxyCompactList}\small\item\em Set the CAN transceiver pins. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_e_s_p32___c_a_n_core_a06735363db68b61a7e3634d9744b1f3d}{end}} () override
+\item 
+bool \mbox{\hyperlink{class_e_s_p32___c_a_n_core_a5474be83b4e12aa82a43d6e70d8d7ed5}{send\+Message}} (const \mbox{\hyperlink{struct_c_a_n_core_1_1_c_a_n_message}{CANMessage}} \&message) override
+\item 
+bool \mbox{\hyperlink{class_e_s_p32___c_a_n_core_adbab7ae89e53ad752bc06e789381c4d5}{read\+Message}} (\mbox{\hyperlink{struct_c_a_n_core_1_1_c_a_n_message}{CANMessage}} \&message) override
+\begin{DoxyCompactList}\small\item\em Read a CAN message from the interface. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{class_e_s_p32___c_a_n_core_a82b0d9ba535b47648ac951338794509e}{available}} () override
+\begin{DoxyCompactList}\small\item\em Check how many CAN messages are available to read. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_e_s_p32___c_a_n_core_a9ce918df2aedf5cfb08ff1a529f6c152}{setup\+Filter}} (uint32\+\_\+t id, uint32\+\_\+t mask) override
+\item 
+bool \mbox{\hyperlink{class_e_s_p32___c_a_n_core_a85a0e3c4965503c96d865bbcc200cd2a}{reset}} () override
+\begin{DoxyCompactList}\small\item\em Reset the hardware resource to a known default state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_c_a_n_core}{CANCore}}}
+\begin{DoxyCompactItemize}
+\item 
+Baudrate {\bfseries get\+Baudrate} () const
+\item 
+uint8\+\_\+t {\bfseries get\+Tx\+Pin} () const
+\item 
+uint8\+\_\+t {\bfseries get\+Rx\+Pin} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_hardware_resource}{Hardware\+Resource}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_hardware_resource_a26f48b38e5bb1d9bdd47ea2e6de87fdb}{request\+Usage}} ()
+\begin{DoxyCompactList}\small\item\em Request a usage slot for this resource. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{class_hardware_resource_a07205354c25627a3bb10ad417e335ff9}{get\+Usages}} ()
+\begin{DoxyCompactList}\small\item\em Get the current number of usages of this resource. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_hardware_resource_a569821aa9a34d96ed143488a72e6872b}{is\+Used}} ()
+\begin{DoxyCompactList}\small\item\em Check if the resource is currently used. \end{DoxyCompactList}\item 
+virtual uint8\+\_\+t \mbox{\hyperlink{class_hardware_resource_a470679cae7880c9ca436755a50f68db4}{get\+Remaining\+Usages}} ()
+\begin{DoxyCompactList}\small\item\em Get remaining usage capacity for this resource. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Types inherited from \mbox{\hyperlink{class_c_a_n_core}{CANCore}}}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_c_a_n_core_a5766804a2230f83a13111a6a9b465e87}\label{class_c_a_n_core_a5766804a2230f83a13111a6a9b465e87} 
+enum {\bfseries Baudrate} \{ \newline
+{\bfseries BR\+\_\+\+NOT\+\_\+\+SET} = 0
+, {\bfseries BR\+\_\+125K} = 125000
+, {\bfseries BR\+\_\+250K} = 250000
+, {\bfseries BR\+\_\+500K} = 500000
+, \newline
+{\bfseries BR\+\_\+1M} = 1000000
+ \}
+\item 
+\Hypertarget{class_c_a_n_core_afa2d8dcf4f9255c223f5819e0167cc83}\label{class_c_a_n_core_afa2d8dcf4f9255c223f5819e0167cc83} 
+enum {\bfseries Status} \{ {\bfseries STATUS\+\_\+\+OK}
+, {\bfseries STATUS\+\_\+\+ERROR\+\_\+\+ACTIVE}
+, {\bfseries STATUS\+\_\+\+BUS\+\_\+\+OFF}
+, {\bfseries STATUS\+\_\+\+ERROR\+\_\+\+PASSIVE}
+ \}
+\item 
+\Hypertarget{class_c_a_n_core_a78a0c4b32f1455438d9f379c3e659d21}\label{class_c_a_n_core_a78a0c4b32f1455438d9f379c3e659d21} 
+enum {\bfseries Filter\+Type} \{ {\bfseries FILTER\+\_\+\+ACCEPT\+\_\+\+ALL}
+, {\bfseries FILTER\+\_\+\+MATCH\+\_\+\+ID}
+, {\bfseries FILTER\+\_\+\+MASKED}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types inherited from \mbox{\hyperlink{class_hardware_resource}{Hardware\+Resource}}}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_hardware_resource_adead6978be3d7b86c18e3d3e051381e6}{Type}} \{ \newline
+\mbox{\hyperlink{class_hardware_resource_adead6978be3d7b86c18e3d3e051381e6ac6f39e4a2dbc764df53048f26209f0a1}{UART}}
+, \mbox{\hyperlink{class_hardware_resource_adead6978be3d7b86c18e3d3e051381e6a63a2eead0d2771007afa8c8af281c50d}{SPI}}
+, \mbox{\hyperlink{class_hardware_resource_adead6978be3d7b86c18e3d3e051381e6ac77292ec986f613995babba396598dbc}{I2C}}
+, \mbox{\hyperlink{class_hardware_resource_adead6978be3d7b86c18e3d3e051381e6ac2fe3e8cc9a9a8fcb39c32be2da214c5}{PWM}}
+, \newline
+\mbox{\hyperlink{class_hardware_resource_adead6978be3d7b86c18e3d3e051381e6a0ae946256af51077cacc3c0a11575635}{CAN}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration of hardware resource types. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_hardware_resource}{Hardware\+Resource}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_hardware_resource_a7ddffb890a743f2df28128d9afd5bfa5}{Hardware\+Resource}} ()=default
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+virtual uint8\+\_\+t \mbox{\hyperlink{class_hardware_resource_a6b7a709561faf5d344b7c3e14bf37558}{get\+Max\+Usages}} ()
+\begin{DoxyCompactList}\small\item\em Get the maximum simultaneous usages allowed for this resource. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_c_a_n_core}{CANCore}}}
+\begin{DoxyCompactItemize}
+\item 
+Baudrate {\bfseries \+\_\+baudrate} = BR\+\_\+\+NOT\+\_\+\+SET
+\item 
+Filter\+Type {\bfseries \+\_\+filter\+Type} = FILTER\+\_\+\+ACCEPT\+\_\+\+ALL
+\item 
+int8\+\_\+t {\bfseries \+\_\+tx\+Pin} = -\/1
+\item 
+int8\+\_\+t {\bfseries \+\_\+rx\+Pin} = -\/1
+\item 
+Status {\bfseries \+\_\+status} = STATUS\+\_\+\+OK
+\item 
+bool {\bfseries \+\_\+is\+Initialized} = false
+\item 
+uint32\+\_\+t {\bfseries \+\_\+filter\+Id} = 0
+\item 
+uint32\+\_\+t {\bfseries \+\_\+filter\+Mask} = 0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_hardware_resource}{Hardware\+Resource}}}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{class_hardware_resource_a78845b363f906c0383e91ea912bbddbc}{usages}} =0
+\begin{DoxyCompactList}\small\item\em Current usage counter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_e_s_p32___c_a_n_core_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_e_s_p32___c_a_n_core_a82b0d9ba535b47648ac951338794509e}\index{ESP32\_CANCore@{ESP32\_CANCore}!available@{available}}
+\index{available@{available}!ESP32\_CANCore@{ESP32\_CANCore}}
+\doxysubsubsection{\texorpdfstring{available()}{available()}}
+{\footnotesize\ttfamily \label{class_e_s_p32___c_a_n_core_a82b0d9ba535b47648ac951338794509e} 
+uint8\+\_\+t ESP32\+\_\+\+CANCore\+::available (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Check how many CAN messages are available to read. 
+
+Queries the TWAI status information to determine how many messages are currently in the RX queue.
+
+\begin{DoxyReturn}{Returns}
+uint8\+\_\+t Number of available messages to read. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_core}{CANCore}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d24/class_e_s_p32___c_a_n_core_a82b0d9ba535b47648ac951338794509e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_e_s_p32___c_a_n_core_acf383daa8d43b01883d8008dbbb8fc06}\index{ESP32\_CANCore@{ESP32\_CANCore}!begin@{begin}}
+\index{begin@{begin}!ESP32\_CANCore@{ESP32\_CANCore}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily \label{class_e_s_p32___c_a_n_core_acf383daa8d43b01883d8008dbbb8fc06} 
+bool ESP32\+\_\+\+CANCore\+::begin (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Initialize the CAN interface. 
+
+This function first checks if the interface is already initialized. If not, it prepares the general, timing, and filter configurations based on the stored settings. It then installs the TWAI driver, configures alerts, and starts the driver.
+
+\begin{DoxyReturn}{Returns}
+true if initialization was successful. 
+
+false if initialization failed. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_core}{CANCore}}.
+
+\Hypertarget{class_e_s_p32___c_a_n_core_a06735363db68b61a7e3634d9744b1f3d}\index{ESP32\_CANCore@{ESP32\_CANCore}!end@{end}}
+\index{end@{end}!ESP32\_CANCore@{ESP32\_CANCore}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily \label{class_e_s_p32___c_a_n_core_a06735363db68b61a7e3634d9744b1f3d} 
+bool ESP32\+\_\+\+CANCore\+::end (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_c_a_n_core}{CANCore}}.
+
+\Hypertarget{class_e_s_p32___c_a_n_core_ac6c187e2a8158cfcc770b568e96706ec}\index{ESP32\_CANCore@{ESP32\_CANCore}!getType@{getType}}
+\index{getType@{getType}!ESP32\_CANCore@{ESP32\_CANCore}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily \label{class_e_s_p32___c_a_n_core_ac6c187e2a8158cfcc770b568e96706ec} 
+\mbox{\hyperlink{class_hardware_resource_adead6978be3d7b86c18e3d3e051381e6}{Hardware\+Resource\+::\+Type}} ESP32\+\_\+\+CANCore\+::get\+Type (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the hardware resource type. 
+
+Must be implemented by derived classes to return the correct \doxylink{class_hardware_resource_adead6978be3d7b86c18e3d3e051381e6}{Type} enum value. \begin{DoxyReturn}{Returns}
+\doxylink{class_hardware_resource_adead6978be3d7b86c18e3d3e051381e6}{Type} The type of the hardware resource. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_hardware_resource_ad1058e4c12406f756755fad5db55dc77}{Hardware\+Resource}}.
+
+\Hypertarget{class_e_s_p32___c_a_n_core_adbab7ae89e53ad752bc06e789381c4d5}\index{ESP32\_CANCore@{ESP32\_CANCore}!readMessage@{readMessage}}
+\index{readMessage@{readMessage}!ESP32\_CANCore@{ESP32\_CANCore}}
+\doxysubsubsection{\texorpdfstring{readMessage()}{readMessage()}}
+{\footnotesize\ttfamily \label{class_e_s_p32___c_a_n_core_adbab7ae89e53ad752bc06e789381c4d5} 
+bool ESP32\+\_\+\+CANCore\+::read\+Message (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_a_n_core_1_1_c_a_n_message}{CANMessage}} \&}]{message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Read a CAN message from the interface. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & Reference to a \doxylink{struct_c_a_n_core_1_1_c_a_n_message}{CANCore\+::\+CANMessage} object to store the received message. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if a message was successfully read, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_core}{CANCore}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d24/class_e_s_p32___c_a_n_core_adbab7ae89e53ad752bc06e789381c4d5_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_e_s_p32___c_a_n_core_a85a0e3c4965503c96d865bbcc200cd2a}\index{ESP32\_CANCore@{ESP32\_CANCore}!reset@{reset}}
+\index{reset@{reset}!ESP32\_CANCore@{ESP32\_CANCore}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \label{class_e_s_p32___c_a_n_core_a85a0e3c4965503c96d865bbcc200cd2a} 
+bool ESP32\+\_\+\+CANCore\+::reset (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reset the hardware resource to a known default state. 
+
+Default implementation clears the usage counter and logs the reset. Derived classes should call the base implementation and perform any additional hardware-\/specific reset steps. \begin{DoxyReturn}{Returns}
+true if the reset succeeded, false otherwise. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_a_n_core_a611efb48b44ea62f1a7b6428671863ca}{CANCore}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d24/class_e_s_p32___c_a_n_core_a85a0e3c4965503c96d865bbcc200cd2a_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_e_s_p32___c_a_n_core_a5474be83b4e12aa82a43d6e70d8d7ed5}\index{ESP32\_CANCore@{ESP32\_CANCore}!sendMessage@{sendMessage}}
+\index{sendMessage@{sendMessage}!ESP32\_CANCore@{ESP32\_CANCore}}
+\doxysubsubsection{\texorpdfstring{sendMessage()}{sendMessage()}}
+{\footnotesize\ttfamily \label{class_e_s_p32___c_a_n_core_a5474be83b4e12aa82a43d6e70d8d7ed5} 
+bool ESP32\+\_\+\+CANCore\+::send\+Message (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_c_a_n_core_1_1_c_a_n_message}{CANMessage}} \&}]{message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_c_a_n_core}{CANCore}}.
+
+\Hypertarget{class_e_s_p32___c_a_n_core_ad668c0ff123ec46700546e952dad39d5}\index{ESP32\_CANCore@{ESP32\_CANCore}!setBaudrate@{setBaudrate}}
+\index{setBaudrate@{setBaudrate}!ESP32\_CANCore@{ESP32\_CANCore}}
+\doxysubsubsection{\texorpdfstring{setBaudrate()}{setBaudrate()}}
+{\footnotesize\ttfamily \label{class_e_s_p32___c_a_n_core_ad668c0ff123ec46700546e952dad39d5} 
+bool ESP32\+\_\+\+CANCore\+::set\+Baudrate (\begin{DoxyParamCaption}\item[{Baudrate}]{baudrate}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Set the CAN bus baudrate. 
+
+Configures the CAN bus baudrate. Must be called before \doxylink{class_e_s_p32___c_a_n_core_acf383daa8d43b01883d8008dbbb8fc06}{begin()}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em baudrate} & The desired baudrate from the Baudrate enum. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+If called after \doxylink{class_e_s_p32___c_a_n_core_acf383daa8d43b01883d8008dbbb8fc06}{begin()}, the baudrate will not be changed. 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_core}{CANCore}}.
+
+\Hypertarget{class_e_s_p32___c_a_n_core_ac11700a4723c67a486fe48ac6d6d66a1}\index{ESP32\_CANCore@{ESP32\_CANCore}!setPins@{setPins}}
+\index{setPins@{setPins}!ESP32\_CANCore@{ESP32\_CANCore}}
+\doxysubsubsection{\texorpdfstring{setPins()}{setPins()}}
+{\footnotesize\ttfamily \label{class_e_s_p32___c_a_n_core_ac11700a4723c67a486fe48ac6d6d66a1} 
+bool ESP32\+\_\+\+CANCore\+::set\+Pins (\begin{DoxyParamCaption}\item[{int8\+\_\+t}]{tx\+Pin}{, }\item[{int8\+\_\+t}]{rx\+Pin}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Set the CAN transceiver pins. 
+
+configures the TX and RX pins for the CAN interface. Must be called before \doxylink{class_e_s_p32___c_a_n_core_acf383daa8d43b01883d8008dbbb8fc06}{begin()}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tx\+Pin} & The TX pin number. \\
+\hline
+{\em rx\+Pin} & The RX pin number. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the pins were set successfully. 
+
+false if already initialized. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_a_n_core}{CANCore}}.
+
+\Hypertarget{class_e_s_p32___c_a_n_core_a9ce918df2aedf5cfb08ff1a529f6c152}\index{ESP32\_CANCore@{ESP32\_CANCore}!setupFilter@{setupFilter}}
+\index{setupFilter@{setupFilter}!ESP32\_CANCore@{ESP32\_CANCore}}
+\doxysubsubsection{\texorpdfstring{setupFilter()}{setupFilter()}}
+{\footnotesize\ttfamily \label{class_e_s_p32___c_a_n_core_a9ce918df2aedf5cfb08ff1a529f6c152} 
+bool ESP32\+\_\+\+CANCore\+::setup\+Filter (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{id}{, }\item[{uint32\+\_\+t}]{mask}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_c_a_n_core}{CANCore}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/leowa/\+Documents/\+Platform\+IO/\+Projects/\+CANTram\+Framework\+Usage/lib/\+CANTram\+Framework/include/\mbox{\hyperlink{_e_s_p32___c_a_n_core_8h}{ESP32\+\_\+\+CANCore.\+h}}\item 
+C\+:/\+Users/leowa/\+Documents/\+Platform\+IO/\+Projects/\+CANTram\+Framework\+Usage/lib/\+CANTram\+Framework/src/hardware/ESP32\+\_\+\+CANCore.\+cpp\end{DoxyCompactItemize}

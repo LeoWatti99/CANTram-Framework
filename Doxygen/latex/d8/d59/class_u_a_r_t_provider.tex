@@ -1,0 +1,58 @@
+\doxysection{UARTProvider Class Reference}
+\hypertarget{class_u_a_r_t_provider}{}\label{class_u_a_r_t_provider}\index{UARTProvider@{UARTProvider}}
+
+
+Abstract interface for objects that supply a \doxylink{class_u_a_r_t_core}{UARTCore} instance.  
+
+
+
+
+{\ttfamily \#include $<$UARTCore.\+h$>$}
+
+
+
+Inheritance diagram for UARTProvider\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=171pt]{d9/d16/class_u_a_r_t_provider__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_u_a_r_t_core}{UARTCore}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_u_a_r_t_provider_a8122e23379ae91a0b7df45006772d84a}{get\+Uart\+Core}} ()=0
+\begin{DoxyCompactList}\small\item\em Obtain a pointer to an available \doxylink{class_u_a_r_t_core}{UARTCore}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract interface for objects that supply a \doxylink{class_u_a_r_t_core}{UARTCore} instance. 
+
+Implement this interface for modules or systems that can provide access to a \doxylink{class_u_a_r_t_core}{UARTCore}. 
+
+\label{doc-func-members}
+\Hypertarget{class_u_a_r_t_provider_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_u_a_r_t_provider_a8122e23379ae91a0b7df45006772d84a}\index{UARTProvider@{UARTProvider}!getUartCore@{getUartCore}}
+\index{getUartCore@{getUartCore}!UARTProvider@{UARTProvider}}
+\doxysubsubsection{\texorpdfstring{getUartCore()}{getUartCore()}}
+{\footnotesize\ttfamily \label{class_u_a_r_t_provider_a8122e23379ae91a0b7df45006772d84a} 
+virtual \mbox{\hyperlink{class_u_a_r_t_core}{UARTCore}} \texorpdfstring{$\ast$}{*} UARTProvider\+::get\+Uart\+Core (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Obtain a pointer to an available \doxylink{class_u_a_r_t_core}{UARTCore}. 
+
+Returns a pointer to a \doxylink{class_u_a_r_t_core}{UARTCore} instance that can be used by clients. May return nullptr if no \doxylink{class_u_a_r_t_core}{UARTCore} is available. \begin{DoxyReturn}{Returns}
+UARTCore\texorpdfstring{$\ast$}{*} Pointer to a \doxylink{class_u_a_r_t_core}{UARTCore} instance or nullptr if none available. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_main_module_v1__0_ae9cbfdbe65306397b01de0a43f7fde6f}{Main\+Module\+V1\+\_\+0}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/leowa/\+Documents/\+Platform\+IO/\+Projects/\+CANTram\+Framework\+Usage/lib/\+CANTram\+Framework/include/\mbox{\hyperlink{_u_a_r_t_core_8h}{UARTCore.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,84 @@
+\doxysection{ISO1\+I813\+T.\+h}
+\hypertarget{_i_s_o1_i813_t_8h_source}{}\label{_i_s_o1_i813_t_8h_source}\index{C:/Users/leowa/Documents/PlatformIO/Projects/CANTramFrameworkUsage/lib/CANTramFramework/include/ISO1I813T.h@{C:/Users/leowa/Documents/PlatformIO/Projects/CANTramFrameworkUsage/lib/CANTramFramework/include/ISO1I813T.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ ISO1I813T\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ ISO1I813T\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <Arduino.h>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}ISO1I813T\_registers.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <SPI.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}SPIChip.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_debug_8h}{Debug.h}}"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }ISO1I813T\ :\ \textcolor{keyword}{public}\ SPIChip}
+\DoxyCodeLine{00012\ \{}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{enum}\ ISO1I813T\_Filter\{}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ US\_50,}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ US\_100,}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ US\_400,}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ US\_800,}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ US\_1600,}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ US\_3200,}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ US\_10000,}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ US\_20000,}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ FILTER\_OFF}
+\DoxyCodeLine{00024\ \ \ \ \ \};\ }
+\DoxyCodeLine{00025\ \ \ \ \ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{enum}\ ERROR\_CODES\{}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ STATUS\_OK\ =\ 0,}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ INVALID\_CHANNEL\ =\ 10,}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ INVALID\_FILTER\ =\ 11,}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ WIRE\_BREAK\_SETTING\_ERROR\ =\ 30}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00032\ \ \ \ \ \};}
+\DoxyCodeLine{00033\ \ \ \ \ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_i_s_o1_i813_t_1_1_diag}{Diag}}}
+\DoxyCodeLine{00035\ \ \ \ \ \{}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ uint8\_t\ glErr:\ 8;\ \textcolor{comment}{//\ GL\ error}}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ uint8\_t\ intErr:\ 8;\ \textcolor{comment}{//\ Interrupt\ error}}
+\DoxyCodeLine{00038\ \ \ \ \ \};}
+\DoxyCodeLine{00039\ \ \ \ \ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_i_s_o1_i813_t_1_1_data}{Data}}}
+\DoxyCodeLine{00041\ \ \ \ \ \{}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ uint8\_t\ inputs:\ 8;\ \textcolor{comment}{//\ Inputs}}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ uint8\_t\ wireBreaks:\ 8;\ \textcolor{comment}{//\ Wire\ breaks}}
+\DoxyCodeLine{00044\ \ \ \ \ \};}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ uint8\_t\ daisyChain\ =\ 1;\ \textcolor{comment}{//number\ of\ devices\ in\ daisy\ chain,\ default\ 1,\ zero\ means\ no\ daisy\ chain\ support}}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ ISO1I813T()=\textcolor{keywordflow}{default};}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ ISO1I813T(uint8\_t\ csPin,\ uint8\_t\ syncPin);}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ writeRegister(uint8\_t\ address,uint8\_t\ data);}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ uint8\_t\ readRegister(uint8\_t\ address);}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setPins(uint8\_t\ csPin,\ uint8\_t\ syncPin=-\/1);}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ begin();}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ uint8\_t\ getInputs()\ \{\ \textcolor{keywordflow}{return}\ \_inputs;\ \}}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ getInput(uint8\_t\ input)\ \{\ \textcolor{keywordflow}{return}\ (\_inputs\ \&\ (1\ <<\ input))\ !=\ 0;\ \}}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_i_s_o1_i813_t_1_1_data}{Data}}\ fetchData();}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_i_s_o1_i813_t_1_1_diag}{Diag}}\ fetchDiagnose();}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ uint8\_t\ getWireBreaks()\ \{\ \textcolor{keywordflow}{return}\ \_wireBreaks;\ \}}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ getWireBreak(uint8\_t\ wireBreak)\ \{\ \textcolor{keywordflow}{return}\ (\_wireBreaks\ \&\ (1\ <<\ wireBreak))\ !=\ 0;\ \}}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ uint8\_t\ setFilter(uint8\_t\ channel,\ ISO1I813T\_Filter\ filter);}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ uint8\_t\ setWireBreakMask(uint8\_t\ channel,\ \textcolor{keywordtype}{bool}\ enable);}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ freeze(\textcolor{keywordtype}{bool}\ status)\ \{digitalWrite(\_syncPin,\ (status\ \&\&\ useSync)\ ?\ LOW\ :\ HIGH);\}}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ uint8\_t\ \_syncPin;}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ SPISettings\ \_spiSettings\ =\ SPISettings(1000000,\ MSBFIRST,\ SPI\_MODE0);}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \_setSPISettings(uint32\_t\ speed,uint8\_t\ bitOrder,\ uint8\_t\ dataMode);}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ uint8\_t\ \_inputs;}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ uint8\_t\ \_wireBreaks;}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ useSync\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00075\ \};}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

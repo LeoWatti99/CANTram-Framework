@@ -1,0 +1,235 @@
+\doxysection{I2\+CCore Class Reference}
+\hypertarget{class_i2_c_core}{}\label{class_i2_c_core}\index{I2CCore@{I2CCore}}
+
+
+Inheritance diagram for I2\+CCore\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{d1/dbd/class_i2_c_core__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for I2\+CCore\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{d8/d07/class_i2_c_core__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_i2_c_core_a56df9b00a465a753a62e5cca8a70c100}\label{class_i2_c_core_a56df9b00a465a753a62e5cca8a70c100} 
+enum {\bfseries I2\+CStatus} \{ {\bfseries I2\+C\+\_\+\+NOT\+\_\+\+STARTED} =0
+, {\bfseries I2\+C\+\_\+\+STARTED} =1
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types inherited from \mbox{\hyperlink{class_hardware_resource}{Hardware\+Resource}}}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_hardware_resource_adead6978be3d7b86c18e3d3e051381e6}{Type}} \{ \newline
+\mbox{\hyperlink{class_hardware_resource_adead6978be3d7b86c18e3d3e051381e6ac6f39e4a2dbc764df53048f26209f0a1}{UART}}
+, \mbox{\hyperlink{class_hardware_resource_adead6978be3d7b86c18e3d3e051381e6a63a2eead0d2771007afa8c8af281c50d}{SPI}}
+, \mbox{\hyperlink{class_hardware_resource_adead6978be3d7b86c18e3d3e051381e6ac77292ec986f613995babba396598dbc}{I2C}}
+, \mbox{\hyperlink{class_hardware_resource_adead6978be3d7b86c18e3d3e051381e6ac2fe3e8cc9a9a8fcb39c32be2da214c5}{PWM}}
+, \newline
+\mbox{\hyperlink{class_hardware_resource_adead6978be3d7b86c18e3d3e051381e6a0ae946256af51077cacc3c0a11575635}{CAN}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration of hardware resource types. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{class_i2_c_core_a0c8934608811f1a80247981f4e222ce9}{reset}} ()
+\begin{DoxyCompactList}\small\item\em Reset the hardware resource to a known default state. \end{DoxyCompactList}\item 
+\Hypertarget{class_i2_c_core_afa31d5d99e788952f70c83210e2fbd0c}\label{class_i2_c_core_afa31d5d99e788952f70c83210e2fbd0c} 
+virtual bool {\bfseries begin} ()=0
+\item 
+virtual \mbox{\hyperlink{class_hardware_resource_adead6978be3d7b86c18e3d3e051381e6}{Hardware\+Resource\+::\+Type}} \mbox{\hyperlink{class_i2_c_core_a092566ca5aacc4421559e29f6ff12da5}{get\+Type}} () override
+\begin{DoxyCompactList}\small\item\em Get the hardware resource type. \end{DoxyCompactList}\item 
+\Hypertarget{class_i2_c_core_a89a7270104517c21a193023564c7566f}\label{class_i2_c_core_a89a7270104517c21a193023564c7566f} 
+virtual void {\bfseries set\+Pins} (int8\+\_\+t sda\+Pin, int8\+\_\+t scl\+Pin)
+\item 
+\Hypertarget{class_i2_c_core_ae3c93a5c6dc5759ad4353ece2a072e91}\label{class_i2_c_core_ae3c93a5c6dc5759ad4353ece2a072e91} 
+virtual void {\bfseries set\+Buffer\+Size} (uint32\+\_\+t buffer\+Size)
+\item 
+\Hypertarget{class_i2_c_core_aa7e192891a7b5470765700563f597375}\label{class_i2_c_core_aa7e192891a7b5470765700563f597375} 
+virtual void {\bfseries set\+I2\+CNum} (int8\+\_\+t i2c\+\_\+num)
+\item 
+\Hypertarget{class_i2_c_core_a77c901f94b6943f5c57e66e3a239633d}\label{class_i2_c_core_a77c901f94b6943f5c57e66e3a239633d} 
+virtual void {\bfseries set\+Frequency} (uint32\+\_\+t frequency)
+\item 
+\Hypertarget{class_i2_c_core_a75e8b9d512769fe3058db23fcd7cdf03}\label{class_i2_c_core_a75e8b9d512769fe3058db23fcd7cdf03} 
+virtual uint32\+\_\+t {\bfseries set\+Max\+Frequency} (uint32\+\_\+t frequency)
+\item 
+\Hypertarget{class_i2_c_core_ae9454e6d255aa7cb2b50706d73eb53dc}\label{class_i2_c_core_ae9454e6d255aa7cb2b50706d73eb53dc} 
+virtual void {\bfseries begin\+Transmission} (uint8\+\_\+t address)=0
+\item 
+\Hypertarget{class_i2_c_core_a0ded24841d8ddec869777010d3e86f65}\label{class_i2_c_core_a0ded24841d8ddec869777010d3e86f65} 
+virtual uint8\+\_\+t {\bfseries end\+Transmission} ()=0
+\item 
+\Hypertarget{class_i2_c_core_a384258d1da79a501b572ee72606809c6}\label{class_i2_c_core_a384258d1da79a501b572ee72606809c6} 
+virtual size\+\_\+t {\bfseries write} (uint8\+\_\+t data)=0
+\item 
+\Hypertarget{class_i2_c_core_a847fa558d755693f0051b14393f565f1}\label{class_i2_c_core_a847fa558d755693f0051b14393f565f1} 
+virtual size\+\_\+t {\bfseries write} (const uint8\+\_\+t \texorpdfstring{$\ast$}{*}data, size\+\_\+t quantity)=0
+\item 
+\Hypertarget{class_i2_c_core_ad6e3708ffb56b3f60754b18f7ca11c71}\label{class_i2_c_core_ad6e3708ffb56b3f60754b18f7ca11c71} 
+virtual size\+\_\+t {\bfseries request\+From} (uint8\+\_\+t address, size\+\_\+t len, bool stop\+Bit)=0
+\item 
+\Hypertarget{class_i2_c_core_a6ab60e8baf1d9027568f351070577ca3}\label{class_i2_c_core_a6ab60e8baf1d9027568f351070577ca3} 
+virtual int {\bfseries available} ()=0
+\item 
+\Hypertarget{class_i2_c_core_a67a83aa1b84d4438fb839a21bcf31cfa}\label{class_i2_c_core_a67a83aa1b84d4438fb839a21bcf31cfa} 
+virtual int {\bfseries read} ()=0
+\item 
+\Hypertarget{class_i2_c_core_a508529b187413b38a5fae1da7c1d1af0}\label{class_i2_c_core_a508529b187413b38a5fae1da7c1d1af0} 
+virtual int {\bfseries peek} ()
+\item 
+\Hypertarget{class_i2_c_core_acde29772640d5b3eecca2248b090e3ef}\label{class_i2_c_core_acde29772640d5b3eecca2248b090e3ef} 
+virtual void {\bfseries flush} ()=0
+\item 
+virtual uint8\+\_\+t \mbox{\hyperlink{class_i2_c_core_a4000d56ed283e62c7d50a4083e4762b6}{get\+Max\+Usages}} () override
+\begin{DoxyCompactList}\small\item\em Get the maximum simultaneous usages allowed for this resource. \end{DoxyCompactList}\item 
+\Hypertarget{class_i2_c_core_aefafd5e5dd47ab2206be06dcfbb47bd2}\label{class_i2_c_core_aefafd5e5dd47ab2206be06dcfbb47bd2} 
+virtual I2\+CStatus {\bfseries get\+I2\+CStatus} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_hardware_resource}{Hardware\+Resource}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_hardware_resource_a26f48b38e5bb1d9bdd47ea2e6de87fdb}{request\+Usage}} ()
+\begin{DoxyCompactList}\small\item\em Request a usage slot for this resource. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{class_hardware_resource_a07205354c25627a3bb10ad417e335ff9}{get\+Usages}} ()
+\begin{DoxyCompactList}\small\item\em Get the current number of usages of this resource. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_hardware_resource_a569821aa9a34d96ed143488a72e6872b}{is\+Used}} ()
+\begin{DoxyCompactList}\small\item\em Check if the resource is currently used. \end{DoxyCompactList}\item 
+virtual uint8\+\_\+t \mbox{\hyperlink{class_hardware_resource_a470679cae7880c9ca436755a50f68db4}{get\+Remaining\+Usages}} ()
+\begin{DoxyCompactList}\small\item\em Get remaining usage capacity for this resource. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_i2_c_core_a497bb9da08340f9928a392224dafc2d6}\label{class_i2_c_core_a497bb9da08340f9928a392224dafc2d6} 
+static constexpr uint32\+\_\+t {\bfseries I2\+C\+\_\+\+DEFAULT\+\_\+\+FREQUENCY} = 1700000
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_i2_c_core_ac457223ae7336cea9cb4ad34377324cc}\label{class_i2_c_core_ac457223ae7336cea9cb4ad34377324cc} 
+int8\+\_\+t {\bfseries \+\_\+sda\+Pin} =-\/1
+\item 
+\Hypertarget{class_i2_c_core_a9061cd7b867338e86bea99fc3c2e07c2}\label{class_i2_c_core_a9061cd7b867338e86bea99fc3c2e07c2} 
+int8\+\_\+t {\bfseries \+\_\+scl\+Pin} =-\/1
+\item 
+\Hypertarget{class_i2_c_core_ad60de441ea1aa8206933531d1b299f7d}\label{class_i2_c_core_ad60de441ea1aa8206933531d1b299f7d} 
+uint32\+\_\+t {\bfseries \+\_\+frequency} = I2\+C\+\_\+\+DEFAULT\+\_\+\+FREQUENCY
+\item 
+\Hypertarget{class_i2_c_core_ae5baa64864d2970a30ece99ccbe4c319}\label{class_i2_c_core_ae5baa64864d2970a30ece99ccbe4c319} 
+int8\+\_\+t {\bfseries \+\_\+i2c\+\_\+num} =-\/1
+\item 
+\Hypertarget{class_i2_c_core_a511ceb95a3ae8e933df62789f200332b}\label{class_i2_c_core_a511ceb95a3ae8e933df62789f200332b} 
+uint32\+\_\+t {\bfseries \+\_\+buffer\+Size} = I2\+C\+\_\+\+DEFAULT\+\_\+\+BUFFER\+\_\+\+LENGTH
+\item 
+\Hypertarget{class_i2_c_core_a308eab39ef932b80cb9fa455011118ae}\label{class_i2_c_core_a308eab39ef932b80cb9fa455011118ae} 
+I2\+CStatus {\bfseries \+\_\+i2c\+Status} = I2\+C\+\_\+\+NOT\+\_\+\+STARTED
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_hardware_resource}{Hardware\+Resource}}}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{class_hardware_resource_a78845b363f906c0383e91ea912bbddbc}{usages}} =0
+\begin{DoxyCompactList}\small\item\em Current usage counter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_i2_c_core_a8bf212a85cabca6ccea9540797e89bf2}\label{class_i2_c_core_a8bf212a85cabca6ccea9540797e89bf2} 
+static constexpr uint16\+\_\+t {\bfseries I2\+C\+\_\+\+DEFAULT\+\_\+\+BUFFER\+\_\+\+LENGTH} = 32
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_hardware_resource}{Hardware\+Resource}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_hardware_resource_a7ddffb890a743f2df28128d9afd5bfa5}{Hardware\+Resource}} ()=default
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_i2_c_core_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_i2_c_core_a4000d56ed283e62c7d50a4083e4762b6}\index{I2CCore@{I2CCore}!getMaxUsages@{getMaxUsages}}
+\index{getMaxUsages@{getMaxUsages}!I2CCore@{I2CCore}}
+\doxysubsubsection{\texorpdfstring{getMaxUsages()}{getMaxUsages()}}
+{\footnotesize\ttfamily \label{class_i2_c_core_a4000d56ed283e62c7d50a4083e4762b6} 
+virtual uint8\+\_\+t I2\+CCore\+::get\+Max\+Usages (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the maximum simultaneous usages allowed for this resource. 
+
+Default implementation returns 1. Override in derived classes to permit multiple users. \begin{DoxyReturn}{Returns}
+uint8\+\_\+t Maximum number of concurrent usages allowed. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_hardware_resource_a6b7a709561faf5d344b7c3e14bf37558}{Hardware\+Resource}}.
+
+\Hypertarget{class_i2_c_core_a092566ca5aacc4421559e29f6ff12da5}\index{I2CCore@{I2CCore}!getType@{getType}}
+\index{getType@{getType}!I2CCore@{I2CCore}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily \label{class_i2_c_core_a092566ca5aacc4421559e29f6ff12da5} 
+virtual \mbox{\hyperlink{class_hardware_resource_adead6978be3d7b86c18e3d3e051381e6}{Hardware\+Resource\+::\+Type}} I2\+CCore\+::get\+Type (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the hardware resource type. 
+
+Must be implemented by derived classes to return the correct \doxylink{class_hardware_resource_adead6978be3d7b86c18e3d3e051381e6}{Type} enum value. \begin{DoxyReturn}{Returns}
+\doxylink{class_hardware_resource_adead6978be3d7b86c18e3d3e051381e6}{Type} The type of the hardware resource. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_hardware_resource_ad1058e4c12406f756755fad5db55dc77}{Hardware\+Resource}}.
+
+\Hypertarget{class_i2_c_core_a0c8934608811f1a80247981f4e222ce9}\index{I2CCore@{I2CCore}!reset@{reset}}
+\index{reset@{reset}!I2CCore@{I2CCore}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \label{class_i2_c_core_a0c8934608811f1a80247981f4e222ce9} 
+virtual bool I2\+CCore\+::reset (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reset the hardware resource to a known default state. 
+
+Default implementation clears the usage counter and logs the reset. Derived classes should call the base implementation and perform any additional hardware-\/specific reset steps. \begin{DoxyReturn}{Returns}
+true if the reset succeeded, false otherwise. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_hardware_resource_a7372684f2afb5139ef8464194a087649}{Hardware\+Resource}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_e_s_p32___i2_c_core_aa3e0817cba1f01e19e046fa27a776eab}{ESP32\+\_\+\+I2\+CCore}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/dd5/class_i2_c_core_a0c8934608811f1a80247981f4e222ce9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{d0/dd5/class_i2_c_core_a0c8934608811f1a80247981f4e222ce9_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/leowa/\+Documents/\+Platform\+IO/\+Projects/\+CANTram\+Framework\+Usage/lib/\+CANTram\+Framework/include/I2\+CCore.\+h\end{DoxyCompactItemize}

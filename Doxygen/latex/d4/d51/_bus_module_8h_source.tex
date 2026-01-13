@@ -1,0 +1,70 @@
+\doxysection{Bus\+Module.\+h}
+\hypertarget{_bus_module_8h_source}{}\label{_bus_module_8h_source}\index{C:/Users/leowa/Documents/PlatformIO/Projects/CANTramFrameworkUsage/lib/CANTramFramework/include/BusModule.h@{C:/Users/leowa/Documents/PlatformIO/Projects/CANTramFrameworkUsage/lib/CANTramFramework/include/BusModule.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ BUSModuleV1\_0\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ BUSModuleV1\_0\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_c_a_n_tram_core_8h}{CANTramCore.h}}"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_c_a_n_tram_module_8h}{CANTramModule.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <SPI.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <Arduino.h>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}SPIChip.h"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_debug_8h}{Debug.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}Interface.h"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_u_a_r_t_core_8h}{UARTCore.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}UARTInterface.h"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}I2CCore.h"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}I2CInterface.h"{}}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_bus_module_v1__0}{BusModuleV1\_0}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_c_a_n_tram_module_ae1c9554adb901b7e798a44d521781c0b}{CANTramModule}}\ \{}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ String\ HW\_TYPE;}
+\DoxyCodeLine{00018\ \ \ \ \ String\ \mbox{\hyperlink{class_bus_module_v1__0_ad27db80f3d7030a0fafdd985079b3bdd}{getHWType}}()\textcolor{keyword}{\ const\ override\ }\{\ \textcolor{keywordflow}{return}\ HW\_TYPE;\ \}}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ String\ HW\_VERSION;}
+\DoxyCodeLine{00020\ \ \ \ \ String\ \mbox{\hyperlink{class_bus_module_v1__0_a64857b219f743fa39813812c9b911428}{getHWVersion}}()\textcolor{keyword}{\ const\ override\ }\{\ \textcolor{keywordflow}{return}\ HW\_VERSION;\ \}}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ String\ FW\_VERSION;}
+\DoxyCodeLine{00022\ \ \ \ \ String\ \mbox{\hyperlink{class_bus_module_v1__0_abb12c39782672f8904b8cc7f5a8c7364}{getFWVersion}}()\textcolor{keyword}{\ const\ override\ }\{\ \textcolor{keywordflow}{return}\ FW\_VERSION;\ \}}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ uint8\_t\ GPIO\_DEMAND\ =\ 3;}
+\DoxyCodeLine{00024\ \ \ \ \ uint8\_t\ \mbox{\hyperlink{class_bus_module_v1__0_ab1f6be81ebb01684222a2fbfdc19cba1}{getGPIODemand}}()\textcolor{keyword}{\ const\ override\ }\{\ \textcolor{keywordflow}{return}\ GPIO\_DEMAND;\ \}}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ uint8\_t\ GPIO\_SUPPLY\ =\ 0;}
+\DoxyCodeLine{00026\ \ \ \ \ uint8\_t\ \mbox{\hyperlink{class_bus_module_v1__0_ab3624eb3ad2ae3333c22125fb0fee5b5}{getGPIOSupply}}()\textcolor{keyword}{\ const\ override\ }\{\ \textcolor{keywordflow}{return}\ GPIO\_SUPPLY;\ \}}
+\DoxyCodeLine{00027\ \ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_bus_module_v1__0_a16bba6acd40262044fbb2dfa89967a37}{attachModule}}(uint8\_t\ slot,uint8\_t\ gpioStart)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_bus_module_v1__0_ae608f88ec327b8ea590cfe5767ae6106}{provideGPIOs}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_bus_module_v1__0_a4a285d859c46cc480e2ccc452e1f0f38}{requestGPIOs}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_bus_module_v1__0_a5d7b5c4ee7d5a1ba9d8ed0628a7f597f}{provideHardwareResources}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_bus_module_v1__0_a805fbe1982b45754d54965eef97c73e3}{requestHardwareResources}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_bus_module_v1__0_ad4d8d6745e0f039f1aaf1f4adf0f4416}{addInterfaces}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{bool}\ addSPIDevice(\mbox{\hyperlink{class_s_p_i_chip}{SPIChip}}*\ spiDevice,\ \textcolor{keywordtype}{bool}\ allowOverride\ =\ \textcolor{keyword}{false});}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{bool}\ setLoopFunction(std::function<\textcolor{keywordtype}{void}(uint8\_t*\ response)>\ loopFunction)\{\_loopFunction\ =\ loopFunction;\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};\ \};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_bus_module_v1__0_aedf45f0be91985e58f6b6d08af048fb3}{initialize}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_bus_module_v1__0_ae39f45e115c9d24cb7adf367fbdd64b7}{preInitialize}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_bus_module_v1__0_a25a59d36f49cd5316a0186bd02b1a588}{cycle}}(uint8\_t*\ response)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_bus_module_v1__0_adca07691ab1dbe6942abd50e3b6a2a23}{reset}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \ \ \ \ \mbox{\hyperlink{class_interface}{Interface}}**\ \mbox{\hyperlink{class_bus_module_v1__0_af6c2381228cdd502b31111301cb116fd}{getInterfaces}}()\textcolor{keyword}{\ override\ }\{\ \textcolor{keywordflow}{return}\ \_interfaces;\ \}}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{class_bus_module_v1__0_ab2f8ee922f12c35d5d893cb4e07b4565}{getInterfaceCount}}()\textcolor{keyword}{\ override\ }\{\ \textcolor{keywordflow}{return}\ INTERFACE\_COUNT;\ \}}
+\DoxyCodeLine{00047\ \ \ \ \ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_bus_module_v1__0_aedb474256450213f863497e8bebd6301}{addUARTInterface}}();}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_bus_module_v1__0_a6c101e00230c5a741169d9f8a327816b}{addI2CInterface}}();\ \textcolor{comment}{//Implement\ later}}
+\DoxyCodeLine{00050\ \ \ \ \ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_output_definition}{OutputDefinition}}*\ UART\_RX\_PIN;}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_output_definition}{OutputDefinition}}*\ UART\_TX\_PIN;}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_output_definition}{OutputDefinition}}*\ SPI\_CS\_PIN;}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_s_p_i_chip}{SPIChip}}*\ \_SPIBus\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{size\_t}\ INTERFACE\_COUNT\ =\ 2;\ \textcolor{comment}{//\ Number\ of\ interfaces\ in\ the\ array}}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_interface}{Interface}}*\ \_interfaces[INTERFACE\_COUNT];\ \textcolor{comment}{//\ representation\ of\ the\ physical\ interfaces\ clamps}}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_u_a_r_t_interface}{UARTInterface}}\ \_uartInterface;}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i2_c_interface}{I2CInterface}}\ \_i2cInterface;\ }
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ std::function<void(uint8\_t*\ response)>\ \_loopFunction\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \textcolor{comment}{//I2nterface*\ \_i2cUnterface\ =\ nullptr;\ \ //Implement\ later}}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{comment}{//SPIInterface*\ \_spi\ =\ nullptr;}}
+\DoxyCodeLine{00063\ \};}
+\DoxyCodeLine{00064\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

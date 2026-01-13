@@ -1,0 +1,69 @@
+\doxysection{UARTInterface.\+h}
+\hypertarget{_u_a_r_t_interface_8h_source}{}\label{_u_a_r_t_interface_8h_source}\index{C:/Users/leowa/Documents/PlatformIO/Projects/CANTramFrameworkUsage/lib/CANTramFramework/include/UARTInterface.h@{C:/Users/leowa/Documents/PlatformIO/Projects/CANTramFrameworkUsage/lib/CANTramFramework/include/UARTInterface.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ UART\_INTERFACE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ UART\_INTERFACE\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}Interface.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_u_a_r_t_core_8h}{UARTCore.h}}"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }UARTInterface\ :\ \textcolor{keyword}{public}\ Interface\{}
+\DoxyCodeLine{00008\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00009\ \ \ \ \ UARTInterface()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \ \ \ \ Interface::Type\ getType()\textcolor{keyword}{\ const\ override\ }\{}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ Interface::BUS;}
+\DoxyCodeLine{00013\ \ \ \ \ \}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{comment}{//Set\ communication\ parameters}}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{void}\ setBaudrate(uint32\_t\ baudrate)}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \{\textcolor{keywordflow}{if}(uartCore)\ uartCore-\/>setBaudrate(baudrate);\}}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{void}\ setDataBits(\mbox{\hyperlink{class_u_a_r_t_core_a1895842f7c33678bdf154e12cc617903}{UARTCore::DataBits}}\ dataBits)}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \{\textcolor{keywordflow}{if}(uartCore)\ uartCore-\/>setDataBits(dataBits);\}}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{void}\ setParity(\mbox{\hyperlink{class_u_a_r_t_core_a53addcd39a841913c86bd7e25cca94a0}{UARTCore::Parity}}\ parity)}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \{\textcolor{keywordflow}{if}(uartCore)\ uartCore-\/>setParity(parity);\}}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ setStopBits(\mbox{\hyperlink{class_u_a_r_t_core_ab88ed673e8897a7804c27ac7d749f00b}{UARTCore::StopBits}}\ stopBits)}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \{\textcolor{keywordflow}{if}(uartCore)\ uartCore-\/>setStopBits(stopBits);\}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{bool}\ send(\textcolor{keywordtype}{char}\ data[],\ \textcolor{keywordtype}{size\_t}\ length)\{}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Implement\ sending\ data\ over\ UART}}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ uartCore-\/>send(data,length);}
+\DoxyCodeLine{00028\ \ \ \ \ \}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ read(\textcolor{keywordtype}{char}*\ buffer)\{}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Implement\ receiving\ data\ over\ UART}}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ uartCore-\/>read(buffer);}
+\DoxyCodeLine{00033\ \ \ \ \ \}}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ available()\{}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Implement\ checking\ available\ data\ over\ UART}}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ uartCore-\/>available();}
+\DoxyCodeLine{00038\ \ \ \ \ \}}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ setUartCore(\mbox{\hyperlink{class_u_a_r_t_core}{UARTCore}}*\ core)\{uartCore\ =\ core;\}}
+\DoxyCodeLine{00041\ \ \ \ \ \mbox{\hyperlink{class_u_a_r_t_core}{UARTCore}}*\ getUartCore()\{\textcolor{keywordflow}{return}\ uartCore;\}}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00045\ \ \ \ \ std::function<void(uint32\_t,\ uint8\_t,\ \textcolor{keywordtype}{bool},\ uint8\_t)>\ onBeginCallback;}
+\DoxyCodeLine{00046\ \ \ \ \ uint32\_t\ \_baudrate;}
+\DoxyCodeLine{00047\ \ \ \ \ \mbox{\hyperlink{class_u_a_r_t_core_a1895842f7c33678bdf154e12cc617903}{UARTCore::DataBits}}\ \_dataBits;}
+\DoxyCodeLine{00048\ \ \ \ \ \mbox{\hyperlink{class_u_a_r_t_core_a53addcd39a841913c86bd7e25cca94a0}{UARTCore::Parity}}\ \_parity;}
+\DoxyCodeLine{00049\ \ \ \ \ \mbox{\hyperlink{class_u_a_r_t_core_ab88ed673e8897a7804c27ac7d749f00b}{UARTCore::StopBits}}\ \_stopBits;}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \ \ \ \ \mbox{\hyperlink{class_u_a_r_t_core}{UARTCore}}*\ uartCore;}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{char}**\ txBuffer;}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{char}**\ rxBuffer;}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ }
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \ \ \ \ }
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \};}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

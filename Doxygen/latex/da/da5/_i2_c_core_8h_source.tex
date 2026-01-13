@@ -1,0 +1,66 @@
+\doxysection{I2\+CCore.\+h}
+\hypertarget{_i2_c_core_8h_source}{}\label{_i2_c_core_8h_source}\index{C:/Users/leowa/Documents/PlatformIO/Projects/CANTramFrameworkUsage/lib/CANTramFramework/include/I2CCore.h@{C:/Users/leowa/Documents/PlatformIO/Projects/CANTramFrameworkUsage/lib/CANTramFramework/include/I2CCore.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ I2C\_CORE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ I2C\_CORE\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_hardware_resource_8h}{HardwareResource.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00006\ \textcolor{comment}{Abstract\ class\ to\ define\ a\ generic\ interface\ to\ use\ I2C\ communication*/}}
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_i2_c_core}{I2CCore}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_hardware_resource_a7ddffb890a743f2df28128d9afd5bfa5}{HardwareResource}}\ \{}
+\DoxyCodeLine{00008\ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_i2_c_core_a0c8934608811f1a80247981f4e222ce9}{reset}}()\{\ }
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \_i2cStatus\ =\ I2C\_NOT\_STARTED;}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_hardware_resource_a7372684f2afb5139ef8464194a087649}{HardwareResource::reset}}();}
+\DoxyCodeLine{00012\ \ \ \ \ \};}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{enum}\ I2CStatus\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ I2C\_NOT\_STARTED=0,}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ I2C\_STARTED=1}
+\DoxyCodeLine{00017\ \ \ \ \ \};}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{comment}{//sets\ hardware\ parameters}}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ begin()\ =0;}
+\DoxyCodeLine{00021\ \ \ \ \ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_hardware_resource_adead6978be3d7b86c18e3d3e051381e6}{HardwareResource::Type}}\ \mbox{\hyperlink{class_i2_c_core_a092566ca5aacc4421559e29f6ff12da5}{getType}}()\textcolor{keyword}{\ override\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_hardware_resource_adead6978be3d7b86c18e3d3e051381e6ac77292ec986f613995babba396598dbc}{Type::I2C}};\ \}}
+\DoxyCodeLine{00023\ \ \ \ \ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ setPins(int8\_t\ sdaPin,\ int8\_t\ sclPin)\ \{\ \_sdaPin\ =\ sdaPin;\ \_sclPin\ =\ sclPin;\ \};}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ setBufferSize(uint32\_t\ bufferSize)\ \{\ \_bufferSize\ =\ bufferSize;\ \};}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ setI2CNum(int8\_t\ i2c\_num)\ \{\ \_i2c\_num\ =\ i2c\_num;\ \};}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ setFrequency(uint32\_t\ frequency)\ \{\ \_frequency\ =\ frequency;\ \};}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{virtual}\ uint32\_t\ setMaxFrequency(uint32\_t\ frequency)\ \{}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \textcolor{keywordflow}{if}(frequency\ <\ \_frequency)\ \{}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \_frequency\ =\ frequency;}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_debug_8h_a693063ba84ad2119e7f3ea1b97947055}{INFO\_PRINTLN}}(\textcolor{stringliteral}{"{}[I2CCore]\ Max\ allowed\ I2C\ frequency\ set\ to\ "{}}\ +\ String(\_frequency)\ +\ \textcolor{stringliteral}{"{}\ Hz"{}});}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \_frequency;}
+\DoxyCodeLine{00034\ \ \ \ \ \}}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ beginTransmission(uint8\_t\ address)=0;}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{virtual}\ uint8\_t\ endTransmission()=0;}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{size\_t}\ write(uint8\_t\ data)=0;}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{size\_t}\ write(\textcolor{keyword}{const}\ uint8\_t\ *data,\ \textcolor{keywordtype}{size\_t}\ quantity)=0;}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{size\_t}\ requestFrom(uint8\_t\ address,\ \textcolor{keywordtype}{size\_t}\ len,\ \textcolor{keywordtype}{bool}\ stopBit)=0;}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{int}\ available()=0;}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{int}\ read()=0;}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{int}\ peek()\{\ \textcolor{keywordflow}{return}\ -\/1;\ \};\ \textcolor{comment}{//\ Optional\ override\ to\ peek\ at\ next\ byte\ in\ receive\ buffer}}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ flush()\ =\ 0;}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{virtual}\ uint8\_t\ \mbox{\hyperlink{class_i2_c_core_a4000d56ed283e62c7d50a4083e4762b6}{getMaxUsages}}()\textcolor{keyword}{\ override\ }\{\ \textcolor{keywordflow}{return}\ 0;\ \}\ \textcolor{comment}{//I2C\ bus\ can\ be\ shared\ infinitely}}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{virtual}\ I2CStatus\ getI2CStatus()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \_i2cStatus;\ \}}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ uint32\_t\ I2C\_DEFAULT\_FREQUENCY\ =\ 1700000;\ \textcolor{comment}{//\ 1,7\ MHz\ default\ frequency}}
+\DoxyCodeLine{00047\ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{comment}{//\ Protected\ members\ here}}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ uint16\_t\ I2C\_DEFAULT\_BUFFER\_LENGTH\ =\ 32;}
+\DoxyCodeLine{00050\ \ \ \ \ }
+\DoxyCodeLine{00051\ \ \ \ \ int8\_t\ \_sdaPin=-\/1;}
+\DoxyCodeLine{00052\ \ \ \ \ int8\_t\ \_sclPin=-\/1;}
+\DoxyCodeLine{00053\ \ \ \ \ uint32\_t\ \_frequency=\ I2C\_DEFAULT\_FREQUENCY;}
+\DoxyCodeLine{00054\ \ \ \ \ int8\_t\ \_i2c\_num=-\/1;}
+\DoxyCodeLine{00055\ \ \ \ \ uint32\_t\ \_bufferSize=\ I2C\_DEFAULT\_BUFFER\_LENGTH;}
+\DoxyCodeLine{00056\ \ \ \ \ I2CStatus\ \_i2cStatus\ =\ I2C\_NOT\_STARTED;}
+\DoxyCodeLine{00057\ \ \ \ \ }
+\DoxyCodeLine{00058\ \};}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
