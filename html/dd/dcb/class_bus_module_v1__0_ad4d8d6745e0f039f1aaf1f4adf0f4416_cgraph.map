@@ -1,0 +1,7 @@
+<map id="BusModuleV1_0::addInterfaces" name="BusModuleV1_0::addInterfaces">
+<area shape="rect" id="Node000001" title="Add interfaces provided by the BusModule to the module interface list." alt="" coords="5,31,209,57"/>
+<area shape="rect" id="Node000002" href="$dd/dcb/class_bus_module_v1__0.html#a6c101e00230c5a741169d9f8a327816b" title="Add and configure the I2C interface for this module." alt="" coords="264,5,482,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="209,32,249,28,249,33,210,37"/>
+<area shape="rect" id="Node000003" href="$dd/dcb/class_bus_module_v1__0.html#aedb474256450213f863497e8bebd6301" title="Add and configure the UART interface for this module." alt="" coords="257,56,489,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="210,51,241,54,241,59,209,56"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="HardwareResource::requestUsage" name="HardwareResource::requestUsage">
+<area shape="rect" id="Node000001" title="Request a usage slot for this resource." alt="" coords="254,5,438,48"/>
+<area shape="rect" id="Node000002" href="$da/d75/class_e_s_p32_p_w_m_core.html#aa519c3a55207f3d0122a2c0e63ffaf5d" title="Add/allocate a PWM channel for the given output definition." alt="" coords="5,13,206,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="238,29,206,29,206,24,238,24"/>
+</map>

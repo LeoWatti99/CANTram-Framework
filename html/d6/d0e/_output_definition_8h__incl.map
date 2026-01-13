@@ -1,0 +1,8 @@
+<map id="C:/Users/leowa/Documents/PlatformIO/Projects/CANTramFrameworkUsage/lib/CANTramFramework/include/OutputDefinition.h" name="C:/Users/leowa/Documents/PlatformIO/Projects/CANTramFrameworkUsage/lib/CANTramFramework/include/OutputDefinition.h">
+<area shape="rect" id="Node000001" title="Definitions for GPIO/output descriptors and provider interfaces." alt="" coords="5,5,274,80"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="101,203,178,229"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,81,131,116,131,154,136,187,131,188,126,155,126,116,130,80"/>
+<area shape="rect" id="Node000003" href="$d0/d4b/_debug_8h.html" title="Logging and debug macro definitions for CANTramCore." alt="" coords="140,128,211,155"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="156,79,168,112,163,114,151,81"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="172,156,155,190,150,187,167,154"/>
+</map>

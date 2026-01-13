@@ -1,0 +1,5 @@
+<map id="ESP32_CANCore::available" name="ESP32_CANCore::available">
+<area shape="rect" id="Node000001" title="Check how many CAN messages are available to read." alt="" coords="266,5,451,32"/>
+<area shape="rect" id="Node000002" href="$d6/d24/class_e_s_p32___c_a_n_core.html#adbab7ae89e53ad752bc06e789381c4d5" title="Read a CAN message from the interface." alt="" coords="5,5,218,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="250,21,218,21,218,16,250,16"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="C:/Users/leowa/Documents/PlatformIO/Projects/CANTramFrameworkUsage/lib/CANTramFramework/include/ESP32_CANCore.h" name="C:/Users/leowa/Documents/PlatformIO/Projects/CANTramFrameworkUsage/lib/CANTramFramework/include/ESP32_CANCore.h">
+<area shape="rect" id="Node000001" title="Declaration of the ESP32_CANCore class." alt="" coords="91,5,359,80"/>
+<area shape="rect" id="Node000002" href="$d3/db6/_c_a_n_tram_framework_8h_source.html" title=" " alt="" coords="5,251,274,325"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="187,94,167,129,150,192,143,250,138,250,145,191,162,127,182,91"/>
+<area shape="rect" id="Node000003" href="$d9/db1/_main_module_v1__0_8h.html" title=" " alt="" coords="177,128,446,203"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="262,91,287,126,283,129,258,94"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="248,214,193,252,190,248,245,210"/>
+<area shape="rect" id="Node000004" href="$d3/d1b/_main_module_v1__0__outputs_8cpp.html" title="This file contains all output related functionallity of the MainmoduleV1_0. This includes native GPIO..." alt="" coords="297,251,566,325"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="361,212,397,248,393,252,357,216"/>
+</map>

@@ -1,0 +1,15 @@
+<map id="CANTramModule::provideGPIOs" name="CANTramModule::provideGPIOs">
+<area shape="rect" id="Node000001" title="Provide GPIO definitions to the core." alt="" coords="517,131,729,157"/>
+<area shape="rect" id="Node000002" href="$d2/dee/class_c_a_n_tram_module.html#a67cab1c238257e6d9b88afc4f644e477" title="Attach this module to a slot and assign GPIO range." alt="" coords="261,131,469,157"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="501,147,469,147,469,141,501,141"/>
+<area shape="rect" id="Node000003" href="$d4/d06/class_analog_module_v1__0.html#a0d48d770904f90501dfa2bef16270d8c" title="Attach module to a slot and set GPIO start." alt="" coords="20,5,198,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="327,124,274,93,212,62,183,51,185,46,214,58,276,89,330,120"/>
+<area shape="rect" id="Node000004" href="$dd/dcb/class_bus_module_v1__0.html#a16bba6acd40262044fbb2dfa89967a37" title="Attach this module to a slot and GPIO start index." alt="" coords="8,72,210,99"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="288,129,170,102,171,97,289,124"/>
+<area shape="rect" id="Node000005" href="$d4/ddb/class_digital_module_v1__0.html#a6b52d3ca7181a224b478d93766a7bfe7" title="Attach the module to a slot and assign GPIO range." alt="" coords="40,123,178,165"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="245,147,179,147,179,141,245,141"/>
+<area shape="rect" id="Node000006" href="$dd/dff/class_main_module_v1__0.html#a54175254ab9745989cc21d00f490297a" title="Attach this module to a slot and GPIO start index." alt="" coords="5,189,213,216"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="289,164,171,191,170,186,288,159"/>
+<area shape="rect" id="Node000007" href="$d0/d4d/class_relais_module_v1__0.html#a1a7004ca779f46212dde0bd70c0a8bca" title="Attach this module to a slot and assign GPIO range." alt="" coords="22,240,196,283"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="330,168,276,199,214,230,185,242,183,237,212,226,274,195,327,164"/>
+</map>

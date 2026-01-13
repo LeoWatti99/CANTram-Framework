@@ -1,0 +1,5 @@
+<map id="BusModuleV1_0::addUARTInterface" name="BusModuleV1_0::addUARTInterface">
+<area shape="rect" id="Node000001" title="Add and configure the UART interface for this module." alt="" coords="257,5,489,32"/>
+<area shape="rect" id="Node000002" href="$dd/dcb/class_bus_module_v1__0.html#ad4d8d6745e0f039f1aaf1f4adf0f4416" title="Add interfaces provided by the BusModule to the module interface list." alt="" coords="5,5,209,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="241,21,209,21,209,16,241,16"/>
+</map>

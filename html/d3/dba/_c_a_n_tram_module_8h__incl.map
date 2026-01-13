@@ -1,0 +1,12 @@
+<map id="C:/Users/leowa/Documents/PlatformIO/Projects/CANTramFrameworkUsage/lib/CANTramFramework/include/CANTramModule.h" name="C:/Users/leowa/Documents/PlatformIO/Projects/CANTramFrameworkUsage/lib/CANTramFramework/include/CANTramModule.h">
+<area shape="rect" id="Node000001" title="Base class for CANTram hardware modules." alt="" coords="5,5,274,80"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="87,277,163,304"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,82,99,104,89,129,85,165,90,201,100,234,113,262,108,264,95,236,84,202,79,165,84,127,94,102,108,79"/>
+<area shape="rect" id="Node000003" href="$da/d20/_interface_8h_source.html" title=" " alt="" coords="98,128,181,155"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="142,80,142,112,137,112,137,80"/>
+<area shape="rect" id="Node000004" href="$d0/d4b/_debug_8h.html" title="Logging and debug macro definitions for CANTramCore." alt="" coords="162,203,232,229"/>
+<area shape="poly" id="edge6_Node000001_Node000004" title=" " alt="" coords="171,79,185,102,195,127,201,158,202,187,196,187,196,159,190,129,180,104,166,82"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="141,155,130,262,125,262,136,155"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="152,154,180,189,175,192,147,157"/>
+<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="186,232,150,268,146,264,182,228"/>
+</map>

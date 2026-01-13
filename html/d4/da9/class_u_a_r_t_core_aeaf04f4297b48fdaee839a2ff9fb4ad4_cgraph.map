@@ -1,0 +1,7 @@
+<map id="UARTCore::reset" name="UARTCore::reset">
+<area shape="rect" id="Node000001" title="Reset the UART core and release/clear resources." alt="" coords="5,5,128,32"/>
+<area shape="rect" id="Node000002" href="$d2/d03/class_hardware_resource.html#a7372684f2afb5139ef8464194a087649" title="Reset the hardware resource to a known default state." alt="" coords="176,5,346,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,16,160,16,160,21,128,21"/>
+<area shape="rect" id="Node000003" href="$d2/d03/class_hardware_resource.html#ad1058e4c12406f756755fad5db55dc77" title="Get the hardware resource type." alt="" coords="394,5,581,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="346,16,378,16,378,21,346,21"/>
+</map>

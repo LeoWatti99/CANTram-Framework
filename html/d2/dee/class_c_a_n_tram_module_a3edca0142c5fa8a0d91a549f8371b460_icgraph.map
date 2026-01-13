@@ -1,0 +1,11 @@
+<map id="CANTramModule::getHWType" name="CANTramModule::getHWType">
+<area shape="rect" id="Node000001" title="Get the hardware type string." alt="" coords="490,31,689,57"/>
+<area shape="rect" id="Node000002" href="$d9/d4b/class_c_a_n_tram_core.html#ae27c247816847e4df4945bae63f4fadd" title="Call this function to attach a module to the core." alt="" coords="248,5,442,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="474,35,442,31,443,26,475,29"/>
+<area shape="rect" id="Node000004" href="$d2/dee/class_c_a_n_tram_module.html#a1be4a73e5fc8e14edad90741593d2d29" title="Periodic cycle callback." alt="" coords="264,56,426,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="475,59,426,64,426,58,474,53"/>
+<area shape="rect" id="Node000003" href="$d9/d4b/class_c_a_n_tram_core.html#aa9da4e441ecc2972d6e565edfa2249f5" title="Call this function to attach a module to next available slot of the core." alt="" coords="5,5,200,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="232,21,200,21,200,16,232,16"/>
+<area shape="rect" id="Node000005" href="$d0/d4d/class_relais_module_v1__0.html#a6036020b6f6dd6cbb9ab1c6428fa719b" title="Periodic cycle callback." alt="" coords="18,56,187,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="249,72,188,72,188,67,249,67"/>
+</map>

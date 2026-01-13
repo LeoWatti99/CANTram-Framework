@@ -1,0 +1,33 @@
+<map id="C:/Users/leowa/Documents/PlatformIO/Projects/CANTramFrameworkUsage/lib/CANTramFramework/include/PWMCore.h" name="C:/Users/leowa/Documents/PlatformIO/Projects/CANTramFrameworkUsage/lib/CANTramFramework/include/PWMCore.h">
+<area shape="rect" id="Node000001" title="Abstract PWM core interface for CANTram." alt="" coords="44,5,312,80"/>
+<area shape="rect" id="Node000002" href="$db/dc9/_output_definition_8h.html" title="Definitions for GPIO/output descriptors and provider interfaces." alt="" coords="5,277,132,304"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,82,136,129,81,264,76,262,131,127,155,79"/>
+<area shape="rect" id="Node000004" href="$d0/d4b/_debug_8h.html" title="Logging and debug macro definitions for CANTramCore." alt="" coords="367,352,437,379"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="171,81,162,130,160,189,163,219,169,249,180,277,196,302,216,313,255,325,352,350,351,355,254,330,213,317,192,306,175,279,164,250,157,220,154,189,157,129,166,80"/>
+<area shape="rect" id="Node000005" href="$da/dfa/_c_a_n_tram_core_8h.html" title="This class serves as the core manager for the CANTram modular system. It handles module attachment,..." alt="" coords="328,128,447,155"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="259,78,347,119,345,124,256,83"/>
+<area shape="rect" id="Node000008" href="$d5/da1/_hardware_resource_8h.html" title="Base class for hardware resources." alt="" coords="206,277,350,304"/>
+<area shape="poly" id="edge22_Node000001_Node000008" title=" " alt="" coords="195,79,270,262,265,264,190,81"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="514,427,591,453"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="111,302,500,420,498,425,109,307"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="128,302,352,350,351,356,126,307"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="429,377,514,417,511,422,427,382"/>
+<area shape="poly" id="edge14_Node000005_Node000002" title=" " alt="" coords="361,158,111,273,108,268,359,153"/>
+<area shape="poly" id="edge7_Node000005_Node000003" title=" " alt="" coords="447,145,510,152,578,164,638,179,661,189,677,201,695,222,705,245,709,268,708,290,701,313,689,336,654,381,627,404,597,422,595,417,624,399,651,377,684,333,696,311,702,289,704,268,700,246,690,225,673,205,658,194,636,184,577,169,510,157,447,150"/>
+<area shape="poly" id="edge15_Node000005_Node000004" title=" " alt="" coords="407,153,429,174,447,202,454,239,448,277,435,311,421,340,416,337,431,309,443,275,448,239,442,204,425,177,403,157"/>
+<area shape="rect" id="Node000006" href="$df/dcb/_c_a_n_tram_module_8h.html" title="Base class for CANTram hardware modules." alt="" coords="530,203,663,229"/>
+<area shape="poly" id="edge8_Node000005_Node000006" title=" " alt="" coords="424,153,546,195,545,200,423,158"/>
+<area shape="poly" id="edge16_Node000005_Node000008" title=" " alt="" coords="376,157,333,204,294,265,289,262,329,201,372,153"/>
+<area shape="rect" id="Node000009" href="$d3/dc5/_c_a_n_core_8h.html" title="Declaration of the CANCore class." alt="" coords="342,203,432,229"/>
+<area shape="poly" id="edge18_Node000005_Node000009" title=" " alt="" coords="390,155,390,187,384,187,384,155"/>
+<area shape="poly" id="edge9_Node000006_Node000003" title=" " alt="" coords="624,228,651,248,674,276,677,291,674,305,656,340,633,371,583,419,580,415,629,367,651,337,669,303,672,291,669,279,647,251,620,232"/>
+<area shape="poly" id="edge13_Node000006_Node000004" title=" " alt="" coords="582,232,432,345,429,340,578,228"/>
+<area shape="rect" id="Node000007" href="$da/d20/_interface_8h_source.html" title=" " alt="" coords="576,277,660,304"/>
+<area shape="poly" id="edge10_Node000006_Node000007" title=" " alt="" coords="603,229,612,262,607,263,598,231"/>
+<area shape="poly" id="edge11_Node000007_Node000003" title=" " alt="" coords="615,306,567,414,562,411,610,303"/>
+<area shape="poly" id="edge12_Node000007_Node000004" title=" " alt="" coords="581,307,453,350,451,345,579,302"/>
+<area shape="poly" id="edge17_Node000008_Node000004" title=" " alt="" coords="301,302,369,342,366,346,298,307"/>
+<area shape="poly" id="edge19_Node000009_Node000003" title=" " alt="" coords="399,228,536,412,532,416,394,231"/>
+<area shape="poly" id="edge21_Node000009_Node000004" title=" " alt="" coords="391,230,402,336,396,337,386,230"/>
+<area shape="poly" id="edge20_Node000009_Node000008" title=" " alt="" coords="370,232,311,271,308,266,367,228"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="OutputDefinition" name="OutputDefinition">
+<area shape="rect" id="Node000001" title="Describes an available output (GPIO or shift register bit)." alt="" coords="5,104,121,131"/>
+<area shape="rect" id="Node000002" href="$d6/d8a/class_output_provider.html" title="Abstract interface for providers that control outputs." alt="" coords="9,5,117,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="66,48,66,104,60,104,60,48"/>
+</map>

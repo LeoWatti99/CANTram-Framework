@@ -1,0 +1,15 @@
+<map id="RelaisModuleV1_0::attachModule" name="RelaisModuleV1_0::attachModule">
+<area shape="rect" id="Node000001" title="Attach this module to a slot and assign GPIO range." alt="" coords="5,107,180,149"/>
+<area shape="rect" id="Node000002" href="$d2/dee/class_c_a_n_tram_module.html#a67cab1c238257e6d9b88afc4f644e477" title="Attach this module to a slot and assign GPIO range." alt="" coords="228,115,436,141"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,125,212,125,212,131,180,131"/>
+<area shape="rect" id="Node000003" href="$d2/dee/class_c_a_n_tram_module.html#a14b79b625e82a3f11ebbb8271b6466b7" title="Setup and validate module interfaces." alt="" coords="494,5,703,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="352,112,410,77,483,42,505,34,507,39,485,46,412,81,355,116"/>
+<area shape="rect" id="Node000004" href="$d2/dee/class_c_a_n_tram_module.html#abaad4d92c02fc8bb525a57d8ac06db7e" title="Provide GPIO definitions to the core." alt="" coords="492,56,705,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="396,111,519,84,520,89,397,117"/>
+<area shape="rect" id="Node000005" href="$d2/dee/class_c_a_n_tram_module.html#aa509ae950722ebd48383c124ec6a63ec" title="Provide hardware resources (e.g., I2C, SPI, UART) to the core." alt="" coords="484,107,713,149"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="436,125,469,125,469,131,436,131"/>
+<area shape="rect" id="Node000006" href="$d2/dee/class_c_a_n_tram_module.html#a7f2c1c05cafb19676aed58c11219d0f5" title="Request GPIO definitions from the core." alt="" coords="492,173,705,200"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="397,139,520,167,519,172,396,145"/>
+<area shape="rect" id="Node000007" href="$d2/dee/class_c_a_n_tram_module.html#a88dd0ab2213df828b576d337e38c1ac8" title="Request hardware resources from the core." alt="" coords="484,224,713,267"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="356,140,413,174,485,210,502,216,500,221,483,214,410,178,353,144"/>
+</map>

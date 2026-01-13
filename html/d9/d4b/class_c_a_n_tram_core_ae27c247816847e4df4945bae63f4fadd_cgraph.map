@@ -1,0 +1,9 @@
+<map id="CANTramCore::attachModule" name="CANTramCore::attachModule">
+<area shape="rect" id="Node000001" title="Call this function to attach a module to the core." alt="" coords="5,56,200,83"/>
+<area shape="rect" id="Node000002" href="$d2/dee/class_c_a_n_tram_module.html#a7905817e8fee9e8bccfc9bbe70ae5669" title="Get starting GPIO index assigned to the module." alt="" coords="248,5,457,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,53,268,33,269,38,173,58"/>
+<area shape="rect" id="Node000003" href="$d2/dee/class_c_a_n_tram_module.html#a3edca0142c5fa8a0d91a549f8371b460" title="Get the hardware type string." alt="" coords="253,56,452,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="200,67,237,67,237,72,200,72"/>
+<area shape="rect" id="Node000004" href="$d2/dee/class_c_a_n_tram_module.html#a80b400128bb6f0841953bb7a75cbf99c" title="Get assigned slot index." alt="" coords="267,107,438,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="173,81,269,100,268,106,171,86"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="RelaisModuleV1_0::cycle" name="RelaisModuleV1_0::cycle">
+<area shape="rect" id="Node000001" title="Periodic cycle callback." alt="" coords="5,5,175,32"/>
+<area shape="rect" id="Node000002" href="$d2/dee/class_c_a_n_tram_module.html#a1be4a73e5fc8e14edad90741593d2d29" title="Periodic cycle callback." alt="" coords="223,5,384,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,16,207,16,207,21,175,21"/>
+<area shape="rect" id="Node000003" href="$d2/dee/class_c_a_n_tram_module.html#a3edca0142c5fa8a0d91a549f8371b460" title="Get the hardware type string." alt="" coords="432,5,631,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="384,16,416,16,416,21,384,21"/>
+</map>

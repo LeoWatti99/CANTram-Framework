@@ -1,0 +1,5 @@
+<map id="OutputProvider::setOutput" name="OutputProvider::setOutput">
+<area shape="rect" id="Node000001" title="Set the logical state of an output." alt="" coords="217,5,390,32"/>
+<area shape="rect" id="Node000002" href="$d9/d4b/class_c_a_n_tram_core.html#a7ea7863ef4164f0bedf74af378528105" title="Call this function to initialize the CANTram core and therefore the controller." alt="" coords="5,5,169,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="201,21,169,21,169,16,201,16"/>
+</map>

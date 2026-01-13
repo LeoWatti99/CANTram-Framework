@@ -1,0 +1,11 @@
+<map id="CANTramCore::addOutputDefinition" name="CANTramCore::addOutputDefinition">
+<area shape="rect" id="Node000001" title="Call this function to add a single output definition to the core." alt="" coords="551,64,782,91"/>
+<area shape="rect" id="Node000002" href="$d9/d4b/class_c_a_n_tram_core.html#a0de4045f26bdf25e2eeb3b0b5f34c203" title="Call this function to add a single output definition to the core." alt="" coords="268,5,500,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="583,63,451,35,452,30,584,58"/>
+<area shape="rect" id="Node000003" href="$d9/d4b/class_c_a_n_tram_core.html#a4fe1f36c52a9ff3561351c2390893bc4" title="Call this function to add multiple output definitions to the core." alt="" coords="268,56,500,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="536,80,500,80,500,75,536,75"/>
+<area shape="rect" id="Node000004" href="$d9/d4b/class_c_a_n_tram_core.html#a96f8c5553711f030ffb740a2578e3d5c" title="Call this function to add multiple output definitions by using their instances to the core." alt="" coords="265,123,503,149"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="584,97,452,125,451,119,583,92"/>
+<area shape="rect" id="Node000005" href="$dd/dff/class_main_module_v1__0.html#a85406338313930631d9da73cf9248a8c" title="Provide GPIO output definitions to CANTramCore." alt="" coords="5,123,217,149"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="249,139,217,139,217,133,249,133"/>
+</map>

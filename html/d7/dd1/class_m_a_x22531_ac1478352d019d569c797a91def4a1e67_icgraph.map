@@ -1,0 +1,7 @@
+<map id="MAX22531::writeRegister" name="MAX22531::writeRegister">
+<area shape="rect" id="Node000001" title="Writes a 16&#45;bit value to a register on the MAX22531." alt="" coords="198,31,368,57"/>
+<area shape="rect" id="Node000002" href="$d7/dd1/class_m_a_x22531.html#adbe1e2d33ed92cd35eb9268912e832ac" title="Initializes the MAX22531 chip and confirms communication." alt="" coords="15,5,140,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,34,140,29,141,24,183,29"/>
+<area shape="rect" id="Node000003" href="$d7/dd1/class_m_a_x22531.html#ae6a21ef931f021030bdd7d2566489ed1" title="Performs a hardware reset of the MAX22531 via the CONTROL register." alt="" coords="5,56,150,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="182,59,151,63,150,58,182,54"/>
+</map>
