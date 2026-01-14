@@ -1,5 +1,0 @@
-<map id="AnalogOutput" name="AnalogOutput">
-<area shape="rect" id="Node000001" title="Analog output interface implementation." alt="" coords="5,80,106,107"/>
-<area shape="rect" id="Node000002" href="$de/d95/class_interface.html" title=" " alt="" coords="19,5,92,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="58,48,58,80,53,80,53,48"/>
-</map>

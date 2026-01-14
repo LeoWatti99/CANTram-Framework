@@ -1,7 +1,0 @@
-<map id="CANTramModule::getSlot" name="CANTramModule::getSlot">
-<area shape="rect" id="Node000001" title="Get assigned slot index." alt="" coords="490,5,661,32"/>
-<area shape="rect" id="Node000002" href="$d9/d4b/class_c_a_n_tram_core.html#ae27c247816847e4df4945bae63f4fadd" title="Call this function to attach a module to the core." alt="" coords="248,5,442,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="474,21,442,21,442,16,474,16"/>
-<area shape="rect" id="Node000003" href="$d9/d4b/class_c_a_n_tram_core.html#aa9da4e441ecc2972d6e565edfa2249f5" title="Call this function to attach a module to next available slot of the core." alt="" coords="5,5,200,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="232,21,200,21,200,16,232,16"/>
-</map>

@@ -1,5 +1,0 @@
-<map id="CANTramCore::attachHardwareResource" name="CANTramCore::attachHardwareResource">
-<area shape="rect" id="Node000001" title="Call this function to attach a hardware resource to the core. E.g., I2C, SPI, UART,..." alt="" coords="281,5,489,48"/>
-<area shape="rect" id="Node000002" href="$dd/dff/class_main_module_v1__0.html#aa67512e4c9fda1474b76868708383778" title="Provide hardware resources (UART, PWM, etc.) to CANTramCore." alt="" coords="5,5,233,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="265,29,233,29,233,24,265,24"/>
-</map>

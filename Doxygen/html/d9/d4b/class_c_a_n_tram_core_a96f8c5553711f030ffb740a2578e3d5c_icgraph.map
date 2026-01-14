@@ -1,5 +1,0 @@
-<map id="CANTramCore::addOutputDefinitions" name="CANTramCore::addOutputDefinitions">
-<area shape="rect" id="Node000001" title="Call this function to add multiple output definitions by using their instances to the core." alt="" coords="265,5,503,32"/>
-<area shape="rect" id="Node000002" href="$dd/dff/class_main_module_v1__0.html#a85406338313930631d9da73cf9248a8c" title="Provide GPIO output definitions to CANTramCore." alt="" coords="5,5,217,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="249,21,217,21,217,16,249,16"/>
-</map>

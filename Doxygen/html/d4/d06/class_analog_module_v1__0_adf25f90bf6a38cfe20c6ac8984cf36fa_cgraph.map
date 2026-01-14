@@ -1,5 +1,0 @@
-<map id="AnalogModuleV1_0::cycle" name="AnalogModuleV1_0::cycle">
-<area shape="rect" id="Node000001" title="Periodic cycle handler called by the core." alt="" coords="5,13,178,40"/>
-<area shape="rect" id="Node000002" href="$dc/d46/class_p_w_m_output_provider.html#a8bee55eeda0ec8908389443cb0b47ac4" title="Set a PWM value on the specified output." alt="" coords="226,5,375,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="178,24,210,24,210,29,178,29"/>
-</map>

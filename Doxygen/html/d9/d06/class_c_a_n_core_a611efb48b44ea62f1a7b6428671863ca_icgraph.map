@@ -1,5 +1,0 @@
-<map id="CANCore::reset" name="CANCore::reset">
-<area shape="rect" id="Node000001" title="Reset the hardware resource to a known default state." alt="" coords="217,5,332,32"/>
-<area shape="rect" id="Node000002" href="$d6/d24/class_e_s_p32___c_a_n_core.html#a85a0e3c4965503c96d865bbcc200cd2a" title="Reset the hardware resource to a known default state." alt="" coords="5,5,169,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="201,21,169,21,169,16,201,16"/>
-</map>

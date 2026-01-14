@@ -1,7 +1,0 @@
-<map id="HardwareResource::requestUsage" name="HardwareResource::requestUsage">
-<area shape="rect" id="Node000001" title="Request a usage slot for this resource." alt="" coords="5,35,190,77"/>
-<area shape="rect" id="Node000002" href="$d2/d03/class_hardware_resource.html#a6b7a709561faf5d344b7c3e14bf37558" title="Get the maximum simultaneous usages allowed for this resource." alt="" coords="239,5,424,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="190,42,223,38,224,43,191,47"/>
-<area shape="rect" id="Node000003" href="$d2/d03/class_hardware_resource.html#ad1058e4c12406f756755fad5db55dc77" title="Get the hardware resource type." alt="" coords="238,72,425,99"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="191,65,222,69,222,74,190,70"/>
-</map>

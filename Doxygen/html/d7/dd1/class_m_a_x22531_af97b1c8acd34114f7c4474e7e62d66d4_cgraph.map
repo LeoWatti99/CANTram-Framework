@@ -1,5 +1,0 @@
-<map id="MAX22531::readChannel" name="MAX22531::readChannel">
-<area shape="rect" id="Node000001" title="Reads a specific ADC channel from the MAX22531 and returns the 12&#45;bit ADC value." alt="" coords="5,5,172,32"/>
-<area shape="rect" id="Node000002" href="$d7/dd1/class_m_a_x22531.html#a5711a7d5588204fa3a09d580c7f7e7e9" title="Reads a 16&#45;bit value from a register on the MAX22531." alt="" coords="220,5,387,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,16,204,16,204,21,172,21"/>
-</map>

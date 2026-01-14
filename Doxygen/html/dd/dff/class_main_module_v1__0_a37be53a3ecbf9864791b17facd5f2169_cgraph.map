@@ -1,5 +1,0 @@
-<map id="MainModuleV1_0::cycle" name="MainModuleV1_0::cycle">
-<area shape="rect" id="Node000001" title="Periodic cycle callback for the module." alt="" coords="5,13,166,40"/>
-<area shape="rect" id="Node000002" href="$dd/dff/class_main_module_v1__0.html#a94e360604a317f98717ae1aaede31061" title="Get the temperature in Celsius in 0.1°C steps." alt="" coords="214,5,433,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,24,198,24,198,29,166,29"/>
-</map>

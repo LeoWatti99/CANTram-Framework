@@ -1,5 +1,0 @@
-<map id="AnalogModuleV1_0::reset" name="AnalogModuleV1_0::reset">
-<area shape="rect" id="Node000001" title="Reset the module and its interfaces." alt="" coords="5,5,176,32"/>
-<area shape="rect" id="Node000002" href="$d2/dee/class_c_a_n_tram_module.html#a496814b4e5fa5f162c48f17ec33d4475" title="Reset the module to a known default state." alt="" coords="224,5,383,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="176,16,208,16,208,21,176,21"/>
-</map>

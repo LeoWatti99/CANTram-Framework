@@ -1,7 +1,0 @@
-<map id="RelaisModuleV1_0::requestGPIOs" name="RelaisModuleV1_0::requestGPIOs">
-<area shape="rect" id="Node000001" title="Request GPIO definitions from the core." alt="" coords="5,5,187,48"/>
-<area shape="rect" id="Node000002" href="$d9/d4b/class_c_a_n_tram_core.html#a671c48002cdb950965c9a00395baf0d5" title="Call this function to retrieve a specific output definition and raise the count of used output defini..." alt="" coords="235,13,466,40"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="187,24,219,24,219,29,187,29"/>
-<area shape="rect" id="Node000003" href="$d9/d4b/class_c_a_n_tram_core.html#a327fbf9847ec97e69a1dcfa554650a8d" title="Call this function to retrieve a specific output definition without affecting the used count." alt="" coords="514,13,742,40"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="466,24,499,24,499,29,466,29"/>
-</map>

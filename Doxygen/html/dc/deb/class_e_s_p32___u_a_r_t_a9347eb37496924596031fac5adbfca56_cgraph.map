@@ -1,7 +1,0 @@
-<map id="ESP32_UART::read" name="ESP32_UART::read">
-<area shape="rect" id="Node000001" title="Read available bytes from UART into buffer." alt="" coords="5,31,143,57"/>
-<area shape="rect" id="Node000002" href="$dc/deb/class_e_s_p32___u_a_r_t.html#ab7b05058426c5c21323ba8b113f2ec5e" title="Get number of bytes available to read." alt="" coords="191,5,354,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,33,175,28,175,34,144,38"/>
-<area shape="rect" id="Node000003" href="$d4/da9/class_u_a_r_t_core.html#a09060493e91d608fb209d8c09675fabe" title="Read available bytes from the UART into the provided buffer." alt="" coords="213,56,332,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="144,50,199,57,198,63,143,55"/>
-</map>

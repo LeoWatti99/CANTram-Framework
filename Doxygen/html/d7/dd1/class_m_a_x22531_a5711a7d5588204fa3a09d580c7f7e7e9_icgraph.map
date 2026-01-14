@@ -1,7 +1,0 @@
-<map id="MAX22531::readRegister" name="MAX22531::readRegister">
-<area shape="rect" id="Node000001" title="Reads a 16&#45;bit value from a register on the MAX22531." alt="" coords="220,31,387,57"/>
-<area shape="rect" id="Node000002" href="$d7/dd1/class_m_a_x22531.html#adbe1e2d33ed92cd35eb9268912e832ac" title="Initializes the MAX22531 chip and confirms communication." alt="" coords="26,5,151,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,35,151,29,151,23,205,30"/>
-<area shape="rect" id="Node000003" href="$d7/dd1/class_m_a_x22531.html#af97b1c8acd34114f7c4474e7e62d66d4" title="Reads a specific ADC channel from the MAX22531 and returns the 12&#45;bit ADC value." alt="" coords="5,56,172,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="205,58,173,62,172,57,204,53"/>
-</map>

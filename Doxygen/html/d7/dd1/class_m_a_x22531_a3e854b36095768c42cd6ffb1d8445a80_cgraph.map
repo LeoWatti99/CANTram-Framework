@@ -1,5 +1,0 @@
-<map id="MAX22531::readAllChannels" name="MAX22531::readAllChannels">
-<area shape="rect" id="Node000001" title="Reads all filtered ADC channels and interrupt status from the MAX22531." alt="" coords="5,5,194,32"/>
-<area shape="rect" id="Node000002" href="$d7/dd1/class_m_a_x22531.html#a344e5f8b852eaa9a4f254ccc481b2a37" title="Performs a burst read of ADC channels and interrupt status from the MAX22531." alt="" coords="242,5,395,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,16,226,16,226,21,194,21"/>
-</map>

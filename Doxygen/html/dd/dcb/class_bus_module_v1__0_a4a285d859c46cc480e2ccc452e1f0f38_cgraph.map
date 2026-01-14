@@ -1,7 +1,0 @@
-<map id="BusModuleV1_0::requestGPIOs" name="BusModuleV1_0::requestGPIOs">
-<area shape="rect" id="Node000001" title="Request GPIO definitions from CANTramCore and validate pins for module interfaces." alt="" coords="5,5,213,32"/>
-<area shape="rect" id="Node000002" href="$d9/d4b/class_c_a_n_tram_core.html#a671c48002cdb950965c9a00395baf0d5" title="Call this function to retrieve a specific output definition and raise the count of used output defini..." alt="" coords="261,5,492,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="213,16,245,16,245,21,213,21"/>
-<area shape="rect" id="Node000003" href="$d9/d4b/class_c_a_n_tram_core.html#a327fbf9847ec97e69a1dcfa554650a8d" title="Call this function to retrieve a specific output definition without affecting the used count." alt="" coords="540,5,768,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="492,16,525,16,525,21,492,21"/>
-</map>

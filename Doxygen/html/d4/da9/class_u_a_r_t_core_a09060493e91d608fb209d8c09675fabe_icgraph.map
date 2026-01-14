@@ -1,5 +1,0 @@
-<map id="UARTCore::read" name="UARTCore::read">
-<area shape="rect" id="Node000001" title="Read available bytes from the UART into the provided buffer." alt="" coords="191,5,309,32"/>
-<area shape="rect" id="Node000002" href="$dc/deb/class_e_s_p32___u_a_r_t.html#a9347eb37496924596031fac5adbfca56" title="Read available bytes from UART into buffer." alt="" coords="5,5,143,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,21,143,21,143,16,175,16"/>
-</map>
