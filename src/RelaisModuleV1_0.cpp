@@ -17,7 +17,13 @@ bool RelaisModuleV1_0::attachModule(uint8_t slot, uint8_t gpioStart){
 bool RelaisModuleV1_0::provideGPIOs(){
    return true;
 }
-
+/**
+ * @brief Requests the GPIO output definitions for the relais interfaces.
+ * @details The function requests 4 outputDefinitions starting from GPIO_START.
+ * 
+ * @return true 
+ * @return false 
+ */
 bool RelaisModuleV1_0::requestGPIOs(){
     bool result = true;
     _relaisGPIOs[0] = CANTramCore::getOutputDefinition(GPIO_START + 0);
