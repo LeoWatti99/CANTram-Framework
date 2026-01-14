@@ -1,0 +1,37 @@
+<map id="include/OutputDefinition.h" name="include/OutputDefinition.h">
+<area shape="rect" id="Node000001" title="Definitions for GPIO/output descriptors and provider interfaces." alt="" coords="289,5,457,31"/>
+<area shape="rect" id="Node000002" href="$AnalogModuleV1__0_8h_source.html" title=" " alt="" coords="5,79,194,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="313,38,147,81,145,76,312,33"/>
+<area shape="rect" id="Node000003" href="$CANTramCore_8h.html" title="This class serves as the core manager for the CANTram modular system. It handles module attachment,..." alt="" coords="503,79,664,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="424,34,548,76,547,81,422,39"/>
+<area shape="rect" id="Node000005" href="$MainModuleV1__0_8h.html" title=" " alt="" coords="470,374,646,399"/>
+<area shape="poly" id="edge21_Node000001_Node000005" title=" " alt="" coords="350,44,328,67,307,96,291,129,285,164,285,240,289,270,302,294,322,315,347,333,407,358,470,373,469,378,406,363,344,337,318,319,298,298,284,271,280,241,280,164,286,127,303,93,324,63,346,40"/>
+<area shape="rect" id="Node000006" href="$MainModuleV1__0__outputs_8cpp.html" title="This file contains all output related functionallity of the MainmoduleV1_0. This includes native GPIO..." alt="" coords="486,447,630,488"/>
+<area shape="poly" id="edge23_Node000001_Node000006" title=" " alt="" coords="335,41,302,62,269,90,244,124,237,144,234,164,234,314,241,351,260,382,288,406,324,425,364,440,406,450,486,461,486,466,405,455,362,445,322,430,285,411,256,385,236,353,229,314,229,164,232,142,239,122,265,86,298,58,332,36"/>
+<area shape="rect" id="Node000007" href="$PWMCore_8h.html" title="Abstract PWM core interface for CANTram." alt="" coords="410,153,546,178"/>
+<area shape="poly" id="edge22_Node000001_Node000007" title=" " alt="" coords="393,42,472,151,467,154,388,45"/>
+<area shape="rect" id="Node000008" href="$ESP32PWMCore_8h_source.html" title=" " alt="" coords="320,226,495,252"/>
+<area shape="poly" id="edge20_Node000001_Node000008" title=" " alt="" coords="380,46,408,226,403,226,374,47"/>
+<area shape="rect" id="Node000012" href="$DigitalModuleV1__0_8h_source.html" title=" " alt="" coords="689,79,873,105"/>
+<area shape="poly" id="edge19_Node000001_Node000012" title=" " alt="" coords="458,32,712,76,711,81,457,37"/>
+<area shape="rect" id="Node000004" href="$BusModule_8h_source.html" title=" " alt="" coords="621,300,762,326"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="598,117,688,299,683,301,593,119"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="584,120,562,374,557,373,578,120"/>
+<area shape="poly" id="edge18_Node000003_Node000006" title=" " alt="" coords="675,105,763,124,855,150,886,158,918,163,976,170,1000,177,1020,189,1032,209,1037,238,1037,314,1034,330,1024,345,991,372,943,395,883,414,750,443,631,461,630,456,749,438,882,409,941,390,988,367,1020,342,1029,328,1032,314,1032,238,1027,211,1016,193,998,182,975,175,917,168,885,164,853,155,762,129,674,111"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="555,116,498,154,495,150,552,111"/>
+<area shape="rect" id="Node000009" href="$UARTCore_8h.html" title="Abstract base for UART hardware cores and provider interface." alt="" coords="703,153,842,178"/>
+<area shape="poly" id="edge10_Node000003_Node000009" title=" " alt="" coords="630,108,741,150,740,155,629,113"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="561,415,561,447,556,447,556,415"/>
+<area shape="poly" id="edge9_Node000007_Node000005" title=" " alt="" coords="494,191,510,225,539,309,558,373,553,374,534,311,505,227,489,194"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="458,191,421,228,418,224,454,187"/>
+<area shape="poly" id="edge8_Node000008_Node000005" title=" " alt="" coords="433,261,548,371,544,375,429,265"/>
+<area shape="poly" id="edge11_Node000009_Node000004" title=" " alt="" coords="745,190,727,208,713,228,699,266,695,300,689,299,694,265,708,225,723,204,741,187"/>
+<area shape="rect" id="Node000010" href="$ESP32__UART_8h_source.html" title=" " alt="" coords="837,300,996,326"/>
+<area shape="poly" id="edge12_Node000009_Node000010" title=" " alt="" coords="836,182,870,199,899,225,910,243,916,264,920,299,914,300,911,265,905,245,895,228,867,203,834,186"/>
+<area shape="rect" id="Node000011" href="$UARTInterface_8h_source.html" title=" " alt="" coords="722,226,885,252"/>
+<area shape="poly" id="edge14_Node000009_Node000011" title=" " alt="" coords="786,191,801,225,796,227,781,193"/>
+<area shape="poly" id="edge13_Node000010_Node000005" title=" " alt="" coords="841,332,620,376,619,370,840,327"/>
+<area shape="poly" id="edge15_Node000011_Node000004" title=" " alt="" coords="773,263,712,302,709,297,770,258"/>
+<area shape="poly" id="edge17_Node000011_Node000005" title=" " alt="" coords="803,268,795,299,776,327,747,349,715,365,681,375,647,382,646,377,680,370,713,360,745,344,772,324,790,297,798,266"/>
+<area shape="poly" id="edge16_Node000011_Node000010" title=" " alt="" coords="837,258,899,297,896,302,834,263"/>
+</map>

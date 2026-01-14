@@ -1,0 +1,27 @@
+<map id="include/CANTramCore.h" name="include/CANTramCore.h">
+<area shape="rect" id="Node000001" title="This class serves as the core manager for the CANTram modular system. It handles module attachment,..." alt="" coords="399,5,561,31"/>
+<area shape="rect" id="Node000002" href="$BusModule_8h_source.html" title=" " alt="" coords="528,226,669,252"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="516,38,541,55,563,77,588,112,601,152,605,193,603,226,598,226,600,193,596,153,583,114,559,81,537,60,513,42"/>
+<area shape="rect" id="Node000003" href="$MainModuleV1__0_8h.html" title=" " alt="" coords="226,300,403,326"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="527,36,560,54,591,77,640,120,682,161,696,183,702,205,699,229,683,254,665,268,638,280,566,297,483,308,403,312,403,307,482,302,565,292,636,275,662,264,679,250,694,227,697,206,691,185,678,165,637,124,588,81,557,58,525,40"/>
+<area shape="rect" id="Node000004" href="$MainModuleV1__0__outputs_8cpp.html" title="This file contains all output related functionallity of the MainmoduleV1_0. This includes native GPIO..." alt="" coords="59,374,202,414"/>
+<area shape="poly" id="edge16_Node000001_Node000004" title=" " alt="" coords="384,32,267,49,143,76,89,94,46,115,18,138,11,151,8,164,8,240,10,261,17,281,40,318,70,348,101,371,97,375,67,352,36,321,12,284,5,263,3,241,3,164,6,149,14,135,44,110,88,89,142,71,266,44,383,27"/>
+<area shape="rect" id="Node000005" href="$PWMCore_8h.html" title="Abstract PWM core interface for CANTram." alt="" coords="188,153,324,178"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="450,42,276,154,273,150,447,38"/>
+<area shape="rect" id="Node000007" href="$UARTCore_8h.html" title="Abstract base for UART hardware cores and provider interface." alt="" coords="410,79,550,105"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="483,46,483,79,477,79,477,46"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="273,335,178,376,176,371,271,330"/>
+<area shape="poly" id="edge7_Node000005_Node000003" title=" " alt="" coords="265,192,284,251,309,298,305,301,279,253,260,194"/>
+<area shape="rect" id="Node000006" href="$ESP32PWMCore_8h_source.html" title=" " alt="" coords="43,226,218,252"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="223,189,153,228,151,223,220,184"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="177,255,284,297,282,302,175,260"/>
+<area shape="poly" id="edge9_Node000007_Node000002" title=" " alt="" coords="524,110,552,127,575,151,586,170,594,191,600,226,595,227,589,192,582,172,571,154,548,132,521,114"/>
+<area shape="rect" id="Node000008" href="$ESP32__UART_8h_source.html" title=" " alt="" coords="294,226,453,252"/>
+<area shape="poly" id="edge10_Node000007_Node000008" title=" " alt="" coords="436,114,410,131,389,154,381,172,376,191,375,226,370,226,371,191,376,170,384,151,407,127,433,110"/>
+<area shape="rect" id="Node000009" href="$UARTInterface_8h_source.html" title=" " alt="" coords="398,153,562,178"/>
+<area shape="poly" id="edge12_Node000007_Node000009" title=" " alt="" coords="483,120,483,152,477,152,477,120"/>
+<area shape="poly" id="edge11_Node000008_Node000003" title=" " alt="" coords="356,266,327,301,323,298,352,262"/>
+<area shape="poly" id="edge13_Node000009_Node000002" title=" " alt="" coords="514,184,580,223,577,228,512,189"/>
+<area shape="poly" id="edge15_Node000009_Node000003" title=" " alt="" coords="485,194,481,224,468,254,450,271,430,284,386,302,384,297,427,279,447,266,463,250,476,223,479,193"/>
+<area shape="poly" id="edge14_Node000009_Node000008" title=" " alt="" coords="451,190,393,228,390,224,448,185"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="AnalogModuleV1_0::requestHardwareResources" name="AnalogModuleV1_0::requestHardwareResources">
+<area shape="rect" id="Node000001" title="Request hardware resources required by the module." alt="" coords="5,5,190,48"/>
+<area shape="rect" id="Node000002" href="$dc/d46/class_p_w_m_output_provider.html#a61998be15a228bbd6f0d6b179aca623b" title="Register/allocate a PWM channel for the given output." alt="" coords="238,5,387,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="190,24,222,24,222,29,190,29"/>
+</map>

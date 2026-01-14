@@ -1,0 +1,5 @@
+<map id="UARTCore" name="UARTCore">
+<area shape="rect" id="Node000001" title="Base class for platform&#45;specific UART implementations." alt="" coords="29,79,114,105"/>
+<area shape="rect" id="Node000002" href="$classHardwareResource.html" title="Base class for hardware resources like UART, SPI, I2C, PWM, etc." alt="" coords="5,5,138,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="74,46,74,79,69,79,69,46"/>
+</map>

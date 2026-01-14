@@ -1,0 +1,5 @@
+<map id="PWMOutputProvider::setPWM" name="PWMOutputProvider::setPWM">
+<area shape="rect" id="Node000001" title="Set a PWM value on the specified output." alt="" coords="226,5,375,48"/>
+<area shape="rect" id="Node000002" href="$d4/d06/class_analog_module_v1__0.html#adf25f90bf6a38cfe20c6ac8984cf36fa" title="Periodic cycle handler called by the core." alt="" coords="5,13,178,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="210,29,178,29,178,24,210,24"/>
+</map>

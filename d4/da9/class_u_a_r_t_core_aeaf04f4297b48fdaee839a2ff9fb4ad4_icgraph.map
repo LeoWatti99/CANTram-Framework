@@ -1,0 +1,5 @@
+<map id="UARTCore::reset" name="UARTCore::reset">
+<area shape="rect" id="Node000001" title="Reset the UART core and release/clear resources." alt="" coords="195,5,317,32"/>
+<area shape="rect" id="Node000002" href="$dc/deb/class_e_s_p32___u_a_r_t.html#a0729d44483caad65176f225c7924755c" title="Reset the ESP32 UART instance." alt="" coords="5,5,147,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,21,147,21,147,16,179,16"/>
+</map>

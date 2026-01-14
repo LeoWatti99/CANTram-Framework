@@ -1,0 +1,5 @@
+<map id="I2CCore::reset" name="I2CCore::reset">
+<area shape="rect" id="Node000001" title="Reset the hardware resource to a known default state." alt="" coords="209,5,316,32"/>
+<area shape="rect" id="Node000002" href="$d0/d97/class_e_s_p32___i2_c_core.html#aa3e0817cba1f01e19e046fa27a776eab" title="Reset the hardware resource to a known default state." alt="" coords="5,5,161,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="193,21,161,21,161,16,193,16"/>
+</map>

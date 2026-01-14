@@ -1,0 +1,16 @@
+<map id="include/MAX22531.h" name="include/MAX22531.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="111,5,251,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="47,226,123,252"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,29,85,36,60,46,36,61,18,81,10,97,8,114,11,132,18,150,39,185,64,214,60,217,35,188,13,153,6,134,3,114,5,95,14,77,33,57,57,42,83,31,110,24"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="28,79,81,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="161,34,90,73,88,69,158,29"/>
+<area shape="rect" id="Node000004" href="$MAX22531__registers_8h_source.html" title=" " alt="" coords="105,79,257,105"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="184,31,184,63,178,63,178,31"/>
+<area shape="rect" id="Node000005" href="$Debug_8h.html" title="Logging and debug macro definitions for CANTramCore." alt="" coords="203,153,271,178"/>
+<area shape="poly" id="edge8_Node000001_Node000005" title=" " alt="" coords="214,29,246,48,260,62,272,78,276,94,274,111,259,141,254,139,269,110,271,95,267,80,256,65,242,53,211,34"/>
+<area shape="rect" id="Node000006" href="$SPIChip_8h_source.html" title=" " alt="" coords="332,79,411,105"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="214,29,326,71,324,76,213,34"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="192,103,220,139,216,142,188,107"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="212,181,126,222,124,217,210,176"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="350,108,275,147,272,143,348,103"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="CANTramModule::reset" name="CANTramModule::reset">
+<area shape="rect" id="Node000001" title="Reset the module to a known default state." alt="" coords="224,31,383,57"/>
+<area shape="rect" id="Node000002" href="$d4/d06/class_analog_module_v1__0.html#af605e705430ba08785ac8dfd68e5efa7" title="Reset the module and its interfaces." alt="" coords="5,5,176,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="208,35,176,31,176,26,208,30"/>
+<area shape="rect" id="Node000003" href="$dd/dcb/class_bus_module_v1__0.html#adca07691ab1dbe6942abd50e3b6a2a23" title="Reset the module to a known default state." alt="" coords="14,56,167,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="208,58,168,63,167,58,208,53"/>
+</map>

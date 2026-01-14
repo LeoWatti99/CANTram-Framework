@@ -1,0 +1,19 @@
+<map id="Interface" name="Interface">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,183,78,209"/>
+<area shape="rect" id="Node000002" href="$de/d85/class_analog_input.html" title=" " alt="" coords="135,5,226,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="50,167,77,105,98,72,124,42,141,30,144,35,127,46,102,75,82,108,54,169"/>
+<area shape="rect" id="Node000003" href="$df/de2/class_analog_output.html" title="Analog output interface implementation." alt="" coords="130,56,230,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="57,168,86,130,124,93,142,81,145,86,127,97,90,134,62,171"/>
+<area shape="rect" id="Node000004" href="$d8/db6/class_c_a_n_interface.html" title=" " alt="" coords="130,107,231,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="76,172,124,143,147,132,149,136,127,148,78,176"/>
+<area shape="rect" id="Node000005" href="$db/db0/class_digital_input.html" title=" " alt="" coords="137,157,224,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="93,184,136,176,137,181,94,189"/>
+<area shape="rect" id="Node000006" href="$dd/da6/class_digital_output.html" title=" " alt="" coords="132,208,229,235"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="94,203,132,210,131,215,93,208"/>
+<area shape="rect" id="Node000007" href="$df/d11/class_i2_c_interface.html" title=" " alt="" coords="134,259,227,285"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="78,216,127,244,149,256,147,260,124,249,76,220"/>
+<area shape="rect" id="Node000008" href="$d0/de8/class_relais_interface.html" title=" " alt="" coords="126,309,235,336"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="62,221,90,258,127,295,145,306,142,311,124,299,86,262,57,224"/>
+<area shape="rect" id="Node000009" href="$dd/dc4/class_u_a_r_t_interface.html" title=" " alt="" coords="126,360,234,387"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="54,223,82,284,102,317,127,346,144,357,141,362,124,350,98,320,77,287,50,225"/>
+</map>

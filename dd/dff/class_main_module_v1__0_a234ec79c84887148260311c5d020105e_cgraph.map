@@ -1,0 +1,5 @@
+<map id="MainModuleV1_0::enableOutputs" name="MainModuleV1_0::enableOutputs">
+<area shape="rect" id="Node000001" title="Enable or disable all outputs managed by this provider." alt="" coords="5,5,219,32"/>
+<area shape="rect" id="Node000002" href="$d6/d8a/class_output_provider.html#aa30505769d3096bf35c097c23b762ea2" title="Enable or disable all outputs managed by this provider." alt="" coords="267,5,467,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="219,16,251,16,251,21,219,21"/>
+</map>

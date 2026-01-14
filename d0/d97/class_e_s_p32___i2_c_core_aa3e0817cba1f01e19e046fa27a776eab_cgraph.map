@@ -1,0 +1,9 @@
+<map id="ESP32_I2CCore::reset" name="ESP32_I2CCore::reset">
+<area shape="rect" id="Node000001" title="Reset the hardware resource to a known default state." alt="" coords="5,5,161,32"/>
+<area shape="rect" id="Node000002" href="$d0/dd5/class_i2_c_core.html#a0c8934608811f1a80247981f4e222ce9" title="Reset the hardware resource to a known default state." alt="" coords="209,5,316,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,16,193,16,193,21,161,21"/>
+<area shape="rect" id="Node000003" href="$d2/d03/class_hardware_resource.html#a7372684f2afb5139ef8464194a087649" title="Reset the hardware resource to a known default state." alt="" coords="364,5,534,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="316,16,348,16,348,21,316,21"/>
+<area shape="rect" id="Node000004" href="$d2/d03/class_hardware_resource.html#ad1058e4c12406f756755fad5db55dc77" title="Get the hardware resource type." alt="" coords="582,5,770,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="535,16,567,16,567,21,535,21"/>
+</map>

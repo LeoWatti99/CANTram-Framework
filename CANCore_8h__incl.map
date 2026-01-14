@@ -1,0 +1,11 @@
+<map id="include/CANCore.h" name="include/CANCore.h">
+<area shape="rect" id="Node000001" title="Declaration of the CANCore class." alt="" coords="33,5,164,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="6,226,81,252"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="71,34,41,53,28,65,18,80,9,114,11,149,20,183,32,211,27,213,15,185,6,150,4,113,13,78,24,62,38,49,68,29"/>
+<area shape="rect" id="Node000003" href="$HardwareResource_8h.html" title="Base class for hardware resources." alt="" coords="27,79,169,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="101,31,101,63,96,63,96,31"/>
+<area shape="rect" id="Node000004" href="$Debug_8h.html" title="Logging and debug macro definitions for CANTramCore." alt="" coords="64,153,132,178"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="128,29,158,49,172,62,183,78,187,99,178,118,161,134,141,147,138,143,157,130,173,114,181,98,178,80,168,65,155,53,125,34"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="101,105,101,137,96,137,96,105"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="91,180,64,216,60,212,87,177"/>
+</map>

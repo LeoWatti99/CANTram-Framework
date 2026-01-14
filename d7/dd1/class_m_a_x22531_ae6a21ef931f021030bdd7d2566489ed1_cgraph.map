@@ -1,0 +1,5 @@
+<map id="MAX22531::HWreset" name="MAX22531::HWreset">
+<area shape="rect" id="Node000001" title="Performs a hardware reset of the MAX22531 via the CONTROL register." alt="" coords="5,5,150,32"/>
+<area shape="rect" id="Node000002" href="$d7/dd1/class_m_a_x22531.html#ac1478352d019d569c797a91def4a1e67" title="Writes a 16&#45;bit value to a register on the MAX22531." alt="" coords="198,5,368,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="150,16,182,16,182,21,150,21"/>
+</map>

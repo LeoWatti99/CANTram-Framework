@@ -1,0 +1,7 @@
+<map id="MainModuleV1_0::configureOutput" name="MainModuleV1_0::configureOutput">
+<area shape="rect" id="Node000001" title="Configure an output&#39;s direction/mode." alt="" coords="249,35,431,77"/>
+<area shape="rect" id="Node000002" href="$dd/dff/class_main_module_v1__0.html#a49970e0c688bc176501bb0186fd07f28" title="Configures the output for a specific pin or bit." alt="" coords="12,5,194,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="233,45,194,41,195,35,234,40"/>
+<area shape="rect" id="Node000003" href="$dd/dff/class_main_module_v1__0.html#a2917d9056213cc8633b13f91722be603" title="Pre&#45;initialize the module after attachment." alt="" coords="5,72,201,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="234,72,201,76,201,71,233,67"/>
+</map>

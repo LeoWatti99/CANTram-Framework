@@ -1,0 +1,7 @@
+<map id="include/HardwareResource.h" name="include/HardwareResource.h">
+<area shape="rect" id="Node000001" title="Base class for hardware resources." alt="" coords="5,5,193,31"/>
+<area shape="rect" id="Node000002" href="$Debug_8h.html" title="Logging and debug macro definitions for CANTramCore." alt="" coords="65,79,133,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,31,102,63,96,63,96,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="61,153,137,178"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="102,105,102,137,96,137,96,105"/>
+</map>

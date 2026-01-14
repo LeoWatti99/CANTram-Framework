@@ -1,0 +1,7 @@
+<map id="MainModuleV1_0::preInitialize" name="MainModuleV1_0::preInitialize">
+<area shape="rect" id="Node000001" title="Pre&#45;initialize the module after attachment." alt="" coords="5,13,201,40"/>
+<area shape="rect" id="Node000002" href="$dd/dff/class_main_module_v1__0.html#a9226f26c18a54a0361585d2c82465027" title="Configure an output&#39;s direction/mode." alt="" coords="249,5,431,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="201,24,233,24,233,29,201,29"/>
+<area shape="rect" id="Node000003" href="$db/dc2/class_output_definition.html#a64751373cfe44aba6a60b2a2ad276710" title="Create a human&#45;readable string describing the OutputDefinition." alt="" coords="479,13,647,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="432,24,463,24,463,29,432,29"/>
+</map>

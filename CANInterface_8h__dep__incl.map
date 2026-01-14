@@ -1,0 +1,7 @@
+<map id="include/CANInterface.h" name="include/CANInterface.h">
+<area shape="rect" id="Node000001" title="Declaration of the CANInterface class." alt="" coords="16,5,171,31"/>
+<area shape="rect" id="Node000002" href="$MainModuleV1__0_8h.html" title=" " alt="" coords="5,79,182,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,46,96,79,91,79,91,46"/>
+<area shape="rect" id="Node000003" href="$MainModuleV1__0__outputs_8cpp.html" title="This file contains all output related functionallity of the MainmoduleV1_0. This includes native GPIO..." alt="" coords="22,153,165,193"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="96,120,96,152,91,152,91,120"/>
+</map>

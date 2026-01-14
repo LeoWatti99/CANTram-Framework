@@ -1,0 +1,5 @@
+<map id="MainModuleV1_0::configureOutput" name="MainModuleV1_0::configureOutput">
+<area shape="rect" id="Node000001" title="Configure an output&#39;s direction/mode." alt="" coords="5,5,188,48"/>
+<area shape="rect" id="Node000002" href="$db/dc2/class_output_definition.html#a64751373cfe44aba6a60b2a2ad276710" title="Create a human&#45;readable string describing the OutputDefinition." alt="" coords="236,13,404,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,24,220,24,220,29,188,29"/>
+</map>

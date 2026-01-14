@@ -1,0 +1,19 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$classCANTramModule.html" title=" " alt="" coords="171,104,292,130"/>
+<area shape="rect" id="Node000001" href="$classAnalogModuleV1__0.html" title=" " alt="" coords="350,5,483,31"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="262,92,303,66,349,40,374,29,376,34,351,45,305,70,265,97"/>
+<area shape="rect" id="Node000002" href="$classBusModuleV1__0.html" title=" " alt="" coords="358,55,475,80"/>
+<area shape="poly" id="edge2_Node000000_Node000002" title=" " alt="" coords="297,97,365,78,366,84,298,102"/>
+<area shape="rect" id="Node000003" href="$classDigitalModuleV1__0.html" title=" " alt="" coords="352,104,481,130"/>
+<area shape="poly" id="edge3_Node000000_Node000003" title=" " alt="" coords="308,114,352,114,352,120,308,120"/>
+<area shape="rect" id="Node000004" href="$classMainModuleV1__0.html" title=" " alt="" coords="356,203,477,228"/>
+<area shape="poly" id="edge4_Node000000_Node000004" title=" " alt="" coords="265,137,305,163,351,189,376,200,374,205,349,194,303,168,262,141"/>
+<area shape="rect" id="Node000008" href="$classRelaisModuleV1__0.html" title=" " alt="" coords="352,153,481,179"/>
+<area shape="poly" id="edge5_Node000000_Node000008" title=" " alt="" coords="298,132,366,150,365,155,297,137"/>
+<area shape="rect" id="Node000006" href="$classOutputProvider.html" title="Abstract interface for providers that control outputs." alt="" coords="5,177,114,203"/>
+<area shape="rect" id="Node000005" href="$classPWMOutputProvider.html" title="Extended output provider interface for PWM&#45;capable outputs." alt="" coords="162,177,302,203"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="129,188,161,188,161,193,129,193"/>
+<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="318,199,356,205,355,210,317,205"/>
+<area shape="rect" id="Node000007" href="$classUARTProvider.html" title="Abstract interface for objects that supply a UARTCore instance." alt="" coords="179,227,284,252"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="300,228,355,221,356,226,300,233"/>
+</map>

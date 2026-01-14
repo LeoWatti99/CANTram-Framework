@@ -1,0 +1,16 @@
+<map id="C:/Users/leowa/Documents/PlatformIO/Projects/CANTramFrameworkUsage/lib/CANTramFramework/include/MAX22531.h" name="C:/Users/leowa/Documents/PlatformIO/Projects/CANTramFrameworkUsage/lib/CANTramFramework/include/MAX22531.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="47,5,315,80"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="47,277,123,304"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="68,83,39,103,17,129,10,146,8,164,18,201,39,236,63,264,59,268,35,239,14,203,3,165,5,145,12,127,36,99,65,78"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="26,128,80,155"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="134,83,84,121,80,116,131,78"/>
+<area shape="rect" id="Node000004" href="$d1/d8f/_m_a_x22531__registers_8h_source.html" title=" " alt="" coords="105,128,258,155"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="184,80,184,112,179,112,179,80"/>
+<area shape="rect" id="Node000005" href="$d0/d4b/_debug_8h.html" title="Logging and debug macro definitions for CANTramCore." alt="" coords="203,203,274,229"/>
+<area shape="poly" id="edge8_Node000001_Node000005" title=" " alt="" coords="236,78,257,101,273,127,277,144,274,161,261,191,256,189,269,159,271,144,268,129,253,104,232,82"/>
+<area shape="rect" id="Node000006" href="$df/d41/_s_p_i_chip_8h_source.html" title=" " alt="" coords="334,128,415,155"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="256,78,337,118,335,123,254,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="193,154,221,189,217,192,189,157"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="213,232,127,273,125,268,211,227"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="352,158,277,197,274,193,350,153"/>
+</map>

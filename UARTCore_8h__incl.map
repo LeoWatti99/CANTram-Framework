@@ -1,0 +1,31 @@
+<map id="include/UARTCore.h" name="include/UARTCore.h">
+<area shape="rect" id="Node000001" title="Abstract base for UART hardware cores and provider interface." alt="" coords="303,5,442,31"/>
+<area shape="rect" id="Node000002" href="$CANTramCore_8h.html" title="This class serves as the core manager for the CANTram modular system. It handles module attachment,..." alt="" coords="264,79,380,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="367,33,342,68,337,65,362,30"/>
+<area shape="rect" id="Node000008" href="$HardwareResource_8h.html" title="Base class for hardware resources." alt="" coords="408,226,551,252"/>
+<area shape="poly" id="edge20_Node000001_Node000008" title=" " alt="" coords="381,30,470,212,465,214,376,32"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="148,374,224,399"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="264,99,199,105,129,116,69,132,47,143,32,154,18,177,10,198,8,219,13,240,21,261,34,282,71,324,101,348,135,365,133,370,98,352,67,328,30,285,17,264,7,242,3,220,5,197,13,174,28,151,44,138,67,127,128,111,198,100,263,94"/>
+<area shape="rect" id="Node000004" href="$CANTramModule_8h.html" title="Base class for CANTram hardware modules." alt="" coords="42,153,173,178"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="286,108,159,150,157,145,285,103"/>
+<area shape="rect" id="Node000006" href="$Debug_8h.html" title="Logging and debug macro definitions for CANTramCore." alt="" coords="189,300,258,326"/>
+<area shape="poly" id="edge13_Node000002_Node000006" title=" " alt="" coords="317,107,286,158,251,227,232,286,227,284,246,225,281,156,312,104"/>
+<area shape="rect" id="Node000007" href="$OutputDefinition_8h.html" title="Definitions for GPIO/output descriptors and provider interfaces." alt="" coords="260,226,384,252"/>
+<area shape="poly" id="edge10_Node000002_Node000007" title=" " alt="" coords="325,105,325,211,319,211,319,105"/>
+<area shape="poly" id="edge14_Node000002_Node000008" title=" " alt="" coords="337,103,457,214,453,218,333,107"/>
+<area shape="rect" id="Node000009" href="$CANCore_8h.html" title="Declaration of the CANCore class." alt="" coords="523,153,609,178"/>
+<area shape="poly" id="edge16_Node000002_Node000009" title=" " alt="" coords="364,103,511,145,509,150,363,108"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="88,181,69,195,52,212,42,231,43,251,65,286,93,317,124,343,153,363,149,367,120,347,89,321,60,290,38,253,36,230,47,208,66,191,85,177"/>
+<area shape="rect" id="Node000005" href="$Interface_8h_source.html" title=" " alt="" coords="53,226,135,252"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="108,179,102,211,97,210,103,178"/>
+<area shape="poly" id="edge9_Node000004_Node000006" title=" " alt="" coords="119,177,206,286,202,289,115,180"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="104,251,173,359,168,362,99,254"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="117,250,189,290,187,294,115,255"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="220,327,202,361,197,359,215,325"/>
+<area shape="poly" id="edge11_Node000007_Node000003" title=" " alt="" coords="319,254,301,289,272,327,248,349,222,367,219,363,244,345,268,324,296,286,314,251"/>
+<area shape="poly" id="edge12_Node000007_Node000006" title=" " alt="" coords="307,255,254,293,251,289,304,250"/>
+<area shape="poly" id="edge15_Node000008_Node000006" title=" " alt="" coords="437,255,273,300,272,295,435,250"/>
+<area shape="poly" id="edge17_Node000009_Node000003" title=" " alt="" coords="577,177,593,213,595,234,588,253,554,292,512,322,465,345,417,362,367,374,320,382,239,388,239,383,319,377,366,369,415,357,463,340,509,317,550,288,584,251,590,233,588,214,572,180"/>
+<area shape="poly" id="edge19_Node000009_Node000006" title=" " alt="" coords="572,179,577,215,574,235,564,254,544,269,514,281,436,298,349,308,274,313,273,307,349,303,435,293,512,276,541,264,560,250,569,234,572,215,567,179"/>
+<area shape="poly" id="edge18_Node000009_Node000008" title=" " alt="" coords="553,181,507,218,504,214,550,177"/>
+</map>

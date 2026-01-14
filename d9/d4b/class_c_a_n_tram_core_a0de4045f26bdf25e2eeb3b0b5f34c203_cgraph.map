@@ -1,0 +1,7 @@
+<map id="CANTramCore::addOutputDefinition" name="CANTramCore::addOutputDefinition">
+<area shape="rect" id="Node000001" title="Call this function to add a single output definition to the core." alt="" coords="5,5,237,32"/>
+<area shape="rect" id="Node000002" href="$d9/d4b/class_c_a_n_tram_core.html#a3bd45401c1ff106db1a07cd6a35bc8b4" title="Call this function to add a single output definition to the core." alt="" coords="285,5,516,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="237,16,269,16,269,21,237,21"/>
+<area shape="rect" id="Node000003" href="$db/dc2/class_output_definition.html#a64751373cfe44aba6a60b2a2ad276710" title="Create a human&#45;readable string describing the OutputDefinition." alt="" coords="564,5,732,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="516,16,548,16,548,21,516,21"/>
+</map>

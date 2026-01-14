@@ -1,0 +1,7 @@
+<map id="PWMCore" name="PWMCore">
+<area shape="rect" id="Node000001" title=" " alt="" coords="31,79,112,105"/>
+<area shape="rect" id="Node000003" href="$classESP32PWMCore.html" title=" " alt="" coords="11,153,132,178"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="74,120,74,152,69,152,69,120"/>
+<area shape="rect" id="Node000002" href="$classHardwareResource.html" title="Base class for hardware resources like UART, SPI, I2C, PWM, etc." alt="" coords="5,5,138,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="74,46,74,79,69,79,69,46"/>
+</map>

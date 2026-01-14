@@ -1,0 +1,19 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$classHardwareResource.html" title="Base class for hardware resources like UART, SPI, I2C, PWM, etc." alt="" coords="5,80,138,106"/>
+<area shape="rect" id="Node000001" href="$classCANCore.html" title=" " alt="" coords="190,5,266,31"/>
+<area shape="poly" id="edge9_Node000000_Node000001" title=" " alt="" coords="113,70,198,29,200,34,115,75"/>
+<area shape="rect" id="Node000003" href="$classI2CCore.html" title=" " alt="" coords="194,55,262,80"/>
+<area shape="poly" id="edge11_Node000000_Node000003" title=" " alt="" coords="152,77,193,70,194,76,153,82"/>
+<area shape="rect" id="Node000005" href="$classPWMCore.html" title=" " alt="" coords="188,104,268,130"/>
+<area shape="poly" id="edge13_Node000000_Node000005" title=" " alt="" coords="153,103,187,108,187,113,153,108"/>
+<area shape="rect" id="Node000007" href="$classUARTCore.html" title="Base class for platform&#45;specific UART implementations." alt="" coords="186,153,270,179"/>
+<area shape="poly" id="edge15_Node000000_Node000007" title=" " alt="" coords="116,110,200,150,197,155,113,115"/>
+<area shape="rect" id="Node000002" href="$classESP32__CANCore.html" title=" " alt="" coords="318,5,441,31"/>
+<area shape="poly" id="edge10_Node000001_Node000002" title=" " alt="" coords="282,16,318,16,318,21,282,21"/>
+<area shape="rect" id="Node000004" href="$classESP32__I2CCore.html" title=" " alt="" coords="322,55,437,80"/>
+<area shape="poly" id="edge12_Node000003_Node000004" title=" " alt="" coords="278,65,322,65,322,70,278,70"/>
+<area shape="rect" id="Node000006" href="$classESP32PWMCore.html" title=" " alt="" coords="320,104,440,130"/>
+<area shape="poly" id="edge14_Node000005_Node000006" title=" " alt="" coords="284,114,319,114,319,120,284,120"/>
+<area shape="rect" id="Node000008" href="$classESP32__UART.html" title=" " alt="" coords="328,153,432,179"/>
+<area shape="poly" id="edge16_Node000007_Node000008" title=" " alt="" coords="285,164,327,164,327,169,285,169"/>
+</map>
