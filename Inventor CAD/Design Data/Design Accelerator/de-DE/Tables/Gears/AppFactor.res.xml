@@ -1,0 +1,9 @@
+<Resources>
+  <string id="%1%" value="Anwendungskoeffizient"/>
+  <string id="%2%" value="Antreibende Maschinestöße"/>
+  <string id="%3%" value="Stöße der angetriebenen Maschine"/>
+  <string id="%4%" value="Flüssig"/>
+  <string id="%5%" value="Leichte Stöße"/>
+  <string id="%6%" value="Mittlere Stöße"/>
+  <string id="%7%" value="Schwere Stöße"/>
+</Resources>

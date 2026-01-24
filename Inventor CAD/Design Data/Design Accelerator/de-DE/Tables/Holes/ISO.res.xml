@@ -1,0 +1,18 @@
+<Resources>
+  <string id="%1%" value="Nenndurchmesser"/>
+  <string id="%2%" value="Enges Spiel"/>
+  <string id="%3%" value="Normales Spiel"/>
+  <string id="%4%" value="Weites Spiel"/>
+  <string id="%5%" value="Kopfdurchmesser"/>
+  <string id="%6%" value="Tiefe der zylindrischen Senkung"/>
+  <string id="%7%" value="Winkel (konische Senkung)"/>
+  <string id="%8%" value="ISO-Bohrung"/>
+  <string id="%9%" value="Senkkopfschraube ISO 2009/7046"/>
+  <string id="%10%" value="Linsensenkkopfschraube ISO 2010/7047"/>
+  <string id="%11%" value="Sechskantkopfschraube ISO 24017"/>
+  <string id="%12%" value="Sechskantkopfschraube ISO 24014 (mit Gewinde)"/>
+  <string id="%13%" value="ISO-Sechskantschraube"/>
+  <string id="%14%" value="Innensechskant-Senkkopfschraube ISO 10642"/>
+  <string id="%15%" value="Inbusschraube ISO 4762"/>
+  <string id="%16%" value="Zylinderschraube mit Schlitz ISO 1207"/>
+</Resources>

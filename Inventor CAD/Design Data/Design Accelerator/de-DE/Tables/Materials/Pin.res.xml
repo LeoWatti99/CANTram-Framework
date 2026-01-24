@@ -1,0 +1,13 @@
+<Resources>
+  <string id="%1%" value="Stiftmaterial (ANSI)"/>
+  <string id="%2%" value="Materialbezeichnung"/>
+  <string id="%3%" value="Zulässige Scherspannung"/>
+  <string id="%4%" value="psi"/>
+  <string id="%5%" value="Kohlenstoffstahl 1211; 1212; 1213"/>
+  <string id="%6%" value="Kohlenstoffreicher Stahl 1070 - 1095"/>
+  <string id="%7%" value="Edelstahl 302"/>
+  <string id="%8%" value="Edelstahl 410 - 420"/>
+  <string id="%9%" value="Legierter Stahl 6150H"/>
+  <string id="%10%" value="Material"/>
+  <string id="%11%" value="||t||.Al|"/>
+</Resources>

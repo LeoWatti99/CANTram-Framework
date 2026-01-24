@@ -1,0 +1,6 @@
+<Resources>
+  <string id="%1%" value="Verbindungsstück-Konstruktionskoeffizient"/>
+  <string id="%2%" value="Feste Verbindung"/>
+  <string id="%3%" value="Gleitende Kopplung ohne Belastung"/>
+  <string id="%4%" value="Gleitende Kopplung bei Belastung"/>
+</Resources>

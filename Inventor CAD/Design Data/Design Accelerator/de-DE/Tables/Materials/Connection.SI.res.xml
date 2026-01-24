@@ -1,0 +1,20 @@
+<Resources>
+  <string id="%1%" value="Material (SI)"/>
+  <string id="%2%" value="Materialbezeichnung"/>
+  <string id="%3%" value="Zugspannung"/>
+  <string id="%4%" value="MPa"/>
+  <string id="%5%" value="Zulässiger Druck"/>
+  <string id="%6%" value="Zulässige Scherspannung"/>
+  <string id="%7%" value="Baustahl"/>
+  <string id="%8%" value="Kohlenstoffstahl"/>
+  <string id="%9%" value="Edelstahl und legierter Stahl"/>
+  <string id="%10%" value="Oberflächengehärteter Stahl"/>
+  <string id="%11%" value="Einsatzgehärteter Stahl"/>
+  <string id="%12%" value="Gusseisen mit Graphitschichten"/>
+  <string id="%13%" value="Gusseisen mit Graphitkugeln"/>
+  <string id="%14%" value="Aluminiumlegierung"/>
+  <string id="%15%" value="Material"/>
+  <string id="%16%" value="S|.ult|"/>
+  <string id="%17%" value="p|.A|"/>
+  <string id="%18%" value="||t||.Al|"/>
+</Resources>

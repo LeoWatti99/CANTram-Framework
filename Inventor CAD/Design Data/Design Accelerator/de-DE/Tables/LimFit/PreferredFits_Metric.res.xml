@@ -1,0 +1,19 @@
+<Resources>
+  <string id="%1%" value="Bevorzugte Passung(metrisch)"/>
+  <string id="%2%" value="Passungsname"/>
+  <string id="%3%" value="Übergang=1 Überlagerung=2 Spiel=3"/>
+  <string id="%4%" value="Einheitsbohrung=1 Einheitswelle=2"/>
+  <string id="%5%" value="Beschreibung der Passungsnutzung"/>
+  <string id="%10%" value="Fester Druckstutzen mit geringfügigem Spiel oder kleinem Übermaß\nMontage-Pressung mit kleiner Kraft\nAnker der E-Motoren an der Welle, Zahnradkränze, gepasste Schrauben"/>
+  <string id="%11%" value="Identischer Druckstutzen mit kleinem Spiel oder kleinem Übermaß\nMontage mit einem Gummi- oder Kupferfäustel\n Demontierbare Passung der Naben von Zahnrädern, Riemenscheiben, Handrädern und -hebeln"/>
+  <string id="%12%" value="Schiebedruckstutzen mit kleinem Spiel und geringfügigem Übermaß\nMontage-Eindrücken mit der Hand\nLeicht demontierbare Passungen der Naben von Zahnrädern, Riemenscheiben und Hülsen"/>
+  <string id="%13%" value="Druckstutzen mit großem Übermaß\nMontage-Pressung mit großer Kraft unter\nverschiedenen Temperaturen der Komponenten\nNaben der verzahnten und  anderen Räder an Wellen, Flansche"/>
+  <string id="%14%" value="Druckstutzen mit mittlerem Übermaß\nMontage-Pressung mit großer Kraft, am besten\nunter verschiedenen Temperaturen für Bohrung und Nabe.\nNaben der Kupplungsscheiben, Lagerhülsen"/>  
+  <string id="%15%" value="Gleitpassung mit geringfügigem Spiel\nAufschieben ohne Anwendung einer größeren Kraft\nKomponenten können nach Schmierung manuell verschoben werden\nTauschräder, Stellringe, Walzenführungen"/>
+  <string id="%16%" value="Gleitpassung\nAufschieben ohne Anwendung einer größeren Kraft\nKomponenten können nach Schmierung manuell verschoben werden\nLeicht demontierbare Teile,\nDistanzringe, Einzelteile von landwirtschaftlichen Maschinen,\nbefestigt  an den Wellen mit Bolzen, Schrauben, Klemmverbindungen"/>
+  <string id="%17%" value="Drehpassung mit sehr kleinem Spiel\nMontage-leicht zu montieren ohne spürbares Spiel\nVerschiebbare Zahnräder und Kupplungsscheiben, verschiebbare Stäbe in Lagern"/>
+  <string id="%18%" value="Drehbare Passung\nMontage- mit spürbarem Spiel\nHauptpassung von Produktionsmaschinen\nPassung von verschiebbaren Stäben, gekröpften Wellen"/>
+  <string id="%19%" value="Frei drehbare Passung\nMontage - mit größerem Spiel \nPassung von langen Wellen, z. B. bei landwirtschaftlichen Maschinen"/>
+  <string id="%20%" value="Drehbare Passung mit erheblichem Spiel\nMontage-mit großem Spiel\nMehrfach gelagerte Wellen von Produktions- und Kolbenmaschinen,\nWellen von gezogenen Rundstäben aus Stahl"/>
+  <string id="%21%" value="Passung mit großem Spiel bei Bauteilen mit großen Toleranzen\nMontage- mit maximalem Spiel\nDrehzapfen, Fallklinken, Gabelschrauben der Bremszüge\nPassung der zum Schweißen bestimmten Bauteile"/>
+</Resources>

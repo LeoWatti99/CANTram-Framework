@@ -1,0 +1,6 @@
+<Resources>
+  <string id="%1%" value="Ritzel-Proportionsmodifikator"/>
+  <string id="%2%" value="Spannritzel mit einem Versatzverhältnis unter 0,175"/>
+  <string id="%3%" value="Spannritzel mit einem Versatzverhältnis über 0,175"/>
+  <string id="%4%" value="Der Versatzradius ist der Abstand der Ritzelmittelfläche von der Lagermittellinie."/>
+</Resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><Resources>
+  <string id="%1%" value="Stoßfaktor"/>
+  <string id="%2%" value="Angetriebene Maschine"/>
+  <string id="%3%" value="Elektrische Motoren"/>
+  <string id="%4%" value="Verbrennungsmaschinen mit geringer Geschwindigkeit (1 Zylinder)"/>
+  <string id="%5%" value="Verbrennungsmaschinen mit geringer Geschwindigkeit (2 Zylinder)"/>
+  <string id="%6%" value="Verbrennungsmaschinen mit hoher Geschwindigkeit (1 oder 2 Zylinder)"/>
+  <string id="%7%" value="Verbrennungsmaschinen mit hoher Geschwindigkeit (4 Zylinder)"/>
+  <string id="%8%" value="Verbrennungsmaschinen mit hoher Geschwindigkeit (6 und mehr Zylinder)"/>
+  <string id="%9%" value="Hydraulische Turbinen mit hoher Geschwindigkeit"/>
+  <string id="%10%" value="Hydraulische Turbinen mit niedriger Geschwindigkeit"/>
+  <string id="%11%" value="Dampfturbinen"/>
+  <string id="%12%" value="Kolbendampfmaschinen"/>
+  <string id="%13%" value="Ausgabe des Übersetzungsgetriebes"/>
+  <string id="%14%" value="Drehmaschinen, Bohrmaschinen"/>
+  <string id="%15%" value="Fräsmaschinen"/>
+  <string id="%16%" value="Hobelmaschinen"/>
+  <string id="%17%" value="Wälzstoßmaschinen, Zerspanungsmaschinen"/>
+  <string id="%18%" value="Ziehmaschinen"/>
+  <string id="%19%" value="Hydraulische Pressen"/>
+  <string id="%20%" value="Exzenterpressen"/>
+  <string id="%21%" value="Hebelpressen"/>
+  <string id="%22%" value="Maschinen zur Holzbearbeitung"/>
+  <string id="%23%" value="Webstühle"/>
+  <string id="%24%" value="Strickmaschinen mit Kreisbewegung"/>
+  <string id="%25%" value="Strickmaschinen mit gradliniger Bewegung"/>
+  <string id="%26%" value="Spinnmaschinen"/>
+  <string id="%27%" value="Kolbenkompressoren, einstufig"/>
+  <string id="%28%" value="Kolbenkompressoren, zweistufig"/>
+  <string id="%29%" value="Kreiselkompressoren, einstufig"/>
+  <string id="%30%" value="Kreiselkompressoren, zweistufig"/>
+  <string id="%31%" value="Gebläsemaschinen"/>
+  <string id="%32%" value="Ventilatoren"/>
+  <string id="%33%" value="Kolbenpumpen mit einem Zylinder"/>
+  <string id="%34%" value="Kolbenpumpen mit zwei Zylindern"/>
+  <string id="%35%" value="Kreiselpumpen"/>
+  <string id="%36%" value="Walzstraßen mit Übersetzung"/>
+  <string id="%37%" value="Direkte Walzstraßen"/>
+  <string id="%38%" value="Brechwerke"/>
+  <string id="%39%" value="Kugelmühlen"/>
+  <string id="%40%" value="Rohrmühlen"/>
+  <string id="%41%" value="Hammermühlen"/>
+  <string id="%42%" value="Glättmaschinen mit Übersetzung"/>
+  <string id="%43%" value="Glättmaschinen (Kalender), direkt"/>
+  <string id="%44%" value="Schleifmaschinen für Zellulose"/>
+  <string id="%45%" value="Vibrationssiebe"/>
+  <string id="%46%" value="Stampfmaschinen"/>
+  <string id="%47%" value="Mischtrommeln"/>
+  <string id="%48%" value="Bagger"/>
+  <string id="%49%" value="Erdfräser"/>
+  <string id="%50%" value="Mischmaschinen"/>
+  <string id="%51%" value="Transportbänder für Schüttgut"/>
+  <string id="%52%" value="Transportbänder für Stückgut"/>
+  <string id="%53%" value="Hubmaschinen"/>
+  <string id="%54%" value="Gabelstapler"/>
+  <string id="%55%" value="Grubenwinden"/>
+  <string id="%56%" value="Generatoren - groß"/>
+  <string id="%57%" value="Generatoren - klein"/>
+  <string id="%58%" value="Übersetzungsgetriebeeingang"/>
+</Resources>

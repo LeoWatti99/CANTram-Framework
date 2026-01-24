@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?><FinishFeatureDefinitions Version="1">
+	<Type Id="MaterialCoating">
+		<Process Name="Zn8/An">
+			<Appearance>Zinc</Appearance>
+			<Description>Zink Dicke 8 μm, Transparente Passivierung</Description>
+			<ShortDescription>Zn8/An</ShortDescription>
+			<Thickness>8 mikron</Thickness>
+			<Comment></Comment>
+		</Process>
+		<Process Name="Zn12/Cn/T2">
+			<Appearance>Turquoise</Appearance>
+			<Description>Zink Dicke 12 μm, irisierende Chromatierung, mit Versiegelung</Description>
+			<ShortDescription>Zn12/Cn/T2</ShortDescription>
+			<Thickness>12 mikron</Thickness>
+			<Comment></Comment>
+		</Process>
+		<Process Name="ZnNi8/An">
+			<Appearance>Yellow</Appearance>
+			<Description>Zink-Nickel-Legierung Dicke 8 μm, Schwarz-Passivierung</Description>
+			<ShortDescription>ZnNi8/An</ShortDescription>
+			<Thickness>8 mikron</Thickness>
+			<Comment></Comment>
+		</Process>
+	</Type>
+	<Type Id="HeatTreatment">
+		<Process Name="Carburize .040 - .030">
+			<Appearance>Anodized - Black</Appearance>
+			<Description>Aufkohlen 0.040 - 0.030, Temperatur min. 1 Std. bei min. 350 F, HRC 55-60</Description>
+			<ShortDescription>Aufkohlen 0.040 - 0.030</ShortDescription>
+			<Depth>30 mikron</Depth>
+			<Hardness>60 HRC</Hardness>
+			<Comment></Comment>
+		</Process>
+		<Process Name="Case Hardening 41-45HRC">
+			<Appearance>Dark Green</Appearance>
+			<Description>Einsatzhärtung 3.00 mm, 41-45 HRC</Description>
+			<ShortDescription>Einsatzhärtung 41-45HRC</ShortDescription>
+			<Depth>3.00 mm</Depth>
+			<Hardness>45 HRC</Hardness>
+			<Comment></Comment>
+		</Process>
+		<Process Name="Soft Annealing 225HB">
+			<Appearance>Dark Olive</Appearance>
+			<Description>Weichglühen 225HB</Description>
+			<ShortDescription>Weichglühen 225HB</ShortDescription>
+			<Depth>0 mm</Depth>
+			<Hardness>225 HB</Hardness>
+			<Comment></Comment>
+		</Process>
+		<Process Name="Case Hardening 55±5HRC">
+			<Appearance>Dark Red</Appearance>
+			<Description>Einsatzhärtung 55±5HRC</Description>
+			<ShortDescription>Einsatzhärtung 55±5HRC</ShortDescription>
+			<Depth>3.00 mm</Depth>
+			<Hardness>55 HRC</Hardness>
+			<Comment></Comment>
+		</Process>
+	</Type>
+	<Type Id="SurfaceTexture">
+		<Process Name="Barrel Finishing">
+			<Appearance>Blue - Wall Paint - Glossy</Appearance>
+			<Description>Trommelpolieren</Description>
+			<ShortDescription>Trommelpolieren</ShortDescription>
+			<Comment></Comment>
+		</Process>
+		<Process Name="Grinding">
+			<Appearance>Smooth - Purple</Appearance>
+			<Description>Schleifen</Description>
+			<ShortDescription>Schleifen</ShortDescription>
+			<Comment></Comment>
+		</Process>
+		<Process Name="Honing">
+			<Appearance>Smooth - White</Appearance>
+			<Description>Honen</Description>
+			<ShortDescription>Honen</ShortDescription>
+			<Comment></Comment>
+		</Process>
+		<Process Name="Lapping">
+			<Appearance>Smooth - Yellow</Appearance>
+			<Description>Läppen</Description>
+			<ShortDescription>Läppen</ShortDescription>
+			<Comment></Comment>
+		</Process>
+		<Process Name="Polishing">
+			<Appearance>Smooth - Dark Forest Green</Appearance>
+			<Description>Polieren</Description>
+			<ShortDescription>Polieren</ShortDescription>
+			<Comment></Comment>
+		</Process>
+		<Process Name="Superfinishing">
+			<Appearance>Flaked Satin - Blue</Appearance>
+			<Description>Superfinishing</Description>
+			<ShortDescription>Superfinishing</ShortDescription>
+			<Comment></Comment>
+		</Process>
+	</Type>
+	<Type Id="PaintColor">
+		<Process Name="Prime/Paint RAL 3018">
+			<Appearance>Red</Appearance>
+			<Description>Vorbereiten/Anstrich RAL 3018</Description>
+			<ShortDescription>RAL 3018</ShortDescription>
+			<Thickness>50 mikron</Thickness>
+			<Comment></Comment>
+		</Process>
+		<Process Name="Prime/Paint RAL 2008">
+			<Appearance>Orange</Appearance>
+			<Description>Vorbereiten/Anstrich RAL 2008</Description>
+			<ShortDescription>RAL 2008</ShortDescription>
+			<Thickness>50 mikron</Thickness>
+			<Comment></Comment>
+		</Process>
+		<Process Name="Prime/Paint RAL 6003">
+			<Appearance>Olive Green</Appearance>
+			<Description>Vorbereiten/Anstrich RAL 6003</Description>
+			<ShortDescription>RAL 6003</ShortDescription>
+			<Thickness>50 mikron</Thickness>
+			<Comment></Comment>
+		</Process>
+	</Type>
+</FinishFeatureDefinitions>

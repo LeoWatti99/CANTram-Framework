@@ -1,0 +1,8 @@
+<Resources>
+  <string id="%1%" value="Gebrauchsdauerkoeffizient"/>
+  <string id="%2%" value="Statische Belastung"/>
+  <string id="%3%" value="Wiederkehrende Belastung"/>
+  <string id="%4%" value="Wechselnde Belastung"/>
+  <string id="%5%" value="Permanente Einpassung"/>
+  <string id="%6%" value="Laufsitz"/>
+</Resources>

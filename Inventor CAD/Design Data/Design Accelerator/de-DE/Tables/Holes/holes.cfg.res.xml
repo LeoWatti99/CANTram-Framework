@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?><Resources>
+  <string id="%1%" value="ANSI"/>
+  <string id="%2%" value="Senkkopfschraube Metallgewinde (82)"/>
+  <string id="%3%" value="Senkkopfschraube Metallgewinde (100)"/>
+  <string id="%4%" value="Sechskantschraube mit Teilgewinde"/>
+  <string id="%5%" value="Sechskantschraube Metallgewinde"/>
+  <string id="%6%" value="Linsenkopfschraube Metallgewinde"/>
+  <string id="%7%" value="Inbusschraube"/>
+  <string id="%8%" value="ANSI (Metrisch)"/>
+  <string id="%9%" value="Senkkopfschraube Metallgewinde"/>
+  <string id="%10%" value="Sechskantkopfschraube"/>
+  <string id="%11%" value="Sechskantschraube Metallgewinde"/>
+  <string id="%12%" value="DIN"/>
+  <string id="%13%" value="Senkkopfschraube"/>
+  <string id="%14%" value="Linsensenkkopfschraube"/>
+  <string id="%15%" value="Sechskantschraube"/>
+  <string id="%16%" value="Innensechskant-Sechskantsenkschraube"/>
+  <string id="%17%" value="Innensechskant-Inbusschraube"/>
+  <string id="%18%" value="ISO"/>
+  <string id="%19%" value="Innensechskant-Inbussenkschraube"/>
+  <string id="%20%" value="JIS"/>
+  <string id="%21%" value="Bohrung"/>
+  <string id="%22%" value="Senkkopfschraube Metallgewinde (80)"/>
+  <string id="%23%" value="Senkkopfschraube DIN EN ISO 2009"/>
+  <string id="%24%" value="Linsensenkkopfschraube ISO 2010"/>
+  <string id="%25%" value="Sechskantkopfschraube DIN EN 24017"/>
+  <string id="%26%" value="Sechskantkopfschraube DIN EN 24014 (mit Gewinde)"/>
+  <string id="%27%" value="Innensechskant-Senkkopfschraube DIN EN ISO 10642"/>
+  <string id="%28%" value="Inbusschraube DIN EN ISO 4762"/>
+  <string id="%29%" value="Zylinderschraube mit Schlitz DIN 84"/>
+  <string id="%30%" value="Senkkopfschraube ISO 2009/7046"/>
+  <string id="%31%" value="Linsensenkkopfschraube ISO 2010/7047"/>
+  <string id="%32%" value="Sechskantkopfschraube ISO 24017"/>
+  <string id="%33%" value="Sechskantkopfschraube ISO 24014 (mit Gewinde)"/>
+  <string id="%34%" value="Innensechskant-Senkkopfschraube ISO 10642"/>
+  <string id="%35%" value="Inbusschraube ISO 4762"/>
+  <string id="%36%" value="Zylinderschraube mit Schlitz ISO 1207"/>
+  <string id="%37%" value="GOST"/>
+  <string id="%38%" value="GOST 12876-67"/>
+  <string id="%39%" value="Countersunk Head GOST 12876-67"/>
+  <string id="%40%" value="Countersunk Head + Washer GOST 12876-67"/>
+  <string id="%41%" value="Hex Head Bolt / Nut GOST 12876-67"/>  
+  <string id="%42%" value="Hex Head Bolt / Nut (Reduced Size) GOST 12876-67"/>
+  <string id="%43%" value="Hex Head Bolt / Nut (Enlarged Washer) GOST 12876-67"/>
+  <string id="%44%" value="Cylindrical Head Hex Socket Screw GOST 12876-67"/>
+  <string id="%45%" value="Cylindrical Head Hex Socket Screw + Washer GOST 12876-67"/>
+  <string id="%46%" value="Cylindrical Head Slotted Screw GOST 12876-67"/>
+  <string id="%47%" value="Cylindrical Head Slotted Screw + Washer GOST 12876-67"/>
+</Resources>

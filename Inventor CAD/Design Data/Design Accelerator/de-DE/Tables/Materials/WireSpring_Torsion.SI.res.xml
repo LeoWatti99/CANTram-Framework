@@ -1,0 +1,41 @@
+<Resources>
+<string id="%1%" value="Material der Feder"/>
+<string id="%2%" value="Materialbezeichnung"/>
+<string id="%3%" value="Dichte"/>
+<string id="%4%" value="kg/m^3"/>
+<string id="%5%" value="Zugmodus"/>
+<string id="%6%" value="MPa"/>
+<string id="%7%" value="Verhältnis zwischen zulässiger Biegespannung und Zugfestigkeit"/>
+<string id="%8%" value="Zugspannung"/>
+<string id="%9%" value="Patentgezogen - Kohlenstoffstahl - 1. Kl."/>
+<string id="%10%" value="Patentgezogen - Kohlenstoffstahl - 2. Kl."/>
+<string id="%11%" value="Patentgezogen - Kohlenstoffstahl - 3. Kl."/>
+<string id="%12%" value="Patentgezogen - Kohlenstoffstahl - 4. Kl."/>
+<string id="%13%" value="Patentgezogen - Kohlenstoffstahl - 5. Kl."/>
+<string id="%14%" value="Vergüteter Draht - Kohlenstoffstahl"/>
+<string id="%15%" value="Vergüteter Draht - Si-Cr-Stahl (14 260)"/>
+<string id="%16%" value="Geglühter Draht - Si-Cr-Stahl (14 260)"/>
+<string id="%17%" value="Vergüteter Draht - Mn-Cr-V-Stahl (15 260)"/>
+<string id="%18%" value="Geglühter Draht - Mn-Cr-V-Stahl (15 260)"/>
+<string id="%19%" value="Gezogener Draht - Cr-Ni-Edelstahl (17 242)"/>
+<string id="%20%" value="Gezogen aus Zinnbronze (42 3016 und 42 3018)"/>
+<string id="%21%" value="Gezogen aus Messing (42 3210 und 42 3213)"/>
+<string id="%22%" value="Material"/>
+<string id="%23%" value="Nrm"/>
+<string id="%24%" value="Norm"/>
+<string id="%25%" value="R|.o|"/>
+<string id="%26%" value="E"/>
+<string id="%27%" value="Koeff."/>
+<string id="%28%" value="WD"/>
+<string id="%29%" value="Drahtdurchmesser"/>
+<string id="%30%" value="mm"/>
+<string id="%31%" value="||s||.ult|"/>
+<string id="%32%" value="ISO"/>
+<string id="%33%" value="DIN"/>
+<string id="%34%" value="Drahtdurchmesser und Zugfestigkeit"/>
+<string id="%35%" value="oE"/>
+<string id="%36%" value="Stahldraht, Klasse 1"/>
+<string id="%37%" value="Stahldraht, Klasse 2 und 2A"/>
+<string id="%38%" value="Stahldraht, Klasse 3"/>
+<string id="%39%" value="GOST"/>
+</Resources>

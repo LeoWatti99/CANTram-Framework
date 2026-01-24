@@ -1,0 +1,16 @@
+<Resources>
+  <string id="%1%" value="Anwendungskoeffizient"/>
+  <string id="%2%" value="Gleichmäßig"/>
+  <string id="%3%" value="Leichter Stoß"/>
+  <string id="%4%" value="Unterbrochener Stoß"/>
+  <string id="%5%" value="Starker Stoß"/>
+  <string id="%6%" value="Gleichmäßig (Turbine, Motor)"/>
+  <string id="%7%" value="Leicht	(Hydraulikmotor)"/>
+  <string id="%8%" value="Mittel (Interne Verbrennung, Motor)"/>
+  <string id="%9%" value="Belastungstyp"/>
+  <string id="%10%" value="Antrieb"/>
+  <string id="%11%" value="(Generatorlüfter)"/>
+  <string id="%12%" value="(oszillierend, Pumpen usw.)"/>
+  <string id="%13%" value="(Antriebspumpen)"/>
+  <string id="%14%" value="(Schläge, Schübe usw.)"/>  
+</Resources>

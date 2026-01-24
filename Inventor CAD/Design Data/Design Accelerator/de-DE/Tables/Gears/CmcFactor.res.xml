@@ -1,0 +1,5 @@
+<Resources>
+  <string id="%1%" value="Steigungskorrekturkoeffizient"/>
+  <string id="%2%" value="Getriebe mit unveränderter Steigung"/>
+  <string id="%3%" value="Durch Steigungskorrekturkoeffizient oder Balligkeit korrekt verändertes Getriebe"/>
+</Resources>

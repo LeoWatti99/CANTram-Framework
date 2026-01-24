@@ -1,0 +1,88 @@
+### Test Descriptions (Sorted by Modules)
+
+#### AnalogModule Tests
+- **File: `test_AI_chip.cpp`**
+  1. **`test_max22531_begin`**: Verifies the initialization of the MAX22531 chip to ensure it starts correctly.
+  2. **`test_max22531_readRegister`**: Tests the ability to read data from a specific register of the MAX22531 chip.
+  3. **`test_max22531_writeRegister`**: Validates writing data to a register and ensures the written data does not affect unrelated registers.
+  4. **`test_max22531_read_channel`**: Checks the functionality of reading analog data from a specific channel, ensuring the values are within expected tolerances.
+  5. **`test_max22531_burstRead`**: Tests the burst read functionality of the MAX22531 chip, ensuring all ADC channels return valid data.
+- **File: `test_analogModule.cpp`**
+  1. **`test_analogModule_initialize`**: Validates the initialization process of the AnalogModule, ensuring proper setup and configuration.
+  2. **`test_analogModule_interfaces`**: Tests the retrieval and validation of interfaces from the AnalogModule, ensuring proper initialization and functionality.
+  3. **`measurement_analogModule_loopDuration`**: Measures the execution time of the AnalogModule's loop function to ensure it operates within acceptable performance limits.
+  4. **`test_analogModule_output`**: Validates the output functionality of the AnalogModule, ensuring correct values are set and read back.
+  5. **`test_analogModule_output_controlled`**: Tests the controlled output functionality of the AnalogModule, requiring user interaction to verify outputs.
+  6. **`test_analogModule_input_controlled`**: Tests the controlled input functionality of the AnalogModule, requiring user interaction to verify inputs.
+  7. **`test_analogModule_input_automatic`**: Automatically tests the input functionality of the AnalogModule, ensuring proper operation without user interaction.
+  8. **`test_analogModule_attach`**: Ensures the AnalogModule can be successfully attached to the CANTramCore and verifies GPIO usage.
+- **File: `test_PWM_output.cpp`**
+  1. **`test_timer_config`**: Validates the configuration of the LEDC timer, ensuring proper frequency, resolution, and clock settings.
+  2. **`test_channel_config`**: Tests the configuration of the LEDC channel, ensuring correct GPIO, timer, and duty cycle settings.
+  3. **`test_set_duty_cycle`**: Verifies the ability to set and update the duty cycle for the LEDC channel, ensuring proper PWM output.
+
+#### RelaisModule Tests
+- **File: `test_relaisModule.cpp`**
+  1. **`test_relaisModule_attach`**: Ensures the RelaisModule can be successfully attached to the CANTramCore.
+  2. **`test_relaisModule_init`**: Verifies the initialization process of the RelaisModule within the CANTramCore.
+  3. **`test_relaisModule_get_interfaces`**: Tests the retrieval of valid interfaces from the RelaisModule and ensures their proper functionality.
+  4. **`measure_relaisModule_loopDuration`**: Measures the execution time of the RelaisModule's loop function to ensure it operates within acceptable performance limits.
+  5. **`test_relaisModule_set_relais`**: Validates the operation of setting and resetting relais states, ensuring proper hardware interaction.
+
+#### MainModule Tests
+- **File: `test_MainModule.cpp`**
+  1. **`test_MainModule_attach`**: Ensures the MainModule can be successfully attached to the CANTramCore.
+  2. **`test_MainModule_Init`**: Verifies the initialization process of the MainModule within the CANTramCore.
+  3. **`test_MainModule_getInterfaces`**: Tests the retrieval of valid interfaces from the MainModule and ensures their proper functionality.
+  4. **`test_MainModule_Temperature`**: Validates the temperature reading functionality of the MainModule, ensuring it operates within expected tolerances.
+  5. **`test_MainModule_Expansion_Bus`**: Tests the expansion bus functionality of the MainModule, ensuring proper GPIO operations.
+  6. **`measure_MainModule_loopDuration`**: Measures the execution time of the MainModule's loop function to ensure it operates within acceptable performance limits.
+- **File: `test_ShiftRegister.cpp`**
+  1. **`test_start_i2c`**: Verifies the initialization of the I2C bus, ensuring proper pin configuration, clock setup, and communication readiness.
+  2. **`test_start_shiftregister`**: Tests the initialization of the shift register over I2C, ensuring proper communication and setup.
+- **File: `test_CAN_Interface.cpp`**
+  1. **`test_CANCore_set_parameters`**: Verifies the configuration of CAN parameters such as baud rate and pin assignments.
+  2. **`test_CANCore_begin_end`**: Tests the initialization and termination of the CAN core functionality.
+  3. **`test_CANCore_send_message`**: Validates the ability to send CAN messages with various configurations.
+  4. **`test_CANCore_read_message`**: Ensures the CAN core can correctly receive and process incoming messages.
+
+
+#### DigitalModule Tests
+- **File: `test_DigitalModule_outputs.cpp`**
+  1. **`test_digitalModule_attach`**: Ensures the DigitalModule can be successfully attached to the CANTramCore.
+  2. **`testdigitalModule_initialize`**: Verifies the initialization process of the DigitalModule, ensuring proper setup of GPIO pins.
+  3. **`test_digitalModule_interfaces`**: Tests the retrieval and validation of interfaces from the DigitalModule.
+  4. **`test_digitalModule_setOutputs`**: Validates the ability to set output states on the DigitalModule.
+- **File: `test_DigitalModule_inputs.cpp`**
+  1. **`test_digitalModule_attach`**: Ensures the DigitalModule can be successfully attached to the CANTramCore.
+  2. **`testdigitalModule_initialize`**: Verifies the initialization process of the DigitalModule, ensuring proper setup of GPIO pins.
+  3. **`test_digitalModule_interfaces`**: Tests the retrieval and validation of interfaces from the DigitalModule.
+  4. **`measurement_digitalModule_loopDuration`**: Measures the execution time of the DigitalModule's loop function to ensure it operates within acceptable performance limits.
+
+#### BusModule Tests
+- **File: `test_i2c_core.cpp`**
+  1. **`test_i2c_core_begin`**: Verifies the initialization of the I2C core, ensuring proper pin configuration and frequency setup.
+  2. **`test_i2c_core_write`**: Tests the write functionality of the I2C core, ensuring data can be sent correctly.
+  3. **`test_i2c_core_lcd`**: Validates the operation of an I2C-connected LCD, ensuring proper initialization and display functionality.
+- **File: `test_SPI.cpp`**
+  1. **`test_BusModule_external_SPI_device`**: Tests the addition of an external SPI device to the BusModule, ensuring proper initialization, SPI settings, and communication.
+- **File: `test_BusModule.cpp`**
+  1. **`test_busmodule_check_for_mainmodule`**: Verifies that the MainModule is correctly attached to the CANTramCore and that the UART hardware resource is available.
+  2. **`test_busmodule_attachModule`**: Ensures the BusModule can be successfully attached to the CANTramCore.
+  3. **`test_busmodule_initialize`**: Validates the initialization process of the BusModule within the CANTramCore.
+  4. **`test_busModule_get_interfaces`**: Tests the retrieval and validation of interfaces from the BusModule, including UART and I2C interfaces.
+  5. **`measurment_busmodule_loopDuration`**: Measures the execution time of the BusModule's loop function to ensure it operates within acceptable performance limits.
+  6. **`test_busmodule_send_data_uart`**: Validates the ability to send data over the UART interface of the BusModule.
+  7. **`test_busmodule_receive_data_uart`**: Ensures the UART interface of the BusModule can correctly receive and process data.
+- **File: `test_uart_core.cpp`**
+  1. **`test_uart_install`**: Verifies the installation of the UART driver with specified pins and buffer size.
+  2. **`test_uart_config`**: Tests the configuration of UART parameters such as baud rate, data bits, parity, and stop bits.
+  3. **`test_uart_setPins`**: Validates the ability to set the TX and RX pins for the UART driver.
+  4. **`test_uart_no_data_after_start`**: Ensures no data is available immediately after starting the UART driver.
+
+- **File: `test_uart_interface.cpp`**
+  1. **`test_interface_begin`**: Verifies the initialization of the UART interface with the specified UART core and parameters.
+  2. **`test_interface_send`**: Tests the ability to send data using the UART interface.
+  3. **`test_interface_available_initial`**: Ensures no data is available initially after starting the UART interface.
+  4. **`test_interface_available_after_send`**: Validates that data sent through the UART interface becomes available for reading.
+  5. **`test_interface_read_after_send`**: Ensures data sent through the UART interface can be correctly read back.

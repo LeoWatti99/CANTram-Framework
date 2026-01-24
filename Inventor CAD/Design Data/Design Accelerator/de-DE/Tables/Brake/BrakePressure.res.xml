@@ -1,0 +1,11 @@
+<Resources>
+  <string id="%1%" value="Bremsdruck"/>
+  <string id="%2%" value="Material"/>
+  <string id="%3%" value="p[MPa]"/>
+  <string id="%4%" value="Geformt"/>
+  <string id="%5%" value="Gewebt"/>
+  <string id="%6%" value="Gesintertes Metall"/>
+  <string id="%7%" value="Kork"/>
+  <string id="%8%" value="Holz"/>
+  <string id="%9%" value="Gusseisen, gehärteter Stahl"/>
+</Resources>

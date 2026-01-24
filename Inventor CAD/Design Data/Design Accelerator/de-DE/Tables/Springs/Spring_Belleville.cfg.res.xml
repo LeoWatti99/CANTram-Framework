@@ -1,0 +1,6 @@
+<Resources>
+  <string id="%1%" value="Tellerfedern - CSN"/>
+  <string id="%2%" value="Tellerfedern - ANSI"/>
+  <string id="%3%" value="Tellerfedern - DIN"/>
+  <string id="%4%" value="Belleville Springs - GOST"/>
+</Resources>

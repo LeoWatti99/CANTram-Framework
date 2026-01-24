@@ -1,0 +1,9 @@
+<Resources>
+  <string id="%1%" value="Belastungsverteilungskoeffizient für Fehlausrichtung flexibler Splines"/>
+  <string id="%2%" value="Fehlausrichtung, Zoll pro Zoll"/>
+  <string id="%3%" value="Belastungsverteilungskoeffizient, Km"/>
+  <string id="%4%" value="1/2 Zoll Zahnbreite"/>
+  <string id="%5%" value="1 Zoll Zahnbreite"/>
+  <string id="%6%" value="2 Zoll Zahnbreite"/>
+  <string id="%7%" value="4 Zoll Zahnbreite"/>
+</Resources>

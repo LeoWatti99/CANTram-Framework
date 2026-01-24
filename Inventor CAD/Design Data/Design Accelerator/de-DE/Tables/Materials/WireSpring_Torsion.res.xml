@@ -1,0 +1,33 @@
+<Resources>
+<string id="%1%" value="Material der Feder"/>
+<string id="%2%" value="Materialbezeichnung"/>
+<string id="%3%" value="Dichte"/>
+<string id="%4%" value="lb/ft^3"/>
+<string id="%5%" value="Zugmodus"/>
+<string id="%6%" value="psi"/>
+<string id="%7%" value="Verhältnis zwischen zulässiger Biegespannung und Zugfestigkeit"/>
+<string id="%8%" value="Zugspannung"/>
+<string id="%9%" value="Saitendraht QQ-W-470"/>
+<string id="%10%" value="Ölgehärteter Stahldraht QQ-W-428"/>
+<string id="%11%" value="Hartgezogener Stahldraht QQ-W-428"/>
+<string id="%12%" value="Cr-V-legierter Stahldraht"/>
+<string id="%13%" value="Cr-Si-legierter Stahldraht QQ-W-412"/>
+<string id="%14%" value="Edelstahl 304 und 420"/>
+<string id="%15%" value="Edelstahl 420"/>
+<string id="%16%" value="Edelstahl 431"/>
+<string id="%17%" value="Edelstahl 316"/>
+<string id="%18%" value="Edelstahl 17-7PH"/>
+<string id="%19%" value="ANSI"/>
+<string id="%20%" value="Material"/>
+<string id="%21%" value="Nrm"/>
+<string id="%22%" value="Norm"/>
+<string id="%23%" value="R|.o|"/>
+<string id="%24%" value="E"/>
+<string id="%25%" value="Koeff."/>
+<string id="%26%" value="WD"/>
+<string id="%27%" value="Drahtdurchmesser"/>
+<string id="%28%" value="in"/>
+<string id="%29%" value="||s||.ult|"/>
+<string id="%30%" value="Drahtdurchmesser und Zugfestigkeit"/>
+<string id="%31%" value="oE"/>
+</Resources>

@@ -1,0 +1,9 @@
+<Resources>
+  <string id="%1%" value="Reibungskoeffizient im Gewinde"/>
+  <string id="%2%" value="Gewindeoberfläche"/>
+  <string id="%3%" value="Nicht geschmiert"/>
+  <string id="%4%" value="Geschmiert"/>
+  <string id="%5%" value="Schwarz oder phosphatiert"/>
+  <string id="%6%" value="Galvanisch verzinkt"/>
+  <string id="%7%" value="Kadmiert"/>
+</Resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><Resources>
+  <string id="%1%" value="Schmierfaktor"/>
+  <string id="%2%" value="Geschwindigkeit der Kette"/>
+  <string id="%3%" value="Schmiermethode"/>
+  <string id="%4%" value="Empfohlene Schmierung"/>
+  <string id="%5%" value="Ausreichende Schmierung"/>
+  <string id="%6%" value="Fehlerfrei"/>
+  <string id="%7%" value="Unzureichend"/>
+  <string id="%8%" value="Keine Schmierung"/>
+  <string id="%9%" value="Sauber"/>
+  <string id="%10%" value="Verunreinigt"/>
+  <string id="%11%" value="Bis zu 4 m/s"/>
+  <string id="%12%" value="Bis zu 7 m/s"/>
+  <string id="%13%" value="Bis zu 12 m/s"/>
+  <string id="%14%" value="Über 12 m/s"/>
+  <string id="%15%" value="Tropfschmierung"/>
+  <string id="%16%" value="Manuelle Schmierung"/>
+  <string id="%17%" value="Unzulässig"/>
+  <string id="%18%" value="Ölbad oder -scheibe"/>
+  <string id="%19%" value="Tropfschmierung"/>
+  <string id="%20%" value="Zwangsschmierung"/>
+  <string id="%21%" value="Öldampf, Zwangsschmierung"/>
+v</Resources>

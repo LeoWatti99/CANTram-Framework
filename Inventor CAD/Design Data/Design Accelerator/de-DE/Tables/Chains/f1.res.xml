@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><Resources>
+  <string id="%1%" value="Gebrauchsdauerkoeffizient"/>
+  <string id="%2%" value="Merkmale der angetriebenen Maschine"/>
+  <string id="%3%" value="Merkmale der Antriebsmaschine"/>
+  <string id="%4%" value="Glatter Lauf"/>
+  <string id="%5%" value="Leichte Stöße"/>
+  <string id="%6%" value="Mittlere Stöße"/>
+  <string id="%7%" value="Starke Stöße"/>
+  <string id="%8%" value="Stoßfaktor"/>
+</Resources>

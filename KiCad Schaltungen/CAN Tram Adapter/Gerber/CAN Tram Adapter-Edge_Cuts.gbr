@@ -1,0 +1,23 @@
+G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,9.0.1*
+G04 #@! TF.CreationDate,2025-11-10T23:51:26+01:00*
+G04 #@! TF.ProjectId,CAN Tram Adapter,43414e20-5472-4616-9d20-416461707465,rev?*
+G04 #@! TF.SameCoordinates,Original*
+G04 #@! TF.FileFunction,Profile,NP*
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW 9.0.1) date 2025-11-10 23:51:26*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+G04 #@! TA.AperFunction,Profile*
+%ADD10C,0.050000*%
+G04 #@! TD*
+G04 APERTURE END LIST*
+D10*
+X77500000Y-67000000D02*
+X135000000Y-67000000D01*
+X135000000Y-93000000D01*
+X77500000Y-93000000D01*
+X77500000Y-67000000D01*
+M02*

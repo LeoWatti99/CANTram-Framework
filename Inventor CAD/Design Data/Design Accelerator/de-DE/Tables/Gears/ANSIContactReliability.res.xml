@@ -1,0 +1,7 @@
+<Resources>
+  <string id="%1%" value="Zuverlässigkeitskoeffiziententabelle"/>
+  <string id="%2%" value="99.9% Zuverlässigkeit"/>
+  <string id="%3%" value="99% Zuverlässigkeit"/>
+  <string id="%4%" value="90% Zuverlässigkeit"/>
+  <string id="%5%" value="50% Zuverlässigkeit"/>
+</Resources>

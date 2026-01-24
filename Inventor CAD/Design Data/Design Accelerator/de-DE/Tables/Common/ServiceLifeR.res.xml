@@ -1,0 +1,12 @@
+<Resources>
+  <string id="%1%" value="Angestrebte Gebrauchsdauer [Mio. Umdrehungen]"/>
+  <string id="%2%" value="Geringe Umdrehungszahl, selten verwendet"/>
+  <string id="%3%" value="Geringe Umdrehungszahl, nicht immer volle Auslastung"/>
+  <string id="%4%" value="Geringe Umdrehungszahl, volle Auslastung"/>
+  <string id="%5%" value="Mittlere Umdrehungszahl, selten verwendet"/>
+  <string id="%6%" value="Mittlere Umdrehungszahl, nicht immer volle Auslastung"/>
+  <string id="%7%" value="Mittlere Umdrehungszahl, volle Auslastung"/>
+  <string id="%8%" value="Hohe Umdrehungszahl, selten verwendet"/>
+  <string id="%9%" value="Hohe Umdrehungszahl, nicht immer volle Auslastung"/>
+  <string id="%10%" value="Hohe Umdrehungszahl, volle Auslastung"/>
+</Resources>

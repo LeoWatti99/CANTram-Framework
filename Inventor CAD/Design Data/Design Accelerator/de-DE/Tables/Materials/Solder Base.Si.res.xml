@@ -1,0 +1,11 @@
+<Resources>
+  <string id="%1%" value="Basismaterial"/>
+  <string id="%2%" value="Materialbezeichnung"/>
+  <string id="%3%" value="Zulässiger Druck"/>
+  <string id="%4%" value="MPa"/>
+  <string id="%5%" value="Gussstahl"/>
+  <string id="%6%" value="Schmiedestahl"/>
+  <string id="%7%" value="Schweißstahl"/>
+  <string id="%8%" value="Material"/>
+  <string id="%9%" value="||s||.al|"/>
+</Resources>

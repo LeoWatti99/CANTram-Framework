@@ -1,0 +1,20 @@
+<Resources>
+  <string id="%1%" value="Spline-Material"/>
+  <string id="%2%" value="Materialbezeichnung"/>
+  <string id="%3%" value="Brinellhärtezahl"/>
+  <string id="%4%" value="oE"/>
+  <string id="%5%" value="Vickershärtezahl (Pyramidenhärte)"/>
+  <string id="%6%" value="Zulässige Druckspannung"/>
+  <string id="%7%" value="psi"/>
+  <string id="%8%" value="Zulässige Scherspannung"/>
+  <string id="%9%" value="Stahl"/>
+  <string id="%10%" value="Oberflächengehärteter Stahl"/>
+  <string id="%11%" value="Einsatzstahl"/>
+  <string id="%12%" value="Material"/>
+  <string id="%13%" value="B|.hn|"/>
+  <string id="%14%" value="HV"/>
+  <string id="%15%" value="S|.c|"/>
+  <string id="%16%" value="S|.s|"/>
+  <string id="%17%" value="Zulässige Zugspannung"/>
+  <string id="%18%" value="S|.t|"/>
+</Resources>

@@ -1,0 +1,14 @@
+<Resources>
+  <string id="%1%" value="Tellerfeder - CSN"/>
+  <string id="%2%" value="Name"/>
+  <string id="%3%" value="Federname"/>
+  <string id="%4%" value="D"/>
+  <string id="%5%" value="Außendurchmesser"/>
+  <string id="%6%" value="mm"/>
+  <string id="%7%" value="Innendurchmesser"/>
+  <string id="%8%" value="d"/>
+  <string id="%9%" value="Materialstärke"/>
+  <string id="%10%" value="t"/>
+  <string id="%11%" value="Freie Höhe"/>
+  <string id="%12%" value="H"/>
+</Resources>

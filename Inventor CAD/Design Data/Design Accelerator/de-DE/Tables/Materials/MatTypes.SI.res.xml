@@ -1,0 +1,29 @@
+<Resources>
+  <string id="%1%" value="Materialtypen (SI)"/>
+  <string id="%2%" value="Materialbezeichnung"/>
+  <string id="%3%" value="Elastizitätsmodul"/>
+  <string id="%4%" value="MPa"/>
+  <string id="%5%" value="Schubmodul"/>
+  <string id="%6%" value="Poissonsche Konstante"/>
+  <string id="%7%" value="Dichte"/>
+  <string id="%8%" value="kg/m^3"/>
+  <string id="%9%" value="Graues Gusseisen"/>
+  <string id="%10%" value="Schmiedbares Gusseisen"/>
+  <string id="%11%" value="Stahl"/>
+  <string id="%12%" value="Gussstahl"/>
+  <string id="%13%" value="Stahl, Nickel"/>
+  <string id="%14%" value="Edelstahl"/>
+  <string id="%15%" value="Messing"/>
+  <string id="%16%" value="Bronze"/>
+  <string id="%17%" value="Aluminiumlegierung"/>
+  <string id="%18%" value="Magnesiumlegierung"/>
+  <string id="%19%" value="Kupfer"/>
+  <string id="%20%" value="Material"/>
+  <string id="%21%" value="E"/>
+  <string id="%22%" value="G"/>
+  <string id="%23%" value="||m|"/>
+  <string id="%24%" value="||r|"/>
+  <string id="%25%" value="oE"/>
+  <string id="%26%" value="S|.y|"/>
+  <string id="%27%" value="Streckgrenze"/>
+</Resources>

@@ -1,0 +1,20 @@
+<Resources>
+  <string id="%1%" value="Bevorzugte Passung(britisch)"/>
+  <string id="%2%" value="Passungsname"/>
+  <string id="%3%" value="Übergang=1 Überlagerung=2 Spiel=3"/>
+  <string id="%4%" value="Einheitsbohrung=1 Einheitswelle=2"/>
+  <string id="%5%" value="Beschreibung der Passungsnutzung"/>
+  <string id="%10%" value="Lage-Übergangspassungen\nKompromiss zwischen Spielpassungen und Presspassung.\nFindet Anwendung, wenn die Lagegenauigkeit wichtig ist."/>
+  <string id="%11%" value="Lage-Passungen mit Übermaß\nWerden verwendet, wenn die Lage von übergeordneter Wichtigkeit ist.\nNicht vorgesehen für Bauteile, die zum Übertragen von Funktionsbelastungen von einem Bauteil\nzu einem anderen aufgrund der genauen Passung vorgesehen sind."/>
+  <string id="%12%" value="Mittlere Presspassungen\nGeeignet für normale Stahlbauteile oder Schrumpfverbindungen auf leichten Profilen."/>
+  <string id="%13%" value="Schwere Presspassungen\nGeeignet für schwerere Stahlbauteile oder Schrumpfverbindungen auf mittleren Profilen."/>
+  <string id="%14%" value="Presspassungen\nGeeignet für Bauteile, die hohen Spannungen ausgesetzt werden können,\noder für Schrumpfverbindungen, bei denen die erforderlichen hohen Presskräfte unangemessen sind."/>
+  <string id="%15%" value="Enge Gleitpassungen\nVorgesehen für die genaue Position von Bauteilen,\ndie ohne wahrnehmbares Spiel montiert werden müssen."/>
+  <string id="%16%" value="Gleitpassungen\nVorgesehen für die genaue Positionierung.\nBauteile bewegen und drehen sich problemlos, jedoch ohne vorgesehenen Freilauf."/>
+  <string id="%17%" value="Präzise Laufpassungen\nVorgesehen für präzise Funktion bei niedrigen\nGeschwindigkeiten und leichtem Zapfendruck."/>
+  <string id="%18%" value="Enge Laufpassungen\nVorgesehen für Laufsitz auf Präzisionsmaschinen\nmit moderater Oberflächengeschwindigkeit und moderatem Zapfendruck."/>
+  <string id="%19%" value="Mittlere Laufpassungen\nVorgesehen für höhere Laufgeschwindigkeiten oder hohen Zapfendruck."/>
+  <string id="%20%" value="Freie Laufpassungen\nVorgesehen, wenn Genauigkeit nicht von Bedeutung\nist oder hohe Temperaturschwankungen auftreten können."/>
+  <string id="%21%" value="Lose Laufpassungen\nVorgesehen für die Verwendung bei weitreichenden großtechnischen\nToleranzen zusammen mit einer Zugabe auf dem externen Konstruktionsglied."/>
+  <string id="%22%" value="Lage-Spielpassungen\nVorgesehen für Bauteile, die normalerweise ortsfest sind,\njedoch frei montiert und demontiert werden können."/>
+</Resources>

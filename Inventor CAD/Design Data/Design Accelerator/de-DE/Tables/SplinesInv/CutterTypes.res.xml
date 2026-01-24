@@ -1,0 +1,14 @@
+<Resources>
+  <string id="%1%" value="DIN 5480 - Verzahnungstypen"/>
+  <string id="%2%" value="Typ"/>
+  <string id="%3%" value="Flankenende"/>
+  <string id="%4%" value="h|.aP0|"/>
+  <string id="%5%" value="Kopfhöhenkoeffizient"/>  
+  <string id="%6%" value="oE"/>
+  <string id="%7%" value="Gefräst"/>
+  <string id="%8%" value="Geschliffen"/>  
+  <string id="%9%" value="Geräumt"/> 
+  <string id="%10%" value="Fixiert"/>   
+  <string id="%11%" value="c|.FP0|"/>  
+  <string id="%12%" value="Koeffizient"/>      
+</Resources>

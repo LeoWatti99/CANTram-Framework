@@ -1,0 +1,13 @@
+<Resources>
+  <string id="%1%" value="Material der Verbindung"/>
+  <string id="%2%" value="Materialbezeichnung"/>
+  <string id="%3%" value="Zugfestigkeit der Verbindung"/>
+  <string id="%4%" value="MPa"/>
+  <string id="%5%" value="Schubfestigkeit der Verbindung"/>
+  <string id="%6%" value="Zinnlot"/>
+  <string id="%7%" value="Lot aus Kupferleg."/>
+  <string id="%8%" value="Silberlot"/>
+  <string id="%9%" value="Material"/>
+  <string id="%10%" value="S||.s|"/>
+  <string id="%11%" value="S||.t|"/>
+</Resources>

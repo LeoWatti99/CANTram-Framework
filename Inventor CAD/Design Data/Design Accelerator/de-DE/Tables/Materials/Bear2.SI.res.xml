@@ -1,0 +1,19 @@
+<Resources>
+  <string id="%1%" value="Zapfenmaterial"/>
+  <string id="%2%" value="Materialbezeichnung"/>
+  <string id="%3%" value="Elastizitätsmodul"/>
+  <string id="%4%" value="MPa"/>
+  <string id="%5%" value="Poissonsche Konstante"/>
+  <string id="%6%" value="Wärmeausdehnungskoeffizient"/>
+  <string id="%7%" value="Kohlenstoffarmer Stahl"/>
+  <string id="%8%" value="Graues Gusseisen"/>
+  <string id="%9%" value="Aluminiumlegierungen"/>
+  <string id="%10%" value="Magnesiumlegierungen"/>
+  <string id="%11%" value="Zinnbronze"/>
+  <string id="%12%" value="Aluminiumbronze"/>
+  <string id="%13%" value="Messing"/>
+  <string id="%14%" value="Material"/>
+  <string id="%15%" value="E"/>
+  <string id="%16%" value="||m|"/>
+  <string id="%17%" value="CoeffT"/>
+</Resources>

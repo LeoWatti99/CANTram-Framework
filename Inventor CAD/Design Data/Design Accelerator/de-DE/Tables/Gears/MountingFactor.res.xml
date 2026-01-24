@@ -1,0 +1,11 @@
+<Resources>
+  <string id="%1%" value="Lagerungskoeffizient"/>
+  <string id="%2%" value="Eigenschaften der Stützung"/>
+  <string id="%3%" value="Flächenbreite [Zoll]"/>
+  <string id="%4%" value="0 bis 2"/>
+  <string id="%5%" value="ab 16"/>
+  <string id="%6%" value="Genaue Lagerung, geringes Lagerspiel, minimale Durchbiegung, Präzisionzahnräder"/>
+  <string id="%7%" value="Weniger starre Lagerung, weniger genaue Zahnräder, Kontakt über die ganze Fläche"/>
+  <string id="%8%" value="Genauigkeit und Lagerung, bei denen Kontakt nicht auf der gesamten Fläche besteht"/>
+  <string id="%9%" value="über 2.2"/>
+</Resources>

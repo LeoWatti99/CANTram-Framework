@@ -1,0 +1,10 @@
+<Resources>
+  <string id="%1%" value="Angestrebte Gebrauchsdauer [Stunden]"/>
+  <string id="%2%" value="Haushaltsgeräte, Apparate und selten verwendete Werkzeuge"/>
+  <string id="%3%" value="Geräte für kurzzeitigen oder nicht durchgehenden Einsatz, z. B. manuell bediente Werkzeuge"/>
+  <string id="%4%" value="Sehr zuverlässige Geräte für kurzzeitigen oder nicht durchgehenden Einsatz"/>
+  <string id="%5%" value="Geräte, die 8 Stunden pro Tag im Einsatz und nicht immer voll ausgelastet sind"/>
+  <string id="%6%" value="Geräte, die 8 bis 16 Stunden pro Tag im Einsatz und voll ausgelastet sind"/>
+  <string id="%7%" value="Geräte für ununterbrochenen Einsatz"/>
+  <string id="%8%" value="Geräte für ununterbrochenen Einsatz mit hoher Gebrauchsdauersicherheit"/>
+</Resources>

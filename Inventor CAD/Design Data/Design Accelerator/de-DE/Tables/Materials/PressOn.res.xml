@@ -1,0 +1,26 @@
+<Resources>
+  <string id="%1%" value="Material für den Druckstutzen"/>
+  <string id="%2%" value="Materialbezeichnung"/>
+  <string id="%3%" value="Poissonsche Konstante"/>
+  <string id="%4%" value="ul"/>
+  <string id="%5%" value="Elastizitätsmodul"/>
+  <string id="%6%" value="psi"/>
+  <string id="%7%" value="Zulässige Spannung"/>
+  <string id="%8%" value="Wärmedehnzahl"/>
+  <string id="%9%" value="m/mf"/>
+  <string id="%10%" value="Wärmedehnzahl für Abkühlung"/>
+  <string id="%11%" value="Stahl"/>
+  <string id="%12%" value="Schmiedbares Gusseisen"/>
+  <string id="%13%" value="Edelstahl"/>
+  <string id="%14%" value="Messing"/>
+  <string id="%15%" value="Bronze"/>
+  <string id="%16%" value="Aluminiumlegierung"/>
+  <string id="%17%" value="Magnesiumlegierung"/>
+  <string id="%18%" value="Gusseisen"/>
+  <string id="%19%" value="Material"/>
+  <string id="%20%" value="||m|"/>
+  <string id="%21%" value="E"/>
+  <string id="%22%" value="p|.A|"/>
+  <string id="%23%" value="||a|"/>
+  <string id="%24%" value="||a||.1|"/>
+</Resources>

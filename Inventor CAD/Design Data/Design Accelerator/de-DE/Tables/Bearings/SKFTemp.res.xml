@@ -1,0 +1,5 @@
+<Resources>
+  <string id="%1%" value="Reduzierungsfaktor der Belastungsbewertung des Lagers in Abhängigkeit von der Arbeitstemperatur (SKF)"/>
+  <string id="%2%" value="Temperatur"/>
+  <string id="%3%" value="Reduzierungsfaktor der Belastungsbewertung"/>
+</Resources>

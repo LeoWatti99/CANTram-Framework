@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><Resources>
+  <string id="%1%" value="Gebrauchsdauerkoeffizient"/>
+  <string id="%2%" value="Niedrige Beanspruchung"/>
+  <string id="%3%" value="Mittlere Beanspruchung"/>
+  <string id="%4%" value="Hohe Beanspruchung"/>
+  <string id="%5%" value="Sehr hohe Beanspruchung"/>
+  <string id="%6%" value="Sporadischer Einsatz"/>
+  <string id="%7%" value="Normaler Einsatz"/>
+  <string id="%8%" value="Ununterbrochener Einsatz"/>
+  <string id="%9%" value="3-5 Stunden pro Tag"/>
+  <string id="%10%" value="8-10 Stunden pro Tag"/>
+  <string id="%11%" value="16-24 Stunden pro Tag"/>
+  <string id="%12%" value="ANTREIBENDE Maschine"/>
+  <string id="%13%" value="ANGETRIEBENE Maschine"/>
+  <string id="%14%" value="Normales Drehmoment"/>
+  <string id="%15%" value="Hohes Drehmoment"/>
+</Resources>

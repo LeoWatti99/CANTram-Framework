@@ -1,0 +1,5 @@
+<Resources>
+  <string id="%1%" value="Gebrauchsabnutzungskoeffizient"/>
+  <string id="%2%" value="Anzahl der Umdrehungen"/>
+  <string id="%3%" value="Gebrauchsabnutzungskoeffizient, Kw"/>
+</Resources>

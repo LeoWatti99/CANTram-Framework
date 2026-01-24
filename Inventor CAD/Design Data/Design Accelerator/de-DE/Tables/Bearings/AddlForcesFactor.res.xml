@@ -1,0 +1,20 @@
+<Resources>
+  <string id="%1%" value="Koeffizient für zusätzliche Kräfte"/>
+  <string id="%2%" value="Koeffizient"/>
+  <string id="%3%" value="Maschinenart"/>
+  <string id="%4%" value="Elektrische Drehbohrmaschinen, Turbinen, Turbokompressoren"/>
+  <string id="%5%" value="Lokomotive und Kolbenmotor"/>
+  <string id="%6%" value="Förderbänder, Seilbahnen, Pumpen, Ventilatoren"/>
+  <string id="%7%" value="Krananlagen, Aufzüge, Grubenventilatoren"/>
+  <string id="%8%" value="Grubenaufzüge und -pumpen"/>
+  <string id="%9%" value="Kolbenpumpen und -kompressoren"/>
+  <string id="%10%" value="Koller-, Rohr- und Hammermühlen, Zerkleinerer"/>
+  <string id="%11%" value="Maschinen für Erdarbeiten, Tiefbohrmaschinen"/>
+  <string id="%12%" value="Trockentrommeln"/>
+  <string id="%13%" value="Papier- und Textilmaschinen"/>
+  <string id="%14%" value="Maschinen für die Lebensmittelverarbeitung"/>
+  <string id="%15%" value="Schleifmaschinen, Bohrmaschinen, Fräsen, Sägen und Holzbearbeitungsmaschinen"/>
+  <string id="%16%" value="Drehmaschinen, Schneidemaschinen mit Hin- und Herbewegung"/>
+  <string id="%17%" value="Walzwerke, Schmiedehämmer, Blechscheren, Stanzmaschinen"/>
+  <string id="%18%" value="Schruppfräser und Vorwalzwerke"/>
+</Resources>

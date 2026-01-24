@@ -1,0 +1,6 @@
+<Resources>
+  <string id="%1%" value="Wechselkoeffizient"/>
+  <string id="%2%" value="Wiederkehrende Belastung"/>
+  <string id="%3%" value="Wechselnde Belastung (z. B. Leitrolle)"/>
+  <string id="%4%" value="Umkehrbarer Vorgang"/>
+</Resources>

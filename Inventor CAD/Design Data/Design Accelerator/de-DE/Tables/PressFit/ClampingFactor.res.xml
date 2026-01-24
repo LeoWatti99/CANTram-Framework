@@ -1,0 +1,14 @@
+<Resources>
+  <string id="%1%" value="Klemmungskoeffizent"/>
+  <string id="%2%" value="Druckstutzen"/>
+  <string id="%3%" value="Schmierung"/>
+  <string id="%4%" value="Klemmungskoeffizient für"/>
+  <string id="%5%" value="Lösen"/>
+  <string id="%6%" value="Gleitung"/>
+  <string id="%7%" value="Umfangsrichtung"/>
+  <string id="%8%" value="Längsrichtung"/>
+  <string id="%9%" value="Schrumpfen"/>
+  <string id="%10%" value="Geschmiert"/>
+  <string id="%11%" value="Nicht geschmiert"/>
+  <string id="%12%" value="Pressung"/>
+</Resources>

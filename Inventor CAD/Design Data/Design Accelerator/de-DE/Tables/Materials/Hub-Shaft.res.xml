@@ -1,0 +1,13 @@
+<Resources>
+  <string id="%1%" value="Material der zu verbindenden Bauteile (ANSI)"/>
+  <string id="%2%" value="Materialbezeichnung"/>
+  <string id="%3%" value="Zulässiger Druck"/>
+  <string id="%4%" value="psi"/>
+  <string id="%5%" value="Edelstahl"/>
+  <string id="%6%" value="Vergütete und legierte Stähle"/>
+  <string id="%7%" value="Gussstahl"/>
+  <string id="%8%" value="Graues Gusseisen"/>
+  <string id="%9%" value="Bronze"/>
+  <string id="%10%" value="Material"/>
+  <string id="%11%" value="||s||.Al|"/>
+</Resources>

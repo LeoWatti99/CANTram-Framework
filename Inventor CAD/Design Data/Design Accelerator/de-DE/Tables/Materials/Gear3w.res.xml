@@ -1,0 +1,16 @@
+<Resources>
+  <string id="%1%" value="Schneckenmaterialien"/>
+  <string id="%2%" value="Material"/>
+  <string id="%3%" value="Materialbezeichnung"/>
+  <string id="%4%" value="Schneckenmaterialkoeffizient"/>
+  <string id="%5%" value="oE"/>
+  <string id="%6%" value="E"/>
+  <string id="%7%" value="Elastizitätsmodul"/>
+  <string id="%8%" value="||m|"/>
+  <string id="%9%" value="Poissonsche Konstante"/>
+  <string id="%10%" value="psi"/>
+  <string id="%11%" value="Gehärteter Stahl"/>
+  <string id="%12%" value="Stahl"/>
+  <string id="%13%" value="Gusseisen"/>
+  <string id="%14%" value="k|.mat|"/>
+</Resources>

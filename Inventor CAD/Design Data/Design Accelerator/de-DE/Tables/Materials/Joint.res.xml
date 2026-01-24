@@ -1,0 +1,21 @@
+<Resources>
+  <string id="%1%" value="Material der Verbindung"/>
+  <string id="%2%" value="Materialbezeichnung"/>
+  <string id="%3%" value="Zulässiger Druck (Statische Belastung)"/>
+  <string id="%4%" value="psi"/>
+  <string id="%5%" value="Elastizitätsmodul"/>
+  <string id="%6%" value="Stahl Kl. 37; 42"/>
+  <string id="%7%" value="Stahl Kl. 50"/>
+  <string id="%8%" value="Stahl Kl. 60"/>
+  <string id="%9%" value="Stahl Kl. 70"/>
+  <string id="%10%" value="Gussstahl"/>
+  <string id="%11%" value="Graues Gusseisen"/>
+  <string id="%12%" value="Bronze"/>
+  <string id="%13%" value="Material"/>
+  <string id="%14%" value="||s||.A1|"/>
+  <string id="%15%" value="E"/>
+  <string id="%16%" value="Zulässiger Druck (Wiederkehrende Belastung)"/>
+  <string id="%17%" value="Zulässiger Druck (Wechselnde Belastung)"/>
+  <string id="%18%" value="||s||.A2|"/>
+  <string id="%19%" value="||s||.A3|"/>
+</Resources>

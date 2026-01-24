@@ -1,0 +1,13 @@
+<Resources>
+  <string id="%1%" value="Spline-Material"/>
+  <string id="%2%" value="Materialbezeichnung"/>
+  <string id="%3%" value="Zulässige Zugspannung"/>
+  <string id="%4%" value="MPa"/>
+  <string id="%5%" value="Gehärteter Stahl"/>
+  <string id="%6%" value="Material"/>
+  <string id="%7%" value="S|.u|"/>
+  <string id="%8%" value="Härte"/>
+  <string id="%9%" value="Rockwellhärteskala"/>
+  <string id="%10%" value="Zahnflankenhärte"/>
+  <string id="%11%" value="oE"/>
+</Resources>

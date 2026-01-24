@@ -1,0 +1,7 @@
+<Resources>
+  <string id="%1%" value="Gebrauchsermüdungskoeffizient"/>
+  <string id="%2%" value="Einseitig gerichtet"/>
+  <string id="%3%" value="Vollständig rückläufig"/>
+  <string id="%4%" value="Anzahl der Drehmomentzyklen"/>
+  <string id="%5%" value="Gebrauchsermüdungskoeffizient, Kf"/>
+</Resources>

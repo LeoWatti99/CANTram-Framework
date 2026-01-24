@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><Resources>
+  <string id="%1%" value="Gebrauchsdauerkoeffizient"/>
+  <string id="%2%" value="Niedrige Belastung"/>
+  <string id="%3%" value="Gleichmäßige Belastung"/>
+  <string id="%4%" value="Leichte Stoßbelastung"/>
+  <string id="%5%" value="Mittlere Stoßbelastung"/>
+  <string id="%6%" value="Starke Stoßbelastung"/>
+  <string id="%7%" value="Sporadischer Einsatz"/>
+  <string id="%8%" value="Normaler Einsatz"/>
+  <string id="%9%" value="Ununterbrochener Einsatz"/>
+  <string id="%10%" value="3-8 Stunden pro Tag"/>
+  <string id="%11%" value="8-16 Stunden pro Tag"/>
+  <string id="%12%" value="16-24 Stunden pro Tag"/>
+  <string id="%13%" value="ANTREIBEND"/>
+  <string id="%14%" value="ANGETRIEBEN"/>
+  <string id="%15%" value="Gleichmäßiges Drehmoment"/>
+  <string id="%16%" value="Hohes/ungleichmäßiges Drehmoment"/>
+</Resources>
