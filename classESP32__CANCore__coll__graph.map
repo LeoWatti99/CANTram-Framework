@@ -1,7 +1,0 @@
-<map id="ESP32_CANCore" name="ESP32_CANCore">
-<area shape="rect" id="Node000001" title=" " alt="" coords="10,153,133,178"/>
-<area shape="rect" id="Node000002" href="$classCANCore.html" title=" " alt="" coords="33,79,110,105"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="74,120,74,152,69,152,69,120"/>
-<area shape="rect" id="Node000003" href="$classHardwareResource.html" title="Base class for hardware resources like UART, SPI, I2C, PWM, etc." alt="" coords="5,5,138,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="74,46,74,79,69,79,69,46"/>
-</map>

@@ -1,5 +1,0 @@
-<map id="PWMOutputProvider" name="PWMOutputProvider">
-<area shape="rect" id="Node000001" title="Extended output provider interface for PWM&#45;capable outputs." alt="" coords="5,79,146,105"/>
-<area shape="rect" id="Node000002" href="$classOutputProvider.html" title="Abstract interface for providers that control outputs." alt="" coords="21,5,130,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="78,46,78,79,73,79,73,46"/>
-</map>

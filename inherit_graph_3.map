@@ -1,19 +1,19 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$classHardwareResource.html" title="Base class for hardware resources like UART, SPI, I2C, PWM, etc." alt="" coords="5,80,138,106"/>
-<area shape="rect" id="Node000001" href="$classCANCore.html" title=" " alt="" coords="190,5,266,31"/>
-<area shape="poly" id="edge9_Node000000_Node000001" title=" " alt="" coords="113,70,198,29,200,34,115,75"/>
-<area shape="rect" id="Node000003" href="$classI2CCore.html" title=" " alt="" coords="194,55,262,80"/>
-<area shape="poly" id="edge11_Node000000_Node000003" title=" " alt="" coords="152,77,193,70,194,76,153,82"/>
-<area shape="rect" id="Node000005" href="$classPWMCore.html" title=" " alt="" coords="188,104,268,130"/>
-<area shape="poly" id="edge13_Node000000_Node000005" title=" " alt="" coords="153,103,187,108,187,113,153,108"/>
-<area shape="rect" id="Node000007" href="$classUARTCore.html" title="Base class for platform&#45;specific UART implementations." alt="" coords="186,153,270,179"/>
-<area shape="poly" id="edge15_Node000000_Node000007" title=" " alt="" coords="116,110,200,150,197,155,113,115"/>
-<area shape="rect" id="Node000002" href="$classESP32__CANCore.html" title=" " alt="" coords="318,5,441,31"/>
-<area shape="poly" id="edge10_Node000001_Node000002" title=" " alt="" coords="282,16,318,16,318,21,282,21"/>
-<area shape="rect" id="Node000004" href="$classESP32__I2CCore.html" title=" " alt="" coords="322,55,437,80"/>
-<area shape="poly" id="edge12_Node000003_Node000004" title=" " alt="" coords="278,65,322,65,322,70,278,70"/>
-<area shape="rect" id="Node000006" href="$classESP32PWMCore.html" title=" " alt="" coords="320,104,440,130"/>
-<area shape="poly" id="edge14_Node000005_Node000006" title=" " alt="" coords="284,114,319,114,319,120,284,120"/>
-<area shape="rect" id="Node000008" href="$classESP32__UART.html" title=" " alt="" coords="328,153,432,179"/>
-<area shape="poly" id="edge16_Node000007_Node000008" title=" " alt="" coords="285,164,327,164,327,169,285,169"/>
+<area shape="rect" id="Node000000" href="$d2/d03/class_hardware_resource.html" title="Base class for hardware resources like UART, SPI, I2C, PWM, etc." alt="" coords="5,81,139,108"/>
+<area shape="rect" id="Node000001" href="$d9/d06/class_c_a_n_core.html" title=" " alt="" coords="190,5,268,32"/>
+<area shape="poly" id="edge9_Node000000_Node000001" title=" " alt="" coords="114,72,199,30,201,35,117,76"/>
+<area shape="rect" id="Node000003" href="$d0/dd5/class_i2_c_core.html" title=" " alt="" coords="194,56,264,83"/>
+<area shape="poly" id="edge11_Node000000_Node000003" title=" " alt="" coords="154,79,193,72,194,78,154,84"/>
+<area shape="rect" id="Node000005" href="$d2/deb/class_p_w_m_core.html" title=" " alt="" coords="188,107,270,133"/>
+<area shape="poly" id="edge13_Node000000_Node000005" title=" " alt="" coords="154,105,188,111,187,116,153,110"/>
+<area shape="rect" id="Node000007" href="$d4/da9/class_u_a_r_t_core.html" title="Base class for platform&#45;specific UART implementations." alt="" coords="187,157,272,184"/>
+<area shape="poly" id="edge15_Node000000_Node000007" title=" " alt="" coords="117,113,201,154,199,159,114,118"/>
+<area shape="rect" id="Node000002" href="$d6/d24/class_e_s_p32___c_a_n_core.html" title=" " alt="" coords="320,5,446,32"/>
+<area shape="poly" id="edge10_Node000001_Node000002" title=" " alt="" coords="284,16,320,16,320,21,284,21"/>
+<area shape="rect" id="Node000004" href="$d0/d97/class_e_s_p32___i2_c_core.html" title=" " alt="" coords="324,56,442,83"/>
+<area shape="poly" id="edge12_Node000003_Node000004" title=" " alt="" coords="280,67,323,67,323,72,280,72"/>
+<area shape="rect" id="Node000006" href="$da/d75/class_e_s_p32_p_w_m_core.html" title=" " alt="" coords="322,107,445,133"/>
+<area shape="poly" id="edge14_Node000005_Node000006" title=" " alt="" coords="286,117,321,117,321,123,286,123"/>
+<area shape="rect" id="Node000008" href="$dc/deb/class_e_s_p32___u_a_r_t.html" title=" " alt="" coords="330,157,436,184"/>
+<area shape="poly" id="edge16_Node000007_Node000008" title=" " alt="" coords="288,168,330,168,330,173,288,173"/>
 </map>

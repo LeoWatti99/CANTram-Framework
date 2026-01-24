@@ -1,5 +1,0 @@
-<map id="I2CCore" name="I2CCore">
-<area shape="rect" id="Node000001" title=" " alt="" coords="37,79,106,105"/>
-<area shape="rect" id="Node000002" href="$classHardwareResource.html" title="Base class for hardware resources like UART, SPI, I2C, PWM, etc." alt="" coords="5,5,138,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="74,46,74,79,69,79,69,46"/>
-</map>

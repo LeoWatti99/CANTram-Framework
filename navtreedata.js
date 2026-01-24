@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "CAN-TRAM-Framework", "index.html", [
+  [ "CANTram Framework", "index.html", [
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -49,9 +49,10 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"AnalogInput_8h_source.html",
-"classOutputProvider.html#aa30505769d3096bf35c097c23b762ea2"
+"annotated.html",
+"dd/d7a/_c_a_n_interface_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';
 var SYNCOFFMSG = 'click to enable panel synchronization';
+var LISTOFALLMEMBERS = 'List of all members';
